@@ -1,0 +1,14 @@
+<!--pages/nav/nav.wxml-->
+<el-head class='el' head='{{head}}' stickie='true'></el-head>
+
+<view class="container">
+  <text>自定义颜色</text>
+  <el-head head='{{head1}}'></el-head>
+
+  <text>卡槽</text>
+  <el-head head='{{head1}}'>
+    <view slot='nav-left' bindtap='onToast'>弹窗</view>
+    <view slot='nav-right' bindtap='onToast'>弹窗</view>
+  </el-head>
+
+</view>

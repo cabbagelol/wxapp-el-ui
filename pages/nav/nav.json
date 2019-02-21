@@ -1,0 +1,6 @@
+{
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "el-head": "../../component/_head/head"
+  }
+}

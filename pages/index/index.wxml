@@ -1,0 +1,8 @@
+<!--index.wxml-->
+<el-head head='{{head}}'></el-head>
+
+<view class="container">
+  <navigator url="../nav/nav" open-type="navigate" class='card'>
+    导航
+  </navigator>
+</view>
