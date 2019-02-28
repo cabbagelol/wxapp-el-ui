@@ -1,0 +1,15 @@
+<view class='_cell_ {{elclass}}' hover-class='{{islink ? "_cell_hover" : ""}}' bindtap='onclick'>
+    <view class='_cell_title_img_ _cell_center_' wx:if='{{icon}}'>
+        <slot name='icon' class='_cell_center_'></slot>
+    </view>
+    <view class='_cell_title_'>
+        <view class='_cell_title_positivetitle_ _cell_center_' wx:if='{{title}}'>{{title}}</view>
+        <view class='_cell_title_subhead_ _cell_center_' wx:if='{{label}}'>{{label}}</view>
+    </view>
+    <view class='_cell_title_content_ _cell_center_'>
+        <slot name='content'></slot>
+    </view>
+    <view class='_cell_title_icon_ _cell_center_'>
+        <image src='../../res/image/useredit/onward.png' wx:if='{{islink}}'></image>
+    </view>
+</view>
