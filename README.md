@@ -18,6 +18,8 @@
 # 组件状况
 - ✔ Nav `导航`
 
+Nav提供了自定义卡槽与Nav基础样式，它将自动适配刘海与非刘海屏幕高度，保证一致性。
+
 ![Image text](http://cdn.cabbagelol.net/wxapp-coms-nav1.png)
 ![Image text](http://cdn.cabbagelol.net/wxapp-coms-nav2.png)
 
@@ -42,7 +44,7 @@ head包含:
 
 nav卡槽:
 
-名称 | 类型
+名称 | 说明
 ------------ | -------------
 nav-left | 左侧卡槽
 nav-title | 中间卡槽
@@ -51,26 +53,42 @@ nav-right | 右侧卡槽
 * 使用nav-title卡槽时应当将title设置为""，否则将出现重复的标题。
 使用例子:
 
-         <el-head head='{{head2}}'>
+         <el-head head='{{head}}'>
             <view slot='nav-tit'>
-                自定义标题
+                <text style='color:red'>自定义</text>标题
             </view>
          </el-head>
    
 - - -
 - ✔ Img `图片`
+
+Img组件自动适配图片，限制在所设置大小之内。
+
+属性:
+
+名称 | 类型 | 说明
+------------ | ------------- | -------------
+src | String |  图片地址，支持网络地址以及本地地址
+style | String | 允许自定义样式
+~~imageslim~~ | ~~Boolean~~ | -
+
+- - -
 - ✔ Load `加载图标`
 
 ![Image text](http://cdn.cabbagelol.net/wxapp-coms-load.png)
 
-目前仅支持二种加载图片，参考上方图片。
+Load组件，目前仅支持二种加载图片，参考上方图片。
+
+属性:
+
+名称 | 类型 | 说明
+------------ | ------------- | -------------
+size | String | 加载图标大小
+type | String | 加载类型 `line` 或 `main`
+
 
 - - -
 - ✔ Nav `导航`
+
+- - -
 - ✔ Cell
-- 口 Content `主体`
-
-#使用
-- 导航
-
-兼容小程序Android以及Ios不同设备状态

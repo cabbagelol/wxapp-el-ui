@@ -24,7 +24,6 @@ Component({
             /**
              * 加载成功
              */
-            // console.info('load img:' + e.currentTarget.dataset.url)
             this.setData({
                 load: false
             })
