@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "el-load": "../_load/load"
+  }
+}
