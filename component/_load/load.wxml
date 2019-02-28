@@ -1,0 +1,4 @@
+<view style='transform: scale({{size || 1}})'>
+  <view class='_load_' wx:if='{{type == "main" || type == ""}}'></view>
+  <view class='_load_line' wx:elif='{{type == "line"}}'></view>
+</view>

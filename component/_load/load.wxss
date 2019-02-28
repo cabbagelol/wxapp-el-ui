@@ -1,0 +1,90 @@
+/* 标准 */
+._load_ {
+  margin: 0 auto;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: relative;
+  border: 3px solid rgba(0, 0, 0, 0);
+  border-top-color: rgba(0, 0, 0, 0.2);
+  transform: rotate(360deg);
+  animation: stretchdelay 0.5s infinite ease-in-out;
+}
+
+._load_:after {
+  content: '';
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  z-index: 10;
+  top: -3px;
+  left: -3px;
+  border-radius: 50%;
+  border: 3px solid rgba(0, 0, 0, 0.1);
+}
+
+@keyframes stretchdelay {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(-360sdeg);
+  }
+}
+
+/* 线形 */
+._load_line {
+  display: inline-block;
+  font-size: 2em;
+  margin: 0 0.3em;
+  position: relative;
+  height: 0.3em;
+  width: 1em;
+}
+
+._load_line:before, ._load_line:after {
+  content: "";
+  display: block;
+  height: 0.3em;
+  position: absolute;
+  width: 0.3em;
+}
+
+._load_line:before {
+  animation: k-loadingK 2s ease-in-out infinite, k-loadingM 0.66s ease-in-out infinite;
+  background: #ee6362;
+}
+
+._load_line:after {
+  animation: k-loadingL 2s ease-in-out infinite, k-loadingN 0.66s ease-in-out infinite;
+  background: #18b6c1;
+}
+
+@keyframes k-loadingK {
+  0% {
+    left: 0;
+  }
+
+  50% {
+    left: 100%;
+  }
+
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes k-loadingL {
+  0% {
+    left: 100%;
+  }
+
+  50% {
+    left: 0;
+  }
+
+  100% {
+    left: 100%;
+  }
+}
