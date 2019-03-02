@@ -7,6 +7,9 @@
 若有疑问，请联系nickmiku@foxmail.com或者提交到帖子中
 
 # 如何使用
+
+npm i wxapp-el-ui
+
 在所需小程序页面中的.json文件配置`usingComponents`参数，关于详细规则参考[这里](https://developers.weixin.qq.com/miniprogram/dev/framework/custom-component/component.html)。
 
       "usingComponents": {
