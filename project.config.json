@@ -15,7 +15,7 @@
 	"compileType": "miniprogram",
 	"libVersion": "2.6.0",
 	"appid": "wx349c32ff0c9fed9f",
-	"projectname": "wxapp-components",
+	"projectname": "wxapp-elui",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},

@@ -3,22 +3,37 @@
 </h1>
 
 # 介绍
-小程序组件库，仅适用微信小程序。
-若有疑问，请联系nickmiku@foxmail.com或者提交到帖子中
+小程序组件库，仅适用微信小程序。若有疑问请提交到Issues中。
 
-# 如何使用
-在所需小程序页面中的.json文件配置`usingComponents`参数，关于详细规则参考[这里](https://developers.weixin.qq.com/miniprogram/dev/framework/custom-component/component.html)。
+# 快速配置
+在page.json文件中配置`usingComponents`参数，在此之前你应该更多的阅读[微信自定义组件](https://developers.weixin.qq.com/miniprogram/dev/framework/custom-component/component.html)的文档。
 
-      "usingComponents": {
-        "el-head": "./component/_head/head"
-      }
-      
-在wxml中插入<el-head head='{{head}}' />既可使用。      
+```json
+"usingComponents": {
+  "el-head": "./component/_head/head",
+  "el-img": "./component/_img/img"
+  "el-load": "./component/_load/load"
+  "el-cell": "./component/_cell/cell"
+}
+```
 
 # 组件状况
-- ✔ Nav `导航`
+- [x] `head`
+- [x] `img`
+- [x] `cell`
+- [x] `load`
+- [ ] `input`
+- [ ] `numIndicator`
+- [ ] `radio`
+- [ ] `button`
 
-Nav提供了自定义卡槽与Nav基础样式，它将自动适配刘海与非刘海屏幕高度，保证一致性。
+* 工程还处于统配中，仅小部分组件被共享
+
+<br><br><br><br>
+
+## 导航
+
+Head提供了自定义卡槽与Nav基础样式，它将自动适配刘海与非刘海屏幕以及android或ios整体高度，保证一致性。
 
 ![Image text](http://cdn.cabbagelol.net/wxapp-coms-nav1.png)
 ![Image text](http://cdn.cabbagelol.net/wxapp-coms-nav2.png)
@@ -59,8 +74,7 @@ nav-right | 右侧卡槽
             </view>
          </el-head>
    
-- - -
-- ✔ Img `图片`
+## 图片
 
 Img组件自动适配图片，限制在所设置大小之内。
 
@@ -72,9 +86,7 @@ src | String |  图片地址，支持网络地址以及本地地址
 style | String | 允许自定义样式
 ~~imageslim~~ | ~~Boolean~~ | -
 
-- - -
-- ✔ Load `加载图标`
-
+## load
 ![Image text](http://cdn.cabbagelol.net/wxapp-coms-load.png)
 
 Load组件，目前仅支持二种加载图片，参考上方图片。
@@ -86,9 +98,4 @@ Load组件，目前仅支持二种加载图片，参考上方图片。
 size | String | 加载图标大小
 type | String | 加载类型 `line` 或 `main`
 
-
-- - -
-- ✔ Nav `导航`
-
-- - -
-- ✔ Cell
+## Cell
