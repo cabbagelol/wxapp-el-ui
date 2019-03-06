@@ -1,21 +1,19 @@
 Page({
   data: {
     head: {
+      stickie: true,
       title: '导航一',
-      back: true
-    },
-    head1: {
-      title: '导航二',
       style: {
-        background: '#535353',
-        textColor: '#fff'
+        background: '#FFF',
+        textColor: '#000'
+      },
+      slot: {
+          l: true,
+          c: false,
+          r: false
       },
       back: true
-    },
-    head2: {
-      title: '导航三,导航栏太长怎么办呢',
-      back: true
-    },
+    }
   },
 
   onToast () {
@@ -24,5 +22,17 @@ Page({
         title: '弹窗成功'
       }
     )
+  },
+
+  onInput (e) {
+    this.setData({
+      [e.target.dataset.e]: e.detail.value
+    })
+  },
+
+  onSwitch (e) {
+    this.setData({
+      [e.target.dataset.e]: e.detail.value
+    })
   }
 })

@@ -9,7 +9,7 @@
     <view class='_cell_title_content_ _cell_center_'>
         <slot name='content'></slot>
     </view>
-    <view class='_cell_title_icon_ _cell_center_'>
-        <image src='../../res/image/useredit/onward.png' wx:if='{{islink}}'></image>
+    <view class='_cell_title_icon_ _cell_center_' wx:if='{{islink}}'>
+        <image src='./onward.png' ></image>
     </view>
 </view>

@@ -19,6 +19,7 @@
   z-index: 55;
   display: inline-flex;
   width: 100%;
+  transition: background-color .25s;
 }
 
 ._head_block_ > view {

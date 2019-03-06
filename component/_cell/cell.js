@@ -6,9 +6,7 @@ Component({
     properties: {
         title: String,
         label: String,
-        content: String,
         icon: Boolean,
-        arrowhead: Boolean,
         elclass: String,
         islink: Boolean
     },

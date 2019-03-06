@@ -36,7 +36,7 @@
 }
 
 ._cell_title_content_ {
-    padding: 0 10px 0 5px;
+    padding: 0 0 0 5px;
     font-size:28rpx;
     text-align: right;
     display: inline-flex;
@@ -57,6 +57,7 @@
 
 ._cell_title_icon_ {
     width: 18px !important;
+    padding-left: 10px;
 }
 
 ._cell_title_icon_ > image {

@@ -1,10 +1,33 @@
-<el-head class='el' head='{{head}}' stickie='true'></el-head>
+<el-head head='{{head}}' stickie='{{head.stickie}}' load="{{head.load}}">
+  <view slot="nav-left" wx:if="{{head.slot.l}}" bindtap="onToast">左</view>
+  <view slot="nav-tit" wx:if="{{head.slot.c}}" bindtap="onToast">中</view>
+  <view slot="nav-right" wx:if="{{head.slot.r}}" bindtap="onToast">右</view>
+</el-head>
 
 <view class="container">
-  <el-head head='{{head1}}'></el-head>
-  <el-head head='{{head2}}'>
-    <view slot='nav-left' bindtap='onToast'>弹窗</view>
-    <view slot='nav-right' bindtap='onToast'>弹窗</view>
-  </el-head>
+  <el-cell title="标题">
+    <input slot="content" value="{{head.title}}" data-e="head.title" bindinput="onInput"/>
+  </el-cell>
+  <el-cell title="悬浮">
+    <switch slot="content" checked="{{head.stickie}}" data-e="head.stickie" bindchange="onSwitch"/>
+  </el-cell>
+  <el-cell title="背景颜色" label="支持透明(inherit)">
+    <input slot="content" value="{{head.style.background}}" data-e="head.style.background" bindinput="onInput"/>
+  </el-cell>
+  <el-cell title="字体颜色">
+    <input slot="content" value="{{head.style.textColor}}" data-e="head.style.textColor" bindinput="onInput"/>
+  </el-cell>
+  <el-cell title="加载">
+    <switch slot="content" checked="{{head.load}}" data-e="head.load" bindchange="onSwitch"/>
+  </el-cell>
 
+  <el-cell title="左" label="左卡槽">
+    <switch slot="content" checked="{{head.slot.l}}" data-e="head.slot.l" bindchange="onSwitch"/>
+  </el-cell>
+  <el-cell title="中" label="中卡槽">
+    <switch slot="content" checked="{{head.slot.c}}" data-e="head.slot.c" bindchange="onSwitch"/>
+  </el-cell>
+  <el-cell title="右" label="右卡槽">
+    <switch slot="content" checked="{{head.slot.r}}" data-e="head.slot.r" bindchange="onSwitch"/>
+  </el-cell>
 </view>
