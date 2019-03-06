@@ -27,7 +27,6 @@ Component({
                     }
                   })
                 })
-              console.log(that.data.nav)
             }
         })
     },

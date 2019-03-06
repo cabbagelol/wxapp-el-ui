@@ -1,4 +1,3 @@
-// pages/nav/nav.js
 Page({
   data: {
     head: {
@@ -8,13 +7,13 @@ Page({
     head1: {
       title: '导航二',
       style: {
-        background: 'red',
+        background: '#535353',
         textColor: '#fff'
       },
       back: true
     },
     head2: {
-      title: '导航三',
+      title: '导航三,导航栏太长怎么办呢',
       back: true
     },
   },

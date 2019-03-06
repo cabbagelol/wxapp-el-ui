@@ -5,4 +5,8 @@
   <navigator url="../nav/nav" open-type="navigate" class='card'>
     导航
   </navigator>
+
+  <navigator url="../load/load" open-type="navigate" class='card'>
+    load
+  </navigator>
 </view>

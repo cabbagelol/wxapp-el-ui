@@ -13,10 +13,10 @@
 
     <view class='_head_block_title_' style='color: {{head.style.textColor ? head.style.textColor : "#000"}}'>
       <slot name='nav-tit' style='font-size: {{nav.fontSizeSetting ? nav.fontSizeSetting : ""}}'></slot>
-      {{head.title || '标题' + nav.interne}}
+      <view>{{head.title || '标题' + nav.interne}}</view>
     </view>
 
-    <view>
+    <view class="_head_block_rbtns">
       <slot name='nav-right'></slot>
     </view>
 

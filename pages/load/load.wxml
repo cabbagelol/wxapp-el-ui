@@ -1,0 +1,11 @@
+<el-head class='el' head='{{head}}' stickie='true'></el-head>
+
+<view class="container">
+    <el-load type="main"></el-load>
+    <el-load type="main" size=".8"></el-load>
+    <el-load type="main" size=".5"></el-load>
+
+    <el-load type="line"></el-load>
+    <el-load type="line"size=".8"></el-load>
+    <el-load type="line"size=".5"></el-load>
+</view>

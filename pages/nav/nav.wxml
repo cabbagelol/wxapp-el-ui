@@ -1,4 +1,3 @@
-<!--pages/nav/nav.wxml-->
 <el-head class='el' head='{{head}}' stickie='true'></el-head>
 
 <view class="container">

@@ -38,6 +38,12 @@
   color: #000;
 }
 
+._head_block_title_ > view {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 ._head_block_rbtns {
   text-align: left;
   width: 100%;
