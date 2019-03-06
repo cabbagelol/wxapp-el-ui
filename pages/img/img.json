@@ -1,0 +1,7 @@
+{
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "el-head": "../../component/_head/head",
+    "el-img": "../../component/_img/img"
+  }
+}

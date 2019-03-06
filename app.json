@@ -2,7 +2,9 @@
   "pages": [
     "pages/index/index",
     "pages/nav/nav",
-    "pages/load/load"
+    "pages/load/load",
+    "pages/img/img",
+    "pages/cell/cell"
   ],
   "window": {
     "backgroundTextStyle": "light",

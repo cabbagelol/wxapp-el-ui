@@ -1,0 +1,13 @@
+<el-head class='el' head='{{head}}' stickie='true'></el-head>
+
+<view class='cover'>
+  <el-img></el-img>
+</view>
+
+<view class='parent-layer'>
+  <el-img src="https://figure.kjwangluo.com/2F5OMZ2J7H"></el-img>
+</view>
+
+<view class='parent-style'>
+  <el-img src="https://figure.kjwangluo.com/2F5OMZ2J7H" class="img-style"></el-img>
+</view>

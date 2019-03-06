@@ -1,0 +1,30 @@
+<el-head class='el' head='{{head}}' stickie='true'></el-head>
+
+<view class='cell'>
+  <!-- icon -->
+  <text>icon</text>
+  <el-cell icon="true" class="icon-cell">
+    <image slot='icon' src='https://figure.kjwangluo.com/2F5OMZ2J7H'></image>
+  </el-cell>
+
+  <!-- title -->
+  <text>title</text>
+  <el-cell title="title" class="title-cell"></el-cell>
+
+  <!-- label -->
+  <text>label</text>
+  <el-cell label="label" class="label-cell"></el-cell>
+
+  <!-- content -->
+  <text>content</text>
+  <el-cell class="content-cell">
+    <view slot="content">content-cell</view>
+  </el-cell>
+
+  <!-- all -->
+  <text>all</text>
+  <el-cell icon='true' title='title' islink='true' class='all-cell' bindclick='onCellClick'>
+      <image slot='icon' src='https://figure.kjwangluo.com/2F5OMZ2J7H'></image>
+      <text slot='content' class='all-cell-content'>cell-content</text>
+  </el-cell>
+</view>

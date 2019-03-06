@@ -1,0 +1,55 @@
+.cell {
+  padding: 80rpx;
+}
+/* icon */
+.icon-cell {
+  border: 1px solid #F2F2F2;
+  display: block;
+  margin-bottom: 80rpx;
+}
+
+.icon-cell image{
+  width: 50rpx;
+  height: 50rpx;
+}
+
+
+/* title */
+
+.title-cell {
+  border: 1px solid #F2F2F2;
+  display: block;
+  margin-bottom: 80rpx;
+}
+
+/* label */
+
+.label-cell {
+  border: 1px solid #F2F2F2;
+  display: block;
+  margin-bottom: 80rpx;
+}
+
+/* content */
+
+.content-cell {
+  border: 1px solid #F2F2F2;
+  display: block;
+  margin-bottom: 80rpx;
+}
+
+/* all */
+
+.all-cell {
+  border: 1px solid #F2F2F2;
+  display: block;
+}
+
+.all-cell image {
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.all-cell-content {
+  margin-left: 200rpx;
+}

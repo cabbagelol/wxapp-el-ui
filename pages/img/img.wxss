@@ -1,0 +1,21 @@
+.cover {
+  width: 750rpx;
+  height: 200rpx;
+  margin-bottom: 50rpx;
+}
+
+.parent-layer {
+  width: 750rpx;
+  height: 200rpx;
+  margin-bottom: 50rpx;
+}
+
+.parent-style {
+  margin-bottom: 50rpx;
+}
+
+.img-style {
+  width: 550rpx;
+  height: 400rpx;
+  display: block;
+}

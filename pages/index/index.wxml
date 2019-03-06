@@ -9,4 +9,12 @@
   <navigator url="../load/load" open-type="navigate" class='card'>
     load
   </navigator>
+
+  <navigator url="../img/img" open-type="navigate" class='card'>
+    img
+  </navigator>
+
+  <navigator url="../cell/cell" open-type="navigate" class='card'>
+    cell
+  </navigator>
 </view>
