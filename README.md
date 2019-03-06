@@ -1,5 +1,5 @@
 <h1 align="center">
-  <p align="center">wxapp-commponets</p>
+  <p align="center">wxapp-el-ui</p>
 </h1>
 
 # 介绍
