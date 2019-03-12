@@ -30,16 +30,25 @@
 
 ```json
 {
-     title: '导航二',         // 导航标题
-     style: {                 // 导航样式
-       background: 'red',     // 背景颜色，支持透明
-       textColor: '#fff'      // 字体颜色
+     "title": "导航二",         // 导航标题
+     "style": {                 // 导航样式
+       "background": "red",     // 背景颜色，支持透明
+       "textColor": "#FFF"      // 字体颜色
      },
-     back: true               // 是否可返回
+     "back": true               // 是否可返回
 }
 
 * 当某参数缺省时，会被默认参数所弥补，请查阅属性表格
 ```
+
+| 名称 | 类型 | 默认状态 | 描述 |
+| :--- | :--- | :--- | :--- |
+| title | String | "" | 标题 |
+| style | Object | {} | 含background/textColor |
+| background | String | "" | 默认状态下将直接继承父容器属性 |
+|  |  |  |  |
+| textColor | String | "" | 默认状态下将直接继承父容器属性 |
+| back | Boolean | false | 是否可见返回上一页按钮 |
 
 #### 插槽:
 
@@ -60,6 +69,8 @@
   ```
 * 在全屏模式下，使用nav-right右侧卡槽会被微信右侧固有按钮遮挡
 * 在nav左右卡槽都设置时，title占有空间被占用，标题超出部分将省略号表示
+
+---
 
 ![Image text](http://cdn.cabbagelol.net/wxapp-coms-nav1.png)![Image text](http://cdn.cabbagelol.net/wxapp-coms-nav2.png)
 
