@@ -1,0 +1,8 @@
+<view class='__input__'>
+    <view class='__input__title__'>
+        <text style='color:red' wx:if='{{mustchoose}}'>*</text>{{title}}
+    </view>
+    <view>
+        <input type='{{type || "text"}}' placeholder='{{placeholder || (title ? ("请输入" + title) : "请输入内容")}}' value='{{value}}' bindinput='onInput'  />
+    </view>
+</view>

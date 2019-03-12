@@ -1,0 +1,26 @@
+.__input__ {
+    display: inline-flex;
+    width: 100%;
+    padding: 15px 20px;
+    background-color: #FFF;
+}
+
+.__input__ .__input__title__ {
+    display: inline-flex;
+    align-items: center;
+    white-space: nowrap;
+    font-size: 30rpx;
+    min-width: 90px;
+    max-height: 100px;
+    color: #000;
+    margin: 0 10px 0 0;
+}
+
+.__input__ .__input__input__ {
+    width: 100%;
+}
+
+.__input__ input {
+    width: 100%;
+    font-size: 30rpx;
+}

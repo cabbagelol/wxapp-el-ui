@@ -2,7 +2,10 @@ Component({
     properties: {
         src: String,
         style: String,
-        imageslim: Boolean
+        mode: String,
+        placeholder: String,
+        lazyload: Boolean,
+        arialabel: String
     },
 
     data: {
@@ -24,6 +27,7 @@ Component({
             /**
              * 加载成功
              */
+            console.info('load img:' + e.currentTarget.dataset.url)
             this.setData({
                 load: false
             })

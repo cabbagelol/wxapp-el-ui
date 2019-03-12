@@ -1,20 +1,18 @@
-<!--index.wxml-->
 <el-head head='{{head}}' stickie></el-head>
-
 <view class="container">
-  <navigator url="../nav/nav" open-type="navigate" class='card'>
-    导航
+  <navigator url="../nav/nav" open-type="navigate">
+      <el-cell title='导航' islink></el-cell>
   </navigator>
 
-  <navigator url="../load/load" open-type="navigate" class='card'>
-    load
+  <navigator url="../load/load" open-type="navigate">
+      <el-cell title='装载' islink></el-cell>
   </navigator>
 
-  <navigator url="../img/img" open-type="navigate" class='card'>
-    img
+  <navigator url="../img/img" open-type="navigate">
+      <el-cell title='图片' islink></el-cell>
   </navigator>
 
-  <navigator url="../cell/cell" open-type="navigate" class='card'>
-    cell
+  <navigator url="../cell/cell" open-type="navigate">
+      <el-cell title='cell' islink></el-cell>
   </navigator>
 </view>

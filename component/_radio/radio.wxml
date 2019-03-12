@@ -1,0 +1,8 @@
+<!-- 单选 -->
+<radio-group class='_radio_' bindchange='radioChange'>
+    <label class="_radio_item" wx:for="{{datas}}" wx:key='{{index}}'>
+        <radio value="{{item.value}}" checked="{{item.checked}}" style='display: none'/>
+        <view class='_radio_checked {{value == item.value ? "checked" : ""}}'></view>
+        {{item.name}}
+    </label>
+</radio-group>

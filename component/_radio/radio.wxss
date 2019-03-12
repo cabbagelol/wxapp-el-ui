@@ -1,0 +1,23 @@
+._radio_ {
+    position: relative;
+}
+
+._radio_checked {
+    border: 3px solid #CCCCCC;
+    width: 8px;
+    height: 8px;
+    background-color: #CCCCCC;
+    border-radius: 50%;
+    margin: 0 5px 0 0;
+}
+
+._radio_checked.checked {
+    border: 3px solid #18B6C1;
+    background-color: #FFF;
+}
+
+._radio_item {
+    display: inline-flex;
+    align-items:center;
+    margin: 0 0 0 20px;
+}

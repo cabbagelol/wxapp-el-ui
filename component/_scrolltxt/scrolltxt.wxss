@@ -1,0 +1,11 @@
+.marquee {
+  overflow: hidden;
+}
+
+.marqueeBox-nowrap {
+  white-space: nowrap;
+}
+
+.marquee_text {
+  float: left;
+}

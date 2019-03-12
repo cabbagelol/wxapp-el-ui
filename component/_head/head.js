@@ -5,7 +5,6 @@ Component({
 
     properties: {
         head: Object,
-        load: Boolean,
         stickie: Boolean
     },
 

@@ -1,0 +1,44 @@
+._textarea_ {
+    padding: 10px 25px;
+    background-color: #FFF;
+}
+
+._textarea_cont {
+    position: relative;
+}
+
+._textarea_cont textarea {
+    word-wrap:break-word;
+    white-space:normal;
+    word-break:break-all;
+ }
+
+/*限制符*/
+._textarea_contwordcount {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    font-size: 30rpx;
+    color: #999;
+}
+
+/*内容*/
+._textarea_ .__input__title__ {
+    display: inline-flex;
+    align-content: center;
+    white-space: nowrap;
+    font-size: 30rpx;
+    min-width: 90px;
+    max-height: 100px;
+    color: #000;
+    margin: 0 10px 10px 0;
+}
+
+._textarea_ textarea {
+    border: 1px solid #F2F2F2;
+    border-radius: .3rem;
+    padding: 10px;
+    height: 132px;
+    width: calc(100% - 20px);
+    font-size: 30rpx;
+}

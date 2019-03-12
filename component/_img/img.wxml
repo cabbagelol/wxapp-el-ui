@@ -2,8 +2,17 @@
   * 控件
   * 图片
  -->
-<view class="__img__">
-    <image src="{{src}}{{imageslim ? '?imageslim' : ''}}" data-url="{{src}}" style='{{style}}' lazy-load="true"
-           alt="{{src || alt}}" wx:if="{{src}}" bindload="onLoad" binderror="onError" mode="aspectFill"></image>
-    <image src="../../res/image/cover.png" style='{{style}}' wx:if="{{!src || src == ''}}" mode="aspectFill"></image>
-</view>
+ <view class="__img__">
+  <image src="{{src}}{{imageslim ? '?imageslim' : ''}}"
+         lazy-load="{{lazyload}}"
+         aria-label="{{arialabel}}"
+         data-url="{{src}}"
+         style='{{style}}'
+         lazy-load="true"
+         alt="{{src || alt}}"
+         wx:if="{{src}}" 
+         bindload="onLoad"
+         binderror="onError"
+         mode="{{mode || 'aspectFill'}}"></image>
+  <image src="{{placeholder ? placeholder : './images/cover.png'}}" style='{{style}}' wx:if="{{!src || src == ''}}" mode="aspectFill"></image>
+ </view>

@@ -1,0 +1,8 @@
+<!--数字指示器-->
+<view class='_numIndicator_'>
+    <view class='_numIndicator_btn' data-type='reduce' bindtap='onChange'>-</view>
+    <view class='_numIndicator_value'>
+        <input type='number' value='{{value}}' bindinput='onInput'/>
+    </view>
+    <view class='_numIndicator_btn' data-type='add' bindtap='onChange'>+</view>
+</view>
