@@ -2,7 +2,7 @@
 
 **v: 1.0.2**
 
-1. 新增控件：scrolltxt
+1. 新增控件：scrolltxt、button
 
 **v: 1.0.1**
 

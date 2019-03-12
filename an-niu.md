@@ -33,7 +33,7 @@ button {
   background: red;
 }
 
- 
+
 button:hover,
 button:active {
   background: red;
