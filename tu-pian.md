@@ -8,7 +8,6 @@
 
 ```json
 {
-    "navigationStyle": "custom",
     "usingComponents": {
       "el-img": "component/_img/img"
     }
