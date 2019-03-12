@@ -42,7 +42,7 @@
 ```
 
 | 名称 | 类型 | 默认状态 | 描述 |
-| :--- | :--- | :--- | :--- |
+| :--- | :---: | :---: | :--- |
 | title | String | "" | 标题 |
 | style | Object | {} | 含background/textColor |
 | background | String | "" | 默认状态下将直接继承父容器属性 |

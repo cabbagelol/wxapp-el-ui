@@ -17,11 +17,11 @@
 #### 属性:
 
 | 名称 | 类型 | 默认 | 说明 |
-| :--- | :--- | :--- | :--- |
+| :--- | :---: | :--- | :--- |
 | src | String | 当src不传时将指向控件根目录下默认图片 | 图片地址，支持网络地址以及本地地址placeholder |
 | placeholder | String | "" | 图片占位图，当src为空时显示的占位图，这里将传入占位图的地址，若不设置那边取img控件跟目录下的images/图片 |
 | style | String | "" | 允许自定义样式 |
-| mode | String | aspectFill | https://developers.weixin.qq.com/miniprogram/dev/component/image.html，控件默认是aspectFill |
+| mode | String | aspectFill | [https://developers.weixin.qq.com/miniprogram/dev/component/image.html，控件默认是aspectFill](https://developers.weixin.qq.com/miniprogram/dev/component/image.html，控件默认是aspectFill) |
 | lazy-load | Boolean | false |  |
 | aria-label | String |  |  |
 

@@ -18,8 +18,19 @@
 
 | 名称 | 类型 | 说明 |
 | :--- | :---: | :--- |
-| size | String | 加载图标大小 |
+| size | String | 加载图标大小, 1为默认大小，建议在0.1-10，小于0时将不可见 |
 | type | String | 加载类型 `line` 或 `main` |
+
+
+
+#### 使用
+
+```html
+<!-- 省略使用 -->
+<el-load />
+
+<el-load type="main" size=".6"></el-load>
+```
 
 ---
 
