@@ -3,45 +3,48 @@
 特性适配移动设备刘海与非刘海屏幕，自动应对不同状态栏高度，基本确保不同移动设备一致表现，并提供相应插槽。
 
 ## 使用指南
-在page.json中引入组件
 
+在page.json中引入组件
 
 ```json
 {
-    "navigationBarTitleText": "Cascader",
+    "navigationStyle": "custom",
     "usingComponents": {
-        "wux-cell-group": "../../dist/cell-group/index",
-        "wux-cell": "../../dist/cell/index",
-        "wux-cascader": "../../dist/cascader/index"
+      "el-head": "component/_head/head"
     }
 }
 ```
 
+```
+* 如果你希望代替掉原有的导航栏，应当添加"navigationStyle": "custom"参数设置全屏。
+```
 
 #### 属性:
 
 | 名称 | 类型 | 描述 |
-| --- | --- | --- |
+| :--- | :---: | :--- |
 | head | Object | head参数属于Object对象，内部可规定导航控件样式、是否允许返回、标题内容等等基础设定 |
 | stickie | Boolean | 悬浮置顶\(单同时出现若干导航控件，会出现遮盖问题\) |
 
 ##### head属性包含:
 
 ```json
-  {
-       title: '导航二',         // 导航标题
-       style: {                 // 导航样式
-         background: 'red',     // 背景颜色，支持透明
-         textColor: '#fff'      // 字体颜色
-       },
-       back: true               // 是否可返回
-  }
+{
+     title: '导航二',         // 导航标题
+     style: {                 // 导航样式
+       background: 'red',     // 背景颜色，支持透明
+       textColor: '#fff'      // 字体颜色
+     },
+     back: true               // 是否可返回
+}
+
+* 当某参数缺省时，会被默认参数所弥补，请查阅属性表格
 ```
 
 #### 插槽:
 
 | 名称 | 说明 |
-| --- | --- |
+| :--- | ---: |
 | nav-left | 左侧卡槽 |
 | nav-title | 中间卡槽 |
 | nav-right | 右侧卡槽 |
@@ -58,9 +61,5 @@
 * 在全屏模式下，使用nav-right右侧卡槽会被微信右侧固有按钮遮挡
 * 在nav左右卡槽都设置时，title占有空间被占用，标题超出部分将省略号表示
 
-
 ![Image text](http://cdn.cabbagelol.net/wxapp-coms-nav1.png)![Image text](http://cdn.cabbagelol.net/wxapp-coms-nav2.png)
-
-
-
 
