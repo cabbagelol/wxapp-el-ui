@@ -1,4 +1,3 @@
-# My Awesome Book
+# 微信组件
+该组件用于乐链科技内部小程序的通用组件，目前包含控件与布局组成。
 
-This file file serves as your book's preface, a great place to describe your book's content and ideas.
-234234
