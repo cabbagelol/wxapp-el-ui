@@ -18,7 +18,7 @@
 
 | 名称 | 类型 | 默认 | 说明 |
 | :--- | :---: | :--- | :--- |
-| scroll | Object | {} | 含delay、orientation、velocity |
+| scrolltxt | Object | {} | 含delay、orientation、velocity |
 | delay | Number | 3000\(3秒\) | 延迟滚动 |
 | orientation | String | left | 滚动方向，支持left和right |
 | velocity | Number | 1 | 20毫秒位移像素点，当越大时移动越快。建议在5以内 |
@@ -41,5 +41,9 @@
 }
 ```
 
+#### 已知问题
 
+Q: 滚动幕布没有正常运作
+
+A: 滚动幕布的父容器应当存在width准确属性值，不应设置width: 100%或是display:inline-flex
 
