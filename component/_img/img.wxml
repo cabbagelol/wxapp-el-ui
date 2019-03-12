@@ -5,5 +5,5 @@
 <view class="__img__">
     <image src="{{src}}{{imageslim ? '?imageslim' : ''}}" data-url="{{src}}" style='{{style}}' lazy-load="true"
            alt="{{src || alt}}" wx:if="{{src}}" bindload="onLoad" binderror="onError" mode="aspectFill"></image>
-    <image src="../../res/image/cover.png" style='{{style}}' wx:if="{{!src || src == ''}}" mode="aspectFill"></image>
+    <image src="./cover.png" style='{{style}}' wx:if="{{!src || src == ''}}" mode="aspectFill"></image>
 </view>

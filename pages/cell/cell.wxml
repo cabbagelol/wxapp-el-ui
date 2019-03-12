@@ -20,6 +20,10 @@
   <el-cell class="content-cell">
     <view slot="content">content-cell</view>
   </el-cell>
+  
+  <!-- islink -->
+  <text>inlink</text>
+  <el-cell islink="true" class="label-cell"></el-cell>
 
   <!-- all -->
   <text>all</text>
