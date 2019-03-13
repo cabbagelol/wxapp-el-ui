@@ -1,0 +1,13 @@
+button {
+  background:  turquoise;
+  color: #FFF;
+  margin: 0 0 30rpx 0;
+}
+ 
+button:hover,
+button:active {
+  position: relative;
+  content: '';
+  background: turquoise;
+  color: #FFF
+}

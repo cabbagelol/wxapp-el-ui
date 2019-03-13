@@ -23,4 +23,8 @@
   <navigator url="../button/button" open-type="navigate">
       <el-cell title='按钮' islink></el-cell>
   </navigator>
+
+  <navigator url="../input/input" open-type="navigate">
+      <el-cell title='输入框' islink></el-cell>
+  </navigator>
 </view>

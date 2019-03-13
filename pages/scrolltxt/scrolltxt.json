@@ -1,0 +1,8 @@
+{
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "el-head": "../../component/_head/head",
+    "el-cell": "../../component/_cell/cell",
+    "el-scrolltxt": "../../component/_scrolltxt/scrolltxt"
+  }
+}

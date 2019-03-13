@@ -7,6 +7,18 @@ Component({
       type: String
   },
 
+  relations: {
+    './_input-title': {
+      type: 'child', 
+      linked(target) {
+      },
+      linkChanged(target) {
+      },
+      unlinked(target) {
+      }
+    }
+  },
+
   data: {},
 
   methods: {

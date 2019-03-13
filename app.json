@@ -6,7 +6,8 @@
     "pages/img/img",
     "pages/cell/cell",
     "pages/scrolltxt/scrolltxt",
-    "pages/button/button"
+    "pages/button/button",
+    "pages/input/input"
   ],
   "window": {
     "backgroundTextStyle": "light",

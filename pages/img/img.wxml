@@ -1,4 +1,4 @@
-<el-head class='el' head='{{head}}' stickie='true'></el-head>
+<el-head head='{{head}}' stickie='true'></el-head>
 <view class='container'>
   <el-cell title='占位图' lab>
     <el-img slot="content" class="img-style"></el-img>

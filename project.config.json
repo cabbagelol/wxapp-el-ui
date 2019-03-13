@@ -38,7 +38,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 2,
+			"current": 3,
 			"list": [
 				{
 					"id": -1,
@@ -58,6 +58,13 @@
 					"id": -1,
 					"name": "按钮",
 					"pathName": "pages/button/button",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "输入框",
+					"pathName": "pages/input/input",
 					"scene": null
 				}
 			]

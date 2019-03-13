@@ -30,7 +30,7 @@
     <el-head head="{{head}}"></el-head>
 ```
 
-关于更多的教程与使用，请参考https://github.com/cabbagelol/wxapp-el-ui/tree/docs它的文档
+关于更多的教程与使用，请参考http://hn.cabbagelol.net/wxapp-el-ui
 
 # 组件状况
 - [x] `head`
