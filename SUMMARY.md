@@ -10,5 +10,6 @@
   * [按钮](an-niu.md)
   * [滚动幕布](gun-dong-mu-bu.md)
   * [输入框](shu-ru-kuang.md)
+  * [数字指示器](shu-zi-zhi-shi-qi.md)
 * [版本](ban-ben.md)
 
