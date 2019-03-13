@@ -9,6 +9,5 @@
   * [按钮](an-niu.md)
   * [滚动幕布](gun-dong-mu-bu.md)
   * [输入框](shu-ru-kuang.md)
-* [组件](zu-jian.md)
 * [版本](ban-ben.md)
 
