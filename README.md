@@ -6,3 +6,7 @@
 
 由于内部使用，所有控件基本由“el-”开头做为命名，若遇到相似组件可能因此改变。
 
+
+
+githun:https://github.com/cabbagelol/wxapp-el-ui
+
