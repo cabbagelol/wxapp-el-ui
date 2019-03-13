@@ -34,7 +34,7 @@
 ```
 
 ```json
-{
+"data": {
   "scrolltxt": {
     "orientation": "left",
     "velocity": .9,
