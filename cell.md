@@ -16,12 +16,12 @@
 
 #### 属性:
 
-| 名称 | 类型 | 描述 |
-| :--- | :---: | :--- |
-| title | String | 主标题 |
-| label | String | 副标题 |
-| icon | Boolean | 是否允许可见图标，注意它将直接影响slot=“icon”插槽的可见，在使用icon插槽前，应该把它设置为true |
-| islink | Boolean | 箭头，注意默认箭头是灰色，如果使用深色背景可能无法正常显示箭头 |
+| 名称 | 类型 | 描述 | 版本 |
+| :--- | :--- | :--- | :--- |
+| title | String | 主标题 | 1.0.1 |
+| label | String | 副标题 | 1.0.1 |
+| icon | Boolean | 是否允许可见图标，注意它将直接影响slot=“icon”插槽的可见，在使用icon插槽前，应该把它设置为true | 1.0.1 |
+| islink | Boolean | 箭头，注意默认箭头是灰色，如果使用深色背景可能无法正常显示箭头 | 1.0.1 |
 
 #### 插槽:
 
@@ -41,7 +41,7 @@
     </el-cell>
 
     <!-- 必须注意使用icon插槽，需要设置icon为true -->
-    
+
     <el-cell icon="true" title="自定义" >
         <el-img slot="icon" src=""></el-img>
     </el-cell>

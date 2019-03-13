@@ -16,12 +16,12 @@
 
 #### 属性
 
-| 名称 | 类型 | 默认 | 说明 |
-| :--- | :---: | :---: | :--- |
-| style | String | "" | 自定义样式，这里会直接传给内部的button。并非el-button标签 |
-| disabled | Boolean | false | 按钮禁用 |
-| radius | Boolean | false | 按钮圆角 |
-| size | String | "" | 大小.含mini、normal、large，当然也可以写成3、5、7. |
+| 名称 | 类型 | 默认 | 说明 | 版本 |
+| :--- | :--- | :--- | :--- | :--- |
+| style | String | "" | 自定义样式，这里会直接传给内部的button。并非el-button标签 | 1.0.1 |
+| disabled | Boolean | false | 按钮禁用 | 1.0.1 |
+| radius | Boolean | false | 按钮圆角 | 1.0.1 |
+| size | String | "" | 大小.含mini、normal、large，当然也可以写成3、5、7. | 1.0.1 |
 
 * 全局样式可以影响button控件样式
 
