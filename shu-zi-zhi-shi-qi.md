@@ -24,6 +24,18 @@
 | superposition | Number | 1 | 一次叠加值 | 1.0.1 |
 | longtag | Boolean | false | 是否允许加速 | 1.0.1 |
 
+#### 方法
+
+`bindchange`: function \(e\) 当数字变动时，无论是主动还是被动
+
+@e.detail:
+
+| 名称 | 类型 | 说明 | 版本 |
+| :--- | :--- | :--- | :--- |
+| el | Object | 内部输入框对象 | 1.0.1 |
+| index | Number | 序列\(一般无用\) | 1.0.1 |
+| value | Number | 数字变动返回的值 | 1.0.1 |
+
 #### 使用
 
 ```html
