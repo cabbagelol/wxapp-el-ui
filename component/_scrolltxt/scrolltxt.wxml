@@ -1,7 +1,7 @@
 <view class='marquee' id='marquee'>
-  <view class="marqueeBox {{marquee.nowrap ? 'marqueeBox-nowrap' : ''}}" style="transform: translateX({{marquee.x}}px) translateY({{marquee.y}}px)">
-    <text class='marquee_text' id='marquee_cont'>
-          <slot></slot>
-      </text>
-  </view>
+    <view class="marqueeBox {{marquee.nowrap ? 'marqueeBox-nowrap' : ''}}" style="transform: translateX({{marquee.x}}px) translateY({{marquee.y}}px)" bindtouchstart='onStart' bindtouchmove='onMove' bindtouchend='onEnd'>
+        <text class='marquee_text' id='marquee_cont'>
+            <slot></slot>
+        </text>
+    </view>
 </view>

@@ -2,7 +2,8 @@ Component({
   properties: {
     scrolltxt: Object,
     width: String,
-    velocity: Number
+    velocity: Number,
+    drag: Boolean
   },
 
   ready() {
@@ -21,6 +22,8 @@ Component({
   },
 
   data: {
+    windowWidth: 0,
+    velocity_: 0,
     marquee: { x: 0, y: 0, nowrap: true },
     interval: 20
   },
@@ -30,17 +33,17 @@ Component({
       var that = this
       var maxscrollwidth = 0;
       var windowWidth = 0;
-      // var windowWidth = wx.getSystemInfoSync().windowWidth;
-
       that.setData({
         'marquee.nowrap': (that.data.scrolltxt.orientation == 'left' || that.data.scrolltxt.orientation == 'right') ? true : false
       })
-
       wx.createSelectorQuery().in(this).selectAll('#marquee_cont,#marquee').boundingClientRect(function(rect) {
         for (var i of rect) {
           if (i.id == 'marquee') { windowWidth = i.width; }
           if (i.id == 'marquee_cont') { maxscrollwidth = i.width; }
         }
+        that.setData({
+          'windowWidth': windowWidth
+        })
         switch (that.data.scrolltxt.orientation) {
           case 'right':
             if (maxscrollwidth > windowWidth) {
@@ -80,6 +83,39 @@ Component({
             break;
         }
       }).exec()
+    },
+
+    onStart (e) {
+      if (!this.data.drag) {return}
+      this.setData({
+        velocity_: this.data.scrolltxt.velocity,
+        tap: {
+          x: e.touches[0].clientX
+        },
+        scrolltxt: Object.assign(this.data.scrolltxt, {
+          velocity: 0
+        })
+      })
+    },
+
+    onMove (e) {
+      if (!this.data.drag) { return }
+      var calc = ((e.touches[0].clientX / 50) - (this.data.tap.x / 50))
+      this.setData({
+        marquee: Object.assign(this.data.marquee, {
+          x: this.data.marquee.x + calc,
+          y: 0
+        })
+      })
+    },
+
+    onEnd () {
+      if (!this.data.drag) { return }
+      this.setData({
+        scrolltxt: Object.assign(this.data.scrolltxt, {
+          velocity: this.data.velocity_ <= 0 ? 1 : this.data.velocity_
+        })
+      })
     }
   }
 })

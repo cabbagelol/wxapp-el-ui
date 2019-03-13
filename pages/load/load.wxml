@@ -2,7 +2,7 @@
 
 <view class="container">
     <el-cell title="Icon"  label="标准">
-        <el-load slot="content" type="main"></el-load>
+        <el-load slot="content" type="main" size="1"></el-load>
     </el-cell>
     <el-cell title="Icon">
         <el-load slot="content" type="main" size=".8"></el-load>
@@ -12,7 +12,7 @@
     </el-cell>
 
     <el-cell title="Icon" label="小" >
-        <el-load slot="content" type="line"></el-load>
+        <el-load slot="content" type="line" size="1"></el-load>
     </el-cell>
     <el-cell title="Icon" label="小" >
         <el-load slot="content" type="line" size=".8"></el-load>

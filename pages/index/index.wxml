@@ -15,4 +15,12 @@
   <navigator url="../cell/cell" open-type="navigate">
       <el-cell title='cell' islink></el-cell>
   </navigator>
+
+  <navigator url="../scrolltxt/scrolltxt" open-type="navigate">
+      <el-cell title='滚动幕布' islink></el-cell>
+  </navigator>
+
+  <navigator url="../button/button" open-type="navigate">
+      <el-cell title='按钮' islink></el-cell>
+  </navigator>
 </view>

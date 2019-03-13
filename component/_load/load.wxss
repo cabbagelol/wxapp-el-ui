@@ -1,5 +1,9 @@
-/* 标准 */
 ._load_ {
+  
+}
+
+/* 标准 */
+._load_main {
   margin: 0 auto;
   width: 20px;
   height: 20px;
@@ -11,7 +15,7 @@
   animation: stretchdelay 0.5s infinite ease-in-out;
 }
 
-._load_:after {
+._load_main:after {
   content: '';
   width: 20px;
   height: 20px;
