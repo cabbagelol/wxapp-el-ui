@@ -17,7 +17,7 @@
 #### 属性:
 
 | 名称 | 类型 | 默认 | 说明 |
-| :--- | :---: | :--- | :--- |
+| :--- | :---: | :---: | :--- |
 | scrolltxt | Object | {} | 含delay、orientation、velocity |
 | delay | Number | 3000\(3秒\) | 延迟滚动 |
 | orientation | String | left | 滚动方向，支持left和right |

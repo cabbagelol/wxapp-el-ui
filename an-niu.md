@@ -17,7 +17,7 @@
 #### 属性
 
 | 名称 | 类型 | 默认 | 说明 |
-| :--- | :--- | :--- | :--- |
+| :--- | :---: | :---: | :--- |
 | style | String | "" | 自定义样式，这里会直接传给内部的button。并非el-button标签 |
 | disabled | Boolean | false | 按钮禁用 |
 | radius | Boolean | false | 按钮圆角 |
