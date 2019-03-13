@@ -11,8 +11,9 @@
 > * [x] cell
 > * [x] load-装载
 > * [x] input-输入器
-> * [x] numIndicator-数字指示器
-> * [x] radio-单选
+> * [x] 滚动幕布
+> * [ ] numIndicator-数字指示器
+> * [ ] radio-单选
 > * [x] button-按钮
 
 
