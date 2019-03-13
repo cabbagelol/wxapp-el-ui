@@ -1,6 +1,7 @@
 # Summary
 
 * [引导](README.md)
+* [快速配置](kuai-su-pei-zhi.md)
 * [组件](zu-jian.md)
   * [导航](chapter1.md)
   * [加载符](jia-zai-fu.md)
