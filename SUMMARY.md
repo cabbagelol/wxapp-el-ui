@@ -11,5 +11,6 @@
   * [滚动幕布](gun-dong-mu-bu.md)
   * [输入框](shu-ru-kuang.md)
   * [数字指示器](shu-zi-zhi-shi-qi.md)
+  * [多行输入框](duo-xing-shu-ru-kuang.md)
 * [版本](ban-ben.md)
 

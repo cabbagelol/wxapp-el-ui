@@ -24,8 +24,6 @@
 | superposition | Number | 1 | 一次叠加值 | 1.0.1 |
 | longtag | Boolean | false | 是否允许加速 | 1.0.1 |
 
-
-
 #### 使用
 
 ```html
