@@ -8,7 +8,7 @@
 >
 > * [x] head-导航
 > * [x] img-图片
-> * [x] cell
+> * [x] cell-单元格
 > * [x] load-装载
 > * [x] input-输入器
 > * [x] scrolltxt-滚动幕布
