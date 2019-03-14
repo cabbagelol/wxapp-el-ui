@@ -1,7 +1,3 @@
-<h1 align="center">
-  <p align="center">wxapp-el-ui</p>
-</h1>
-
 # 介绍
 小程序组件库，仅适用微信小程序。若有疑问请提交到Issues中。
 
