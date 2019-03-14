@@ -13,5 +13,6 @@
   * [数字指示器](shu-zi-zhi-shi-qi.md)
   * [多行输入框](duo-xing-shu-ru-kuang.md)
   * [弹出框](popup.md)
+  * [下拉刷新](xia-la-shua-xin.md)
 * [版本](ban-ben.md)
 
