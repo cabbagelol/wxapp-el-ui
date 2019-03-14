@@ -25,6 +25,7 @@
 | radius | Boolean | false | 按钮圆角 | 1.0.1 |
 | size | String | "" | 大小.含mini、normal、large，当然也可以写成3、5、7. | 1.0.1 |
 
+* 注意button控件按钮无法正常使用open-type="getUserInfo"类型功能，你应该使用原生来代替
 * 全局样式可以影响button控件样式
 
 ```css
