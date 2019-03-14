@@ -39,8 +39,7 @@
     "copy-code-button",
     "cuav-chapters",
     "heading-anchors",
-    "theme-fexa",
-    "prism"
+    "theme-fexa"
   ],
   "pluginsConfig": {
     "theme-fexa":{
@@ -61,7 +60,7 @@
         {
           "url":"https://github.com/cabbagelol/wxapp-el-ui",
           "target":"_blank",
-          "name": "Githun"
+          "name": "Github"
         },
         {
           "url":"https://github.com/cabbagelol/wxapp-el-ui/tree/docs",
