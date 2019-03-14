@@ -16,7 +16,7 @@
 }
 ```
 
-#### 属性
+### 属性
 
 | 名称 | 类型 | 默认 | 说明 | 版本 |
 | :--- | :--- | :--- | :--- | :--- |
@@ -26,7 +26,7 @@
 | superposition | Number | 1 | 一次叠加值 | 1.0.1 |
 | longtag | Boolean | false | 是否允许加速 | 1.0.1 |
 
-#### 方法
+### 方法
 
 `bindchange`: function \(e\) 当数字变动时，无论是主动还是被动
 
@@ -38,7 +38,7 @@
 | index | Number | 序列\(一般无用\) | 1.0.1 |
 | value | Number | 数字变动返回的值 | 1.0.1 |
 
-#### 使用
+### 使用
 
 ```html
 <el-numIndicator value='0' min='0' longtag></el-numIndicator>

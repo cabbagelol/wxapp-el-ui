@@ -16,7 +16,7 @@ popup
 }
 ```
 
-#### 属性
+### 属性
 
 | 名称 | 类型 | 默认 | 说明 | 版本 |
 | :--- | :--- | :--- | :--- | :--- |
@@ -25,7 +25,7 @@ popup
 | show | Boolean | false | 是否可见popup | 1.0.1 |
 | closeOnModal | Boolean | true | 是否可通过点击遮盖返回bindchange事件 | 1.0.1 |
 
-#### 方法
+### 方法
 
 change : function \(e\)
 
@@ -33,7 +33,7 @@ change : function \(e\)
 
 @e.el: view
 
-#### 使用
+### 使用
 
 ```html
 <el-popup show='{{popup.show}}' modal='{{popup.modal}}' position='TOP' bindchange='onPopup'>

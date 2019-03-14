@@ -39,13 +39,13 @@
 | min | String | "" | 请带上单位 | 1.0.1 |
 | max | String | "" | 请带上单位 | 1.0.1 |
 
-#### 方法
+### 方法
 
 `bindinput`: function \(e\) 输入框输入时
 
 @e: 内部input对象
 
-#### 使用
+### 使用
 
 ```html
 <el-input title='名称'></el-input>
