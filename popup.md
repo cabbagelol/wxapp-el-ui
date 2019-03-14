@@ -38,7 +38,7 @@ change : function \(e\)
 ```html
 <el-popup show='{{popup.show}}' modal='{{popup.modal}}' position='TOP' bindchange='onPopup'>
   <view slot='content'>
-
+    <!-- do -->
   </view>
 </el-popup>
 ```
