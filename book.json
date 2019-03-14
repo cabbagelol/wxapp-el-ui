@@ -1,8 +1,7 @@
 {
-  "author": "水泡泡",
-  "description": "水泡泡的testbook",
+  "author": "wxapp-el-ui",
+  "description": "cabbagelol下的wxapp-el-ui文档说明",
   "extension": null,
-  "generator": "site",
   "language": "zh-hans",
   "isbn": "",
   "links": {
@@ -14,7 +13,7 @@
       "weibo": null
     },
     "sidebar": {
-      "水泡泡的博客": "http://www.cnblogs.com/r00tuser/"
+
     }
   },
   "output": null,
@@ -32,48 +31,46 @@
     "paperSize": "a4"
   },
   "plugins": [
-    "-lunr",
-    "-search",
+    "-sharing",
+    "-livereload",
+    "-fontsettings",
     "-highlight",
-    "prism",
-    "search-plus",
-    "theme-comscore",
-    "toggle-chapters",
-    "codeblock-filename",
-    "splitter",
-    "tbfed-pagefooter",
-    "anchor-navigation-ex",
-    "expandable-chapters-small",
-    "sectionx",
-    "disqus"
+    "back-to-top-button",
+    "copy-code-button",
+    "cuav-chapters",
+    "heading-anchors",
+    "theme-fexa",
+    "prism"
   ],
   "pluginsConfig": {
+    "theme-fexa":{
+      "search-placeholder":"输入关键字搜索",
+      "logo":"./logo.png",
+      "favicon": "./favicon.ico"
+    },
     "prism": {
       "css": [
-        "prism-themes/themes/prism-base16-ateliersulphurpool.light.css"
+        "prism-themes/themes/prism-duotone-light.css"
       ]
-    },
-    "tbfed-pagefooter": {
-      "copyright": "Copyright &copy r00tuser 2017",
-      "modify_label": "该文件修订时间：",
-      "modify_format": "YYYY-MM-DD HH:mm:ss"
-    },
-    "anchor-navigation-ex": {
-      "isRewritePageTitle": true,
-      "isShowTocTitleIcon": true,
-      "tocLevel1Icon": "fa fa-hand-o-right",
-      "tocLevel2Icon": "fa fa-hand-o-right",
-      "tocLevel3Icon": "fa fa-hand-o-right"
-    },
-    "sectionx": {
-      "tag": "b"
-    },
-    "disqus": {
-      "shortName": "yourshorName"
     }
   },
-  "title": "test book",
-  "variables": {},
+  "title": "",
+  "variables": {
+    "themeFexa":{
+      "nav":[
+        {
+          "url":"https://github.com/cabbagelol/wxapp-el-ui",
+          "target":"_blank",
+          "name": "Githun"
+        },
+        {
+          "url":"https://github.com/cabbagelol/wxapp-el-ui/tree/docs",
+          "target":"_blank",
+          "name": "参与编辑"
+        }
+      ]
+    }
+  },
   "theme-default": {
     "showLevel": true
   }
