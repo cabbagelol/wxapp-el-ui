@@ -1,13 +1,25 @@
-<el-head class='el' head='{{head}}' stickie='true'></el-head>
+<el-head head='{{head}}' stickie='true'></el-head>
+<view class='container'>
+  <el-cell title='占位图' lab>
+    <el-img slot="content" class="img-style"></el-img>
+  </el-cell>
 
-<view class='cover'>
-  <el-img></el-img>
-</view>
+  <el-cell title='带地址图标' label='网络图片'>
+    <el-img slot="content" src="https://developers.weixin.qq.com/miniprogram/dev/image/cat/0.jpg?t=19031116" class="img-style"></el-img>
+  </el-cell>
 
-<view class='parent-layer'>
-  <el-img src="https://figure.kjwangluo.com/2F5OMZ2J7H"></el-img>
-</view>
+  <el-cell title='支持Base64'>
+    <el-img slot="content" src="{{imgBase64}}" class="img-style"></el-img>
+  </el-cell>
 
-<view class='parent-style'>
-  <el-img src="https://figure.kjwangluo.com/2F5OMZ2J7H" class="img-style"></el-img>
+  <view class='img-col'>
+    <view wx:for='{{array}}' wx:key='{{index}}'>
+      <el-img slot="content"
+        lazyload='true'
+        mode='{{item.mode}}'
+        src="https://developers.weixin.qq.com/miniprogram/dev/image/cat/0.jpg?t=19031116"
+        class="img-list"></el-img>
+        <text>{{item.text}}</text>
+  </view>
+  </view>
 </view>

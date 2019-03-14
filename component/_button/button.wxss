@@ -1,0 +1,46 @@
+@import './style/button.wxss';
+
+._button_ {
+  text-align: center;
+  font-weight: 500;
+  line-height: 28px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+._button_left {
+  justify-content: flex-start;
+}
+
+._button_center {
+  justify-content: center;
+}
+
+._button_right {
+  justify-content: flex-end;
+}
+
+._button_mini {
+  padding: 5rpx 20rpx !important;
+  font-size: 36rpx !important;
+}
+
+._button_normal {
+  padding: 15rpx 20rpx !important;
+  font-size: 34rpx !important;
+}
+
+._button_large {
+  padding: 30rpx 20rpx !important;
+  font-size: 36rpx !important;
+}
+
+._button_radius {
+  border-radius: 50px;
+}
+
+.no-margin {
+  margin: 0 !important;
+}

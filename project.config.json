@@ -38,12 +38,33 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 0,
+			"current": 3,
 			"list": [
 				{
 					"id": -1,
 					"name": "导航",
 					"pathName": "pages/nav/nav",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "滚动幕布",
+					"pathName": "pages/scrolltxt/scrolltxt",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "按钮",
+					"pathName": "pages/button/button",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "输入框",
+					"pathName": "pages/input/input",
 					"scene": null
 				}
 			]

@@ -1,0 +1,38 @@
+.__input__ {
+  display: inline-flex;
+  width: calc(100% - 40px);
+  padding: 15px 20px;
+  background-color: #fff;
+}
+
+.__input__ > view:last-child {
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+}
+
+.__input__ .__input__title__ {
+  display: inline-flex;
+  align-items: center;
+  font-size: 30rpx;
+  min-width: 90px;
+  max-height: 100px;
+  color: #000;
+  margin: 0 10px 0 0;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.__input__ .__input__title__.__input__title-null__ {
+  min-width: 0 !important;
+  margin: 0 !important;
+}
+
+.__input__ .__input__input__ {
+  width: 100%;
+}
+
+.__input__ input {
+  width: 100%;
+  font-size: 30rpx;
+}

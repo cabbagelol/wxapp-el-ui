@@ -2,6 +2,7 @@
   "navigationStyle": "custom",
   "usingComponents": {
     "el-head": "../../component/_head/head",
-    "el-cell": "../../component/_cell/cell"
+    "el-cell": "../../component/_cell/cell",
+    "el-img": "../../component/_img/img"
   }
 }

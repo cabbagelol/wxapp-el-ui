@@ -1,0 +1,10 @@
+<!-- 多行文本框 -->
+<view class='_textarea_'>
+    <view class='__input__title__' wx:if='{{title}}'>{{title}}</view>
+    <view class='_textarea_cont'>
+        <textarea placeholder='{{placeholder}}' bindinput='onInput' class='{{elclass}}'
+                  maxlength='{{wordcount}}' style='height:{{style.height}} px; {{elstyle}}'>{{data}}</textarea>
+        <view wx:if='{{wordcount || wordcount > 0}}' class='_textarea_contwordcount'>{{cursor + '/' + wordcount}}</view>
+        <view wx:if='{{register}}'></view>
+    </view>
+</view>

@@ -9,7 +9,7 @@
 
         <view class='_head_block_rbtns'>
             <view bindtap='onBack' wx:if='{{head.back}}'>
-                <image class='_head_block_rbtns_back' src='./nav_back.png'></image>
+                <image class='_head_block_rbtns_back' src='./images/head_back.png'></image>
             </view>
             <slot name='nav-left'></slot>
         </view>

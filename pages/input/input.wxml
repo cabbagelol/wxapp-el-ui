@@ -1,0 +1,15 @@
+<el-head head='{{head}}' stickie='true'></el-head>
+<view class='container'>
+  <el-input placeholder='输入内容'></el-input>
+  <el-input title='名字'></el-input>
+  <el-input title='年龄' type='number'></el-input>
+  <el-input title='描述' value='默认内容' type='number'></el-input>
+  <el-input title='学历' mustchoose='true' placeholder='输入你的学历信息' type='number'></el-input>
+
+  <el-input>
+    <el-input-title max='290rpx'>
+      <view class='tag'>正面</view> 真实的身份证照片
+      <text style='color:red'>*</text>
+    </el-input-title>
+  </el-input>
+</view>

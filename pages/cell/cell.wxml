@@ -1,34 +1,41 @@
-<el-head class='el' head='{{head}}' stickie='true'></el-head>
+<el-head head='{{head}}' stickie='true'></el-head>
+<view class='container'>
+  <el-cell title="具有副标题" ></el-cell>
 
-<view class='cell'>
-  <!-- icon -->
-  <text>icon</text>
-  <el-cell icon="true" class="icon-cell">
+  <el-cell title="具有副标题"  label="label"></el-cell>
+
+  <el-cell title="使用插槽"  label="content">
+    <view slot="content">这里是自定义内容</view>
+  </el-cell>
+
+  <el-cell icon="true" title="带有图标" >
     <image slot='icon' src='https://figure.kjwangluo.com/2F5OMZ2J7H'></image>
   </el-cell>
 
-  <!-- title -->
-  <text>title</text>
-  <el-cell title="title" class="title-cell"></el-cell>
+  <el-cell icon='true' title='icon' islink='true'>
+      <icon  slot='icon'  type="success_no_circle" size="15" />
+  </el-cell>
 
-  <!-- label -->
-  <text>label</text>
-  <el-cell label="label" class="label-cell"></el-cell>
+  <el-cell icon='true' title='icon' islink='true'>
+      <icon  slot='icon'  type="info" size="15" />
+  </el-cell>
 
-  <!-- content -->
-  <text>content</text>
-  <el-cell class="content-cell">
-    <view slot="content">content-cell</view>
+  <el-cell icon='true' title='icon' islink='true'>
+      <icon  slot='icon'  type="warn" size="15" />
+  </el-cell>
+
+  <el-cell icon='true' title='icon'  islink='true'>
+      <icon  slot='icon'  type="search" size="15" />
   </el-cell>
   
   <!-- islink -->
   <text>inlink</text>
   <el-cell islink="true" class="label-cell"></el-cell>
 
-  <!-- all -->
-  <text>all</text>
-  <el-cell icon='true' title='title' islink='true' class='all-cell' bindclick='onCellClick'>
-      <image slot='icon' src='https://figure.kjwangluo.com/2F5OMZ2J7H'></image>
-      <text slot='content' class='all-cell-content'>cell-content</text>
+  <el-cell icon='true' title='所有'  label="点击下我试试" islink='true' bindclick='onCellClick'>
+      <icon  slot='icon'  type="success" size="15" />
+      <view slot='content'>
+        <el-img src='https://figure.kjwangluo.com/2F5OMZ2J7H' class='cell-img'></el-img>
+      </view>
   </el-cell>
 </view>

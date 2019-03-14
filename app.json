@@ -4,7 +4,10 @@
     "pages/nav/nav",
     "pages/load/load",
     "pages/img/img",
-    "pages/cell/cell"
+    "pages/cell/cell",
+    "pages/scrolltxt/scrolltxt",
+    "pages/button/button",
+    "pages/input/input"
   ],
   "window": {
     "backgroundTextStyle": "light",
