@@ -6,4 +6,3 @@
 
 联系nickmiku@foxmail.com
 
-![Image text](https://q1.qlogo.cn/g?b=qq&nk=1214617226&s=100&t=1384608689)
