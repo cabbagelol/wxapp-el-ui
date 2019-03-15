@@ -13,6 +13,7 @@
   * [textarea 多行输入框](duo-xing-shu-ru-kuang.md)
   * [popup 弹出框](popup.md)
   * [refresh 下拉刷新](xia-la-shua-xin.md)
+  * [tab 标签页](tab-biao-qian-ye.md)
 * [界面](jie-mian.md)
   * [load 加载符](jia-zai-fu.md)
   * [button 按钮](an-niu.md)
