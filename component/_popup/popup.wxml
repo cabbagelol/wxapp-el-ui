@@ -1,0 +1,6 @@
+<view class='__popup__' wx:if='{{show}}'>
+  <view class='__popup__modal' wx:if='{{!!modal}}' bindtap='onModal'></view>
+  <view id='popupContent' class='__popup__content__ __popup__content__{{position || "button"}}' >
+    <slot name='content'></slot> 
+  </view>
+</view> 

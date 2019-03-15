@@ -1,0 +1,10 @@
+<el-head head='{{head}}' bindhead='onGetHead'></el-head>
+<view class='container'>
+  <el-vacancy></el-vacancy>
+  <el-vacancy cont='true' height='600rpx'>
+    <view slot='cont'>
+      <el-img src='https://developers.weixin.qq.com/miniprogram/dev/image/cat/0.jpg?t=19031116' style='margin: 0 auto;display:block;width: 300rpx; height: 300rpx' />
+      <text style='color: red'>标签</text>自定义内容,高度为600rpx
+    </view>
+  </el-vacancy>
+</view>

@@ -1,6 +1,6 @@
 {
   "name": "wxapp-el-ui",
-  "version": "1.0.2",
+  "version": "1.0.1",
   "dependencies": {
     "miniprogram-navigation-bar": "0.0.4"
   }

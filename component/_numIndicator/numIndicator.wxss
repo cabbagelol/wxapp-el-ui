@@ -1,27 +1,29 @@
-._numIndicator_ {
+.__numIndicator__ {
     display: inline-flex;
 }
 
-._numIndicator_ > view {
+.__numIndicator__ > view {
     width: 100%;
     display: inline-flex;
     justify-content: center;
     align-items: center;
 }
 
-._numIndicator_value {
+.__numIndicator_value__ {
     padding: 5px 10px;
     background-color: #F2F2F2;
     border-radius: .3rem;
     margin: 0 10px;
 }
 
-._numIndicator_value input {
+.__numIndicator_value__ input {
     text-align: center;
-    width: 40px;
+    width: 80rpx;
+    min-width: 80rpx;
+    max-width: 150rpx;
 }
 
-._numIndicator_btn {
+.__numIndicator_btn__ {
     color: #CCC;
     font-size: 45rpx;
     font-weight: 500;

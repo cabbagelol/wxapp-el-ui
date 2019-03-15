@@ -1,0 +1,20 @@
+.title {
+  font-size: 84rpx;
+  color: #FFF;
+  margin: 0 0 100rpx 0;
+}
+
+.title > text {
+  display: block;
+  font-size: 34rpx;
+}
+
+.htitle {
+  color: #FFF;
+  margin: 20rpx 0;
+}
+
+.container {
+  background: #03a9f4;
+  padding: 10rpx auto;
+}

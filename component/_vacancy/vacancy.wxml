@@ -1,0 +1,10 @@
+<!--
+  * 控件
+  * 空置-占位
+ -->
+ <view class="__vacancy__" style="height:{{height}}">
+    <view>
+        <text wx:if='{{!cont}}'>空空如也</text>
+        <slot name='cont'></slot>
+    </view>
+ </view>

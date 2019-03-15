@@ -1,0 +1,22 @@
+.numIndicator-custom .__numIndicator__ {
+  border: 1px solid #f2f2f2;
+  border-radius: 0.3rem;
+}
+
+.numIndicator-custom .__numIndicator_btn__ {
+  padding: 0 20rpx;
+  font-size:  inherit;
+}
+
+.numIndicator-custom .__numIndicator_value__ {
+  padding: 0 !important;
+  margin: 0 !important;
+  border-radius: 0rem !important;
+  background: #fff !important;
+  border-right: 1px solid #f2f2f2;
+  border-left: 1px solid #f2f2f2;
+}
+
+.numIndicator-custom .__numIndicator_value__ > input {
+  color: #999;
+}

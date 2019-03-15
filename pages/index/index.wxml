@@ -1,30 +1,52 @@
 <el-head head='{{head}}' stickie></el-head>
-<view class="container">
+<view class='container'>
+
+  <view class='title'>
+    <view>Elui</view>
+    <text>微信UI组件</text>
+  </view>
+
+  <view class='htitle'>组件</view>
   <navigator url="../nav/nav" open-type="navigate">
-      <el-cell title='导航' islink></el-cell>
+    <el-cell title='导航' islink></el-cell>
   </navigator>
-
-  <navigator url="../load/load" open-type="navigate">
-      <el-cell title='装载' islink></el-cell>
-  </navigator>
-
   <navigator url="../img/img" open-type="navigate">
-      <el-cell title='图片' islink></el-cell>
+    <el-cell title='图片' islink></el-cell>
   </navigator>
-
   <navigator url="../cell/cell" open-type="navigate">
-      <el-cell title='cell' islink></el-cell>
+    <el-cell title='单元格' islink></el-cell>
   </navigator>
-
   <navigator url="../scrolltxt/scrolltxt" open-type="navigate">
-      <el-cell title='滚动幕布' islink></el-cell>
+    <el-cell title='滚动幕布' islink></el-cell>
   </navigator>
-
-  <navigator url="../button/button" open-type="navigate">
-      <el-cell title='按钮' islink></el-cell>
-  </navigator>
-
   <navigator url="../input/input" open-type="navigate">
-      <el-cell title='输入框' islink></el-cell>
+    <el-cell title='输入框' islink></el-cell>
   </navigator>
+  <navigator url="../textarea/textarea" open-type="navigate">
+    <el-cell title='多行输入框' islink></el-cell>
+  </navigator>
+  <navigator url="../numIndicator/numIndicator" open-type="navigate">
+    <el-cell title='数字指示器' islink></el-cell>
+  </navigator>
+  <navigator url="../popup/popup" open-type="navigate">
+    <el-cell title='弹窗' islink></el-cell>
+  </navigator>
+  <navigator url="../refresh/refresh" open-type="navigate">
+    <el-cell title='下拉刷新' islink></el-cell>
+  </navigator>
+  <navigator url="../tab/tab" open-type="navigate">
+    <el-cell title='标签页' islink></el-cell>
+  </navigator>
+
+  <view class='htitle'>界面</view>
+  <navigator url="../load/load" open-type="navigate">
+    <el-cell title='装载' islink></el-cell>
+  </navigator>
+  <navigator url="../button/button" open-type="navigate">
+    <el-cell title='按钮' islink></el-cell>
+  </navigator>
+  <navigator url="../vacancy/vacancy" open-type="navigate">
+    <el-cell title='空置区' islink></el-cell>
+  </navigator>
+  
 </view>

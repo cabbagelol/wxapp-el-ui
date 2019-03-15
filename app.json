@@ -7,12 +7,33 @@
     "pages/cell/cell",
     "pages/scrolltxt/scrolltxt",
     "pages/button/button",
-    "pages/input/input"
+    "pages/input/input",
+    "pages/numIndicator/numIndicator",
+    "pages/textarea/textarea",
+    "pages/popup/popup",
+    "pages/refresh/refresh",
+    "pages/vacancy/vacancy",
+    "pages/tab/tab"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "wxapp-component",
     "navigationBarTextStyle": "black"
+  },
+  "usingComponents": {
+    "el-head": "./component/_head/head",
+    "el-cell": "./component/_cell/cell",
+    "el-load": "./component/_load/load",
+    "el-button": "./component/_button/button",
+    "el-textarea": "./component/_textarea/textarea",
+    "el-scrolltxt": "../../component/_scrolltxt/scrolltxt",
+    "el-numIndicator": "./component/_numIndicator/numIndicator",
+    "el-input": "./component/_input/input",
+    "el-input-title": "./component/_input/input-title",
+    "el-img": "./component/_img/img",
+    "el-popup": "./component/_popup/popup",
+    "el-refresh": "./component/_refresh/refresh",
+    "el-vacancy": "./component/_vacancy/vacancy"
   }
 }

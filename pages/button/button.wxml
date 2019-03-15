@@ -1,6 +1,6 @@
 <el-head head='{{head}}' stickie='true'></el-head>
 <view class='container'>
-  <el-button size='{{button.size}}' align='{{button.align}}' disabled='{{button.disabled}}' radius='{{button.radius}}' bindtap='onButton' wx:if='{{button.show}}'>
+  <el-button size='{{button.size}}' align='{{button.align}}' disabled='{{button.disabled}}' radius='{{button.radius}}' wx:if='{{button.show}}' bindtap='onButton'>
     按钮<block wx:if='{{button.load}}'>, 出现<el-load></el-load>图标</block>
   </el-button>
 

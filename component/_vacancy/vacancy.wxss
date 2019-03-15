@@ -1,0 +1,13 @@
+.__vacancy__ {
+  background-color: inherit;
+  min-height: 10vh;
+  display: inline-flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.__vacancy__ > view {
+  color: #999;
+  font-size: 1rem;
+}

@@ -1,0 +1,27 @@
+<el-head head='{{head}}' stickie='true'></el-head>
+<view class='container'>
+  <el-cell title='数字指示器'>
+    <el-numIndicator slot='content' value='-10' bindchange='onNumIndicator'></el-numIndicator>
+  </el-cell>
+
+  <el-cell title='限制' label='限制最小值与最大值，0-10'>
+    <el-numIndicator slot='content' min='1'  max='10'></el-numIndicator>
+  </el-cell>
+
+  <el-cell title='值' label='初始值'>
+    <el-numIndicator slot='content' value='5' ></el-numIndicator>
+  </el-cell>
+
+  <el-cell title='叠' label='改变一次叠加或减少值'>
+    <el-numIndicator slot='content' value='0' superposition='10'></el-numIndicator>
+  </el-cell>
+
+  <el-cell title='自定义样式' >
+    <el-numIndicator slot='content' class='numIndicator-custom'></el-numIndicator>
+  </el-cell>
+
+  <el-cell title='快速叠加' label='按住加减符快速叠加或减少'>
+    <el-numIndicator slot='content' value='100' min='0' superposition='100' longtag class='numIndicator-custom'></el-numIndicator>
+  </el-cell>
+
+</view>

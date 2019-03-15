@@ -1,5 +1,5 @@
 button {
-  background:  turquoise;
+  background:  #03a9f4;
   color: #FFF;
   margin: 0 0 30rpx 0;
 }
@@ -8,6 +8,6 @@ button:hover,
 button:active {
   position: relative;
   content: '';
-  background: turquoise;
+  background: #03a9f4;
   color: #FFF
 }

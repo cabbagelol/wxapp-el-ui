@@ -1,0 +1,4 @@
+<el-head class='el' head='{{head}}' stickie='true'></el-head>
+<view class='container'>
+  <el-textarea title='备注'></el-textarea>
+</view>

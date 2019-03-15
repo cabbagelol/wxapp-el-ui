@@ -1,0 +1,10 @@
+.__input-titile-omit__ {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+.__input-titile__ {
+  margin: 0 10px 0 0;
+}

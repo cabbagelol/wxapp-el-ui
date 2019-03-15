@@ -13,7 +13,7 @@
 		"autoAudits": false
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.6.0",
+	"libVersion": "2.6.2",
 	"appid": "wx1b1c359c86d1634a",
 	"projectname": "wxapp-elui",
 	"debugOptions": {
@@ -38,7 +38,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 3,
+			"current": 6,
 			"list": [
 				{
 					"id": -1,
@@ -65,6 +65,27 @@
 					"id": -1,
 					"name": "输入框",
 					"pathName": "pages/input/input",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "指示器",
+					"pathName": "pages/numIndicator/numIndicator",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "popup",
+					"pathName": "pages/popup/popup",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "下拉刷新",
+					"pathName": "pages/refresh/refresh",
 					"scene": null
 				}
 			]

@@ -1,4 +1,4 @@
-<el-head class='el' head='{{head}}' stickie='true'></el-head>
+<el-head head='{{head}}' stickie='true'></el-head>
 <view class='container'>
 
   <view class='scrolltxt'>
