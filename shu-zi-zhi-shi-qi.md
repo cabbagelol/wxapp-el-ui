@@ -38,7 +38,7 @@
 | index | Number | 序列\(一般无用\) | 1.0.1 |
 | value | Number | 数字变动返回的值 | 1.0.1 |
 
-`bindholdtao`: function \(e\) 当触摸一直保持
+`bindholdtap`: function \(e\) 当触摸一直保持
 
 @e.detail:
 
@@ -77,7 +77,7 @@
 | el-button-right | 右侧按钮 | 1.0.1 |
 | el-input | 输入框 | 1.0.1 |
 
-使用方式你可以参考这里[重写Class类](/zhong-xie-class-lei.md)。
+使用方式请参考这里[重写Class类](/zhong-xie-class-lei.md)。
 
 ### 使用
 

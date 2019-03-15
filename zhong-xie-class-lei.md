@@ -13,9 +13,9 @@
 
 * 所有wxapp-el-ui控件命名都以"**class**"来
 
-为了方便管理独立的控件样式，我们应该在项目的根目录下创建public/styles文件夹作为公共样式库,这里我们以numIndicator.wxss来命名它。  
-很好，接下来将重写它：
+为了方便管理独立的控件样式，我们应该在项目的根目录下创建public/styles文件夹作为公共样式库,这里我们以numIndicator.wxss来命名它。
 
+  
 numIndicator.wxml:
 
 ```html
@@ -51,7 +51,7 @@ numIndicator.wxss:
 }
 ```
 
-
+### 
 
 ### 单独的Class
 
@@ -63,7 +63,7 @@ numIndicator.wxss:
 
 ```css
 .numIndicator-button-left {
-  color: red
+  color: red;
 }
 ```
 
