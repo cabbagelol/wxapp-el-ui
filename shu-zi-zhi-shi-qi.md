@@ -18,6 +18,14 @@
 
 ### 属性
 
+| 名称 | 类型 | 默认 | 说明 | 版本 |
+| :--- | :--- | :--- | :--- | :--- |
+| value | Number | 0 | 值 | 1.0.1 |
+| min | Number | - | 最小值 | 1.0.1 |
+| max | Number | - | 最大值 | 1.0.1 |
+| superposition | Number | 1 | 一次叠加值 | 1.0.1 |
+| longtag | Boolean | false | 是否允许加速 | 1.0.1 |
+
 ### 方法
 
 `bindchange`: function \(e\) 当数字变动时，无论是主动还是被动
@@ -29,6 +37,26 @@
 | el | Object | 内部输入框对象 | 1.0.1 |
 | index | Number | 序列\(一般无用\) | 1.0.1 |
 | value | Number | 数字变动返回的值 | 1.0.1 |
+
+`bindholdtao`: function \(e\) 当触摸一直保持
+
+@e.detail:
+
+| 名称 | 类型 | 说明 | 版本 |
+| :--- | :--- | :--- | :--- |
+| el | Object | 内部输入框对象 | 1.0.1 |
+| value | Number | 值 | 1.0.1 |
+
+`bindtapend`: function \(e\) 触摸离开
+
+@e.detail:
+
+| 名称 | 类型 | 说明 | 版本 |
+| :--- | :--- | :--- | :--- |
+| el | Object | 内部输入框对象 | 1.0.1 |
+| value | Number | 值 | 1.0.1 |
+
+### 
 
 ### 样式
 
