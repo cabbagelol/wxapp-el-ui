@@ -6,3 +6,11 @@
 
 联系nickmiku@foxmail.com
 
+| 头像 | 名称 | 职责 |
+| :--- | :--- | :--- |
+| ![](https://q1.qlogo.cn/g?b=qq&nk=1214617226&s=100&t=1384608689) | Cabbagelol | Elui主导 |
+| ![](https://q1.qlogo.cn/g?b=qq&nk=1224619931&s=100&t=1384608689) | 一份子 | 设计 |
+| ![](https://q1.qlogo.cn/g?b=qq&nk=1290816367&s=100&t=1384608689) | 菊 | 前端 |
+
+
+

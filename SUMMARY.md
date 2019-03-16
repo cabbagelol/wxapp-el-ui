@@ -18,5 +18,6 @@
   * [load 加载符](jia-zai-fu.md)
   * [button 按钮](an-niu.md)
   * [vacancy 空置区](kong-zhi-qu.md)
+  * [body 主体](content-zhu-ti.md)
 * [版本](ban-ben.md)
 
