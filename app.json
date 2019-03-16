@@ -34,6 +34,8 @@
     "el-img": "./component/_img/img",
     "el-popup": "./component/_popup/popup",
     "el-refresh": "./component/_refresh/refresh",
-    "el-vacancy": "./component/_vacancy/vacancy"
+    "el-vacancy": "./component/_vacancy/vacancy",
+    "el-tab": "./component/_tab/tab",
+    "el-tab-content": "./component/_tab/tab-item"
   }
 }

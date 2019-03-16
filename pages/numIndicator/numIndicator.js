@@ -6,12 +6,7 @@ Page({
     },
   },
 
-  onLoad: function (options) {
-
-  },
-
   onNumIndicator (e) {
-    console.log(e)
     wx.showToast({
       title: new String(e.detail.value),
       icon: 'none'

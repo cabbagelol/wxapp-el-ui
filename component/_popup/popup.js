@@ -13,10 +13,6 @@ Component({
     closeOnModal: Boolean
   },
 
-  ready () {
-    console.log(1)
-  },
-
   methods: {
     onModal(e) {
       var that = this
