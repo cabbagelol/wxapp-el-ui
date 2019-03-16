@@ -1,0 +1,5 @@
+<view class='__tab-item__ {{class || ""}}' style='{{style || ""}}'  bindtap='onTabSelect' wx:if='{{tabitem.title == title}}'>
+  <slot />
+</view>
+<!-- index == value ||  -->
+<!-- {{tabitem.title}} == {{title}} | -->

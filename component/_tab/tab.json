@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "el-tab-item": "./tab-item"
+  }
+}
