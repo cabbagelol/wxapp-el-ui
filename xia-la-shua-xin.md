@@ -26,7 +26,11 @@
 
 ### 事件
 
-bindonRefresh: function \(\) {}
+`bindonRefresh`: function \(\) {}
+
+```
+具体参考使用方法
+```
 
 ### 使用
 
@@ -39,42 +43,42 @@ bindonRefresh: function \(\) {}
 ```
 
 ```js
-onLoad() {
-  this.refreshView = this.selectComponent("#refresh")
-}
-```
-
-```js
-//触摸开始
-handletouchstart: function(event) {
-  this.refreshView.handletouchstart(event)
-},
-
-//触摸移动
-handletouchmove: function(event) {
-  this.refreshView.handletouchmove(event)
-},
-
-//触摸结束
-handletouchend: function(event) {
-  this.refreshView.handletouchend(event)
-},
-
-//触摸取消
-handletouchcancel: function(event) {
-  this.refreshView.handletouchcancel(event)
-},
-
-//页面滚动
-onPageScroll: function(event) {
-  this.refreshView.onPageScroll(event)
-},
-
-onPullDownRefresh: function() {
-  setTimeout(() => {
-    this.refreshView.stopPullRefresh()
-  }, 5000)
-}
+page({
+  onLoad() {
+    this.refreshView = this.selectComponent("#refresh")
+  },
+  
+  //触摸开始
+  handletouchstart(event) {
+    this.refreshView.handletouchstart(event)
+  },
+  
+  //触摸移动
+  handletouchmove(event) {
+    this.refreshView.handletouchmove(event)
+  },
+  
+  //触摸结束
+  handletouchend(event) {
+    this.refreshView.handletouchend(event)
+  },
+  
+  //触摸取消
+  handletouchcancel(event) {
+    this.refreshView.handletouchcancel(event)
+  },
+  
+  //页面滚动
+  onPageScroll(event) {
+    this.refreshView.onPageScroll(event)
+  },
+  
+  onPullDownRefresh() {
+    setTimeout(() => {
+      this.refreshView.stopPullRefresh()
+    }, 3000)
+  }
+})
 ```
 
 完整使用案例以wxapp-el-ui演示小程序为准.

@@ -36,7 +36,7 @@ change : function \(e\)
 ### 使用
 
 ```html
-<el-popup show='{{popup.show}}' modal='{{popup.modal}}' position='TOP' bindchange='onPopup'>
+<el-popup show='{{popup.show}}' modal='{{popup.modal}}' position='top' bindchange='onPopup'>
   <view slot='content'>
     <!-- do -->
   </view>
@@ -44,19 +44,23 @@ change : function \(e\)
 ```
 
 ```js
-onPopup () {
-  this.setData({
-    'popup.show': this.data.popup.show != true
-  })
-}
+page({
+  data: {
+    "popup": {
+      "show": false,
+      "modal": true
+    }
+  },
+    
+  onPopup () {
+    this.setData({
+      'popup.show': this.data.popup.show != true
+    })
+  }
+})
 ```
 
-```josn
-"popup": {
-  "show": false,
-  "modal": true
-}
-```
+
 
 
 
