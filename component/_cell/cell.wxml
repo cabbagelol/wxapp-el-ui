@@ -10,6 +10,6 @@
         <slot name='content'></slot>
     </view>
     <view class='_cell_title_icon_ _cell_center_' wx:if='{{islink}}'>
-        <image src='./onward.png' ></image>
+        <image src='./images/onward.png' ></image>
     </view>
 </view>
