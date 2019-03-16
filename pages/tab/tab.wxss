@@ -1,0 +1,17 @@
+.tab {
+  display: block;
+  border-top: 1px solid #F9F9F9;
+}
+
+.tab-content {
+  height: 600rpx;
+  overflow: auto;
+}
+
+.tab-custom {
+  white-space: nowrap;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30rpx;
+}
