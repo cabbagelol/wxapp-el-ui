@@ -72,8 +72,6 @@ button:active {
 }
 ```
 
-##### 
-
 ### 样式
 
 ##### 1. 方法一
@@ -83,8 +81,6 @@ button:active {
 | el-button | 按钮 | 1.0.1 |
 
 使用方式请参考这里[重写Class类](/zhong-xie-class-lei.md)。
-
-
 
 ### 使用
 

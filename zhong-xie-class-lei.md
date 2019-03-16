@@ -4,6 +4,8 @@
 
 这里我们将以数字指示器来演示如何重写Class类，首选我们找到数字指示器中"样式"一栏，数字指示器控件中提供了仅有几个Class名称，我们来看看：
 
+### 1.全局
+
 | 名称 | 说明 | 版本 |
 | :--- | :--- | :--- |
 | **numIndicator** | 指示器根类 | 1.0.1 |
@@ -11,11 +13,10 @@
 | **numIndicator\_btnright** | 指示器右侧按钮 | 1.0.1 |
 | **numIndicator\_value** | 指示器input输入框 | 1.0.1 |
 
-* 所有wxapp-el-ui控件命名都以"**class**"来
+* 所有wxapp-el-ui控件命名都以"\_\_**class**\_\_"来
 
 为了方便管理独立的控件样式，我们应该在项目的根目录下创建public/styles文件夹作为公共样式库,这里我们以numIndicator.wxss来命名它。
 
-  
 numIndicator.wxml:
 
 ```html
@@ -51,9 +52,7 @@ numIndicator.wxss:
 }
 ```
 
-### 
-
-### 单独的Class
+### 2.单独的Class
 
 除了以上方法外，wxapp-el-ui也提供另一种重写方式，比如这样:
 
@@ -67,5 +66,5 @@ numIndicator.wxss:
 }
 ```
 
-
+实际上将"numIndicator-button-left"类赋予el-button-left，被内部解析到对应位置，因此通过这样方法控制内部视图样式。
 
