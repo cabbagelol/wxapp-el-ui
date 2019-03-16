@@ -30,11 +30,11 @@
 <el-head head="{{head}}"></el-head>
 ```
 
-## 集成mpvue
+## Elui演示小程序
 
-```
-npm install wxapp-el-ui
-```
+目前elui未上架，因此你需要单独将[项目](https://github.com/cabbagelol/wxapp-el-ui/)克隆，你仅需导入到微信编译器中即可。
+
+* 请别忘记设置测试appid
 
 
 

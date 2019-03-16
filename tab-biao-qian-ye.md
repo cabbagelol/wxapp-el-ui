@@ -36,14 +36,19 @@
 
 Tab标签左侧与右侧区域:
 
+| 名称 | 说明 | 版本 |
+| :--- | :--- | :--- |
+| left | 左侧插槽 | 1.0.1 |
+| right | 右侧插槽 | 1.0.1 |
+
 ```html
 <el-tab class='tab' animation='{{tab.animation}}' scroll='{{tab.scroll}}' active='{{tab.title}}' bindchange='onTabChange'>
-  
+
   <!-- 左侧区域 -->
   <view slot='left'>
     左侧
   </view>
-  
+
   <el-tab-content title='{{item.title}}' wx:for='{{tab.data}}' wx:key='{{index}}' disabled='{{item.disabled}}'>
     <block wx:if='{{tab.content}}'>
       <view class='tab-content'>
@@ -51,12 +56,12 @@ Tab标签左侧与右侧区域:
       </view>
     </block>
   </el-tab-content>
-  
+
   <!-- 右侧区域 -->
   <view slot='right'>
     右侧
   </view>
-  
+
 </el-tab>
 ```
 
