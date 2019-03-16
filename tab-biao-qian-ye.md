@@ -65,6 +65,16 @@ Tab标签左侧与右侧区域:
 </el-tab>
 ```
 
+### 样式
+
+| 名称 | 说明 | 版本 |
+| :--- | :--- | :--- |
+| el-nav | tab标签根 | 1.0.1 |
+| el-nav-item | tab标签单独标签 | 1.0.1 |
+| el-content | 内容 | 1.0.1 |
+
+使用方式请参考这里[重写Class类](/zhong-xie-class-lei.md)。
+
 ### 使用
 
 ```html
