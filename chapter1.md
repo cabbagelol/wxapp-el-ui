@@ -72,7 +72,5 @@
 * 在全屏模式下，使用nav-right右侧卡槽会被微信右侧固有按钮遮挡
 * 在nav左右卡槽都设置时，title占有空间被占用，标题超出部分将省略号表示
 
----
 
-![Image text](http://cdn.cabbagelol.net/wxapp-coms-nav1.png)![Image text](http://cdn.cabbagelol.net/wxapp-coms-nav2.png)
 
