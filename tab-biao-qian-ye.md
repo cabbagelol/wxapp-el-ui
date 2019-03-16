@@ -23,6 +23,7 @@
 | :--- | :--- | :--- | :--- | :--- |
 | active | String | "" | 当前显示标签页内容 | 1.0.1 |
 | animation | Boolean | false | 动画 | 1.0.1 |
+| isscroll | Bookean | true | 是否允许滚动 | 1.0.1 |
 
 ### el-tab-content属性\(子\)
 
@@ -30,44 +31,67 @@
 | :--- | :--- | :--- | :--- | :--- |
 | title | String | "" | 标题 | 1.0.1 |
 | disabled | Boolean | false | 禁用标签 | 1.0.1 |
-|  |  |  |  |  |
+
+### 插槽
+
+Tab标签左侧与右侧区域:
+
+```html
+<el-tab class='tab' animation='{{tab.animation}}' scroll='{{tab.scroll}}' active='{{tab.title}}' bindchange='onTabChange'>
+  
+  <!-- 左侧区域 -->
+  <view slot='left'>
+    左侧
+  </view>
+  
+  <el-tab-content title='{{item.title}}' wx:for='{{tab.data}}' wx:key='{{index}}' disabled='{{item.disabled}}'>
+    <block wx:if='{{tab.content}}'>
+      <view class='tab-content'>
+        <el-cell title='{{item.title}}-{{i}}' label='{{item.cont}}' wx:for='{{10}}' wx:for-item='i' wx:key='{{i}}' islink></el-cell>
+      </view>
+    </block>
+  </el-tab-content>
+  
+  <!-- 右侧区域 -->
+  <view slot='right'>
+    右侧
+  </view>
+  
+</el-tab>
+```
 
 ### 使用
 
 ```html
 <el-tab active='{{tab.title}}' bindchange='onTabChange'>
+
   <el-tab-content title='设计'>
     <view class='tab-content'>
       设计理念
       <el-load size='1' />
     </view>
   </el-tab-content>
+
   <el-tab-content title='工业' disabled>
     <view class='tab-content'>
       工业科技
       <el-load size='1' />
     </view>
   </el-tab-content>
-  <el-tab-content title='人才'>
-    <view class='tab-content'>
-      人员管理
-      <el-load size='1' />
-    </view>
-  </el-tab-content>
-  <el-tab-content title='开发{{index}}'>
-    <view class='tab-content'>
-      资源管理
-      <el-load size='1' />
-    </view>
-  </el-tab-content>
-  <el-tab-content title='记忆'>
-    <view class='tab-content'>
-      大脑
-      <el-load size='1' />
-    </view>
-  </el-tab-content>
+
+  <el-tab-content title='人才'></el-tab-content>
+
 </el-tab>
 ```
 
+```js
+  onTabChange (e) {
+    this.setData({
+      'tab.index': e.detail.index,
+      'tab.title': e.detail.title
+    })
+  }
+```
 
+具体参考模板[代码](https://github.com/cabbagelol/wxapp-el-ui/tree/master/component/_tab)
 
