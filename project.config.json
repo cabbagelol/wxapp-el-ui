@@ -38,7 +38,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 7,
+			"current": 8,
 			"list": [
 				{
 					"id": -1,
@@ -93,6 +93,13 @@
 					"id": -1,
 					"name": "标签页",
 					"pathName": "pages/tab/tab",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "空",
+					"pathName": "pages/vacancy/vacancy",
 					"scene": null
 				}
 			]

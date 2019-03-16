@@ -1,1 +1,20 @@
-/* pages/vacancy/vacancy.wxss */
+.vacancy {
+  display: block;
+  border: 1px solid #EEE;
+  margin: 0 0 50rpx 0;
+  padding: 50rpx 0;
+  border-radius: .2rem;
+  background: #FFF;
+}
+
+.vacancy-text {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 30rpx;
+  margin-bottom: 20rpx;
+}
+
+.vacancy-text text {
+  color: #1890ff
+}
