@@ -1,0 +1,43 @@
+button {
+  background:  #03a9f4;
+  color: #FFF;
+}
+
+.popup-demo {
+  margin: 0 0 100rpx 0;
+}
+
+.popup-content {
+  width: calc(100% - 60rpx);
+  background: #FFF;
+  padding: 30rpx;
+}
+
+.popup-content-top {
+  padding-top: 200rpx;
+  width: 100%;
+  height: 100%;
+}
+
+.popup-content-button {
+  border-radius: 1rem 1rem 0 0; 
+  min-height: 600rpx;
+}
+
+.popup-content-left,
+.popup-content-right {
+  width: 280px;
+  height: 100%; 
+}
+
+.popup-content-text {
+  padding:  100rpx 0;
+  text-align: center;
+}
+
+.popup-content-img {
+  margin: 0 auto;
+  display: block;
+  width: 200rpx;
+  height: 240rpx;
+}

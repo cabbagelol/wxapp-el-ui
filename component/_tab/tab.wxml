@@ -1,0 +1,23 @@
+<view class='__tab__'>
+  <view class='__tab-main__'>
+
+    <view class='__tab-nav-item-left__'></view>
+
+    <scroll-view scroll-x='{{isscroll}}' scroll-left='{{scroll.x}}' bindscroll='onScrolls' lower-threshold='50' scroll-with-animation='{{animation}}' class='__tab-nav-item-center__'>
+
+      <view class='__tab-nav__ el-nav'>
+        <slot name='left' class='__tab-nav-item-left__' />
+        <view class='__tab-nav-item__ el-nav-item {{(tabs.title == item.title ) ? "__tab-nav-itemactive__ " : ""}} {{item.disabled ? "__tab-nav-itemdisabled__" : ""}}' data-index='{{index}}' data-title='{{item.title}}' wx:for='{{tabs.data}}' wx:key='{{index}}'
+          bindtap='onTabIndex'>
+          {{item.title || '标题'}}
+        </view>
+        <slot name='right'  class='__tab-nav-item-left__' />
+      </view>
+    </scroll-view>
+
+  </view>
+
+  <view class='__tab-navcontent__ el-content'>
+    <slot/>
+  </view>
+</view>

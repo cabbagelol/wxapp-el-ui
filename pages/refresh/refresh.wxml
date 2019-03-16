@@ -1,0 +1,7 @@
+<el-head head='{{head}}' bindhead='onGetHead' stickie='true'></el-head>
+<el-refresh id='refreshView' backgroundColor="#FFF" bindonRefresh="onPullDownRefresh" />
+<view class='container'>
+  <view class="container" bindtouchstart='handletouchstart' bindtouchmove='handletouchmove' bindtouchend='handletouchend' bindtouchcancel='handletouchcancel'>
+    <el-cell title='消息' wx:for='{{50}}' wx:key='{{item}}' islink></el-cell>
+  </view>
+</view>

@@ -1,0 +1,3 @@
+<view class='__input-titile__ {{omit == true ? "__input-titile-omit__" : ""}}' style=' -webkit-line-clamp: {{omit || 1}};max-width: {{max || ""}};min-width: {{min || ""}};'>
+  <slot />
+</view>

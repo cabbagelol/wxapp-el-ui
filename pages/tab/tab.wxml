@@ -1,0 +1,39 @@
+<el-head head='{{head}}' stickie='true'></el-head>
+
+<el-tab class='tab' animation='{{tab.animation}}' isscroll='{{tab.scroll}}' active='{{tab.title}}' bindchange='onTabChange'>
+  <view slot='left' class='tab-custom' wx:if='{{tab.custom}}'>
+    左侧
+  </view>
+  <el-tab-content title='{{item.title}}' wx:for='{{tab.data}}' wx:key='{{index}}' disabled='{{item.disabled}}'>
+    <block wx:if='{{tab.content}}'>
+      <view class='tab-content'>
+        <el-cell title='{{item.title}}-{{i}}' label='{{item.cont}}' wx:for='{{10}}' wx:for-item='i' wx:key='{{i}}' islink></el-cell>
+      </view>
+    </block>
+  </el-tab-content>
+  <view slot='right' class='tab-custom' wx:if='{{tab.custom}}'>
+    右侧
+  </view>
+</el-tab>
+
+<view class='container'>
+  <el-cell title="顺序号">
+    <input slot="content" value="{{tab.index}}" data-e="tab.index" bindinput="onInput" disabled/>
+  </el-cell>
+  <el-cell title="标题">
+    <input slot="content" value="{{tab.title}}" data-e="tab.title" bindinput="onInput" disabled />
+  </el-cell>
+
+  <el-cell title="自定义" label="中卡槽">
+    <switch slot="content" checked="{{tab.custom}}" data-e="tab.custom" bindchange="onSwitch" />
+  </el-cell>
+  <el-cell title="动画">
+    <switch slot="content" checked="{{tab.animation}}" data-e="tab.animation" bindchange="onSwitch" />
+  </el-cell>
+  <el-cell title="是否允许滚动">
+    <switch slot="content" checked="{{tab.scroll}}" data-e="tab.scroll" bindchange="onSwitch" />
+  </el-cell>
+  <el-cell title="是否展现内容">
+    <switch slot="content" checked="{{tab.content}}" data-e="tab.content" bindchange="onSwitch" />
+  </el-cell>
+</view>

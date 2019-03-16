@@ -14,6 +14,10 @@ Page({
     }
   },
 
+  onGetUserinfo (e) {
+    console.log(e)
+  },
+
   onButton () {
     wx.showToast({
       title: '你点击了按钮',
