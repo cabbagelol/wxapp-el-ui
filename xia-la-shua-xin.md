@@ -24,6 +24,10 @@
 | refreshHeight | Number | 150 | 下拉刷新高度 | 1.0.1 |
 | textColor | String | white | 下拉刷新字体颜色 | 1.0.1 |
 
+### 事件
+
+bindonRefresh: function \(\) {}
+
 ### 使用
 
 ```html
@@ -72,8 +76,6 @@ onPullDownRefresh: function() {
   }, 5000)
 }
 ```
-
-
 
 完整使用案例以wxapp-el-ui演示小程序为准.
 

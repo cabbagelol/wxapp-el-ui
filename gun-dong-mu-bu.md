@@ -25,6 +25,7 @@
 | orientation | String | left | 滚动方向，支持left和right | 1.0.1 |
 | velocity | Number | 1 | 20毫秒位移像素点，当越大时移动越快。建议在5以内 | 1.0.1 |
 | drag | Boolean | false | 当X轴移动时，是否允许通过手势可左右拖拽查看前后文 | 1.0.1 |
+| isscroll | Bookwab | true | 是否滚动 | 1.0.1 |
 
 * 注意，滚动幕布不带然后样式，你可以随意搭配其他空间一起使用，请参考“使用”一栏
 * 当属性变动后，需在滚动完成一次滚动后才生效
