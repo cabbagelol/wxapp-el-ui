@@ -52,6 +52,8 @@ numIndicator.wxss:
 }
 ```
 
+请别忘记将public/styles/numIndicator.wxss导入到对应的page.wxss中。
+
 ### 2.单独的Class
 
 除了以上方法外，wxapp-el-ui也提供另一种重写方式，比如这样:
