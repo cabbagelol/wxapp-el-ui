@@ -1,0 +1,13 @@
+<view class='__content__'>
+  <view class='__content-head__'>
+    <slot name='head' />
+  </view>
+
+  <view class='__content-body__' style='height: {{content.body.height}}px'>
+      <slot name='body' />
+  </view>
+
+  <view class='__content-footer__'>
+    <slot name='footer' />
+  </view>
+</view>

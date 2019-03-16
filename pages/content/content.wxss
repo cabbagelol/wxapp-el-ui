@@ -1,0 +1,16 @@
+.content-head {
+  display: block;
+  border-bottom: 1px solid #F2F2F2;
+}
+
+.content-footer {
+  display: block;
+  text-align: center;
+  padding: 20rpx 0;
+  background: #FFF;
+}
+
+.content-body {
+  display: block;
+  border-bottom: 1px solid #F9F9F9;
+}

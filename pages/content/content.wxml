@@ -1,0 +1,9 @@
+<el-body>
+  <el-head slot='head' head='{{head}}' stickie='true' class='content-head'></el-head>
+  <view slot='body'>
+    <el-cell title='{{index}}' wx:for='{{100}}' wx:key='{{index}}' class='content-body' islink></el-cell>
+  </view>
+  <view slot='footer' class='content-footer'>
+    页脚
+  </view>
+</el-body>

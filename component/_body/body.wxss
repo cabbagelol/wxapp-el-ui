@@ -1,0 +1,14 @@
+page {
+  height: 100%;
+}
+
+.__content__ {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.__content-body__ {
+  overflow: auto;
+}
