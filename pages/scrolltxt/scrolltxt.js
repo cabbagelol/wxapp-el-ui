@@ -5,6 +5,7 @@ Page({
       back: true
     },
     scroll: {
+      isscroll: false,
       drag: false,
       start: true,
       delay:3000,

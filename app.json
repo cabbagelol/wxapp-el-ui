@@ -13,7 +13,8 @@
     "pages/popup/popup",
     "pages/refresh/refresh",
     "pages/vacancy/vacancy",
-    "pages/tab/tab"
+    "pages/tab/tab",
+    "pages/content/content"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -36,6 +37,7 @@
     "el-refresh": "./component/_refresh/refresh",
     "el-vacancy": "./component/_vacancy/vacancy",
     "el-tab": "./component/_tab/tab",
-    "el-tab-content": "./component/_tab/tab-item"
+    "el-tab-content": "./component/_tab/tab-item",
+    "el-body": "./component/_body/body"
   }
 }

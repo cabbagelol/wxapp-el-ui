@@ -1,9 +1,26 @@
 Component({
   properties: {
+    isscroll: {
+      type: Boolean,
+      value: true
+    },
     scrolltxt: Object,
     width: String,
     velocity: Number,
     drag: Boolean
+  },
+
+  observers: {
+    'isscroll': function (e) {
+      if (e) {
+        this.onscrolltxt()
+        this.setData({ omittxt: e })
+      }
+    }
+  },
+
+  data: {
+    omittxt: false
   },
 
   ready() {
@@ -33,16 +50,23 @@ Component({
       var that = this
       var maxscrollwidth = 0;
       var windowWidth = 0;
-      that.setData({
-        'marquee.nowrap': (that.data.scrolltxt.orientation == 'left' || that.data.scrolltxt.orientation == 'right') ? true : false
-      })
+
+      if (!that.data.isscroll) {
+        that.setData({
+          'marquee.x': 0,
+          omittxt: that.data.isscroll ? true : false
+        })
+        return;
+      }
+
       wx.createSelectorQuery().in(this).selectAll('#marquee_cont,#marquee').boundingClientRect(function(rect) {
         for (var i of rect) {
           if (i.id == 'marquee') { windowWidth = i.width; }
           if (i.id == 'marquee_cont') { maxscrollwidth = i.width; }
         }
         that.setData({
-          'windowWidth': windowWidth
+          'windowWidth': windowWidth,
+          'marquee.nowrap': (that.data.scrolltxt.orientation == 'left' || that.data.scrolltxt.orientation == 'right') ? true : false
         })
         switch (that.data.scrolltxt.orientation) {
           case 'right':

@@ -48,5 +48,7 @@
   <navigator url="../vacancy/vacancy" open-type="navigate">
     <el-cell title='空置区' islink></el-cell>
   </navigator>
-  
+  <navigator url="../content/content" open-type="navigate">
+    <el-cell title='主体' islink></el-cell>
+  </navigator>
 </view>

@@ -1,5 +1,18 @@
-.marquee {
+.__scrolltxt__ {
   overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+  position: relative;
+}
+
+.__scrolltxt-isscroll__ {
+  position: absolute;
+  bottom:  0;
+  right: 0;
+  background: #FFF;
+}
+
+.__scrolltxt-box__ {
+  display: inline-block;
 }
 
 .marqueeBox-nowrap {
