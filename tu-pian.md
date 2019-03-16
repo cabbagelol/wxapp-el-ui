@@ -7,7 +7,6 @@
 | ![](/assets/img01.png) |
 | :---: |
 
-![](/assets/img01.png)
 ## 使用指南
 
 在page.json中引入组件

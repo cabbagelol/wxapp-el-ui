@@ -4,6 +4,10 @@
 
 ---
 
+| ![](/assets/refresh01.png)![](/assets/refresh02.png) |
+| :---: |
+
+
 ## 使用指南
 
 在page.json中引入组件
