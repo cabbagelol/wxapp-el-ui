@@ -3,11 +3,7 @@ Component({
     size: String,
     type: String
   },
-
-  data: {
-
-  },
-
+  
   ready () {
     var that = this
     wx.createSelectorQuery().in(this).select('#load').boundingClientRect(function (rect) {
@@ -18,7 +14,4 @@ Component({
       }
     }).exec()
   },
-
-  methods: {
-  }
 })

@@ -8,7 +8,7 @@ Page({
       title: '首页',
       style: {
         textColor: '#FFF',
-        background: '#03a9f4'
+        background: '#18b6c1'
       }
     }
   }

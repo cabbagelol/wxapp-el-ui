@@ -1,4 +1,7 @@
 <view class='_load_' id='load' style='transform: scale({{size || 1}})'>
   <view class='_load_main' wx:if='{{type == "main" || type == ""}}'></view>
+  <view class='_load_circular loading' wx:elif='{{type == "circular"}}'>
+      <view wx:for='{{5}}' wx:key='{{index}}'></view>
+  </view>
   <view class='_load_line' wx:elif='{{type == "line"}}'></view>
 </view>

@@ -11,13 +11,23 @@
         <el-load slot="content" type="main" size=".5"></el-load>
     </el-cell>
 
-    <el-cell title="Icon" label="小" >
+    <el-cell title="Icon"  label="标准">
+        <el-load slot="content" type="circular" size="1"></el-load>
+    </el-cell>
+      <el-cell title="Icon">
+        <el-load slot="content" type="circular" size=".8"></el-load>
+    </el-cell>
+    <el-cell title="Icon"  label="小">
+        <el-load slot="content" type="circular" size=".5"></el-load>
+    </el-cell>
+
+    <el-cell title="Icon" label="小">
         <el-load slot="content" type="line" size="1"></el-load>
     </el-cell>
-    <el-cell title="Icon" label="小" >
+    <el-cell title="Icon" >
         <el-load slot="content" type="line" size=".8"></el-load>
     </el-cell>
-    <el-cell title="Icon" label="小" >
+    <el-cell title="Icon" label="小">
         <el-load slot="content" type="line" size=".5"></el-load>
     </el-cell>
 </view>

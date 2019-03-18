@@ -3,12 +3,26 @@ page {
 }
 
 .__content__ {
+  position: relative;
   overflow: hidden;
   height: 100%;
   width: 100%;
-  position: relative;
 }
 
 .__content-body__ {
-  overflow: auto;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.__content-body__ > view {
+  overflow: hidden
+}
+
+.test {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #fff;
+  z-index: 10
 }
