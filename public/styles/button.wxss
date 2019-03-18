@@ -1,0 +1,13 @@
+button {
+  background:  #18b6c1;
+  color: #FFF;
+  margin: 0 0 30rpx 0;
+}
+ 
+button:hover,
+button:active {
+  position: relative;
+  content: '';
+  background: #18b6c1;
+  color: #FFF
+}

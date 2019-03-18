@@ -13,11 +13,8 @@
 
 1.在page.json文件中配置`usingComponents`参数。
 ```json
-"usingComponents": {
-  "el-head": "component/_head/head",
-  images: images,
-  "el-load": "component/_load/load",
-  "el-cell": "component/_cell/cell"
+"usingComponents":{
+  "el-head": "component/_head/head"
 }
 ```
 2.在wxml中使用组件：
