@@ -79,27 +79,29 @@ Component({
 
       that.setSelectContent();
       that.onChange('tap');
-
-      wx.createSelectorQuery().in(this).select('.__tab-nav-itemactive__').boundingClientRect(function(rect) {
-        const systeminfo = wx.getSystemInfoSync();
-        var calc = (systeminfo.screenWidth / 2) - (rect.width / 2)
-
-        if (rect.left > 10 && rect.left < calc) {
-          that.setData({
-            'scroll.x': that.data.scroll.x - (rect.width / 2)
-          })
-        } else if (rect.left > 10 && rect.left > calc) {
-          that.setData({
-            'scroll.x': that.data.scroll.x + (rect.width)
-          })
+      var allWidth = 0; // 总宽度
+      var scroll = wx.getSystemInfoSync().windowWidth; // 屏幕宽度
+      var paddingWidth = 0; // 父元素padding
+      var myScroll = 0; // 元素所在位置
+      wx.createSelectorQuery().in(this).select('.__tab-nav__').boundingClientRect(function(rect){
+        // 获取父元素的总宽度
+        allWidth = rect.width
+      }).exec()
+      wx.createSelectorQuery().in(this).selectAll('.__tab-nav-item__').boundingClientRect(function (rect) {
+        // 获取子元素的所在位置
+        var allScroll = 0;  // 所有元素加起来的宽度
+        for(var i in rect){
+          if (i > that.data.tabs.index){
+          } else {
+            myScroll = rect[i].width + myScroll
+          }
+          allScroll = rect[i].width + allScroll
         }
-
-        if (rect.right > that.data.tabnav.width / 2) {
-          that.setData({
-            'scroll.x': that.data.tabnav.width / 2
-          })
-        }
-
+        // 子元素所在位置等于父元素宽度 - 所有元素加起来的宽然后除2(即父元素左padding)
+        myScroll = myScroll + (allWidth - allScroll)/2 
+        that.setData({
+          'scroll.x': myScroll - scroll / 2 - rect[that.data.tabs.index].width/2
+        })
       }).exec()
     },
 
