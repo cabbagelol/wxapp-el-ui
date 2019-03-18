@@ -15,6 +15,6 @@
 }
 
 .container {
-  background: #03a9f4;
+  background: #18b6c1;
   padding: 10rpx auto;
 }

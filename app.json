@@ -14,7 +14,8 @@
     "pages/refresh/refresh",
     "pages/vacancy/vacancy",
     "pages/tab/tab",
-    "pages/content/content"
+    "pages/content/content",
+    "pages/demo/demo"
   ],
   "window": {
     "backgroundTextStyle": "light",

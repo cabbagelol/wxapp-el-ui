@@ -38,7 +38,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 9,
+			"current": 11,
 			"list": [
 				{
 					"id": -1,
@@ -107,6 +107,21 @@
 					"id": -1,
 					"name": "主体",
 					"pathName": "pages/content/content",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "装载",
+					"pathName": "pages/load/load",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "测试",
+					"pathName": "pages/demo/demo",
+					"query": "",
 					"scene": null
 				}
 			]

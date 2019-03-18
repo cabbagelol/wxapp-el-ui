@@ -1,24 +1,10 @@
-/**app.wxss**/
-page {
-  height: 100%;
-  background: #F2F2F2;
-}
+@import './public/styles/button.wxss';
 
-button {
-  background:  #03a9f4;
-  color: #FFF;
-  margin: 0 0 30rpx 0;
-}
- 
-button:hover,
-button:active {
-  position: relative;
-  content: '';
-  background: #03a9f4;
-  color: #FFF
+page {
+  display: block;
 }
 
 .container {
-  background: #F2F2F2;
   padding: 20px 10px;
+  background: #F2F2F2;
 } 

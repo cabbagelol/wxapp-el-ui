@@ -23,8 +23,8 @@
 }
 
 .__tab-nav-itemactive__ {
-  color: #03a9f4;
-  border-bottom: 2px solid #03a9f4;
+  color: #18b6c1;
+  border-bottom: 2px solid #18b6c1;
 }
 
 .__tab-nav-itemdisabled__ {

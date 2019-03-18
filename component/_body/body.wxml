@@ -3,8 +3,15 @@
     <slot name='head' />
   </view>
 
-  <view class='__content-body__' style='height: {{content.body.height}}px'>
-      <slot name='body' />
+  <view class='__content-body__'
+      style='height: {{content.body.height}}px'
+      bindtouchstart='onBodyStart'
+      bindtouchend='onBodyEnd'
+      catchtouchmove="onBodyMove">
+      <view class='test'>{{content.body.tap.top}}</view>
+      <view class='__content-footer-view__' style='transition: transform {{content.body.tap.duration / 1000}}s; transform: translateY({{content.body.tap.top}}px)'>
+        <slot name='body' />
+      </view>
   </view>
 
   <view class='__content-footer__'>
