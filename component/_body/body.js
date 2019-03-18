@@ -99,11 +99,16 @@ Component({
             calcY = point.pageY - that.data.content.body.tap.start
 
       if (that.data.content.body.tap.top >= 100) { return }
-      // console.log(calcY)
+      console.log(calcY)
       that.setData({
-        'content.body.tap.top': that.data.content.body.tap.top + (calcY)
+        'content.body.tap.top': that.data.content.body.tap.top + point.pageY - that.data.content.body.tap.start
       })
-      console.log(`${that.data.content.body.tap.top} + ${calcY}`)
+    },
+
+    oncalc (val_) {
+      var val = val_;
+      console.log(val)
+      return val
     },
 
     isNumber(old_, new_) {
