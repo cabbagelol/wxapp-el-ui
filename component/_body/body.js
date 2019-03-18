@@ -89,6 +89,9 @@ Component({
           'content.body.tap.duration': 200
         })
       }
+      that.setData({
+        test: that.data.content.body.tap.top
+      })
     },
 
     y: 0,
@@ -96,12 +99,10 @@ Component({
     onBodyMove(e) {
       var that = this;
       var point = e.changedTouches[0],
-            calcY = point.pageY - that.data.content.body.tap.start
-
+        calcY = point.pageY - that.data.content.body.tap.start + that.data.test
       if (that.data.content.body.tap.top >= 100) { return }
-      console.log(calcY)
       that.setData({
-        'content.body.tap.top': that.data.content.body.tap.top + point.pageY - that.data.content.body.tap.start
+        'content.body.tap.top': calcY
       })
     },
 
