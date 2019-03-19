@@ -92,6 +92,12 @@ Component({
       that.setData({
         test: that.data.content.body.tap.top
       })
+      if (that.data.content.body.tap.top > 0){
+        that.setData({
+          'content.body.tap.top': 0,
+          test: 0
+        })
+      }
     },
 
     y: 0,
@@ -104,6 +110,16 @@ Component({
       that.setData({
         'content.body.tap.top': calcY
       })
+      // if (calcY > 0){
+      //   that.setData({
+      //     'content.body.tap.top': 0
+      //   })
+      // }
+      // if (that.data.content.body.tap.top > 0) {
+      //   that.setData({
+      //     'content.body.tap.top': 0
+      //   })
+      // }
     },
 
     oncalc (val_) {

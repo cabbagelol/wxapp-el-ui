@@ -58,13 +58,18 @@ Component({
         that.onChange();
       }
     }).exec()
+    for (var i in that.data.tabs.data) {
+      if (that.data.tabs.data[i].title == that.data.active) {
+        that.setData({
+          'tabs.index': i
+        })
+      }
+    }
+    this.scollSelect();
   },
 
   created() {
     this.child = [];
-  },
-  ready(){
-    this.scollSelect();
   },
 
   methods: {
@@ -118,6 +123,7 @@ Component({
         that.setData({
           'scroll.x': myScroll - scroll / 2 - rect[that.data.tabs.index].width / 2
         })
+        // console.log(that.data.scroll.x + ' + ' + myScroll + ' + ' + rect[that.data.tabs.index].width / 2)
       }).exec()
     },
 

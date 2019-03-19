@@ -4,7 +4,7 @@
 
   <view slot='body'>
     <view>内容</view>
-    <el-cell title='{{index}}' wx:for='{{20}}' wx:key='{{index}}' class='content-body' islink>
+    <el-cell title='{{index}}' wx:for='{{5}}' wx:key='{{index}}' class='content-body' islink>
       <el-numIndicator slot='content'></el-numIndicator>
     </el-cell>
     <view>内容</view>
