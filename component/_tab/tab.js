@@ -123,7 +123,6 @@ Component({
         that.setData({
           'scroll.x': myScroll - scroll / 2 - rect[that.data.tabs.index].width / 2
         })
-        // console.log(that.data.scroll.x + ' + ' + myScroll + ' + ' + rect[that.data.tabs.index].width / 2)
       }).exec()
     },
 
