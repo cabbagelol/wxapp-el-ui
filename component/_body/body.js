@@ -7,24 +7,17 @@ Component({
 
   data: {
     content: {
-      head: {
-        height: 0
-      },
+      head: { height: 0 },
       body: {
         height: 0,
         tap: {
           top: 0,
           duration: 0
         },
-        view: {
-          height: 0
-        }
+        view: { height: 0 }
       },
-      footer: {
-        height: 0
-      }
-    },
-    test: 0
+      footer: { height: 0 }
+    }
   },
 
   ready() {
@@ -89,6 +82,9 @@ Component({
           'content.body.tap.duration': 200
         })
       }
+      that.setData({
+        test: that.data.content.body.tap.top
+      })
     },
 
     y: 0,
@@ -96,12 +92,10 @@ Component({
     onBodyMove(e) {
       var that = this;
       var point = e.changedTouches[0],
-            calcY = point.pageY - that.data.content.body.tap.start
-
+        calcY = point.pageY - that.data.content.body.tap.start + that.data.test
       if (that.data.content.body.tap.top >= 100) { return }
-      console.log(calcY)
       that.setData({
-        'content.body.tap.top': that.data.content.body.tap.top + point.pageY - that.data.content.body.tap.start
+        'content.body.tap.top': calcY
       })
     },
 
@@ -112,7 +106,7 @@ Component({
     },
 
     isNumber(old_, new_) {
-      return new_ > old_ ? true : false 
+      return new_ > old_ ? true : false
     },
 
   }

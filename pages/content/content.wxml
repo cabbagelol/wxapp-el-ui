@@ -1,17 +1,32 @@
-<el-body>
-
+<el-body upperThreshold='{{content.upperThreshold}}' lowerThreshold='{{content.lowerThreshold}}' fullscreen='{{content.autoFullscreenf}}' rubber='{{content.rubber}}' scrollY='{{content.y}}' bindscroll='onScroll' bindready='onScrollReady'>
   <el-head slot='head' head='{{head}}' stickie='true' class='content-head'></el-head>
-
   <view slot='body'>
-    <view>内容</view>
-    <el-cell title='{{index}}' wx:for='{{20}}' wx:key='{{index}}' class='content-body' islink>
-      <el-numIndicator slot='content'></el-numIndicator>
+
+      <!-- <el-cell title='{{index}}' wx:for='{{20}}' wx:key='{{index}}'>
+        {{index}}1
+      </el-cell> -->
+
+    <el-cell title='head高度' label='{{content.head}}' class='content-body'></el-cell>
+    <el-cell title='body高度' label='{{content.body}}' class='content-body'></el-cell>
+    <el-cell title='footer高度' label='{{content.footer}}' class='content-body'></el-cell>
+    <el-cell title="橡皮筋">
+      <switch slot="content" checked="{{content.rubber}}" data-e="content.rubber" bindchange="onSwitch" />
     </el-cell>
-    <view>内容</view>
-  </view>
+    <el-cell title="最大下拉值">
+      <input slot="content" value="{{content.upperThreshold}}" data-e="content.upperThreshold" bindinput="onInput" />
+    </el-cell>
+    <el-cell title="最大上拉值">
+      <input slot="content" value="{{content.lowerThreshold}}" data-e="content.lowerThreshold" bindinput="onInput" />
+    </el-cell>
+    <el-cell title='Y轴' class='content-body' islink>
+      <el-numIndicator slot='content' value='{{content.tap.Y}}' data-e='content.y' bindchange='onInput'></el-numIndicator>
+    </el-cell>
+    <view class='container'>
+      <el-button bindtap='onSetScroll'>修改</el-button>
+    </view>
 
+  </view>
   <view slot='footer' class='content-footer'>
-    页脚
+    页脚 {{content.y}}
   </view>
-
 </el-body>
