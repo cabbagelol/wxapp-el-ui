@@ -1,6 +1,6 @@
 # 介绍
 
-小程序组件库，仅适用微信小程序。若有疑问请提交到Issues中。
+小程序组件库，仅适用微信小程序。若有疑问请提交到[Issues](https://github.com/cabbagelol/wxapp-el-ui/issues)中。
 
 该组件目前处于分离状态中，不适合立即投入使用。
 
