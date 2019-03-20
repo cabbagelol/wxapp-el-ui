@@ -27,7 +27,6 @@ body控件会对head和footer识别，计算出中间区域的适配高度。
 | 名称 | 说明 | 版本 |
 | :--- | :--- | :--- |
 | scrollY | 纵轴 | 1.0.2 |
-| fullscreem | 依据手机类型是否兼容底部安全区 | 1.0.2 |
 | rubber | 橡皮筋，支持android与ios | 1.0.2 |
 | upperThreshold | 顶距最大下拉距离，当0时为默认 | 1.0.2 |
 | lowerThreshold | 底距最大上拉距离，当0时为默认,默认最大值无限 | 1.0.2 |
