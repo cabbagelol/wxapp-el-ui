@@ -1,17 +1,11 @@
 <el-body animation='200' upperThreshold='{{content.upperThreshold}}' lowerThreshold='{{content.lowerThreshold}}' fullscreen='{{content.autoFullscreenf}}' rubber='{{content.rubber}}' scrollY='{{content.y}}' bindscroll='onScroll' bindready='onScrollReady'>
   <el-head slot='head' head='{{head}}' stickie='true' class='content-head'></el-head>
   <view slot='body'>
-<<<<<<< HEAD
     <el-cell title='head高度' label='{{content.head}}' class='content-body'></el-cell>
     <el-cell title='body高度' label='{{content.body}}' class='content-body'></el-cell>
     <el-cell title='footer高度' label='{{content.footer}}' class='content-body'></el-cell>
     <el-cell title="橡皮筋">
       <switch slot="content" checked="{{content.rubber}}" data-e="content.rubber" bindchange="onSwitch" />
-=======
-    <view>内容</view>
-    <el-cell title='{{index}}' wx:for='{{5}}' wx:key='{{index}}' class='content-body' islink>
-      <el-numIndicator slot='content'></el-numIndicator>
->>>>>>> master
     </el-cell>
     <el-cell title="最大下拉值">
       <input slot="content" value="{{content.upperThreshold}}" data-e="content.upperThreshold" bindinput="onInput" />
