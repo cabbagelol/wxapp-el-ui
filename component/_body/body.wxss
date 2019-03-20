@@ -18,11 +18,3 @@ page {
 .__content-body__ > view {
   overflow: hidden
 }
-
-.test {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: #fff;
-  z-index: 10
-}
