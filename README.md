@@ -1,6 +1,9 @@
 # 体验
 
-<img src='/assets/ewcode.png' style='margin: 0 auto'>
+<div>
+    <img src='/assets/ewcode.png' style='margin: 0 auto;width: 200px;'>
+    233
+</div>
 
 # 微信组件
 
