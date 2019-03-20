@@ -1,3 +1,7 @@
+# 体验
+
+<img src='/assets/ewcode.png' style='margin: 0 auto'>
+
 # 微信组件
 
 该组件由乐链科技内部小程序组件分离，含控件与布局组成。
@@ -14,7 +18,7 @@
 
 # 捐助
 
-如果你喜欢Elui，你可以通过以下地址捐助给我，鞠躬。
+如果你喜欢Elui，你可以通过以下地址捐助给我，鞠躬。邮箱elui@cabbagelol.net
 
 [捐1元](http://hn.cabbagelol.net/blive_pay_hn/index.php?money=100&title=Elui) \| [捐10元](http://hn.cabbagelol.net/blive_pay_hn/index.php?money=1000&title=Elui) \| [捐50元](http://hn.cabbagelol.net/blive_pay_hn/index.php?money=5000&title=Elui) \| [捐100元](http://hn.cabbagelol.net/blive_pay_hn/index.php?money=10000&title=Elui)
 
