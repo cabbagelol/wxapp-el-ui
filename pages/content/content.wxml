@@ -19,7 +19,7 @@
     <view class='container'>
       <el-button bindtap='onSetScroll' data-value='{{content.tap.y}}'>滚动到{{content.tap.y}}</el-button>
       <el-button bindtap='onSetScroll' data-value='{{content.scrollButtonY}}'>滚动到底部</el-button>
-      <el-vacancy wx:for='{{2}}' wx:key='{{index}}'></el-vacancy>
+      <el-vacancy wx:for='{{30}}' wx:key='{{index}}'></el-vacancy>
       <el-button bindtap='onSetScroll' data-value='0'>置顶</el-button>
     </view>
   </view>

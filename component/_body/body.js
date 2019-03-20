@@ -41,6 +41,8 @@ Component({
           end: 0,
           duration: 0
         },
+        scrollbarHeight: 0,
+        scrollbarTop: 0,
         view: {
           height: 0
         }
@@ -71,10 +73,10 @@ Component({
         })
       })
       config.util.$('.__content-body__').then(function(e) {
-        that.setData({
-          'content.body.height': info.screenHeight - that.data.content.head.height - that.data.content.footer.height
-        })
+        const height = info.screenHeight - that.data.content.head.height - that.data.content.footer.height;
+        that.setData({ 'content.body.height': height })
         that.srcollHead = -(that.data.content.body.view.height - that.data.content.body.height);
+        that.setData({ 'content.body.scrollbarHeight': -(that.data.content.body.height / that.srcollHead) * 100 })
         that.triggerEvent('ready', {
           body: {
             head: that.data.content.head.height,
@@ -136,10 +138,18 @@ Component({
     },
 
     setSrcollData(number_, time_) {
-      this.setData({
+      var that = this
+      that.setData({
         'content.body.tap.top': number_ || 0,
         'content.body.tap.duration': time_ || 0,
+        'content.body.scrollbarHeight': -(that.data.content.body.height / that.srcollHead) * 100
       })
+      var sTop = (that.data.content.body.tap.top / that.srcollHead) * 100
+      if (sTop >= 0 && sTop <= 100) {
+        that.setData({
+          'content.body.scrollbarTop': sTop - (sTop >= 1 ? (that.data.content.body.scrollbarHeight / that.data.content.body.height * 100) : 0)
+        })
+      }
     },
   }
 })
