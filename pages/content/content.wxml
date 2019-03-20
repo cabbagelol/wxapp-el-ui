@@ -1,4 +1,4 @@
-<el-body upperThreshold='{{content.upperThreshold}}' lowerThreshold='{{content.lowerThreshold}}' fullscreen='{{content.autoFullscreenf}}' rubber='{{content.rubber}}' scrollY='{{content.y}}' bindscroll='onScroll' bindready='onScrollReady'>
+<el-body animation='200' upperThreshold='{{content.upperThreshold}}' lowerThreshold='{{content.lowerThreshold}}' fullscreen='{{content.autoFullscreenf}}' rubber='{{content.rubber}}' scrollY='{{content.y}}' bindscroll='onScroll' bindready='onScrollReady'>
   <el-head slot='head' head='{{head}}' stickie='true' class='content-head'></el-head>
   <view slot='body'>
     <el-cell title='head高度' label='{{content.head}}' class='content-body'></el-cell>
@@ -19,11 +19,9 @@
     <view class='container'>
       <el-button bindtap='onSetScroll' data-value='{{content.tap.y}}'>滚动到{{content.tap.y}}</el-button>
       <el-button bindtap='onSetScroll' data-value='{{content.scrollButtonY}}'>滚动到底部</el-button>
-      <el-cell title='{{index}}' wx:for='{{20}}' wx:key='{{index}}' islink>
-        {{index}}1
-      </el-cell>
+      <el-vacancy wx:for='{{2}}' wx:key='{{index}}'></el-vacancy>
+      <el-button bindtap='onSetScroll' data-value='0'>置顶</el-button>
     </view>
-    没有更多
   </view>
   <view slot='footer' class='content-footer'>
     页脚 {{content.y}}

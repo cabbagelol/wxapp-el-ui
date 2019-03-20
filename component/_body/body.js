@@ -6,6 +6,7 @@ Component({
   },
 
   properties: {
+    animation: Number,
     scrollY: {
       type: Number,
       value: 0
@@ -24,7 +25,7 @@ Component({
 
   observers: {
     'scrollY': function(newNumber_) {
-      this.setSrcollData(newNumber_, 200)
+      this.setSrcollData(newNumber_, this.data.animation || 200)
     }
   },
 
@@ -104,9 +105,9 @@ Component({
     onBodyEnd(e) {
       var that = this;
       if (that.data.content.body.tap.top >= 0) {
-        that.setSrcollData(0, 200)
+        that.setSrcollData(0, that.data.animation || 200)
       } else if (that.data.content.body.tap.top <= that.srcollHead) {
-        that.setSrcollData(that.srcollHead > 0 ? 0 : that.srcollHead, 200)
+        that.setSrcollData(that.srcollHead > 0 ? 0 : that.srcollHead, that.data.animation || 200)
       }
     },
 
