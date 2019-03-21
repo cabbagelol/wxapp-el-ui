@@ -36,10 +36,14 @@
     "-fontsettings",
     "-highlight",
     "back-to-top-button",
-    "copy-code-button",
     "cuav-chapters",
     "heading-anchors",
-    "theme-fexa"
+    "theme-fexa",
+
+    "prism",
+    "flexible-alerts",
+    "todo",
+    "popup"
   ],
   "pluginsConfig": {
     "theme-fexa":{
