@@ -20,6 +20,17 @@
 }
 ```
 
+### 属性
+
+| 名称 | 类型 | 默认 | 说明 | 版本 |
+| :--- | :--- | :--- | :--- | :--- |
+| title | String | "" | 标题 | 1.0.1 |
+| placeholder | String | "" | placeholder | 1.0.1 |
+| elstyle | String | "" | 继承style | 1.0.1 - 1.0.1 |
+| elclass | String | "" | 继承class | 1.0.1 - 1.0.1 |
+| value\(~~data~~\) | String | "" | 内容 | 1.0.1 |
+| wordcount | Number | 0 |  |  |
+
 ### 使用
 
 ```html
