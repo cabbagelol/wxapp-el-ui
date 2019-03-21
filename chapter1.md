@@ -31,17 +31,19 @@
 | :--- | :--- | :--- | :--- |
 | head | Object | head参数属于Object对象，内部可规定导航控件样式、是否允许返回、标题内容等等基础设定 | 1.0.1 |
 | stickie | Boolean | 悬浮置顶\(单同时出现若干导航控件，会出现遮盖问题\) | 1.0.1 |
+| load | Boolean | 显示在标题后的load | 1.0.2 |
+
 
 ##### head属性包含:
 
 ```json
 {
-     "title": "导航二",         // 导航标题
-     "style": {                 // 导航样式
-       "background": "red",     // 背景颜色，支持透明
-       "textColor": "#FFF"      // 字体颜色
-     },
-     "back": true               // 是否可返回
+   "title": "导航二",         // 导航标题
+   "style": {                 // 导航样式
+     "background": "red",     // 背景颜色，支持透明
+     "textColor": "#FFF"      // 字体颜色
+   },
+   "back": true               // 是否可返回
 }
 
 * 当某参数缺省时，会被默认参数所弥补，请查阅属性表格
@@ -52,7 +54,7 @@
 | title | String | "" | 标题 | 1.0.1 |
 | style | Object | {} | 含background/textColor | 1.0.1 |
 | background | String | "" | 默认状态下将直接继承父容器属性 | 1.0.1 |
-|  |  |  |  | 1.0.1 |
+| backgroundImage | String | "" | 背景地址，注意在background为inherit下使用 | 1.0.2 |
 | textColor | String | "" | 默认状态下将直接继承父容器属性 | 1.0.1 |
 | back | Boolean | false | 是否可见返回上一页按钮 | 1.0.1 |
 
@@ -64,17 +66,31 @@
 | nav-title | 中间卡槽 | 1.0.1 |
 | nav-right | 右侧卡槽 | 1.0.1 |
 
-* 使用nav-title卡槽时应当将title设置为""，否则将出现重复的标题。
+
   使用例子:
   ```html
-     <el-head head='{{head}}'>
-        <view slot='nav-tit'>
-            <text style='color:red'>自定义</text>标题
-        </view>
-     </el-head>
+ <el-head head='{{head}}'>
+    <view slot='nav-tit'>
+        <text style='color:red'>自定义</text>标题
+    </view>
+ </el-head>
   ```
-* 在全屏模式下，使用nav-right右侧卡槽会被微信右侧固有按钮遮挡
 * 在nav左右卡槽都设置时，title占有空间被占用，标题超出部分将省略号表示
+
+### 已知问题
+
+Q: **是否让head提供一个高度参数？**
+
+A: 单纯希望取得head高度，你可以考使用[body](/content-zhu-ti.md)控件，它会在准备好时返回更加详细的高度参数
+
+Q: **同时设置标题和使用标题卡槽会重复么**
+
+A: 使用nav-title卡槽时应当将title设置为""，否则将出现重复的标题。
+
+Q: **导航栏右侧放置的内容会被遮挡么**
+
+A: 在全屏模式下，使用nav-right右侧卡槽会被微信右侧固有按钮遮挡，因此尽量避免这样设计。
+
 
 
 
