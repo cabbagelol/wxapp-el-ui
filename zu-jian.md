@@ -10,4 +10,4 @@
 > [!NOTE|style:flat|lable:Mylable|iconVisibility:hidden]
 > "!type":`NOTE`、"style":`flat`、"lable":`自定义标签`、图标不可见
 
-[x] 123
+*   [x]  drink a cup of tea 2

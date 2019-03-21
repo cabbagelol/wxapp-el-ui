@@ -1,6 +1,6 @@
 {
   "author": "wxapp-el-ui",
-  "description": "cabbagelol下的wxapp-el-ui文档说明",
+  "description": "wxapp-el-ui文档说明",
   "extension": null,
   "language": "zh-hans",
   "isbn": "",
@@ -35,17 +35,23 @@
     "-livereload",
     "-fontsettings",
     "-highlight",
-    "back-to-top-button",
     "cuav-chapters",
     "heading-anchors",
     "theme-fexa",
 
     "prism",
+    "prism-themes",
     "flexible-alerts",
     "todo",
-    "popup"
+    "custom-js-css"
   ],
   "pluginsConfig": {
+    "custom-js-css": {
+      "js": [],
+      "css": [
+        "./style/main.css"
+      ]
+    },
     "theme-fexa":{
       "search-placeholder":"输入关键字搜索",
       "logo":"./logo.png",
