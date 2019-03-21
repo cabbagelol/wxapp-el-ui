@@ -1,8 +1,7 @@
 # 体验
+![](/assets/ewcode.png)
+![](/assets/qqcode.png)
 
-<div>
-    <img src='/assets/ewcode.png' style='margin: 0 auto;width: 200px;'>
-</div>
 演示程序可能不是最新，你应当克隆github上的代码，版本优先更新为 `github `> `技术文档` > `小程序`，具体参考[快速配置](/kuai-su-pei-zhi.md)
 
 # 微信组件

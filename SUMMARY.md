@@ -19,6 +19,7 @@
   * [button 按钮](an-niu.md)
   * [vacancy 空置区](kong-zhi-qu.md)
   * [body 主体](content-zhu-ti.md)
+  * [tag 标签](tag.md)
 * [设计规范](she-ji-gui-fan.md)
 * [设计资源](she-ji-zi-yuan.md)
 * [版本](ban-ben.md)
