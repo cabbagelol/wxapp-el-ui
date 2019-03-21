@@ -46,6 +46,9 @@
     "custom-js-css"
   ],
   "pluginsConfig": {
+    "flexible-alerts": {
+      "style": "flat"
+    },
     "custom-js-css": {
       "js": [],
       "css": [

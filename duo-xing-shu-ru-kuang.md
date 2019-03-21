@@ -4,6 +4,11 @@
 
 ---
 
+> [!TIP|style:flat|label:注意|iconVisibility:hidden]
+> An alert of type 'tip' using alert specific style 'flat' which overrides global style 'callout'.
+> In addition, this alert uses an own heading and hides specific icon.
+
+
 | ![](/assets/textarea01.png) |
 | :---: |
 
