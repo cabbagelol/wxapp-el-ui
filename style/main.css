@@ -54,11 +54,12 @@ a:hover{
 }
 
 .markdown-section img {
+    display: block;
     margin: 0 auto !important;
-    padding: 8px !important;
+    padding: 0 !important;
     border: 1px solid #EEE;
     background: none !important;
-    transition: all 1s !important;
+    transition: all .25s !important;
     box-sizing: initial !important;
     box-shadow: none !important;
     margin-left: auto !important;
