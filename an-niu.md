@@ -18,8 +18,6 @@
 }
 ```
 
-### 
-
 ### 属性
 
 | 名称 | 类型 | 默认 | 说明 | 版本 |
@@ -35,48 +33,12 @@
 ### 样式
 
 ##### 1. 全局
-```css
-/*app.wxss*/
-/*app中这样写将会影响el-button，为了方便管理全部button，当然它也有内部样式类*/
 
-button {
-  background: red;
-}
-
-
-button:hover,
-button:active {
-  background: red;
-  color: #FFF
-}
-
-/*局部*/
-._button_ {
-  background: #000;
-}
-```
-
-#### 重写size类
-
-```css
-/*
-* 放到page.wxss或app.wxss中
-* 如果size类型增加，请参考属性表中新增类型
-*/
-
-._button_mini {
-  /*do*/
-}
-
-._button_normal {
-  /*do*/
-}
-
-._button_large {
-  /*do*/
-}
-```
-
+| 名称 | 说明 | 版本 |
+| :--- | :--- | :--- |
+| \_\_button_mini \_\_ |  | 1.0.1 |
+| \_\_button_normal\_\_ |  | 1.0.1 |
+| \_\_button_large___ |  | 1.0.1 |
 
 ##### 2. 局部
 
