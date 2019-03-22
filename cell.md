@@ -4,9 +4,7 @@
 
 ---
 
-| ![](/assets/cell01.png)|
-| :---: |
-
+![](/assets/cell01.png)
 
 ## 使用指南
 
