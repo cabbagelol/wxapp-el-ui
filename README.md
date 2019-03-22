@@ -1,7 +1,4 @@
-# 体验
-
-![](/assets/ewcode.png)  
-![](/assets/qqcode.png)
+# 体验![](/assets/imgcode.png) 
 
 演示程序可能不是最新，你应当克隆github上的代码，版本优先更新为 `github`&gt; `技术文档` &gt; `小程序`，具体参考[快速配置](/kuai-su-pei-zhi.md)
 
