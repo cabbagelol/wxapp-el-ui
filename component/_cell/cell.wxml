@@ -1,3 +1,4 @@
+<!-- 单元格 -->
 <view class='_cell_ {{elclass}}' hover-class='{{islink ? "_cell_hover" : ""}}' bindtap='onclick'>
     <view class='_cell_title_img_ _cell_center_' wx:if='{{icon}}'>
         <slot name='icon' class='_cell_center_'></slot>

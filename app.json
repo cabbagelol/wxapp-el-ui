@@ -15,7 +15,9 @@
     "pages/vacancy/vacancy",
     "pages/tab/tab",
     "pages/content/content",
-    "pages/demo/demo"
+    "pages/demo/demo",
+    "pages/tag/tag",
+    "pages/layout/layout"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -39,6 +41,10 @@
     "el-vacancy": "./component/_vacancy/vacancy",
     "el-tab": "./component/_tab/tab",
     "el-tab-content": "./component/_tab/tab-item",
-    "el-body": "./component/_body/body"
+    "el-body": "./component/_body/body",
+    "el-tag": "./component/_tag/tag",
+    "el-row": "./component/_row/row",
+    "el-column": "./component/_column/column",
+    "el-layout": "./component/_layout/layout"
   }
 }

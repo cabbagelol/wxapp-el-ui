@@ -1,28 +1,50 @@
 Component({
+  externalClasses: [
+    'el-textarea',
+    'el-title',
+    'el-wordcount'
+  ],
+
   properties: {
-      elclass: String,
-      elstyle: String,
-      title: String,
-      data: String,
-      placeholder: String,
-      style: Object,
-      register: String,
-      wordcount: Number
+    textarea: {
+      type: Object,
+      value: {
+        style: {
+          height: 130,
+          minHeight: 0,
+          maxHeight: null
+        }
+      }
+    },
+    title: String,
+    value: String,
+    placeholder: String,
+    wordcount: Number,
+    name: String,
+    disabled: {
+      type: Boolean,
+      value: false
+    }
   },
 
   data: {
-      placeholder: '输入内容',
-      value: '',
-      cursor: 0
+    placeholder: '输入内容',
+    value: '',
+    cursor: 0
   },
 
   methods: {
-    onInput (e) {
-        this.setData({
-            value: e.detail.value,
-            cursor: e.detail.cursor
-        })
-        this.triggerEvent('input', e)
+    onInput(e) {
+      var that = this
+      that.setData({
+        value: e.detail.value,
+        cursor: e.detail.cursor
+      })
+      that.triggerEvent('input', {
+        type: e.type,
+        value: that.data.value,
+        e: e
+      })
     }
   }
 })

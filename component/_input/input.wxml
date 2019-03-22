@@ -1,3 +1,4 @@
+<!-- 输入器 -->
 <view class='__input__'>
   <view class='__input__title__ {{!title ? "__input__title-null__" : ""}}'>
     <block wx:if='{{title}}'>

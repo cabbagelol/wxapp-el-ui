@@ -3,13 +3,17 @@ const config = require("../index.js");
 Component({
   options: {
     multipleSlots: true
-  },
+  },  
 
   properties: {
     animation: Number,
     scrollY: {
       type: Number,
       value: 0
+    }, 
+    scrollbar: {
+      type: Boolean,
+      value: true
     },
     fullscreem: Boolean,
     rubber: Boolean,
@@ -127,7 +131,7 @@ Component({
       } else if (!that.data.rubber && calcY < that.srcollHead) {
         calcY = that.srcollHead
       }
-      that.setSrcollData(calcY, 0)
+      that.setSrcollData(calcY, 100)
       that.getSrcollData()
     },
 

@@ -1,4 +1,20 @@
 <el-head class='el' head='{{head}}' stickie='true'></el-head>
 <view class='container'>
-  <el-textarea title='备注'></el-textarea>
+  <el-cell title="标题">
+    <input slot="content" value="{{textarea.title}}" data-e="textarea.title" bindinput="onInput" />
+  </el-cell>
+  <el-cell title="内容">
+    <input slot="content" value="{{textarea.value}}" data-e="textarea.value" bindinput="onInput" />
+  </el-cell>
+  <el-cell title="placeholder">
+    <input slot="content" value="{{textarea.placeholder}}" data-e="textarea.placeholder" bindinput="onInput" />
+  </el-cell>
+  <el-cell title="限制与统计">
+    <input slot="content" value="{{textarea.wordcount}}" data-e="textarea.wordcount" bindinput="onInput" />
+  </el-cell>
+  <el-cell title="禁用">
+    <switch slot="content" checked="{{textarea.disabled}}" data-e="textarea.disabled" bindchange="onSwitch" />
+  </el-cell>
 </view>
+  <el-textarea name="swistch" title='{{textarea.title}}' placeholder='{{textarea.placeholder}}' disabled='{{textarea.disabled}}' wordcount='{{textarea.wordcount}}' value='{{textarea.value}}' bindinput='onTextarea'></el-textarea>
+

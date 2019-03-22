@@ -1,7 +1,7 @@
 <el-head head='{{head}}' stickie='{{head.stickie}}' load="{{head.load}}">
-  <view slot="nav-left" wx:if="{{head.slot.l}}" bindtap="onToast">左</view>
-  <view slot="nav-tit" wx:if="{{head.slot.c}}" bindtap="onToast">中</view>
-  <view slot="nav-right" wx:if="{{head.slot.r}}" bindtap="onToast">右</view>
+  <view slot="nav-left" wx:if="{{head.slot.l}}" bindtap="onToast" style='color:{{head.style.textColor}}'>左</view>
+  <view slot="nav-tit" wx:if="{{head.slot.c}}" bindtap="onToast" style='color:{{head.style.textColor}}'>中</view>
+  <view slot="nav-right" wx:if="{{head.slot.r}}" bindtap="onToast" style='color:{{head.style.textColor}}'>右</view>
 </el-head>
 
 <view class="container">

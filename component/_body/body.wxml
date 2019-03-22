@@ -8,7 +8,7 @@
       <slot name='body' />
     </view>
 
-    <view class='__content-body-scrollbar__' style='height: {{content.body.height}}px;'>
+    <view class='__content-body-scrollbar__' style='height: {{content.body.height}}px;' wx:if='{{scrollbar}}'>
       <view class='__content-body-scrollbar-body__'>
         <view style='height:{{content.body.scrollbarHeight}}px; top:{{content.body.scrollbarTop}}%'>
         </view>

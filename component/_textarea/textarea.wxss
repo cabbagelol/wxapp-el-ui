@@ -1,20 +1,20 @@
-._textarea_ {
+.__textarea__ {
     padding: 10px 25px;
     background-color: #FFF;
 }
 
-._textarea_cont {
+.__textarea_cont__ {
     position: relative;
 }
 
-._textarea_cont textarea {
+.__textarea_cont__ textarea {
     word-wrap:break-word;
     white-space:normal;
     word-break:break-all;
  }
 
 /*限制符*/
-._textarea_contwordcount {
+.__textarea_contwordcount__ {
     position: absolute;
     bottom: 5px;
     right: 5px;
@@ -23,7 +23,7 @@
 }
 
 /*内容*/
-._textarea_ .__input__title__ {
+.__textarea__ .__input__title__ {
     display: inline-flex;
     align-content: center;
     white-space: nowrap;
@@ -34,11 +34,11 @@
     margin: 0 10px 10px 0;
 }
 
-._textarea_ textarea {
+.__textarea__ textarea {
     border: 1px solid #F2F2F2;
     border-radius: .3rem;
-    padding: 10px;
-    height: 132px;
+    padding: 10px 10px 30px 10px;
+    min-height: 132px;
     width: calc(100% - 20px);
     font-size: 30rpx;
 }

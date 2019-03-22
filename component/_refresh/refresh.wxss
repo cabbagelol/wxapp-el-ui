@@ -1,4 +1,4 @@
-.refresh-container {
+.__refresh__ {
   box-sizing: border-box;
   font-size: 28rpx;
   color: #999;
@@ -8,14 +8,14 @@
   overflow: hidden;
 }
 
-.refresh-layout {
+.__refresh-layout__ {
   display: inline-flex;
   width: 100%;
   justify-content: center;
   align-items: center;
 }
 
-.refresh-tips {
+.__refresh-tips__ {
   line-height: 30rpx;
   font-size: 26rpx;
   vertical-align: middle;
