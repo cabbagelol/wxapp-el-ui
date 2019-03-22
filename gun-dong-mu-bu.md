@@ -4,8 +4,7 @@
 
 ---
 
-| ![](/assets/scrolltxt01.png) |
-| :---: |
+![](/assets/scrolltxt01.png)
 
 ## 使用指南
 
