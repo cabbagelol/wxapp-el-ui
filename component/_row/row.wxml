@@ -1,0 +1,3 @@
+<view class="flex align-{{align}}">
+  <slot></slot>
+</view>

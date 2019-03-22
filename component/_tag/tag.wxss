@@ -1,0 +1,42 @@
+@import '../_button/button.wxss';
+
+.__tag__ {
+  display: inline-flex;
+  color: #1A1A1A;
+  margin-right: 10rpx;
+}
+ 
+.__tag__::last-child {
+  margin-right: 0;
+}
+
+.__tag-plain__ {
+  background-color: inherit;
+}
+
+.__tag-primary__ {
+  background-color: #18b6c1;
+}
+
+.__tag-success__ {
+  background-color: rgb(7, 193, 96);
+}
+
+.__tag-danger__ {
+  background-color: rgb(255, 68, 68);
+}
+
+.__tag-3__ {
+    padding: 8rpx 10rpx;
+    font-size: 20rpx;
+}
+
+.__tag-5__ {
+    padding: 12rpx 20rpx;
+    font-size: 24rpx;
+}
+
+.__tag-7__ {
+    padding: 18rpx 25rpx;
+    font-size: 28rpx;
+}

@@ -1,0 +1,6 @@
+@import '../index';
+
+.__layout__ {
+  display: inline-table;
+  width: 100%;
+}

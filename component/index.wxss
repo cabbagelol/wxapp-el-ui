@@ -1,0 +1,13 @@
+el-body,
+el-button,
+el-cell,
+el-vacancy,
+el-row,
+el-column {
+  display: block;
+}
+
+el-layout {
+  max-width: 100%;
+  max-height: 100vh;
+}
