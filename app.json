@@ -17,7 +17,8 @@
     "pages/content/content",
     "pages/demo/demo",
     "pages/tag/tag",
-    "pages/layout/layout"
+    "pages/layout/layout",
+    "pages/file/file"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -45,6 +46,7 @@
     "el-tag": "./component/_tag/tag",
     "el-row": "./component/_row/row",
     "el-column": "./component/_column/column",
-    "el-layout": "./component/_layout/layout"
+    "el-layout": "./component/_layout/layout",
+    "el-file": "./component/_file/file"
   }
 }

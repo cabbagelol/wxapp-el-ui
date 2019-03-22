@@ -23,7 +23,7 @@
     <el-cell title='输入框' label='input' islink></el-cell>
   </navigator>
   <navigator url="../textarea/textarea" open-type="navigate">
-    <el-cell title='多行输入框'  label='textarea' islink></el-cell>
+    <el-cell title='多行输入框' label='textarea' islink></el-cell>
   </navigator>
   <navigator url="../numIndicator/numIndicator" open-type="navigate">
     <el-cell title='数字指示器' label='numIndicator' islink></el-cell>
@@ -56,5 +56,10 @@
   </navigator>
   <navigator url="../layout/layout" open-type="navigate">
     <el-cell title='布局' label='layout' islink></el-cell>
+  </navigator>
+
+  <view class='htitle'>第三方</view>
+  <navigator url="../file/file" open-type="navigate">
+    <el-cell title='七牛云图片上传' label='file' islink></el-cell>
   </navigator>
 </view>

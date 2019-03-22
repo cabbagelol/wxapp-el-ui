@@ -7,7 +7,7 @@
   height: 100%;
 }
 
-.__popup__modal {
+.__popup__modal__ {
   position: absolute;
   top: 0;
   left: 0;
@@ -22,36 +22,74 @@
   align-items: center;
 }
 
-.__popup__content__top {
+.__popup__content-top__ {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
 }
 
-.__popup__content__right {
+.__popup-top-animation__ {
+  animation: top .25s;
+}
+
+@keyframes top {
+  0% { top: -100% }
+  100% { top: 0 }
+}
+
+.__popup__content-right__ {
   position: absolute;
   top: 0;
   right: 0;
   height: 100%;
-  /* width: 100%; */
   justify-content: flex-end;
   align-items: center;
 }
 
-.__popup__content__button {
+.__popup-right-animation__ {
+  animation: right .25s;
+}
+
+@keyframes right {
+  0% { right: -100% }
+  100% { right: 0 }
+}
+
+.__popup__content-bottom__ {
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
 }
 
-.__popup__content__left {
+.__popup-bottom-animation__ {
+  animation: bottom .25s;
+}
+
+@keyframes bottom {
+  0% { bottom: -100% }
+  100% { bottom: 0 }
+}
+
+.__popup__content-left__ {
   position: absolute;
   top: 0;
   left: 0;
-  /* width: 100%; */
   height: 100%;
   justify-content: flex-start;
   align-items: center;
+}
+
+.__popup-left-animation__ {
+  animation: left .25s;
+}
+
+@keyframes left {
+  0% { left: -100% }
+  100% { left: 0 }
+}
+
+.__popup-animation__ {
+  transition:  all .25s;
 }

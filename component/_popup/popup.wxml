@@ -1,7 +1,9 @@
 <!-- 弹窗 -->
 <view class='__popup__' wx:if='{{show}}'>
-  <view class='__popup__modal' wx:if='{{!!modal}}' bindtap='onModal'></view>
-  <view id='popupContent' class='__popup__content__ __popup__content__{{position || "button"}}' >
+  <view class='__popup__modal__' wx:if='{{!!modal}}' bindtap='onModal'></view>
+  <view
+    id='popupContent' 
+    class='__popup__content__ {{(!!animation) ? "__popup-" + position + "-animation__" : ""}} __popup__content-{{position || "bottom"}}__' >
     <slot name='content'></slot> 
   </view>
 </view> 
