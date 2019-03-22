@@ -2,16 +2,18 @@
 
 应对不同风格，实际上wxapp-el-ui考虑了一些组件控件或是界面控件允许重写Class，来控制控件样式。
 
-这里我们将以数字指示器来演示如何重写Class类，首选我们找到数字指示器中"样式"一栏，数字指示器控件中提供了仅有几个Class名称，我们来看看：
+这里我们将以"数字指示器"来演示如何重写它的Class类流程，再此之前我们首选需要知道"数字指示器"是否支持重新(当你看到"样式"一栏，表示着它提供了特定Class通道)，"指示器"中提供了两种方式，分别为全局与局部。
 
 ### 1.全局
 
+通常提供全局的Class会以".class"表示,如下表格：
+
 | 名称 | 说明 | 版本 |
 | :--- | :--- | :--- |
-| numIndicator | 指示器根类 | 1.0.1 |
-| numIndicator\_btnleft | 指示器左侧按钮 | 1.0.1 |
-| numIndicator\_btnright | 指示器右侧按钮 | 1.0.1 |
-| numIndicator\_value | 指示器input输入框 | 1.0.1 |
+| .numIndicator | 全局指示器根类 | 1.0.1 |
+| .numIndicator\_btnleft | 全局指示器左侧按钮 | 1.0.1 |
+| .numIndicator\_btnright | 全局指示器右侧按钮 | 1.0.1 |
+| .numIndicator\_value | 全局指示器input输入框 | 1.0.1 |
 
 * 所有wxapp-el-ui控件命名都以"\_\_class\_\_"来
 
