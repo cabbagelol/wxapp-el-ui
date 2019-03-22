@@ -36,8 +36,14 @@ file:
 | video.camera | Boolean | 'front' | 前/后摄像头 | 1.0.2 |
 | files.type | String | 'all' | 限制文件类型 | 1.0.2 |
 | files.extension | Array | null | 限制后缀类型 | 1.0.2 |
-|  |  |  |  |  |
-|  |  |  |  |  |
 
-使用
+### 使用
+
+```HTML
+<el-file>
+    <el-button>选择</el-button>
+</el-file>
+```
+
+
 
