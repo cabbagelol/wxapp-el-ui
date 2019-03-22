@@ -8,10 +8,10 @@
 
 | 名称 | 说明 | 版本 |
 | :--- | :--- | :--- |
-| **numIndicator** | 指示器根类 | 1.0.1 |
-| **numIndicator\_btnleft** | 指示器左侧按钮 | 1.0.1 |
-| **numIndicator\_btnright** | 指示器右侧按钮 | 1.0.1 |
-| **numIndicator\_value** | 指示器input输入框 | 1.0.1 |
+| numIndicator | 指示器根类 | 1.0.1 |
+| numIndicator\_btnleft | 指示器左侧按钮 | 1.0.1 |
+| numIndicator\_btnright | 指示器右侧按钮 | 1.0.1 |
+| numIndicator\_value | 指示器input输入框 | 1.0.1 |
 
 * 所有wxapp-el-ui控件命名都以"\_\_**class**\_\_"来
 

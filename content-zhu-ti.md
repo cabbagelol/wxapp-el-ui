@@ -7,9 +7,7 @@
 > [!TIP|style:flat|label:告知|iconVisibility:hidden]
 > Body在安卓低端表现不佳，当大量内容时不建议使用body
 
-| ![](/assets/body01.png) |
-| :---: |
-
+![](/assets/body01.png)
 
 ## 使用指南
 
