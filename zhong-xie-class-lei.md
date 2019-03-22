@@ -13,7 +13,7 @@
 | numIndicator\_btnright | 指示器右侧按钮 | 1.0.1 |
 | numIndicator\_value | 指示器input输入框 | 1.0.1 |
 
-* 所有wxapp-el-ui控件命名都以"\_\_**class**\_\_"来
+* 所有wxapp-el-ui控件命名都以"\_\_class\_\_"来
 
 为了方便管理独立的控件样式，我们应该在项目的根目录下创建public/styles文件夹作为公共样式库,这里我们以numIndicator.wxss来命名它。
 
