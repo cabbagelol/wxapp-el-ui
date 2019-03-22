@@ -10,12 +10,12 @@
 
 | 名称 | 说明 | 版本 |
 | :--- | :--- | :--- |
-| .numIndicator | 全局指示器根类 | 1.0.1 |
-| .numIndicator\_btnleft | 全局指示器左侧按钮 | 1.0.1 |
-| .numIndicator\_btnright | 全局指示器右侧按钮 | 1.0.1 |
-| .numIndicator\_value | 全局指示器input输入框 | 1.0.1 |
+| .\_\_numIndicator\_\_| 全局指示器根类 | 1.0.1 |
+| .\_\_numIndicator\_btnleft\_\_ | 全局指示器左侧按钮 | 1.0.1 |
+| .\_\_numIndicator\_btnright\_\_ | 全局指示器右侧按钮 | 1.0.1 |
+| .\_\_numIndicator\_value\_\_ | 全局指示器input输入框 | 1.0.1 |
 
-* 所有wxapp-el-ui控件命名都以"\_\_class\_\_"来
+* 所有elui控件命名都以"\_\_class\_\_"来这样的格式命名，因此观察出是内部的Class。
 
 为了方便管理独立的控件样式，我们应该在项目的根目录下创建public/styles文件夹作为公共样式库,这里我们以numIndicator.wxss来命名它。
 
