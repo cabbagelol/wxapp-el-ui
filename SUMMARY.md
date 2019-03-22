@@ -21,6 +21,7 @@
   * [body 主体](content-zhu-ti.md)
   * [tag 标签](tag.md)
   * [layout 布局](layout-bu-ju.md)
+  * [file 文件](file-wen-jian.md)
 * [设计规范](she-ji-gui-fan.md)
 * [设计资源](she-ji-zi-yuan.md)
 * [版本](ban-ben.md)
