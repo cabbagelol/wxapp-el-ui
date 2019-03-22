@@ -31,7 +31,11 @@ file:
 | 名称 | 类型 | 默认 | 说明 | 版本 |
 | :--- | :--- | :--- | :--- | :--- |
 | count | Number | 1 | 文件数量 | 1.0.2 |
-|  |  |  |  |  |
+| video.maxDuration | Number | 60 | 视频长度 | 1.0.2 |
+| video.compressed | Boolean | false | 压缩 | 1.0.2 |
+| video.camera | Boolean | 'front' | 前/后摄像头 | 1.0.2 |
+| files.type | String | 'all' | 限制文件类型 | 1.0.2 |
+| files.extension | Array | null | 限制后缀类型 | 1.0.2 |
 |  |  |  |  |  |
 |  |  |  |  |  |
 
