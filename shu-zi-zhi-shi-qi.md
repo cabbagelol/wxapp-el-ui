@@ -62,12 +62,12 @@
 
 ##### 全局
 
-| 类称 | 说明 | 版本 |
+| 名称 | 说明 | 版本 |
 | :--- | :--- | :--- |
-| .numIndicator | 全局指示器根类 | 1.0.1 |
-| .numIndicator\_btnleft | 全局指示器左侧按钮 | 1.0.1 |
-| .numIndicator\_btnright | 全局指示器右侧按钮 | 1.0.1 |
-| .numIndicator\_value | 全局指示器input输入框 | 1.0.1 |
+| .\_\_numIndicator\_\_| 全局指示器根类 | 1.0.1 |
+| .\_\_numIndicator\_btnleft\_\_ | 全局指示器左侧按钮 | 1.0.1 |
+| .\_\_numIndicator\_btnright\_\_ | 全局指示器右侧按钮 | 1.0.1 |
+| .\_\_numIndicator\_value\_\_ | 全局指示器input输入框 | 1.0.1 |
 
 ##### 局部
 

@@ -15,19 +15,12 @@
 | .\_\_numIndicator\_btnright\_\_ | 全局指示器右侧按钮 | 1.0.1 |
 | .\_\_numIndicator\_value\_\_ | 全局指示器input输入框 | 1.0.1 |
 
-* 所有elui控件命名都以"\_\_class\_\_"来这样的格式命名，因此观察出是内部的Class。
+* 所有elui控件命名都以"\_\_class\_\_"来这样的格式命名，因此观察出是内部的Class
 
 为了方便管理独立的控件样式，我们应该在项目的根目录下创建public/styles文件夹作为公共样式库,这里我们以numIndicator.wxss来命名它。
 
-numIndicator.wxml:
-
-```html
-<el-numIndicator slot='content' class='numIndicator-custom'></el-numIndicator>
-```
-
-numIndicator.wxss:
-
 ```css
+/*public/styles/numIndicator.wxss:*/
 /*当然为了区分,我们添加numIndicator-custom识别，引用该类指示器会使用我们自定义样式*/
 
 .numIndicator-custom .__numIndicator__ {
@@ -53,15 +46,24 @@ numIndicator.wxss:
   color: #999; 
 }
 ```
-
-请别忘记将public/styles/numIndicator.wxss导入到对应的page.wxss中。
-
-### 2.单独的Class
-
-除了以上方法外，wxapp-el-ui也提供另一种重写方式，比如这样:
+并在对应页面上创建el-numIndicator标签使用
 
 ```html
-<el-numIndicator slot='content' el-button-left='numIndicator-button-left'></el-numIndicator>
+<!-- page/index/index.wxml: -->
+<el-numIndicator class='numIndicator-custom'></el-numIndicator>
+```
+当然，别忘记导入在公共库内的自定义样式, 这样你便能在`el-numIndicator`中引用自己的样式
+```css
+/*page/index/index.wxss:*/
+@import '../public/styles/numIndicator';
+```
+
+### 2.局部
+
+仅仅在局部适用，那么可以通过控件内部提供的局部Class属性绑定class类，比如这样:
+
+```html
+<el-numIndicator el-button-left='numIndicator-button-left'></el-numIndicator>
 ```
 
 ```css
@@ -69,6 +71,10 @@ numIndicator.wxss:
   color: red;
 }
 ```
+
+在这里我们看到，我们对增加了el-button-left的属性绑定了.numIndicator-button-left类来使用，当然并不是所有控件都支持怎么做，因此你需要查看对应控件文档是否支持"样式"
+
+
 
 实际上将"numIndicator-button-left"类赋予el-button-left，被内部解析到对应位置，因此通过这样方法控制内部视图样式。
 
