@@ -64,6 +64,9 @@
 
 ```html
 <el-numIndicator el-button-left='numIndicator-button-left'></el-numIndicator>
+<!--
+  * 实际上将"numIndicator-button-left"类赋予el-button-left，被内部解析到对应位置，因此通过这样方法控制内部视图样式。
+-->
 ```
 
 ```css
@@ -76,5 +79,5 @@
 
 
 
-实际上将"numIndicator-button-left"类赋予el-button-left，被内部解析到对应位置，因此通过这样方法控制内部视图样式。
+
 
