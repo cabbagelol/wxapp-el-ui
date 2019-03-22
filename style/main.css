@@ -61,8 +61,8 @@ a:hover{
     transition: all 1s !important;
     box-sizing: initial !important;
     box-shadow: none !important;
-    margin-left: 0 !important;
-    margin-right: 0 !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
     max-width: none !important;
 }
 
