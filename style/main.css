@@ -53,6 +53,23 @@ a:hover{
     background: #FFF !important;
 }
 
+.markdown-section img {
+    margin: 0 auto !important;
+    padding: 8px !important;
+    border: 1px solid #EEE;
+    background: none !important;
+    transition: all 1s !important;
+    box-sizing: initial !important;
+    box-shadow: none !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    max-width: none !important;
+}
+
+.markdown-section img:hover {
+    box-shadow: none !important;
+}
+
 @media screen and (max-width: 600px) {
     .book-anchor,
     .header-inner .header-nav{
