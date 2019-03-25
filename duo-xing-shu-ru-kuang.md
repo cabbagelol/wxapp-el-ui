@@ -42,11 +42,19 @@
 ### 使用
 
 ```html
-<el-textarea title='名称'></el-textarea>
+<el-textarea title='名称' bindinput='onTextarea'></el-textarea>
 
 <!-- or -->
 
 <el-textarea title='名称' />
+```
+
+```js
+Page({
+    onTextarea (e) {
+        // do
+    }
+})
 ```
 
 ### 已知问题
@@ -54,6 +62,4 @@
 Q: 我如何捕捉IOS下的点击完成按钮返回的数据？
 
 A: 在textarea控件中，这些数据变动操作都会触发bindinput方法返回，因此你仅关注input事件既可
-
-
 
