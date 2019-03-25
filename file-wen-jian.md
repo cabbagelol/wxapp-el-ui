@@ -39,6 +39,15 @@ file:
 | files.type | String | 'all' | 限制文件类型 | 1.0.2 |
 | files.extension | Array | null | 限制后缀类型 | 1.0.2 |
 
+### 事件
+
+`succeed`: function \(e\) {}
+
+| 名称 | 说明 |  | 版本 |
+| :--- | :--- | :--- | :--- |
+|  |  |  |  |
+|  |  |  |  |
+
 ### 使用
 
 ```HTML
@@ -47,5 +56,5 @@ file:
 </el-file>
 ```
 
-
+第三方
 
