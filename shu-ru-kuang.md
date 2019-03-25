@@ -43,20 +43,34 @@
 
 ### 方法
 
-`bindinput`: function \(e\) 输入框输入时
+`bindinput`: function \(e\) {}
 
-@e: 内部input对象
+| 名称 | 说明 | 版本 |
+| :--- | :--- | :--- |
+| value | 值 | 1.0.1 |
 
 ### 使用
 
 ```html
-<el-input title='名称'></el-input>
+<el-input bindinput='onInput' title='名称'></el-input>
 
-<el-input>
+<el-input bindinput='onInput' value='{{value}}' placeholder='清输入内容'>
     <el-input-title omit='true'>
         自定义内容
     </el-input-itile>
 </el-input>
+```
+
+```js
+Page({
+    data: {
+        value: ''
+    },
+
+    onInput (e) {
+        // do
+    }
+})
 ```
 
 
