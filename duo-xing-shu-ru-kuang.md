@@ -42,7 +42,7 @@
 ### 使用
 
 ```html
-<el-textarea title='名称' bindinput='onTextarea'></el-textarea>
+<el-textarea title='名称' value='{{value}}' bindinput='onTextarea'></el-textarea>
 
 <!-- or -->
 
@@ -51,6 +51,10 @@
 
 ```js
 Page({
+    data: {
+        value: ''
+    },
+
     onTextarea (e) {
         // do
     }

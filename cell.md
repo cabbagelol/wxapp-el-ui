@@ -32,23 +32,23 @@
 内容卡槽位置，使用如下:
 
 ```html
-    <el-cell title="默认卡槽">
-        <view slot="content">内容</view>
-    </el-cell>
+<el-cell title="默认卡槽">
+    <view slot="content">内容</view>
+</el-cell>
 ```
 
 图标卡槽位置，使用如下:
 
 ```html
-    <el-cell icon="true" title="默认卡槽" >
-        <image slot="icon" src="">内容</image>
-    </el-cell>
+<el-cell icon="true" title="默认卡槽" >
+    <image slot="icon" src="">内容</image>
+</el-cell>
 
-    <!-- 必须注意使用icon插槽，需要设置icon为true -->
+<!-- 必须注意使用icon插槽，需要设置icon为true -->
 
-    <el-cell icon="true" title="自定义" >
-        <el-img slot="icon" src=""></el-img>
-    </el-cell>
+<el-cell icon="true" title="自定义" >
+    <el-img slot="icon" src=""></el-img>
+</el-cell>
 ```
 
 

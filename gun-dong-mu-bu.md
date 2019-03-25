@@ -38,15 +38,19 @@
 <el-scrolltxt scrolltxt="{{scrolltxt}}">这里将滚动内容，你可以看到它正在滚动，当然你这里也可以设置为变量</el-scrolltxt>
 ```
 
-```json
-"data": {
-  "scrolltxt": {
-    "orientation": "left",
-    "velocity": .9,
-    "delay": 3000 // 3秒
+```js
+Page({
+  data: {
+    scrolltxt: {
+      orientation: "left",
+      velocity: .9,
+      delay: 3000 // 3秒
+    }
   }
-}
+})
 ```
+
+---
 
 #### 已知问题
 
