@@ -16,7 +16,7 @@
 }
 ```
 
-属性
+### 属性
 
 | 名称 | 类型 | 默认 | 说明 | 版本 |
 | :--- | :--- | :--- | :--- | :--- |
@@ -25,6 +25,8 @@
 | camera | Boolean | false | 是否显示相册 | 1.0.2 |
 | files | Boolean | false | 是否显示文件 | 1.0.2 |
 | video | Boolean | false | 是否显示视频 | 1.0.2 |
+
+* 当album、camera、files、video都为false时，不被触发显示选择框
 
 file:
 
