@@ -10,7 +10,7 @@ Page({
       animation: true,
       content: true,
       index: 2,
-      title: '代码',
+      title: '人才',
       data: [
         {
           title: '领袖',

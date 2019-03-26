@@ -46,8 +46,6 @@ Page({
   },
 
   onPullDownRefresh: function() {
-    setTimeout(() => {
-      this.refreshView.stopPullRefresh()
-    }, 3000)
+    this.refreshView.stopPullRefresh()
   }
 })

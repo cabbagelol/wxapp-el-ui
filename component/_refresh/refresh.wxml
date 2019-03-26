@@ -1,6 +1,6 @@
-<view style='height:{{dynamicHeight}}rpx;background-color:{{backgroundColor}}' class="refresh-container">
-  <view class='refresh-layout' style='line-height:{{refreshHeight}}rpx;height:{{refreshHeight}}rpx;'>
-    <el-load type='main' size='.7' hidden="{{0!=pullState}}"></el-load>
-    <text class="refresh-tips">{{pullState==1?'下拉刷新...':pullState==0?'正在刷新...':'松开刷新...'}}</text>
+<view class='__refresh__' style='transition: height {{refresh.transition / 1000}}s;height:{{refresh.dynamicHeight}}rpx;background-color:{{backgroundColor}}'>
+  <view class='__refresh-layout__' style='line-height:{{refreshHeight}}rpx;height:{{refreshHeight}}rpx;'>
+    <el-load type='main' size='.8' hidden="{{0!=pullState}}"></el-load>
+    <text class="__refresh-tips__">{{pullState==1?'下拉刷新...':pullState==0?'正在刷新...':'松开刷新...'}}</text>
   </view>
 </view>

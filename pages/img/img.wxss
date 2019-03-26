@@ -15,8 +15,8 @@
 }
 
 .img-style {
-  width: 100rpx;
-  height: 100rpx;
+  /* width: 100rpx;
+  height: 100rpx; */
   display: block;
 }
 

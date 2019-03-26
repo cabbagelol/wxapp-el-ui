@@ -4,8 +4,8 @@ Page({
       stickie: true,
       title: '导航一',
       style: {
-        background: '#FFF',
-        textColor: '#000'
+        background: 'linear-gradient(45deg, #0b9ca7, #18b6c1)',
+        textColor: '#FFF'
       },
       slot: {
           l: true,

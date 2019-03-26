@@ -1,7 +1,12 @@
 <el-head head='{{head}}' bindhead='onGetHead' stickie='true'></el-head>
-<el-refresh id='refreshView' backgroundColor="#FFF" bindonRefresh="onPullDownRefresh" />
+<el-refresh id='refreshView' backgroundColor="#FFF" />
 <view class='container'>
-  <view class="container" bindtouchstart='handletouchstart' bindtouchmove='handletouchmove' bindtouchend='handletouchend' bindtouchcancel='handletouchcancel'>
-    <el-cell title='消息' wx:for='{{50}}' wx:key='{{item}}' islink></el-cell>
+  <view bindtouchstart='handletouchstart' bindtouchmove='handletouchmove' bindtouchend='handletouchend' bindtouchcancel='handletouchcancel'>
+      <el-vacancy cont='true' height='100vh'>
+        <view slot='cont'>
+          <el-img src='https://gw.alipayobjects.com/mdn/miniapp_social/afts/img/A*pevERLJC9v0AAAAAAAAAAABjAQAAAQ/original' style='margin: 0 auto;display:block;width: 350rpx; height: 320rpx' mode='scaleToFill'/>
+          <el-button bindtap='onPullDownRefresh'>收起</el-button>
+        </view>
+      </el-vacancy>
   </view>
 </view>

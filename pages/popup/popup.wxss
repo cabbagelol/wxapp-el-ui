@@ -1,8 +1,3 @@
-button {
-  background:  #03a9f4;
-  color: #FFF;
-}
-
 .popup-demo {
   margin: 0 0 100rpx 0;
 }
@@ -38,6 +33,6 @@ button {
 .popup-content-img {
   margin: 0 auto;
   display: block;
-  width: 200rpx;
+  width: 300rpx;
   height: 240rpx;
 }

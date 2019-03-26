@@ -10,19 +10,21 @@ Component({
       type: Boolean,
       value: false
     },
-    closeOnModal: Boolean
+    closeOnModal: Boolean,
+    animation: {
+      type: Boolean,
+      value: true
+    }
   },
 
   methods: {
     onModal(e) {
       var that = this
       that.setData({ 'show': that.data.show != true })
-      if (closeOnModal) {
-        that.triggerEvent('change', { 
-          value: that.data.show,
-          el: e
-        })
-      }
+      that.triggerEvent('change', {
+        value: that.data.show,
+        el: e
+      })
     }
   } 
 })

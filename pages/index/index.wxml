@@ -8,47 +8,58 @@
 
   <view class='htitle'>组件</view>
   <navigator url="../nav/nav" open-type="navigate">
-    <el-cell title='导航' islink></el-cell>
+    <el-cell title='导航' label='head' islink></el-cell>
   </navigator>
   <navigator url="../img/img" open-type="navigate">
-    <el-cell title='图片' islink></el-cell>
+    <el-cell title='图片' label='img' islink></el-cell>
   </navigator>
   <navigator url="../cell/cell" open-type="navigate">
-    <el-cell title='单元格' islink></el-cell>
+    <el-cell title='单元格' label='cell' islink></el-cell>
   </navigator>
   <navigator url="../scrolltxt/scrolltxt" open-type="navigate">
-    <el-cell title='滚动幕布' islink></el-cell>
+    <el-cell title='滚动幕布' label='scrolltxt' islink></el-cell>
   </navigator>
   <navigator url="../input/input" open-type="navigate">
-    <el-cell title='输入框' islink></el-cell>
+    <el-cell title='输入框' label='input' islink></el-cell>
   </navigator>
   <navigator url="../textarea/textarea" open-type="navigate">
-    <el-cell title='多行输入框' islink></el-cell>
+    <el-cell title='多行输入框' label='textarea' islink></el-cell>
   </navigator>
   <navigator url="../numIndicator/numIndicator" open-type="navigate">
-    <el-cell title='数字指示器' islink></el-cell>
+    <el-cell title='数字指示器' label='numIndicator' islink></el-cell>
   </navigator>
   <navigator url="../popup/popup" open-type="navigate">
-    <el-cell title='弹窗' islink></el-cell>
+    <el-cell title='弹窗' label='popup' islink></el-cell>
   </navigator>
   <navigator url="../refresh/refresh" open-type="navigate">
-    <el-cell title='下拉刷新' islink></el-cell>
+    <el-cell title='下拉刷新' label='refresh' islink></el-cell>
   </navigator>
   <navigator url="../tab/tab" open-type="navigate">
-    <el-cell title='标签页' islink></el-cell>
+    <el-cell title=' 标签页' label='tab' islink></el-cell>
   </navigator>
 
   <view class='htitle'>界面</view>
   <navigator url="../load/load" open-type="navigate">
-    <el-cell title='装载' islink></el-cell>
+    <el-cell title='装载' label='load' islink></el-cell>
   </navigator>
   <navigator url="../button/button" open-type="navigate">
-    <el-cell title='按钮' islink></el-cell>
+    <el-cell title='按钮' label='button' islink></el-cell>
   </navigator>
   <navigator url="../vacancy/vacancy" open-type="navigate">
-    <el-cell title='空置区' islink></el-cell>
+    <el-cell title='空置区' label='vacancy' islink></el-cell>
   </navigator>
   <navigator url="../content/content" open-type="navigate">
-    <el-cell title='主体' islink></el-cell>
+    <el-cell title='主体' label='content' islink></el-cell>
+  </navigator>
+  <navigator url="../tag/tag" open-type="navigate">
+    <el-cell title='标签' label='tag' islink></el-cell>
+  </navigator>
+  <navigator url="../layout/layout" open-type="navigate">
+    <el-cell title='布局' label='layout' islink></el-cell>
+  </navigator>
+
+  <view class='htitle'>第三方</view>
+  <navigator url="../file/file" open-type="navigate">
+    <el-cell title='七牛云图片上传' label='file' islink></el-cell>
   </navigator>
 </view>

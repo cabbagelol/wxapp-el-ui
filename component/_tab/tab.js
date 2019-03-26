@@ -87,7 +87,30 @@ Component({
 
       that.setSelectContent();
       that.onChange('tap');
-      that.scollSelect()
+      var allWidth = 0; // 总宽度
+      var scroll = wx.getSystemInfoSync().windowWidth; // 屏幕宽度
+      var paddingWidth = 0; // 父元素padding
+      var myScroll = 0; // 元素所在位置
+      wx.createSelectorQuery().in(this).select('.__tab-nav__').boundingClientRect(function(rect){
+        // 获取父元素的总宽度
+        allWidth = rect.width
+      }).exec()
+      wx.createSelectorQuery().in(this).selectAll('.__tab-nav-item__').boundingClientRect(function (rect) {
+        // 获取子元素的所在位置
+        var allScroll = 0;  // 所有元素加起来的宽度
+        for(var i in rect){
+          if (i > that.data.tabs.index){
+          } else {
+            myScroll = rect[i].width + myScroll
+          }
+          allScroll = rect[i].width + allScroll
+        }
+        // 子元素所在位置等于父元素宽度 - 所有元素加起来的宽然后除2(即父元素左padding)
+        myScroll = myScroll + (allWidth - allScroll)/2
+        that.setData({
+          'scroll.x': myScroll - scroll / 2 - rect[that.data.tabs.index].width/2
+        })
+      }).exec()
     },
 
     onChange(onType_) {
@@ -97,33 +120,6 @@ Component({
         title: that.data.tabs.title,
         type: onType_ || 'change'
       })
-    },
-    scollSelect(){
-      var that = this
-      var allWidth = 0; // 总宽度
-      var scroll = wx.getSystemInfoSync().windowWidth; // 屏幕宽度
-      var paddingWidth = 0; // 父元素padding
-      var myScroll = 0; // 元素所在位置
-      wx.createSelectorQuery().in(this).select('.__tab-nav__').boundingClientRect(function (rect) {
-        // 获取父元素的总宽度
-        allWidth = rect.width
-      }).exec()
-      wx.createSelectorQuery().in(this).selectAll('.__tab-nav-item__').boundingClientRect(function (rect) {
-        // 获取子元素的所在位置
-        var allScroll = 0;  // 所有元素加起来的宽度
-        for (var i in rect) {
-          if (i > that.data.tabs.index) {
-          } else {
-            myScroll = rect[i].width + myScroll
-          }
-          allScroll = rect[i].width + allScroll
-        }
-        // 子元素所在位置等于父元素宽度 - 所有元素加起来的宽然后除2(即父元素左padding)
-        myScroll = myScroll + (allWidth - allScroll) / 2
-        that.setData({
-          'scroll.x': myScroll - scroll / 2 - rect[that.data.tabs.index].width / 2
-        })
-      }).exec()
     },
 
     setSelectContent() {
