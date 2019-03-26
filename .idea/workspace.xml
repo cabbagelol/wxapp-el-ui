@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ec6a3c75-8d73-4fbb-abdc-25d4f1419cda" name="Default Changelist" comment="" />
+    <list default="true" id="ec6a3c75-8d73-4fbb-abdc-25d4f1419cda" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -17,11 +19,8 @@
         <entry file="file://$PROJECT_DIR$/chapter1.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="480">
-                <caret line="94" selection-start-line="94" selection-end-line="94" />
-                <folding>
-                  <element signature="n#style#0;n#text#0;n#view#0;n#el-head#0;n#!!top" expanded="true" />
-                </folding>
+              <first_editor relative-caret-position="481">
+                <caret line="93" selection-start-line="93" selection-end-line="93" />
               </first_editor>
               <second_editor />
             </state>
@@ -85,17 +84,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="wxapp-el-ui" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wxapp-el-ui" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -209,10 +198,10 @@
     <option name="totallyTimeSpent" value="37500000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
+    <frame x="1912" y="-8" width="1936" height="1096" extended-state="1" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24693333" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2496" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -225,7 +214,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32952183" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32952183" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32917964" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -260,6 +249,20 @@
         </entry>
       </map>
     </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="2019-3-14 17:25:21" />
@@ -284,14 +287,7 @@
     <entry file="file://$PROJECT_DIR$/node_modules/gitbook-plugin-theme-corezoid/_layouts/website/languages.html" />
     <entry file="file://$PROJECT_DIR$/node_modules/gitbook-plugin-theme-corezoid/_layouts/website/page.html" />
     <entry file="file://$PROJECT_DIR$/node_modules/gitbook-plugin-theme-corezoid/_assets/website/images/logo.png" />
-    <entry file="file://$PROJECT_DIR$/2.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/2.md" />
     <entry file="file://$PROJECT_DIR$/zhong-xie-class-lei.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -528,11 +524,8 @@
     <entry file="file://$PROJECT_DIR$/chapter1.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="480">
-            <caret line="94" selection-start-line="94" selection-end-line="94" />
-            <folding>
-              <element signature="n#style#0;n#text#0;n#view#0;n#el-head#0;n#!!top" expanded="true" />
-            </folding>
+          <first_editor relative-caret-position="481">
+            <caret line="93" selection-start-line="93" selection-end-line="93" />
           </first_editor>
           <second_editor />
         </state>
