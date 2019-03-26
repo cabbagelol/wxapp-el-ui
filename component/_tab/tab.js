@@ -57,14 +57,14 @@ Component({
         that.setSelectContent();
         that.onChange();
       }
-    }).exec()
-    for (var i in that.data.tabs.data) {
-      if (that.data.tabs.data[i].title == that.data.active) {
-        that.setData({
-          'tabs.index': i
-        })
+      for (var i in that.data.tabs.data) {
+        if (that.data.tabs.data[i].title == that.data.active) {
+          that.setData({
+            'tabs.index': i
+          })
+        }
       }
-    }
+    }).exec()
     this.scollSelect();
   },
 
