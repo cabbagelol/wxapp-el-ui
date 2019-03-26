@@ -1,6 +1,6 @@
 <el-head head='{{head}}' stickie='true'></el-head>
 
-<el-tab class='tab' animation='{{tab.animation}}' isscroll='{{tab.scroll}}' active='{{tab.title}}' bindchange='onTabChange'>
+<el-tab class='tab' animation='{{tab.animation}}' isscroll='{{tab.scroll}}' active='{{tab.title}}' bindchange ='onTabChange'>
   <view slot='left' class='tab-custom' wx:if='{{tab.custom}}'>
     左侧
   </view>

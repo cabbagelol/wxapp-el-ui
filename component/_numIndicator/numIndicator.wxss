@@ -14,6 +14,7 @@
     background-color: #F2F2F2;
     border-radius: .3rem;
     margin: 0 10px;
+    position: relative;
 }
 
 .__numIndicator_value__ input {
@@ -21,6 +22,8 @@
     width: 80rpx;
     min-width: 80rpx;
     max-width: 150rpx;
+    position: relative;
+    z-index: 0;
 }
 
 .__numIndicator_btn__ {

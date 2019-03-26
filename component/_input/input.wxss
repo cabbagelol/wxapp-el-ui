@@ -1,7 +1,7 @@
 .__input__ {
   display: inline-flex;
   width: calc(100% - 40px);
-  padding: 15px 20px;
+  padding: 30rpx 40rpx;
   background-color: #fff;
 }
 
