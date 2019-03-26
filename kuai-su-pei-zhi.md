@@ -12,7 +12,7 @@
   $ git clone https://github.com/cabbagelol/wxapp-el-ui.git (建议)
 ```
 
-将`component`与`style`文件夹拷贝到自己的项目中，依照下方教程方式使用组件。
+将`component`与`style`文件夹拷贝到自己的项目中\(请注意控件的依赖，详情查看控件“依赖”栏目\)，依照下方教程方式使用组件。
 
 1.在app.json或当前page.json文件中配置`usingComponents`参数。
 
