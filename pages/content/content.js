@@ -7,24 +7,8 @@ Page({
     content: {
       head: 0,
       body: 0,
-      footer: 0,
-      scrollbar: false,
-      scrollButtonY: 0,
-      upperThreshold: 100,  
-      lowerThreshold: 100,
-      autoFullscreenf: true,
-      rubber: true,
-      y: 0,
-      tap: {
-        y: -200
-      }
+      footer: 0
     }
-  },
-
-  onScroll (e) {
-    this.setData({
-      'content.y': e.detail.scrollY
-    })
   },
 
   onScrollReady (e) {
@@ -36,21 +20,5 @@ Page({
     })
   },
 
-  onSetScroll (e) {
-    this.setData({
-      'content.y': e.target.dataset.value
-    })
-  },
 
-  onInput(e) {
-    this.setData({
-      [e.target.dataset.e]: e.detail.value
-    })
-  },
-
-  onSwitch(e) {
-    this.setData({
-      [e.target.dataset.e]: e.detail.value
-    })
-  }
 })  

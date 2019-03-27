@@ -1,34 +1,9 @@
-<el-body animation='200' scrollbar='{{content.scrollbar}}' upperThreshold='{{content.upperThreshold}}' lowerThreshold='{{content.lowerThreshold}}' fullscreen='{{content.autoFullscreenf}}' rubber='{{content.rubber}}' scrollY='{{content.y}}' bindscroll='onScroll' bindready='onScrollReady'>
+<el-body animation='200' scrollbar='{{content.scrollbar}}' upperThreshold='{{content.upperThreshold}}' lowerThreshold='{{content.lowerThreshold}}' fullscreen='{{content.autoFullscreenf}}' rubber='{{content.rubber}}' isscroll='{{false}}' scrollY='{{content.y}}' bindscroll='onScroll' bindready='onScrollReady'>
   <el-head slot='head' head='{{head}}' stickie='true' class='content-head'></el-head>
   <view slot='body'>
     <el-cell title='head高度' label='{{content.head}}' class='content-body'></el-cell>
     <el-cell title='body高度' label='{{content.body}}' class='content-body'></el-cell>
     <el-cell title='footer高度' label='{{content.footer}}' class='content-body'></el-cell>
-    <el-cell title="橡皮筋">
-      <switch slot="content" checked="{{content.rubber}}" data-e="content.rubber" bindchange="onSwitch" />
-    </el-cell>
-    <el-cell title="滚动条">
-      <switch slot="content" checked="{{content.scrollbar}}" data-e="content.scrollbar" bindchange="onSwitch" />
-    </el-cell>
-    <el-cell title="最大下拉值">
-      <input slot="content" value="{{content.upperThreshold}}" data-e="content.upperThreshold" bindinput="onInput" />
-    </el-cell>
-    <el-cell title="最大上拉值">
-      <input slot="content" value="{{content.lowerThreshold}}" data-e="content.lowerThreshold" bindinput="onInput" />
-    </el-cell>
-    <el-cell title='Y轴' class='content-body'>
-      <el-numIndicator slot='content' value='{{content.tap.y}}' data-e='content.tap.y' bindchange='onInput'></el-numIndicator>
-    </el-cell>
-    <view class='container'>
-      <el-button bindtap='onSetScroll' data-value='{{content.tap.y}}'>滚动到{{content.tap.y}}</el-button>
-      <el-button bindtap='onSetScroll' data-value='{{content.scrollButtonY}}'>滚动到底部</el-button>
-      <el-vacancy cont='true' height='1000rpx'>
-        <view slot='cont'>
-          <el-img src='https://gw.alipayobjects.com/mdn/miniapp_social/afts/img/A*pevERLJC9v0AAAAAAAAAAABjAQAAAQ/original' style='margin: 0 auto;display:block;width: 350rpx; height: 320rpx' mode='scaleToFill'/>
-        </view>
-      </el-vacancy>
-      <el-button bindtap='onSetScroll' data-value='0'>置顶</el-button>
-    </view>
   </view>
   <view slot='footer' class='content-footer'>
     页脚 {{content.y}}

@@ -4,5 +4,5 @@
             <slot></slot>
         </text>
     </view>
-    <view class='__scrolltxt-isscroll__' wx:if='{{!omittxt}}'>...</view>
+    <view class='__scrolltxt-isscroll__' wx:if='{{omittxt}}'>...</view>
 </view>

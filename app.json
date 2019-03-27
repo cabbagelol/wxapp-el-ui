@@ -18,7 +18,8 @@
     "pages/demo/demo",
     "pages/tag/tag",
     "pages/layout/layout",
-    "pages/file/file"
+    "pages/file/file",
+    "pages/rolling/rolling"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -47,6 +48,7 @@
     "el-row": "./component/_row/row",
     "el-column": "./component/_column/column",
     "el-layout": "./component/_layout/layout",
-    "el-file": "./component/_file/file"
+    "el-file": "./component/_file/file",
+    "el-rolling": "./component/_rolling/rolling"
   }
 }
