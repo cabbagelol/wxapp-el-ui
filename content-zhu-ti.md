@@ -4,7 +4,7 @@
 
 ---
 
-> [!TIP|style:flat|label:告知|iconVisibility:hidden]
+> \[!TIP\|style:flat\|label:告知\|iconVisibility:hidden\]  
 > Body在安卓低端表现不佳，当大量内容时不建议使用body
 
 ![](/assets/body01.png)
@@ -23,26 +23,7 @@
 
 body控件会对head和footer识别，计算出中间区域的适配高度。
 
-### 属性
-
-| 名称 | 说明 | 版本 |
-| :--- | :--- | :--- |
-| scrollY | 纵轴 | 1.0.2 |
-| rubber | 橡皮筋，支持android与ios | 1.0.2 |
-| upperThreshold | 顶距最大下拉距离，当0时为默认 | 1.0.2 |
-| lowerThreshold | 底距最大上拉距离，当0时为默认,默认最大值无限 | 1.0.2 |
-| animation | 动画时间，取值在0到无限，1000为一秒，建议设置200 | 1.0.2 |
-
 ### 事件
-
-`bindscroll`: function \(e\) {}
-
-@e.detail
-
-| 名称 | 说明 | 版本 |
-| :--- | :--- | :--- |
-| ~~scrollX~~ | ~~横轴\(预留\)~~ | ~~1.0.2~~ |
-| scrollY | 纵轴 | 1.0.2 |
 
 `bindready`: function \(e\) {}
 
@@ -51,7 +32,6 @@ body控件会对head和footer识别，计算出中间区域的适配高度。
 | 名称 | 说明 | 版本 |
 | :--- | :--- | :--- |
 | body | 当body准备好时返回head/body/footer对应高度，scrollButtonY为滚动最底部位置 | 1.0.2 |
-| scrollY | T轴滚动位置 | 1.0.2 |
 
 ### 插槽
 
@@ -100,12 +80,6 @@ body控件会对head和footer识别，计算出中间区域的适配高度。
 
 </el-body>
 ```
-
-### 已知问题
-
-Q: 修改Y轴值，没有触发更新
-
-A: 部分语法需基础库2.6.1以上，对于过低版本微信可能未支持，该问题会在1.0.3中修复
 
 
 
