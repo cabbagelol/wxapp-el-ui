@@ -23,7 +23,10 @@ Component({
 
   methods: {
       onInput (e) {
-        this.triggerEvent('input', e)
+        this.triggerEvent('input', {
+          e: e,
+          value: e.detail.value
+        })
       }
   }
 })

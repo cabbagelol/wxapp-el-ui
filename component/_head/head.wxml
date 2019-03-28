@@ -7,7 +7,7 @@
           wx:if='{{stickie}}'></view>
 
     <view class='__head_block__ {{stickie ? "__head_stickie__" :  ""}}'
-          style='padding:{{nav.statusBarHeight}}px 0 0 0; background: {{head.style.background ? head.style.background : "#FFF"}}'>
+          style='padding:{{nav.statusBarHeight}}px 0 0 0; background: {{head.style.background ? head.style.background : "inherit"}}'>
 
         <view class='__head_block_rbtns__'>
             <view bindtap='onBack' wx:if='{{head.back}}'>

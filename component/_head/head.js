@@ -8,8 +8,11 @@ Component({
       type: Boolean,
       value: false
     },
-    head: Object,
-    stickie: Boolean
+    stickie: {
+      type: Boolean,
+      value: true
+    },
+    head: Object
   },
 
   data: {

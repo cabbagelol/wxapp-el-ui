@@ -2,10 +2,12 @@
 
 .__tag__ {
   display: inline-flex;
-  color: #1A1A1A;
+  color: #1a1a1a;
   margin-right: 10rpx;
+  background-color: #f2f2f2;
+  border-radius: 0.2rem;
 }
- 
+
 .__tag__::last-child {
   margin-right: 0;
 }
@@ -27,16 +29,16 @@
 }
 
 .__tag-3__ {
-    padding: 8rpx 10rpx;
-    font-size: 20rpx;
+  padding: 8rpx 10rpx;
+  font-size: 20rpx;
 }
 
 .__tag-5__ {
-    padding: 12rpx 20rpx;
-    font-size: 24rpx;
+  padding: 12rpx 20rpx;
+  font-size: 24rpx;
 }
 
 .__tag-7__ {
-    padding: 18rpx 25rpx;
-    font-size: 28rpx;
+  padding: 20rpx 40rpx;
+  font-size: 24rpx;
 }
