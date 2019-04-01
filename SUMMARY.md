@@ -3,6 +3,7 @@
 * [引导](README.md)
 * [快速配置](kuai-su-pei-zhi.md)
 * [重写Class类](zhong-xie-class-lei.md)
+* [通用事件](tong-yong-shi-jian.md)
 * [组件](zu-jian.md)
   * [head 导航](chapter1.md)
   * [cell 单元格](cell.md)
