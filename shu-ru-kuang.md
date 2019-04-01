@@ -54,7 +54,7 @@
 ```html
 <el-input bindinput='onInput' title='名称'></el-input>
 
-<el-input bindinput='onInput' value='{{value}}' placeholder='清输入内容'>
+<el-input bindinput='onInput' value='{{value}}' placeholder='清输入内容' data-e='value'>
     <el-input-title omit='true'>
         自定义内容
     </el-input-itile>
@@ -66,12 +66,17 @@ Page({
     data: {
         value: ''
     },
-
-    onInput (e) {
-        // do
-    }
+    
+    /**
+    * 通用的input事件(1)
+    */
+    onInput(e) {
+      this.setData({
+        [e.target.dataset.e]: e.detail.value
+      })
+    },
 })
 ```
 
-
+\(1\)通用事件
 

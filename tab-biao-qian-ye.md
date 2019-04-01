@@ -40,14 +40,14 @@ Tab标签左侧与右侧区域:
 | :--- | :--- | :--- |
 | left | 左侧插槽 | 1.0.1 |
 | right | 右侧插槽 | 1.0.1 |
+| title-\* | 自定义标题插槽，一旦使用该插槽，默认标题将自动隐藏，因此需要开发者手动重新设置 | 1.0.2 |
 
 ```html
+<!-- 使用方法 -->
 <el-tab class='tab' animation='{{tab.animation}}' scroll='{{tab.scroll}}' active='{{tab.title}}' bindchange='onTabChange'>
 
-  <!-- 左侧区域 -->
-  <view slot='left'>
-    左侧
-  </view>
+  <!-- 左侧自定义区域 -->
+  <view slot='left'></view>
 
   <el-tab-content title='{{item.title}}' wx:for='{{tab.data}}' wx:key='{{index}}' disabled='{{item.disabled}}'>
     <block wx:if='{{tab.content}}'>
@@ -57,13 +57,67 @@ Tab标签左侧与右侧区域:
     </block>
   </el-tab-content>
 
-  <!-- 右侧区域 -->
-  <view slot='right'>
-    右侧
-  </view>
+  <!-- 右侧自定义区域 -->
+  <view slot='right'></view>
 
 </el-tab>
+
+
+
+<!-- 自定义标题使用方法 -->
+<el-tab>
+  <view slot='title-{{item.title}}' wx:for='{{tab.data}}' wx:key='{{index}}'>
+    <!-- 自定义标题 -->
+  </view>
+</el-tab>
 ```
+
+```js
+Page({
+    data: {
+        tab: {
+            custom: false,
+            scroll: true,
+            animation: true,
+            content: true,
+            title: '人才',
+            data: [
+            {
+              title: '领袖',
+              cont: '国家导航',
+              disabled: true
+            },
+            {
+              title: '设计',
+              cont: '人物互交'
+            },
+            {
+              title: '人才',
+              cont: '公司高层'
+            },
+            {
+              title: '科技技能',
+              cont: '城市推动力'
+            },
+            {
+              title: '水源',
+              cont: '人类来源',
+            },
+            {
+              title: '动物',
+              cont: '生物链',
+            },
+            {
+              title: '代码',
+              cont: '码农构建'
+            },
+          ]
+        }
+    }
+})
+```
+
+### 
 
 ### 样式
 
