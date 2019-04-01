@@ -5,7 +5,7 @@
   color: #1a1a1a;
   margin-right: 10rpx;
   background-color: #f2f2f2;
-  border-radius: 0.2rem;
+  border-radius: .2rem;
 }
 
 .__tag__::last-child {
@@ -29,7 +29,7 @@
 }
 
 .__tag-3__ {
-  padding: 8rpx 10rpx;
+  padding: 5rpx 15rpx;
   font-size: 20rpx;
 }
 

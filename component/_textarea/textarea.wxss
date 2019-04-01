@@ -1,47 +1,45 @@
 .__textarea__ {
-  padding: 20rpx 40rpx;
-  background-color: #fff;
+    padding: 20rpx 40rpx;
+    background-color: #FFF;
 }
 
 .__textarea_cont__ {
-  position: relative;
+    position: relative;
 }
 
 .__textarea_cont__ textarea {
-  word-wrap: break-word;
-  white-space: normal;
-  word-break: break-all;
-}
+    word-wrap:break-word;
+    white-space:normal;
+    word-break:break-all;
+    overflow: auto;
+ }
 
 /*限制符*/
-
 .__textarea_contwordcount__ {
-  position: absolute;
-  bottom: 5px;
-  right: 5px;
-  font-size: 30rpx;
-  color: #999;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    font-size: 30rpx;
+    color: #999;
 }
 
 /*内容*/
-
 .__textarea__ .__input__title__ {
-  display: inline-flex;
-  align-content: center;
-  white-space: nowrap;
-  font-size: 30rpx;
-  min-width: 90px;
-  max-height: 100px;
-  color: #000;
-  margin: 0 10px 10px 0;
+    display: inline-flex;
+    align-content: center;
+    white-space: nowrap;
+    font-size: 30rpx;
+    min-width: 90px;
+    max-height: 100px;
+    color: #000;
+    margin: 0 10px 10px 0;
 }
 
 .__textarea__ textarea {
-  border: 1px solid #f2f2f2;
-  border-radius: 0.3rem;
-  padding: 10px 10px 30px 10px;
-  min-height: 132px;
-  width: calc(100% - 20px);
-  font-size: 30rpx;
-  transition: all 0.26s;
+    border: 1px solid #F2F2F2;
+    border-radius: .3rem;
+    padding: 10px 10px 30px 10px;
+    min-height: 132px;
+    width: calc(100% - 20px);
+    font-size: 30rpx;
 }

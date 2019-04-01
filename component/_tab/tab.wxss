@@ -13,6 +13,10 @@
   /* width: calc(100% - 80rpx); *//* overflow: auto; */
 }
 
+.__tab-nav-title__ {
+  display: inline-flex;
+}
+
 .__tab-nav-item__ {
   font-size: 36rpx;
   white-space: nowrap;

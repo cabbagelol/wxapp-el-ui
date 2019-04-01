@@ -34,7 +34,6 @@ Page({
   },
 
   onSlider (e) {
-    console.log(e)
     this.setData({
       [e.target.dataset.e]: e.detail.value
     })

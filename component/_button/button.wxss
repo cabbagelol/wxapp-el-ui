@@ -41,5 +41,5 @@
 }
 
 .__button_radius__ {
-  border-radius: 50px;
+  border-radius: 50px  !important;
 }

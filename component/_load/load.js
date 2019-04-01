@@ -1,17 +1,22 @@
+const config = require("../index.js");
+
 Component({
   properties: {
     size: String,
     type: String
   },
-  
-  ready () {
+
+  ready() {
     var that = this
-    wx.createSelectorQuery().in(this).select('#load').boundingClientRect(function (rect) {
-      if (!!that.data.size) {
-        that.setData({
-          size: (rect.width * rect.height) / 1000
-        })
-      }
-    }).exec()
+    if (config.util.in(that)) {
+      config.util.$('#load').then(function(e) {
+        var load = e['#load'];
+        if (!that.data.size) {
+          that.setData({
+            size: ((load.width || 1) * (load.height || 1)) / 1000
+          })
+        }
+      })
+    }
   },
 })

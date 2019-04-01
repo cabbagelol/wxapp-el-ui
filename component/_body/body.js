@@ -31,15 +31,14 @@ Component({
     if (config.util.in(that)) {
       config.util.$('.__content-head__').then(function(e) {
         that.setData({
-          'content.head.height': e['.'].height
+          'content.head.height': e['.__content-head__'].height
         })
       })
       config.util.$('.__content-footer__').then(function(e) {
         that.setData({
-          'content.footer.height': e['.'].height
+          'content.footer.height': e['.__content-footer__'].height
         })
       })
-      
       config.util.$('.__content-body__').then(function(e) {
         const height = info.screenHeight - that.data.content.head.height - that.data.content.footer.height;
         that.setData({ 'content.body.height': height })

@@ -1,9 +1,18 @@
 <el-head head='{{head}}' stickie='true'></el-head>
-
-<el-tab class='tab' animation='{{tab.animation}}' isscroll='{{tab.scroll}}' active='{{tab.title}}' bindchange ='onTabChange'>
+<el-tab class='tab' animation='{{tab.animation}}' isscroll='{{tab.scroll}}' active='{{tab.title}}' bindchange='onTabChange'>
   <view slot='left' class='tab-custom' wx:if='{{tab.custom}}'>
     左侧
   </view>
+
+  <view class='tab-title-custom' slot='title-人才'>
+    <view>人才</view>
+    <view>战略意义</view>
+  </view>
+
+  <view class='tab-title-custom' slot='title-水源'>
+    水源 <el-tag size='3' color='red' textColor='#FFF'>new</el-tag>
+  </view>
+
   <el-tab-content title='{{item.title}}' wx:for='{{tab.data}}' wx:key='{{index}}' disabled='{{item.disabled}}'>
     <block wx:if='{{tab.content}}'>
       <view class='tab-content'>
@@ -15,7 +24,6 @@
     右侧
   </view>
 </el-tab>
-
 <view class='container'>
   <el-cell title="顺序号">
     <input slot="content" value="{{tab.index}}" data-e="tab.index" bindinput="onInput" disabled/>

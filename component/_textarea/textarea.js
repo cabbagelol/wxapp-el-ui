@@ -1,9 +1,15 @@
+const config = require("../index.js");
+
 Component({
   externalClasses: [
     'el-textarea',
     'el-title',
     'el-wordcount'
   ],
+
+  options: {
+    addGlobalClass: true
+  },
 
   properties: {
     textarea: {
@@ -28,9 +34,18 @@ Component({
   },
 
   data: {
+    textareaMaxHeight: 0,
     placeholder: '输入内容',
     value: '',
     cursor: 0
+  },
+
+  ready() {
+    var that = this
+    var sysinfo = wx.getSystemInfoSync();
+    that.setData({
+      textareaMaxHeight: sysinfo.screenHeight / 2
+    })
   },
 
   methods: {

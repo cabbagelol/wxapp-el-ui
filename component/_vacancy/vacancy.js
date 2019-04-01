@@ -1,16 +1,14 @@
 Component({
-    options: {
-        multipleSlots: true
-    },
+  options: {
+    multipleSlots: true
+  },
 
-    properties: {
-        cont: Boolean,
-        height: String
-    },
+  properties: {
+    cont: Boolean,
+    height: String
+  },
 
-    data: {
-        cont: false
-    },
-
-    methods: {}
+  data: {
+    cont: false
+  }
 })

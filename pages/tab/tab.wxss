@@ -1,6 +1,33 @@
 .tab {
   display: block;
-  border-top: 1px solid #F9F9F9;
+  border-top: 1px solid #f9f9f9;
+}
+
+.tab-title-custom {
+  display: inline-flex;
+  align-items: center;
+}
+
+.tab-title-custom el-tag {
+  margin-left: 10rpx;
+}
+
+.tab-title-custom > view:first-child {
+  font-size: 36rpx;
+  color: #999;
+}
+
+.tab-title-custom > view:last-child {
+  display: block;
+  margin: 0 auto;
+  font-size: 20rpx;
+  padding: 0 15rpx;
+  border-radius: 50px;
+  color: #999;
+  width: 40rpx;
+  overflow: hidden;
+  line-height: 20rpx;
+  white-space: pre-line;
 }
 
 .tab-content {

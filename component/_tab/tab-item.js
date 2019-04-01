@@ -21,13 +21,7 @@ Component({
 
   relations: {
     './tab': {
-      type: 'parent',
-      linked(target) {
-      },
-      linkChanged(target) {
-      },
-      unlinked(target) {
-      }
+      type: 'parent'
     }
   },
 

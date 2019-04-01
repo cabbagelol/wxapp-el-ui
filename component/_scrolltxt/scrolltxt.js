@@ -53,7 +53,6 @@ Component({
           if (i.id == 'marquee') { windowWidth = i.width; }
           if (i.id == 'marquee_cont') { maxscrollwidth = i.width; }
         }
-        console.log(maxscrollwidth < windowWidth)
         that.setData({
           omittxt: maxscrollwidth < windowWidth ? true : false
         })

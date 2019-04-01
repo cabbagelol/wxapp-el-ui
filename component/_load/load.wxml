@@ -1,8 +1,7 @@
 <!-- 装载 -->
 <view class='_load_' id='load' style='transform: scale({{size || 1}})'>
   <view class='_load_main' wx:if='{{type == "main" || type == ""}}'></view>
-  <view class='_load_circular loading' wx:elif='{{type == "circular"}}'>
-      <view wx:for='{{5}}' wx:key='{{index}}'></view>
+  <view class='_load_circular location_indicator' wx:elif='{{type == "location"}}'>
   </view>
   <view class='_load_line' wx:elif='{{type == "line"}}'></view>
 </view>
