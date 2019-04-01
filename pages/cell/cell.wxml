@@ -28,10 +28,6 @@
       <icon  slot='icon'  type="search" size="15" />
   </el-cell>
   
-  <!-- islink -->
-  <text>inlink</text>
-  <el-cell islink="true" class="label-cell"></el-cell>
-
   <el-cell icon='true' title='所有'  label="点击下我试试" islink='true' bindclick='onCellClick'>
       <icon  slot='icon'  type="success" size="15" />
       <view slot='content'>

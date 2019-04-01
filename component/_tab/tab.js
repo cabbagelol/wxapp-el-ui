@@ -51,11 +51,9 @@ Component({
     if (config.util.in(that)) {
       config.util.$('.__tab-nav-title__').then(function(e) {
         for (var i = 0; i < e.length; i++) {
-          console.log(e['.__tab-nav-title__' + i].width > 0)
           if (e['.__tab-nav-title__' + i].width > 0) {
             that.data.tabs.data[i]['isTitle'] = true
           }
-          // console.log(that.data.tabs.data[i])
         }
         that.setData({
           'tabs.data': that.data.tabs.data
@@ -71,7 +69,7 @@ Component({
         that.setSelectContent();
         that.onChange();
       }
-    }).exec()
+    }).exec();
   },
 
   created() {

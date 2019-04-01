@@ -1,6 +1,5 @@
 el-body,
 el-button,
-el-img,
 el-cell,
 el-vacancy,
 el-row,
@@ -11,5 +10,5 @@ el-column {
 el-img,
 el-layout {
   max-width: 100%;
-  max-height: 100vh;
+  max-height: 100%;
 }
