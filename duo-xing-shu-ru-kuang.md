@@ -55,11 +55,18 @@ Page({
         value: ''
     },
 
-    onTextarea (e) {
-        // do
-    }
+    /**
+    * 通用的textarea事件(1)
+    */
+    onTextarea(e) {
+        this.setData({
+            [e.target.dataset.e]: e.detail.value
+        })
+    },
 })
 ```
+
+\(1\)[通用事件](/tong-yong-shi-jian.md)
 
 ---
 

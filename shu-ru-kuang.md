@@ -66,7 +66,7 @@ Page({
     data: {
         value: ''
     },
-    
+
     /**
     * 通用的input事件(1)
     */
@@ -78,5 +78,5 @@ Page({
 })
 ```
 
-\(1\)通用事件
+\(1\)[通用事件](/tong-yong-shi-jian.md)
 
