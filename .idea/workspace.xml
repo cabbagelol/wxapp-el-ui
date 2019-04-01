@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ec6a3c75-8d73-4fbb-abdc-25d4f1419cda" name="Default Changelist" comment="style 2019-3-22 09:59:59">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="ec6a3c75-8d73-4fbb-abdc-25d4f1419cda" name="Default Changelist" comment="style 2019-3-22 09:59:59" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -83,8 +81,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
       <pane id="Scope" />
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -128,6 +126,7 @@
       <workItem from="1553053764898" duration="2565000" />
       <workItem from="1553128110707" duration="12826000" />
       <workItem from="1553737263116" duration="611000" />
+      <workItem from="1554090535653" duration="599000" />
     </task>
     <task id="LOCAL-00001" summary="2019-3-14 17:25:21">
       <created>1552555525486</created>
@@ -196,12 +195,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38111000" />
+    <option name="totallyTimeSpent" value="38710000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-201" y="247" width="1936" height="1096" extended-state="1" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25226668" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25493333" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
