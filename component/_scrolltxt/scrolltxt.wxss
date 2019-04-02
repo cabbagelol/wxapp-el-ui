@@ -4,11 +4,15 @@
   position: relative;
 }
 
+.__scrolltxt-cont__ {
+  overflow: hidden;
+  width: calc(100% - 30rpx)
+}
+
 .__scrolltxt-isscroll__ {
   position: absolute;
   bottom:  0;
   right: 0;
-  background: #FFF;
 }
 
 .__scrolltxt-box__ {

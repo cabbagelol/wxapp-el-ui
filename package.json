@@ -1,13 +1,23 @@
 {
   "name": "wxapp-el-ui",
-  "version": "1.0.2",
+  "version": "0.0.3",
   "repository": {
     "type": "git",
-    "url": "https://github.com/cabbagelol/wxapp-el-ui"
+    "url": "git+https://github.com/cabbagelol/wxapp-el-ui.git"
   },
   "license": "ISC",
-  "description": "",
+  "description": "小程序组件库，仅适用微信小程序。若有疑问请提交到Issues中。",
   "miniprogram": "dist",
   "devDependencies ": {},
-  "dependencies": {}
+  "dependencies": {
+  },
+  "bugs": {
+    "url": "https://github.com/cabbagelol/wxapp-el-ui/issues"
+  },
+  "homepage": "https://github.com/cabbagelol/wxapp-el-ui#readme",
+  "main": ".eslintrc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": ""
 }

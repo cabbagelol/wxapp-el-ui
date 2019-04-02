@@ -1,4 +1,8 @@
+const app = getApp();
+
 Page({
+  $: app.e.$,
+
   data: {
     head: {
       stickie: true,

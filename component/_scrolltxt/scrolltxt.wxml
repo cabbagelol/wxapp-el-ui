@@ -1,8 +1,10 @@
-<view class='__scrolltxt__' id='marquee'>
+<view class='__scrolltxt__'>
+  <view class='__scrolltxt-cont__' id='marquee'>
     <view class="__scrolltxt-box__ {{marquee.nowrap ? 'marqueeBox-nowrap' : ''}}" style="transform: translateX({{marquee.x}}px) translateY({{marquee.y}}px)" bindtouchstart='onStart' bindtouchmove='onMove' bindtouchend='onEnd'>
-        <text class='marquee_text' id='marquee_cont'>
+      <text class='marquee_text' id='marquee_cont'>
             <slot></slot>
         </text>
     </view>
-    <view class='__scrolltxt-isscroll__' wx:if='{{omittxt}}'>...</view>
+  </view>
+  <view class='__scrolltxt-isscroll__' wx:if='{{omittxt}}'>...</view>
 </view>
