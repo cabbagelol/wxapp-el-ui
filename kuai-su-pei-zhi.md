@@ -14,7 +14,7 @@
 
 将`component`与`style`文件夹拷贝到自己的项目中\(请注意控件的依赖，详情查看控件“依赖”栏目\)，依照下方教程方式使用组件。
 
-1.在app.json或当前page.json文件中配置`usingComponents`参数。
+1.在app.json或当前page.json文件中配置`usingComponents`参数。所有控件的配置单你可以通过此[传送门](https://github.com/cabbagelol/wxapp-el-ui/blob/master/app.json)，查阅usingComponents字段内容。
 
 ```json
 "usingComponents": {
