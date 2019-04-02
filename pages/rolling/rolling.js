@@ -1,4 +1,8 @@
+const app = getApp();
+
 Page({
+  $: app.e.$,
+
   data: {
     head: {
       title: '滚动',
@@ -36,16 +40,4 @@ Page({
       'rolling.y': e.target.dataset.value
     })
   },
-
-  onInput(e) {
-    this.setData({
-      [e.target.dataset.e]: e.detail.value
-    })
-  },
-
-  onSwitch(e) {
-    this.setData({
-      [e.target.dataset.e]: e.detail.value
-    })
-  }
 })

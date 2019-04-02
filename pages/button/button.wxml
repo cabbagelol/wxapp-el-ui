@@ -5,18 +5,18 @@
   </el-button>
 
   <el-cell title='大小' label='mini,normal,large'>
-    <input slot="content" value="{{button.size}}" data-e="button.size" bindinput="onInput" />
+    <input slot="content" value="{{button.size}}" data-e="button.size" bindinput="$" />
   </el-cell>
   <el-cell title='文本方向' label='left,center,right'>
-    <input slot="content" value="{{button.align}}" data-e="button.align" bindinput="onInput" />
+    <input slot="content" value="{{button.align}}" data-e="button.align" bindinput="$" />
   </el-cell>
   <el-cell title='圆角'>
-    <switch slot="content" checked="{{button.radius}}" data-e="button.radius" bindchange="onSwitch" />
+    <switch slot="content" checked="{{button.radius}}" data-e="button.radius" bindchange="$" />
   </el-cell>
   <el-cell title='禁用'>
-    <switch slot="content" checked="{{button.disabled}}" data-e="button.disabled" bindchange="onSwitch" />
+    <switch slot="content" checked="{{button.disabled}}" data-e="button.disabled" bindchange="$" />
   </el-cell>
   <el-cell title='加载'>
-    <switch slot="content" checked="{{button.load}}" data-e="button.load" bindchange="onSwitch" />
+    <switch slot="content" checked="{{button.load}}" data-e="button.load" bindchange="$" />
   </el-cell>
 </view>

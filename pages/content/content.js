@@ -19,6 +19,4 @@ Page({
       'content.scrollButtonY': e.detail.body.scrollButtonY
     })
   },
-
-
 })  

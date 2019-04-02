@@ -1,4 +1,8 @@
+const app = getApp();
+
 Page({
+  $: app.e.$,
+  
   data: {
     head: {
       title: '标签页',
@@ -51,16 +55,4 @@ Page({
       'tab.title': e.detail.title
     })
   },
-
-  onInput(e) {
-    this.setData({
-      [e.target.dataset.e]: e.detail.value
-    })
-  },
-
-  onSwitch(e) {
-    this.setData({
-      [e.target.dataset.e]: e.detail.value
-    })
-  }
 })

@@ -5,22 +5,22 @@
     scrollY='{{rolling.y}}' bindscroll='onScroll' bindready='onScrollReady' class='rolling-body'>
 
     <el-cell title="橡皮筋">
-      <switch slot="content" checked="{{rolling.rubber}}" data-e="rolling.rubber" bindchange="onSwitch" />
+      <switch slot="content" checked="{{rolling.rubber}}" data-e="rolling.rubber" bindchange="$" />
     </el-cell>
     <el-cell title="滚动条">
-      <switch slot="content" checked="{{rolling.scrollbar}}" data-e="rolling.scrollbar" bindchange="onSwitch" />
+      <switch slot="content" checked="{{rolling.scrollbar}}" data-e="rolling.scrollbar" bindchange="$" />
     </el-cell>
     <el-cell title="是否滚动">
-      <switch slot="content" checked="{{rolling.isscroll}}" data-e="rolling.isscroll" bindchange="onSwitch" />
+      <switch slot="content" checked="{{rolling.isscroll}}" data-e="rolling.isscroll" bindchange="$" />
     </el-cell>
     <el-cell title="最大下拉值">
-      <input slot="content" value="{{rolling.upperThreshold}}" data-e="rolling.upperThreshold" bindinput="onInput" />
+      <input slot="content" value="{{rolling.upperThreshold}}" data-e="rolling.upperThreshold" bindinput="$" />
     </el-cell>
     <el-cell title="最大上拉值">
-      <input slot="content" value="{{rolling.lowerThreshold}}" data-e="rolling.lowerThreshold" bindinput="onInput" />
+      <input slot="content" value="{{rolling.lowerThreshold}}" data-e="rolling.lowerThreshold" bindinput="$" />
     </el-cell>
     <el-cell title='Y轴' class='content-body'>
-      <el-numIndicator slot='content' value='{{rolling.tap.y}}' data-e='rolling.tap.y' bindchange='onInput'></el-numIndicator>
+      <el-numIndicator slot='content' value='{{rolling.tap.y}}' data-e='rolling.tap.y' bindchange='$'></el-numIndicator>
     </el-cell>
     <view class='container'>
       <el-button bindtap='onSetScroll' data-value='{{rolling.tap.y}}'>滚动到{{rolling.tap.y}}</el-button>

@@ -27,16 +27,4 @@ Page({
       }
     )
   },
-
-  onInput (e) {
-    this.setData({
-      [e.target.dataset.e]: e.detail.value
-    })
-  },
-
-  onSwitch (e) {
-    this.setData({
-      [e.target.dataset.e]: e.detail.value
-    })
-  }
 })

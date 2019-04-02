@@ -1,7 +1,0 @@
-<view class="wrapper">
-  <view class="scroller" bindtouchstart="_start" bindtouchmove="_move" bindtouchend="_end" style="height:{{scrollWidth}}px;transition: transform {{duration/1000}}s;transform:translateZ(0) translateY({{distY}}px)">
-    <view wx:key="{{item}}" wx:for="{{10}}">
-      {{index}}
-    </view>
-  </view>
-</view>

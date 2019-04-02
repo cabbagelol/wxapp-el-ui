@@ -5,8 +5,4 @@ Page({
       back: true
     },
   },
-
-  onLoad (options) {
-
-  },
 })

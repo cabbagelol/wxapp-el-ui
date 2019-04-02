@@ -39,7 +39,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 17,
+			"current": 8,
 			"list": [
 				{
 					"id": -1,
@@ -77,8 +77,8 @@
 					"scene": null
 				},
 				{
-					"id": -1,
-					"name": "popup",
+					"id": 5,
+					"name": "弹窗",
 					"pathName": "pages/popup/popup",
 					"query": "",
 					"scene": null
@@ -98,8 +98,8 @@
 					"scene": null
 				},
 				{
-					"id": -1,
-					"name": "空",
+					"id": 8,
+					"name": "空置区",
 					"pathName": "pages/vacancy/vacancy",
 					"query": "",
 					"scene": null
@@ -164,6 +164,7 @@
 					"id": -1,
 					"name": "滚动",
 					"pathName": "pages/rolling/rolling",
+					"query": "",
 					"scene": null
 				}
 			]

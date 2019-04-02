@@ -26,22 +26,22 @@
 </el-tab>
 <view class='container'>
   <el-cell title="顺序号">
-    <input slot="content" value="{{tab.index}}" data-e="tab.index" bindinput="onInput" disabled/>
+    <input slot="content" value="{{tab.index}}" data-e="tab.index" bindinput="$" disabled/>
   </el-cell>
   <el-cell title="标题">
-    <input slot="content" value="{{tab.title}}" data-e="tab.title" bindinput="onInput" disabled />
+    <input slot="content" value="{{tab.title}}" data-e="tab.title" bindinput="$" disabled />
   </el-cell>
 
   <el-cell title="自定义" label="中卡槽">
-    <switch slot="content" checked="{{tab.custom}}" data-e="tab.custom" bindchange="onSwitch" />
+    <switch slot="content" checked="{{tab.custom}}" data-e="tab.custom" bindchange="$" />
   </el-cell>
   <el-cell title="动画">
-    <switch slot="content" checked="{{tab.animation}}" data-e="tab.animation" bindchange="onSwitch" />
+    <switch slot="content" checked="{{tab.animation}}" data-e="tab.animation" bindchange="$" />
   </el-cell>
   <el-cell title="是否允许滚动">
-    <switch slot="content" checked="{{tab.scroll}}" data-e="tab.scroll" bindchange="onSwitch" />
+    <switch slot="content" checked="{{tab.scroll}}" data-e="tab.scroll" bindchange="$" />
   </el-cell>
   <el-cell title="是否展现内容">
-    <switch slot="content" checked="{{tab.content}}" data-e="tab.content" bindchange="onSwitch" />
+    <switch slot="content" checked="{{tab.content}}" data-e="tab.content" bindchange="$" />
   </el-cell>
 </view>

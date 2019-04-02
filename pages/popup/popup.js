@@ -1,4 +1,8 @@
+const app = getApp();
+
 Page({
+  $: app.e.$,
+  
   data: {
     head: {
       title: '弹窗',
@@ -25,16 +29,4 @@ Page({
       'scroll.orientation': this.data.array[e.detail.value].v
     })
   },
-
-  onInput(e) {
-    this.setData({
-      [e.target.dataset.e]: e.detail.value
-    })
-  },
-
-  onSwitch(e) {
-    this.setData({
-      [e.target.dataset.e]: e.detail.value
-    })
-  }
 })
