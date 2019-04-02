@@ -6,6 +6,8 @@
 <el-input value='{{value}}' data-e='value' bindinput='onInput' />
 ```
 
+这里提供一个data-e的声明，被方便被onInput捕抓。
+
 ```js
 Page({
   data: {
@@ -32,5 +34,5 @@ Page({
 })
 ```
 
-这样你便不需要处理每一个数据，当然form也是不错选择。这类处理函数在原生控件或是Elui控件是支持的。
+这样你便不需要处理每一个数据，当然form也是可以实现。这类处理函数在原生控件或是Elui控件是支持的。
 
