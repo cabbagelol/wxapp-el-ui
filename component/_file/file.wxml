@@ -1,0 +1,15 @@
+<view>
+  <view bindtap='onPopup'>
+    <slot/>
+  </view>
+
+  <el-popup show='{{file.show}}' position='bottom' modal='{{file.modal}}' bindchange='onPopup' animation='true'>
+      <view slot='content' class='__file-popup__'>
+        <view class='__file-popup-item__' data-type='camera' bindtap='onSelechFileType' wx:if='{{camera}}'>拍摄</view>
+        <view class='__file-popup-item__' data-type='album' bindtap='onSelechFileType' wx:if='{{album}}'>相册</view>
+        <view class='__file-popup-item__' data-type='file' bindtap='onSelechFileType' wx:if='{{file}}'>文件</view>
+        <view class='__file-popup-item__' data-type='video' bindtap='onSelechFileType' wx:if='{{video}}'>视频</view> 
+        <view class='__file-popup-item__ __file-popup-cancel__'  bindtap='onPopup'>取消</view>
+      </view>
+  </el-popup>
+</view>

@@ -10,7 +10,8 @@
   display: inline-flex;
   padding: 0 40rpx;
   /* min-width: calc(100% - 80rpx); */
-  /* width: calc(100% - 80rpx); *//* overflow: auto; */
+  width: calc(100% - 80rpx);
+  /* overflow: auto; */
 }
 
 .__tab-nav-title__ {
