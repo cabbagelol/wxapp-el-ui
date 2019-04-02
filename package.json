@@ -1,19 +1,13 @@
 {
   "name": "wxapp-el-ui",
   "version": "1.0.2",
-  "devDependencies ": {
-    "babel-core": "^6.26.3",
-    "babel-loader": "^7.1.5",
-    "babel-plugin-module-resolver": "^3.1.1",
-    "babel-preset-env": "^1.7.0",
-    "eslint": "^5.3.0",
-    "eslint-loader": "^2.1.0",
-    "webpack": "^4.16.5",
-    "webpack-node-externals": "^1.7.2",
-    "eslint-config-airbnb-base": "13.1.0",
-    "eslint-plugin-import": "^2.14.0",
-    "eslint-plugin-node": "^7.0.1",
-    "eslint-plugin-promise": "^3.8.0"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cabbagelol/wxapp-el-ui"
   },
+  "license": "ISC",
+  "description": "",
+  "miniprogram": "dist",
+  "devDependencies ": {},
   "dependencies": {}
 }
