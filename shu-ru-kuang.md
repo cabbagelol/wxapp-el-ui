@@ -28,6 +28,7 @@
 | mustchoose | Boolean | false | 是否出现必选符 | 1.0.1 |
 | placeholder | String | "" | 预选 | 1.0.1 |
 | value | String | "" | 值 | 1.0.1 |
+| clear | Boolean | false | 擦除键 | 1.0.2 |
 
 \* title优先于el-input-title，当title属性存在时以title内容为准
 
@@ -48,6 +49,14 @@
 | 名称 | 说明 | 版本 |
 | :--- | :--- | :--- |
 | value | 值 | 1.0.1 |
+
+### 插槽
+
+尾部插槽:
+
+| 名称 | 说明 | 版本 |
+| :--- | :--- | :--- |
+| right | 尾部插槽 | 1.0.2 |
 
 ### 使用
 
