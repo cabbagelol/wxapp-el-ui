@@ -21,4 +21,4 @@ $ git clone https://github.com/cabbagelol/wxapp-el-ui.git (建议)
     <el-head head="{{head}}"></el-head>
 ```
 
-关于更多的教程与使用，请参考http://hn.cabbagelol.net/wxapp-el-ui\
+关于更多的教程与使用，请参考http://hn.cabbagelol.net/wxapp-el-ui
