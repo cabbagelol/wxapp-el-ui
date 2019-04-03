@@ -16,6 +16,7 @@
   * [refresh 下拉刷新](xia-la-shua-xin.md)
   * [tab 标签页](tab-biao-qian-ye.md)
   * [rolling 滚动](rolling-gun-dong.md)
+  * [cellswipe ](cellswipe.md)
 * [界面](jie-mian.md)
   * [load 加载符](jia-zai-fu.md)
   * [button 按钮](an-niu.md)
