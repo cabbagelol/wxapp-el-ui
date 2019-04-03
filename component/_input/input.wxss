@@ -5,7 +5,7 @@
   background-color: #fff;
 }
 
-.__input__ > view:last-child {
+.__input__ > view.__input-cont__ {
   width: 100%;
   display: inline-flex;
   align-items: center;
@@ -28,6 +28,21 @@
   margin: 0 !important;
 }
 
+.__input__ .__input-right__ {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-end;
+  white-space: nowrap;
+}
+
+.__input__ .__input-clear__ {
+  margin-left: 20rpx;
+  width: 30rpx;
+  display: inline-flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
 .__input__ .__input__input__ {
   width: 100%;
 }
@@ -35,4 +50,11 @@
 .__input__ input {
   width: 100%;
   font-size: 30rpx;
+  height: 100%;
+  display: inline-flex;
+  align-items: center;
+}
+
+.__input-clear__ {
+  width: 30rpx;
 }

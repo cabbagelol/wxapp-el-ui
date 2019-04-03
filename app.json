@@ -18,7 +18,8 @@
     "pages/tag/tag",
     "pages/layout/layout",
     "pages/file/file",
-    "pages/rolling/rolling"
+    "pages/rolling/rolling",
+    "pages/cellswipe/cellswipe"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -48,6 +49,7 @@
     "el-column": "./component/_column/column",
     "el-layout": "./component/_layout/layout",
     "el-file": "./component/_file/file",
-    "el-rolling": "./component/_rolling/rolling"
+    "el-rolling": "./component/_rolling/rolling",
+    "el-cellswipe": "./component/_cellswipe/cellswipe"
   }
 }

@@ -1,4 +1,5 @@
-._load_ {
+.__load__ {
+  display: block;
 }
 
 /* 标准 */
@@ -9,8 +10,8 @@
   height: 35rpx;
   border-radius: 50%;
   position: relative;
-  border: 5rpx solid rgba(0, 0, 0, 0.1);
-  border-top-color: #18b6c1;
+  /* border: 5rpx solid rgba(0, 0, 0, 0.1); */
+  /* border-top-color: #18b6c1; */
   transform: rotate(360deg);
   animation: stretchdelay 0.5s infinite ease-in-out;
 }
@@ -34,7 +35,7 @@
   height: 40rpx;
 }
 
-._load_line:before, ._load_line:after {
+._load_line > view {
   margin: 0 auto;
   content: "";
   display: block;
@@ -45,14 +46,14 @@
   border-radius: 0.1rem;
 }
 
-._load_line:before {
+._load_line > view:first-child {
   animation: k-loadingK 2s ease-in-out infinite, k-loadingM 0.66s ease-in-out infinite;
-  background: rgba(0, 0, 0, 0.2);
+  
 }
 
-._load_line:after {
+._load_line > view:last-child {
   animation: k-loadingL 2s ease-in-out infinite, k-loadingN 0.66s ease-in-out infinite;
-  background: #18b6c1;
+
 }
 
 @keyframes k-loadingK {
@@ -97,26 +98,24 @@
   content: "";
 }
 
-.location_indicator:before {
+.location_indicator > view:first-child {
   position: absolute;
   left: calc(50% - 12.5rpx);
   width: 25rpx;
   height: 25rpx;
   border-radius: 100% 100% 100% 0;
-  box-shadow: 0px 0px 0px 5rpx #18b6c1;
   -webkit-animation: mapping 1s linear infinite;
   animation: mapping 1s linear infinite;
   -webkit-transform: rotate(-46deg);
   transform: rotate(-46deg);
 }
 
-.location_indicator:after {
+.location_indicator > view:last-child {
   position: absolute;
   width: 40rpx;
   height: 10rpx;
   border-radius: 100%;
   left: calc(50% - 20rpx);
-  background-color: rgba(0, 0, 0, 0.06);
   bottom: 0;
   z-index: 0;
 }

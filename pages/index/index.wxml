@@ -43,6 +43,10 @@
   <navigator url="../file/file" open-type="navigate">
     <el-cell title='文件' label='file' islink></el-cell>
   </navigator>
+  <navigator url="../cellswipe/cellswipe" open-type="navigate">
+    <el-cell title='cellswipe' label='cellswipe' islink></el-cell>
+  </navigator>
+
 
   <view class='htitle'>界面</view>
   <navigator url="../load/load" open-type="navigate">

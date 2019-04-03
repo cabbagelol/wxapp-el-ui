@@ -11,7 +11,7 @@
 		"newFeature": true,
 		"nodeModules": true,
 		"autoAudits": false,
-		"uglifyFileName": true
+		"uglifyFileName": false
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.6.2",
@@ -39,7 +39,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 8,
+			"current": 18,
 			"list": [
 				{
 					"id": -1,
@@ -165,6 +165,12 @@
 					"name": "滚动",
 					"pathName": "pages/rolling/rolling",
 					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "cellswipe",
+					"pathName": "pages/cellswipe/cellswipe",
 					"scene": null
 				}
 			]

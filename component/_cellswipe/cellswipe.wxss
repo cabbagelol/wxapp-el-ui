@@ -1,0 +1,45 @@
+.__cellswipe__ {
+  overflow: hidden;
+}
+
+.__cellswipe-controller__ {
+  display: flex;
+  white-space:nowrap;
+  width: 100%;
+}
+
+.__cellswipe-controller-center__ {
+  width: 100%;
+  min-height: 100%;
+  min-width: 100%;
+}
+
+.__cellswipe-controller-right__, .__cellswipe-controller-left__,.__cellswipe-controller-center__ {
+  position: relative;
+  display:inline-block;
+}
+
+.__cellswipe-controller-right-cont__, .__cellswipe-controller-left-cont__ {
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+  height: 100%;
+}
+
+.__cellswipe-controller-right-cont-d__ {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0px;
+  height: calc(100% - 2rpx);
+  width: 200%;
+}
+
+.__cellswipe-controller-left-cont-d__ {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  right: 0;
+  height: calc(100% - 2rpx);
+  width: 200%;
+}

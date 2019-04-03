@@ -1,0 +1,16 @@
+<view class='__cellswipe__'>
+  
+  <view class='__cellswipe-controller__' style='transition: transform {{cellswipe.duration / 1000}}s;transform: translateX({{cellswipe.left}}px)' bindtouchstart="touchStart" catchtouchmove="touchMove" bindtouchend="touchEnd">
+    <view class='__cellswipe-controller-left__'>
+      <view class='__cellswipe-controller-left-cont__'><slot name='left'></slot></view>
+      <view class='__cellswipe-controller-left-cont-d__' style='width: {{cellswipe.leftWs}}px;background-color: {{color}};'></view>
+    </view>
+    <view class='__cellswipe-controller-center__' style='height:{{cellswipe.centerH}}px' catchtap='onTap'>
+      <slot name='cont'></slot>
+    </view>
+    <view class='__cellswipe-controller-right__'>
+      <view class='__cellswipe-controller-right-cont__'><slot name='right'></slot></view>
+      <view class='__cellswipe-controller-right-cont-d__' style='width: {{cellswipe.rightWs}}px;background-color: {{color}};'></view>
+    </view>
+  </view>
+</view>

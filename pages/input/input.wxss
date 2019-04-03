@@ -1,9 +1,9 @@
-.tag {
-  background: #000;
-  border-radius: .3rem;
-  padding: 2rpx 10rpx;
-  display: inline-flex;
-  color: #FFF;
-  margin-right: 10rpx;
+.container-text {
+  padding: 30rpx;
+  background: #FFF;
+  display: block;
   font-size: 30rpx;
+  line-height: 50rpx;
+  color: #555;
+  margin-bottom: 30rpx;
 }

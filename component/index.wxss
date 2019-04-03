@@ -3,6 +3,8 @@ el-button,
 el-cell,
 el-vacancy,
 el-row,
+el-input,
+el-layout,
 el-column {
   display: block;
 }
