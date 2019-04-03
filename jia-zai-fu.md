@@ -24,8 +24,7 @@
 | :--- | :--- | :--- | :--- |
 | size | String | 加载图标大小, 1为正常大小，建议在0.1-10，小于0时将不可见 | 1.0.1 |
 | type | String | 加载类型 `line` 或 `main` | 1.0.1 |
-
-\* 不提供size属性时自动适配大小
+| color | Object | 主色调、副色调 | 1.0.2 |
 
 ### 使用
 
@@ -38,6 +37,5 @@
 
 ---
 
-![Image text](http://cdn.cabbagelol.net/wxapp-coms-load.png)  
-\(Load组件，目前仅支持二种加载图片，参考上方图片\)
+
 
