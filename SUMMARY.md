@@ -18,7 +18,7 @@
   * [rolling 滚动](rolling-gun-dong.md)
   * [cellswipe ](cellswipe.md)
 * [界面](jie-mian.md)
-  * [load 加载符](jia-zai-fu.md)
+  * [load 装载](jia-zai-fu.md)
   * [button 按钮](an-niu.md)
   * [vacancy 空置区](kong-zhi-qu.md)
   * [body 主体](content-zhu-ti.md)
