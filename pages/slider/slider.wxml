@@ -1,0 +1,5 @@
+<el-head head='{{head}}' stickie='true'></el-head>
+<view class='container'>
+    <el-slider>
+    </el-slider>
+</view>
