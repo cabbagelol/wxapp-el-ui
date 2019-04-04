@@ -24,10 +24,15 @@
 | :--- | :--- | :--- | :--- | :--- |
 | title | String | "" | 标题 | 0.0.2 |
 | placeholder | String | "" | placeholder | 0.0.2 |
-| ~~elstyle~~ | ~~String~~ | ~~""~~ | ~~继承style~~ | 0.0.2 - 0.0.2 |
-| ~~elclass~~ | ~~String~~ | ~~""~~ | ~~继承class~~ | 0.0.2 - 0.0.2 |
 | value\(~~data~~\) | String | "" | 内容 | 0.0.2 |
 | wordcount | Number | 0 | 限制与统计,当为0时表示不在限制与统计 | 0.0.2 |
+| vibrate | Boolean | false | 触摸交互 | 0.0.4 |
+
+移除
+| 名称 | 类型 | 默认 | 说明 | 版本 |
+| :--- | :--- | :--- | :--- | :--- |
+| elstyle | String | "" | 继承style | 0.0.2 - 0.0.2 |
+| elclass | String | "" | 继承class | 0.0.2 - 0.0.2 |
 
 ### 事件
 
