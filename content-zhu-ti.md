@@ -40,7 +40,6 @@ Page({
     body.data.message.onMessage({
       cont: '内容',
       time: 3000,
-      succeed() {
         wx.showToast({
           title: '成功',
           icon: 'none'
@@ -98,6 +97,12 @@ Page({
 
 </el-body>
 ```
+
+### 依赖
+
+| 名称 | 版本 |
+| :--- | :--- |
+| message | 1.0.2 |
 
 
 
