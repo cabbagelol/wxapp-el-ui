@@ -1,0 +1,25 @@
+<el-head class='el' head='{{head}}' stickie='true'></el-head>
+<el-message class='messgae'></el-message>
+<view class="container">
+  <el-cell title="内容">
+    <input slot="content" value="{{message.cont}}" data-e="message.cont" bindinput="$" />
+  </el-cell>
+  <el-cell title="类型" label='success,warning,danger'>
+    <input slot="content" value="{{message.type}}" data-e="message.type" bindinput="$" />
+  </el-cell>
+  <el-cell title="停留时间">
+    <input slot="content" value="{{message.time}}" data-e="message.time" bindinput="$" />
+  </el-cell>
+  <el-cell title="图标">
+    <switch slot="content" checked="{{message.icon}}" data-e="message.icon" bindchange="$" />
+  </el-cell>
+</view>
+<view class="container">
+  <el-column class='message-tip'>
+    <el-column-1>说明:</el-column-1>
+    <el-column-5>支持队列消息,快速触摸下方按钮开始</el-column-5>
+  </el-column>
+  <el-button bindtap='onMessageShow'>
+    {{message.ing ? "处理中" : "显示"}}
+  </el-button>
+</view>
