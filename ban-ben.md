@@ -4,7 +4,10 @@
 
 `待发布`
 
-* 修订
+* 修订popup为center时淡入动画.
+* 修订vacancy默认水平/垂直居中.
+* 修订message支持html标签.
+* 修订numlndicto触摸交互.
 
 ### v: 0.0.3
 
