@@ -30,6 +30,27 @@ body控件会对head和footer识别，计算出中间区域的适配高度。
 | :--- | :--- | :--- |
 | body | 当body准备好时返回head/body/footer对应高度，scrollButtonY为滚动最底部位置 | 1.0.2 |
 
+`onMessage`: function \(data\) {} 该事件是由message控件提供，因此body会依赖message，详细属性参数参考[message](/message-quan-ju-xiao-xi.md)控件.
+
+```js
+Page({
+  // 必须在Ready后执行
+  onReady () {
+    var body = this.selectComponent(".body");
+    body.data.message.onMessage({
+      cont: '内容',
+      time: 3000,
+      succeed() {
+        wx.showToast({
+          title: '成功',
+          icon: 'none'
+        })
+      }
+    })
+  },
+})
+```
+
 ### 插槽
 
 导航栏插槽:

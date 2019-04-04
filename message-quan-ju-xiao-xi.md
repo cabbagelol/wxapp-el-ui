@@ -40,7 +40,7 @@
 | title | String | "" | 标题 | 1.0.2 |
 | cont | String | "" | 内容 | 1.0.2 |
 | time | Number | 3000 | 显示时间 | 1.0.2 |
-| sicceed | event | function | 当显示成功时触发该事件。 | 1.0.2 |
+| succeed | event | function | 当显示成功时触发该事件。 | 1.0.2 |
 
 ### 使用
 
@@ -55,7 +55,7 @@ Page({
     onLoad () {
         this.messgae = this.selectComponent(".messgae");
     },
-    
+
     onMessageShow () {
       var that = this;
       that.messgae.onMessage({
