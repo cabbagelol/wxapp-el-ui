@@ -39,7 +39,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 20,
+			"current": 21,
 			"list": [
 				{
 					"id": -1,
@@ -70,8 +70,8 @@
 					"scene": null
 				},
 				{
-					"id": -1,
-					"name": "指示器",
+					"id": 4,
+					"name": "数字指示器",
 					"pathName": "pages/numIndicator/numIndicator",
 					"query": "",
 					"scene": null
@@ -185,6 +185,13 @@
 					"id": -1,
 					"name": "全局消息",
 					"pathName": "pages/message/message",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "表单",
+					"pathName": "pages/form/form",
 					"scene": null
 				}
 			]

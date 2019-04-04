@@ -39,7 +39,7 @@
     border: 1px solid #F2F2F2;
     border-radius: .3rem;
     padding: 10px 10px 30px 10px;
-    min-height: 132px;
+    min-height: 100rpx;
     width: calc(100% - 20px);
     font-size: 30rpx;
 }

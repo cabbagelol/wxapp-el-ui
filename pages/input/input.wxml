@@ -10,10 +10,13 @@
   </text>
   <el-layout>
     <el-input placeholder='输入内容' data-e='value.a' bindinput='$'></el-input>
+    <el-input placeholder='禁用' disabled></el-input>
+    <el-input title='密码' placeholder='密码类型' type='password'></el-input>
     <el-input title='名字' data-e='value.b' bindinput='$'></el-input>
-    <el-input title='年龄' type='number' data-e='value.c' bindinput='$'></el-input>
+    <el-input title='年龄' type='number' data-e='value.c' bindinput='$' focus></el-input>
     <el-input title='描述' value='{{value.d}}' type='number' clear data-e='value.d' bindinput='$'></el-input>
     <el-input title='学历' mustchoose='true' placeholder='输入你的学历信息' type='number' clear data-e='value.e' bindinput='$'></el-input>
+    <el-input title='触摸反馈' mustchoose='true' placeholder='输入时生效' type='number' clear data-e='value.e' bindinput='$' vibrate></el-input>
     <el-input data-e='value.f' bindinput='$'>
       <el-input-title max='290rpx'>
         <el-tag size='3' color='orange' textColor='#FFF'>正面</el-tag>身份证照片

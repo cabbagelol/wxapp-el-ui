@@ -6,6 +6,7 @@
   width: calc(100% - 60rpx);
   background: #FFF;
   padding: 30rpx;
+  animation: all .25s;
 }
 
 .popup-content-top {

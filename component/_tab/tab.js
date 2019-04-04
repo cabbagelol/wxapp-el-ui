@@ -49,7 +49,7 @@ Component({
   ready() {
     var that = this;
     if (config.util.in(that)) {
-      config.util.$('.__tab-nav-title__').then(function (e) {
+      config.util.$('.__tab-nav-title__').then(function(e) {
         for (var i = 0; i < e.length; i++) {
           if (e['.__tab-nav-title__' + i].width > 0) {
             that.data.tabs.data[i]['isTitle'] = true
@@ -59,17 +59,17 @@ Component({
           'tabs.data': that.data.tabs.data
         })
       })
+      config.util.$('.__tab-nav__').then(function (e) {
+        if (that.data.scroll.x <= (e['.__tab-nav__'].width / 2)) {
+          that.setData({
+            'tabs.title': that.data.active || that.data.tabs.data[0].title,
+            tabnav: e['.__tab-nav__']
+          });
+          that.setSelectContent();
+          that.onChange();
+        }
+      })
     }
-    wx.createSelectorQuery().in(that).select('.__tab-nav__').boundingClientRect(function (tabnav) {
-      if (that.data.scroll.x <= (tabnav.width / 2)) {
-        that.setData({
-          'tabs.title': that.data.active || that.data.tabs.data[0].title,
-          tabnav
-        });
-        that.setSelectContent();
-        that.onChange();
-      }
-    }).exec();
   },
 
   created() {

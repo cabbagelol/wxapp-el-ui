@@ -108,6 +108,7 @@ Component({
           }
           break
       }
+      wx.vibrateShort();
       that.setData({
         inputWidth: that.data.value.toString().length * 20
       })

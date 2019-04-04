@@ -1,18 +1,17 @@
 button {
-  background:  #18b6c1;
-  color: #FFF;
+  background: #18b6c1;
+  color: #fff;
   margin: 0 0 30rpx 0;
 }
- 
-button::after,
-button::before {
+
+button::after, button::before {
   contain: '';
+  background: #10a9b4;
 }
 
-button:hover,
-button:active {
+button:hover, button:active {
   position: relative;
   content: '';
-  background: #18b6c1;
-  color: #FFF
+  background: #10a9b4;
+  color: #fff;
 }

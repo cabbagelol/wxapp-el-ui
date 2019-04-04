@@ -22,7 +22,8 @@
     "pages/cellswipe/cellswipe",
     "pages/slider/slider",
     "pages/message/message",
-    "pages/rule/rule"
+    "pages/rule/rule",
+    "pages/form/form"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -56,6 +57,7 @@
     "el-cellswipe": "./component/_cellswipe/cellswipe",
     "el-slider": "./component/_slider/slider",
     "el-message": "./component/_message/message",
-    "el-rule": "./component/_rule/rule"
+    "el-rule": "./component/_rule/rule",
+    "el-form": "./component/_form/form"
   }
 }

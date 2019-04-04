@@ -15,6 +15,11 @@
   <el-cell title="禁用">
     <switch slot="content" checked="{{textarea.disabled}}" data-e="textarea.disabled" bindchange="$" />
   </el-cell>
+  <el-cell title="长按复制">
+    <switch slot="content" checked="{{textarea.copy}}" data-e="textarea.copy" bindchange="$" />
+  </el-cell>
+  <el-cell title="触摸反馈">
+    <switch slot="content" checked="{{textarea.vibrate}}" data-e="textarea.vibrate" bindchange="$" />
+  </el-cell>
 </view>
-  <el-textarea name="swistch" title='{{textarea.title}}' placeholder='{{textarea.placeholder}}' disabled='{{textarea.disabled}}' wordcount='{{textarea.wordcount}}' value='{{textarea.value}}' data-e="textarea.value"  bindinput='$'></el-textarea>
-
+<el-textarea name="swistch" title='{{textarea.title}}' placeholder='{{textarea.placeholder}}' vibrate='{{textarea.vibrate}}' copy='{{textarea.copy}}' disabled='{{textarea.disabled}}' wordcount='{{textarea.wordcount}}' value='{{textarea.value}}' data-e="textarea.value" bindinput='$' bindcopy='onCopy'></el-textarea>

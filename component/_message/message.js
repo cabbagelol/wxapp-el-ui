@@ -63,7 +63,7 @@ Component({
       list.push(data_);
       if (list.length > 1) {
         for (var i = 0; i < list.length; i++) {
-          list[i].time = (list.length == i + 1 ? list[i].time : 1000)
+          list[i].time = (list.length == i + 1 ? list[i].time : 800)
         }
       }
       that.setData({

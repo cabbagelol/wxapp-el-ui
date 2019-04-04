@@ -8,22 +8,15 @@ Component({
   },
 
   properties: {
+    vibrate: {
+      type: Boolean,
+      value: true
+    },
     style: String,
     disabled: Boolean,
     radius: Boolean,
     size: String,
     align: String,
-
-    "open-type": {
-      type: String,
-      value: 'getUserInfo'
-    },
-    aps: {
-      type: Object,
-      value: {
-        isShow: null
-      }
-    },
     playIndex: {
       type: null,
       value: null
@@ -38,8 +31,26 @@ Component({
   },
 
   methods: {
+    onvibrate () {
+      if (this.data.vibrate) {
+        wx.vibrateShort();
+      }
+    },
+
     onTap(e) {
-      this.triggerEvent('tag', e)
+      this.triggerEvent('tag', e);
+      this.onvibrate();
+    },
+
+    onLongtap () {
+      var that = this;
+      that.taping = setInterval(function () {
+        that.onvibrate();
+      }, 200) 
+    },
+
+    onLogintapEnd () {
+      clearInterval(this.taping)
     }
   }
 })

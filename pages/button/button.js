@@ -9,6 +9,7 @@ Page({
       back: true
     },
     button: {
+      color: { essential: "#FFF"},
       show: true,
       size: 'normal',
       align:'center',

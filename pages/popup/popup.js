@@ -9,6 +9,7 @@ Page({
       back: true
     },
     popup: {
+      background: 'rgba(0,0,0,.8)',
       show: false,
       modal: true,
       animation: true

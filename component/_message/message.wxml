@@ -11,7 +11,7 @@
     </view>
     <view class='__message-text__'>
       <slot />
-      <text>{{message.cont}}</text>
+      <rich-text nodes='{{message.cont}}'></rich-text>
     </view>
   </view>
 </view>

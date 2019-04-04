@@ -22,12 +22,20 @@ Component({
         }
       }
     },
+    copy: {
+      type: Boolean,
+      value: true
+    },
     title: String,
     value: String,
     placeholder: String,
     wordcount: Number,
     name: String,
     disabled: {
+      type: Boolean,
+      value: false
+    },
+    vibrate: {
       type: Boolean,
       value: false
     }
@@ -59,6 +67,28 @@ Component({
         type: e.type,
         value: that.data.value,
         e: e
+      })
+      if (that.data.vibrate) {
+        wx.vibrateShort();
+      }
+    },
+
+    onLongTap () {
+      var that = this;
+      if (!that.data.copy || that.data.disabled) {return}
+      wx.setClipboardData({
+        data: that.data.value,
+        success () {
+          that.triggerEvent('copy', {
+            code: 0,
+            value: that.data.value
+          })
+        },
+        fail () {
+          that.triggerEvent('copy', {
+            code: -1
+          })
+        }
       })
     }
   }
