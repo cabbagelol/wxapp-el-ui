@@ -13,7 +13,7 @@ Page({
       modal: true,
       animation: true
     },
-    array: [{ n: '左', v: 'left' }, { n: '上', v: 'top' }, { n: '右', v: 'right' }, { n: '下', v: 'bottom' }],
+    array: [{ n: '左', v: 'left' }, { n: '上', v: 'top' }, { n: '右', v: 'right' }, { n: '下', v: 'bottom' }, { n: '中', v: 'center' }],
     arrayi: 0
   },
 

@@ -39,7 +39,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 18,
+			"current": 19,
 			"list": [
 				{
 					"id": -1,
@@ -171,6 +171,13 @@
 					"id": -1,
 					"name": "cellswipe",
 					"pathName": "pages/cellswipe/cellswipe",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "滑动选择器",
+					"pathName": "pages/slider/slider",
 					"scene": null
 				}
 			]

@@ -1,4 +1,7 @@
-<!-- 弹窗 -->
+<!-- 
+  * 控件
+  ** 弹窗
+ -->
 <view class='__popup__' wx:if='{{show}}'>
   <view class='__popup__modal__' wx:if='{{!!modal}}' bindtap='onModal'></view>
   <view

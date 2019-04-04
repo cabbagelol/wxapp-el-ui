@@ -19,7 +19,8 @@
     "pages/layout/layout",
     "pages/file/file",
     "pages/rolling/rolling",
-    "pages/cellswipe/cellswipe"
+    "pages/cellswipe/cellswipe",
+    "pages/slider/slider"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -50,6 +51,7 @@
     "el-layout": "./component/_layout/layout",
     "el-file": "./component/_file/file",
     "el-rolling": "./component/_rolling/rolling",
-    "el-cellswipe": "./component/_cellswipe/cellswipe"
+    "el-cellswipe": "./component/_cellswipe/cellswipe",
+    "el-slider": "./component/_slider/slider"
   }
 }
