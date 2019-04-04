@@ -22,10 +22,10 @@
 
 | 名称 | 类型 | 默认 | 说明 | 版本 |
 | :--- | :--- | :--- | :--- | ---: |
-| position | String | "" | 方向，left/top/right/button | 1.0.1 |
-| modal | Boolean | true | 遮盖层 | 1.0.1 |
-| show | Boolean | false | 是否可见popup | 1.0.1 |
-| closeOnModal | Boolean | true | 是否可通过点击遮盖返回bindchange事件 | 1.0.1 |
+| position | String | "" | 方向，left/top/right/button | 0.0.2 |
+| modal | Boolean | true | 遮盖层 | 0.0.2 |
+| show | Boolean | false | 是否可见popup | 0.0.2 |
+| closeOnModal | Boolean | true | 是否可通过点击遮盖返回bindchange事件 | 0.0.2 |
 
 ### 方法
 

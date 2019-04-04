@@ -22,11 +22,11 @@
 
 | 名称 | 类型 | 默认 | 说明 | 版本 |
 | :--- | :--- | :--- | :--- | :--- |
-| value | Number | 0 | 值 | 1.0.1 |
-| min | Number | - | 最小值 | 1.0.1 |
-| max | Number | - | 最大值 | 1.0.1 |
-| superposition | Number | 1 | 一次叠加值 | 1.0.1 |
-| longtag | Boolean | false | 是否允许加速 | 1.0.1 |
+| value | Number | 0 | 值 | 0.0.2 |
+| min | Number | - | 最小值 | 0.0.2 |
+| max | Number | - | 最大值 | 0.0.2 |
+| superposition | Number | 1 | 一次叠加值 | 0.0.2 |
+| longtag | Boolean | false | 是否允许加速 | 0.0.2 |
 
 ### 方法
 
@@ -36,9 +36,9 @@
 
 | 名称 | 类型 | 说明 | 版本 |
 | :--- | :--- | :--- | :--- |
-| el | Object | 内部输入框对象 | 1.0.1 |
-| index | Number | 序列\(一般无用\) | 1.0.1 |
-| value | Number | 数字变动返回的值 | 1.0.1 |
+| el | Object | 内部输入框对象 | 0.0.2 |
+| index | Number | 序列\(一般无用\) | 0.0.2 |
+| value | Number | 数字变动返回的值 | 0.0.2 |
 
 `bindholdtap`: function \(e\) 当触摸一直保持
 
@@ -46,8 +46,8 @@
 
 | 名称 | 类型 | 说明 | 版本 |
 | :--- | :--- | :--- | :--- |
-| el | Object | 内部输入框对象 | 1.0.1 |
-| value | Number | 值 | 1.0.1 |
+| el | Object | 内部输入框对象 | 0.0.2 |
+| value | Number | 值 | 0.0.2 |
 
 `bindtapend`: function \(e\) 触摸离开
 
@@ -55,8 +55,8 @@
 
 | 名称 | 类型 | 说明 | 版本 |
 | :--- | :--- | :--- | :--- |
-| el | Object | 内部输入框对象 | 1.0.1 |
-| value | Number | 值 | 1.0.1 |
+| el | Object | 内部输入框对象 | 0.0.2 |
+| value | Number | 值 | 0.0.2 |
 
 ### 样式
 
@@ -64,18 +64,18 @@
 
 | 名称 | 说明 | 版本 |
 | :--- | :--- | :--- |
-| .\_\_numIndicator\_\_ | 全局指示器根类 | 1.0.1 |
-| .\_\_numIndicator\_btnleft\_\_ | 全局指示器左侧按钮 | 1.0.1 |
-| .\_\_numIndicator\_btnright\_\_ | 全局指示器右侧按钮 | 1.0.1 |
-| .\_\_numIndicator\_value\_\_ | 全局指示器input输入框 | 1.0.1 |
+| .\_\_numIndicator\_\_ | 全局指示器根类 | 0.0.2 |
+| .\_\_numIndicator\_btnleft\_\_ | 全局指示器左侧按钮 | 0.0.2 |
+| .\_\_numIndicator\_btnright\_\_ | 全局指示器右侧按钮 | 0.0.2 |
+| .\_\_numIndicator\_value\_\_ | 全局指示器input输入框 | 0.0.2 |
 
 ##### 局部
 
 | 名称 | 说明 | 版本 |
 | :--- | :--- | :--- |
-| el-button-left | 左侧按钮 | 1.0.1 |
-| el-button-right | 右侧按钮 | 1.0.1 |
-| el-input | 输入框 | 1.0.1 |
+| el-button-left | 左侧按钮 | 0.0.2 |
+| el-button-right | 右侧按钮 | 0.0.2 |
+| el-input | 输入框 | 0.0.2 |
 
 使用方式请参考这里[重写Class类](/zhong-xie-class-lei.md)。
 

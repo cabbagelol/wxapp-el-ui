@@ -37,7 +37,7 @@ layout并非一定使用，可单独使用row和column
 
 | 名称 | 类型 | 默认 | 说明 | 版本 |
 | :--- | :--- | :--- | :--- | :--- |
-| align | String | start | 垂直对齐，start、center、end | 1.0.2 |
+| align | String | start | 垂直对齐，start、center、end | 0.0.3 |
 
 ### 使用
 
@@ -53,22 +53,22 @@ layout并非一定使用，可单独使用row和column
 
 | 名称 | 类型 | 默认 | 说明 | 版本 |
 | :--- | :--- | :--- | :--- | :--- |
-| align | String | start | 水平对齐，start、center、end | 1.0.2 |
+| align | String | start | 水平对齐，start、center、end | 0.0.3 |
 
 ### 标签
 
 | 名称 | 说明 | 版本 |
 | :--- | :--- | :--- |
-| el-column-1 | 等比例1 | 1.0.2 |
-| el-column-2 | 等比例2 | 1.0.2 |
-| el-column-3 | 等比例3 | 1.0.2 |
-| el-column-4 | 等比例4 | 1.0.2 |
-| el-column-5 | 等比例5 | 1.0.2 |
-| el-column-xs | 固定尺寸标签,占有20% | 1.0.2 |
-| el-column-sm | 固定尺寸标签,占有40% | 1.0.2 |
-| el-column-sub | 固定尺寸标签,占有50% | 1.0.2 |
-| el-column-lg | 固定尺寸标签,占有60% | 1.0.2 |
-| el-column-xl | 固定尺寸标签,占有80% | 1.0.2 |
+| el-column-1 | 等比例1 | 0.0.3 |
+| el-column-2 | 等比例2 | 0.0.3 |
+| el-column-3 | 等比例3 | 0.0.3 |
+| el-column-4 | 等比例4 | 0.0.3 |
+| el-column-5 | 等比例5 | 0.0.3 |
+| el-column-xs | 固定尺寸标签,占有20% | 0.0.3 |
+| el-column-sm | 固定尺寸标签,占有40% | 0.0.3 |
+| el-column-sub | 固定尺寸标签,占有50% | 0.0.3 |
+| el-column-lg | 固定尺寸标签,占有60% | 0.0.3 |
+| el-column-xl | 固定尺寸标签,占有80% | 0.0.3 |
 
 ### 使用
 

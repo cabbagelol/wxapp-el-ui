@@ -20,11 +20,11 @@
 
 | 名称 | 类型 | 默认 | 说明 | 版本 |
 | :--- | :--- | :--- | :--- | :--- |
-| color | String | 继承 | 背景演示 | 1.0.2 |
-| size | String | 5号 | 大小 | 1.0.2 |
-| plain | Boolean | false | 幽灵 | 1.0.2 |
-| round | Boolean | false | 圆角 | 1.0.2 |
-| textColor | String | "" | 文本颜色 | 1.0.2 |
+| color | String | 继承 | 背景演示 | 0.0.3 |
+| size | String | 5号 | 大小 | 0.0.3 |
+| plain | Boolean | false | 幽灵 | 0.0.3 |
+| round | Boolean | false | 圆角 | 0.0.3 |
+| textColor | String | "" | 文本颜色 | 0.0.3 |
 
 ### 使用
 

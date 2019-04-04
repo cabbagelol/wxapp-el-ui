@@ -20,11 +20,11 @@
 
 | 名称 | 类型 | 默认 | 说明 | 版本 |
 | :--- | :--- | :--- | :--- | :--- |
-| file | Object | {} | file配置 | 1.0.2 |
-| album | Boolean | false | 是否显示拍摄 | 1.0.2 |
-| camera | Boolean | false | 是否显示相册 | 1.0.2 |
-| files | Boolean | false | 是否显示文件 | 1.0.2 |
-| video | Boolean | false | 是否显示视频 | 1.0.2 |
+| file | Object | {} | file配置 | 0.0.3 |
+| album | Boolean | false | 是否显示拍摄 | 0.0.3 |
+| camera | Boolean | false | 是否显示相册 | 0.0.3 |
+| files | Boolean | false | 是否显示文件 | 0.0.3 |
+| video | Boolean | false | 是否显示视频 | 0.0.3 |
 
 * 当album、camera、files、video都为false时，不被触发显示选择框
 
@@ -32,12 +32,12 @@ file:
 
 | 名称 | 类型 | 默认 | 说明 | 版本 |
 | :--- | :--- | :--- | :--- | :--- |
-| count | Number | 1 | 文件数量 | 1.0.2 |
-| video.maxDuration | Number | 60 | 视频长度 | 1.0.2 |
-| video.compressed | Boolean | false | 压缩 | 1.0.2 |
-| video.camera | Boolean | 'front' | 前/后摄像头 | 1.0.2 |
-| files.type | String | 'all' | 限制文件类型 | 1.0.2 |
-| files.extension | Array | null | 限制后缀类型 | 1.0.2 |
+| count | Number | 1 | 文件数量 | 0.0.3 |
+| video.maxDuration | Number | 60 | 视频长度 | 0.0.3 |
+| video.compressed | Boolean | false | 压缩 | 0.0.3 |
+| video.camera | Boolean | 'front' | 前/后摄像头 | 0.0.3 |
+| files.type | String | 'all' | 限制文件类型 | 0.0.3 |
+| files.extension | Array | null | 限制后缀类型 | 0.0.3 |
 
 ### 事件
 

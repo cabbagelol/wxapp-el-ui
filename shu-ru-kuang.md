@@ -23,12 +23,12 @@
 
 | 名称 | 类型 | 默认 | 说明 | 版本 |
 | :--- | :--- | :--- | :--- | :--- |
-| title | String | "" | 输入框头部标题 | 1.0.1 |
-| type | String | text | 输入类型 | 1.0.1 |
-| mustchoose | Boolean | false | 是否出现必选符 | 1.0.1 |
-| placeholder | String | "" | 预选 | 1.0.1 |
-| value | String | "" | 值 | 1.0.1 |
-| clear | Boolean | false | 擦除键 | 1.0.2 |
+| title | String | "" | 输入框头部标题 | 0.0.2 |
+| type | String | text | 输入类型 | 0.0.2 |
+| mustchoose | Boolean | false | 是否出现必选符 | 0.0.2 |
+| placeholder | String | "" | 预选 | 0.0.2 |
+| value | String | "" | 值 | 0.0.2 |
+| clear | Boolean | false | 擦除键 | 0.0.3 |
 
 \* title优先于el-input-title，当title属性存在时以title内容为准
 
@@ -38,9 +38,9 @@
 
 | 名称 | 类型 | 默认 | 说明 | 版本 |
 | :--- | :--- | :--- | :--- | :--- |
-| omit | Number | false | 省略，当填omit=‘1’时，表示省略1行，超出部分以...来表示。 | 1.0.1 |
-| min | String | "" | 请带上单位 | 1.0.1 |
-| max | String | "" | 请带上单位 | 1.0.1 |
+| omit | Number | false | 省略，当填omit=‘1’时，表示省略1行，超出部分以...来表示。 | 0.0.2 |
+| min | String | "" | 请带上单位 | 0.0.2 |
+| max | String | "" | 请带上单位 | 0.0.2 |
 
 ### 方法
 
@@ -48,7 +48,7 @@
 
 | 名称 | 说明 | 版本 |
 | :--- | :--- | :--- |
-| value | 值 | 1.0.1 |
+| value | 值 | 0.0.2 |
 
 ### 插槽
 
@@ -56,7 +56,7 @@
 
 | 名称 | 说明 | 版本 |
 | :--- | :--- | :--- |
-| right | 尾部插槽 | 1.0.2 |
+| right | 尾部插槽 | 0.0.2 |
 
 ### 使用
 

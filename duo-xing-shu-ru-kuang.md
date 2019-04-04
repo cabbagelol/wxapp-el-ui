@@ -22,12 +22,12 @@
 
 | 名称 | 类型 | 默认 | 说明 | 版本 |
 | :--- | :--- | :--- | :--- | :--- |
-| title | String | "" | 标题 | 1.0.1 |
-| placeholder | String | "" | placeholder | 1.0.1 |
-| ~~elstyle~~ | ~~String~~ | ~~""~~ | ~~继承style~~ | 1.0.1 - 1.0.1 |
-| ~~elclass~~ | ~~String~~ | ~~""~~ | ~~继承class~~ | 1.0.1 - 1.0.1 |
-| value\(~~data~~\) | String | "" | 内容 | 1.0.1 |
-| wordcount | Number | 0 | 限制与统计,当为0时表示不在限制与统计 | 1.0.1 |
+| title | String | "" | 标题 | 0.0.2 |
+| placeholder | String | "" | placeholder | 0.0.2 |
+| ~~elstyle~~ | ~~String~~ | ~~""~~ | ~~继承style~~ | 0.0.2 - 0.0.2 |
+| ~~elclass~~ | ~~String~~ | ~~""~~ | ~~继承class~~ | 0.0.2 - 0.0.2 |
+| value\(~~data~~\) | String | "" | 内容 | 0.0.2 |
+| wordcount | Number | 0 | 限制与统计,当为0时表示不在限制与统计 | 0.0.2 |
 
 ### 事件
 
@@ -35,9 +35,9 @@
 
 | 名称 | 说明 | 版本 |
 | :--- | :--- | :--- |
-| type | 事件类型 | 1.0.2 |
-| e | Event | 1.0.1 |
-| value | 值 | 1.0.2 |
+| type | 事件类型 | 0.0.3 |
+| e | Event | 0.0.2 |
+| value | 值 | 0.0.3 |
 
 ### 使用
 

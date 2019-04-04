@@ -22,9 +22,9 @@
 
 | 名称 | 类型 | 默认 | 说明 | 版本 |
 | :--- | :--- | :--- | :--- | :--- |
-| backgroundColor | String | \#000 | 下拉刷新背景颜色 | 1.0.1 |
-| refreshHeight | Number | 150 | 下拉刷新高度 | 1.0.1 |
-| textColor | String | white | 下拉刷新字体颜色 | 1.0.1 |
+| backgroundColor | String | \#000 | 下拉刷新背景颜色 | 0.0.2 |
+| refreshHeight | Number | 150 | 下拉刷新高度 | 0.0.2 |
+| textColor | String | white | 下拉刷新字体颜色 | 0.0.2 |
 
 ### 事件
 
