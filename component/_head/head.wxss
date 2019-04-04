@@ -1,9 +1,11 @@
+@import './style/font.wxss';
+
 .__head-background__ {
-   position: relative;
-   z-index: 15;
-   top: 0;
-   left: 0;
-   width: 100%;
+  position: relative;
+  z-index: 15;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 .__head__ {
@@ -15,6 +17,7 @@
   z-index: 4;
   width: 100%;
   height: 90rpx;
+  transition:  all .25s;
 }
 
 .__head_stickie__ {
@@ -27,17 +30,17 @@
   z-index: 55;
   display: inline-flex;
   width: 100%;
-  transition: background-color .25s;
+  transition: background 0.25s;
 }
 
 .__head_block__ > view {
   width: 100%;
-    min-width: 80px;
+  min-width: 80px;
 }
 
 .__head_block_title__ {
   font-weight: 500;
-  font-size: calc(11px * 2);
+  font-size: 34rpx;
   text-align: center;
   width: 100%;
   min-height: 45px;

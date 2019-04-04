@@ -15,10 +15,13 @@
     "pages/vacancy/vacancy",
     "pages/tab/tab",
     "pages/content/content",
-    "pages/demo/demo",
     "pages/tag/tag",
     "pages/layout/layout",
-    "pages/file/file"
+    "pages/file/file",
+    "pages/rolling/rolling",
+    "pages/cellswipe/cellswipe",
+    "pages/slider/slider",
+    "pages/message/message"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -47,6 +50,10 @@
     "el-row": "./component/_row/row",
     "el-column": "./component/_column/column",
     "el-layout": "./component/_layout/layout",
-    "el-file": "./component/_file/file"
+    "el-file": "./component/_file/file",
+    "el-rolling": "./component/_rolling/rolling",
+    "el-cellswipe": "./component/_cellswipe/cellswipe",
+    "el-slider": "./component/_slider/slider",
+    "el-message": "./component/_message/message"
   }
 }

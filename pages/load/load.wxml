@@ -1,33 +1,42 @@
 <el-head class='el' head='{{head}}' stickie='true'></el-head>
-
 <view class="container">
-    <el-cell title="Icon"  label="标准">
-        <el-load slot="content" type="main" size="1"></el-load>
-    </el-cell>
-    <el-cell title="Icon">
-        <el-load slot="content" type="main" size=".8"></el-load>
-    </el-cell>
-    <el-cell title="Icon" label="小" >
-        <el-load slot="content" type="main" size=".5"></el-load>
-    </el-cell>
+  <el-cell title="main" label="标准">
+    <el-load slot="content" type="main" size="1" color="{{color}}"></el-load>
+  </el-cell>
+  <el-cell title="main">
+    <el-load slot="content" type="main" size=".8"></el-load>
+  </el-cell>
+  <el-cell title="main" label="小">
+    <el-load slot="content" type="main" size=".6"></el-load>
+  </el-cell>
 
-    <el-cell title="Icon"  label="标准">
-        <el-load slot="content" type="circular" size="1"></el-load>
-    </el-cell>
-      <el-cell title="Icon">
-        <el-load slot="content" type="circular" size=".8"></el-load>
-    </el-cell>
-    <el-cell title="Icon"  label="小">
-        <el-load slot="content" type="circular" size=".5"></el-load>
-    </el-cell>
+  <el-cell title="location" label="标准">
+    <el-load slot="content" type="location" size="1" color="{{color}}"></el-load>
+  </el-cell>
+  <el-cell title="location">
+    <el-load slot="content" type="location" size=".8"></el-load>
+  </el-cell>
+  <el-cell title="location" label="小">
+    <el-load slot="content" type="location" size=".6"></el-load>
+  </el-cell>
 
-    <el-cell title="Icon" label="小">
-        <el-load slot="content" type="line" size="1"></el-load>
-    </el-cell>
-    <el-cell title="Icon" >
-        <el-load slot="content" type="line" size=".8"></el-load>
-    </el-cell>
-    <el-cell title="Icon" label="小">
-        <el-load slot="content" type="line" size=".5"></el-load>
-    </el-cell>
+  <el-cell title="line" label="标准">
+    <el-load slot="content" type="line" size="1" color="{{color}}"></el-load>
+  </el-cell>
+  <el-cell title="line">
+    <el-load slot="content" type="line" size=".8"></el-load>
+  </el-cell>
+  <el-cell title="line" label="小">
+    <el-load slot="content" type="line" size=".6"></el-load>
+  </el-cell>
+
+  <el-cell title="success" label="标准">
+    <el-load slot="content" type="success" size="1" color="{{color}}"></el-load>
+  </el-cell>
+  <el-cell title="success">
+    <el-load slot="content" type="success" size=".8"></el-load>
+  </el-cell>
+  <el-cell title="success" label="小">
+    <el-load slot="content" type="success" size=".6"></el-load>
+  </el-cell>
 </view>

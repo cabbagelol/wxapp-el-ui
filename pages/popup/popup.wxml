@@ -1,6 +1,6 @@
 <el-head head='{{head}}' bindhead='onGetHead'></el-head>
-<view class='container'> 
-  
+<view class='container'>
+
   <view class='popup-demo'>
     <button bindtap='onPopup'>{{!popup.show ? "显示" : "隐藏"}}</button>
   </view>
@@ -8,20 +8,20 @@
   <el-popup show='{{popup.show}}' modal='{{popup.modal}}' position='{{array[arrayi].v}}' animation='{{popup.animation}}' bindchange='onPopup'>
     <view slot='content' class='popup-content {{"popup-content-" + array[arrayi].v}}'>
       <view class='popup-content-text'>
-         <image src='https://gw.alipayobjects.com/mdn/miniapp_social/afts/img/A*pevERLJC9v0AAAAAAAAAAABjAQAAAQ/original' class='popup-content-img' />
+        <image src='https://gw.alipayobjects.com/mdn/miniapp_social/afts/img/A*pevERLJC9v0AAAAAAAAAAABjAQAAAQ/original' class='popup-content-img' />
       </view>
       <el-button bindtap='onPopup' size='normal'>确认</el-button>
     </view>
   </el-popup>
 
   <el-cell title="显示状态">
-    <switch slot="content" checked="{{popup.show}}" data-e="popup.show" bindchange="onSwitch"/>
+    <switch slot="content" checked="{{popup.show}}" data-e="popup.show" bindchange="$" />
   </el-cell>
   <el-cell title="动画">
-    <switch slot="content" checked="{{popup.animation}}" data-e="popup.animation" bindchange="onSwitch"/>
+    <switch slot="content" checked="{{popup.animation}}" data-e="popup.animation" bindchange="$" />
   </el-cell>
   <el-cell title="遮盖层" label='为false时无法点击非聚焦区域隐藏'>
-    <switch slot="content" checked="{{popup.modal}}" data-e="popup.modal" bindchange="onSwitch"/>
+    <switch slot="content" checked="{{popup.modal}}" data-e="popup.modal" bindchange="$" />
   </el-cell>
   <el-cell title="方向">
     <picker slot='content' range-key='n' bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
@@ -29,5 +29,5 @@
         {{array[arrayi].n}}
       </view>
     </picker>
-    </el-cell>
+  </el-cell>
 </view>

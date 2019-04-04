@@ -1,3 +1,5 @@
+const app = getApp();
+
 Page({
   data: {
     head: {
@@ -5,6 +7,7 @@ Page({
       back: true
     }
   },
+  
   onCellClick (e) {
     wx.showToast({
       title: 'Clicking Cell',

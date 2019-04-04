@@ -1,9 +1,10 @@
 el-body,
 el-button,
-el-img,
 el-cell,
 el-vacancy,
 el-row,
+el-input,
+el-layout,
 el-column {
   display: block;
 }
@@ -11,5 +12,5 @@ el-column {
 el-img,
 el-layout {
   max-width: 100%;
-  max-height: 100vh;
+  max-height: 100%;
 }

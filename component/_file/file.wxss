@@ -1,0 +1,16 @@
+.__file-popup__ {
+  background: #F2F2F2;
+  width: 100%;
+}
+
+.__file-popup-item__ {
+  background: #FFF;
+  border-bottom: 1px solid #F2F2F2;
+  padding: 20rpx 30rpx;
+  font-size: 30rpx;
+  text-align: center;
+}
+
+.__file-popup-cancel__ {
+  margin: 30rpx 0 0 0;
+}

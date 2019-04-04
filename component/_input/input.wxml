@@ -1,12 +1,23 @@
-<!-- 输入器 -->
+<!-- 
+  * 控件
+  ** 输入器
+ -->
 <view class='__input__'>
   <view class='__input__title__ {{!title ? "__input__title-null__" : ""}}'>
     <block wx:if='{{title}}'>
-        <text style='color:red' wx:if='{{mustchoose}}'>*</text>{{title}}
+      <text style='color:red' wx:if='{{mustchoose}}'>*</text>{{title}}
     </block>
-    <block wx:else><slot /></block>
+    <block wx:else>
+      <slot />
+    </block>
   </view>
-  <view>
+  <view class='__input-cont__'>
     <input type='{{type || "text"}}' placeholder='{{placeholder || (title ? ("请输入" + title) : "请输入内容")}}' value='{{value}}' bindinput='onInput' />
+  </view>
+  <view class='__input-clear__' bindtap='onClearValue' wx:if='{{clear && length > 0}}'>
+    <icon type='clear' color='#A1A1A1' size="10"></icon>
+  </view>
+  <view class='__input-right__'>
+    <slot name='right' />
   </view>
 </view>

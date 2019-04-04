@@ -9,8 +9,9 @@
 		"postcss": true,
 		"minified": true,
 		"newFeature": true,
-		"nodeModules": false,
-		"autoAudits": false
+		"nodeModules": true,
+		"autoAudits": false,
+		"uglifyFileName": false
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.6.2",
@@ -38,7 +39,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 16,
+			"current": 20,
 			"list": [
 				{
 					"id": -1,
@@ -76,8 +77,8 @@
 					"scene": null
 				},
 				{
-					"id": -1,
-					"name": "popup",
+					"id": 5,
+					"name": "弹窗",
 					"pathName": "pages/popup/popup",
 					"query": "",
 					"scene": null
@@ -97,8 +98,8 @@
 					"scene": null
 				},
 				{
-					"id": -1,
-					"name": "空",
+					"id": 8,
+					"name": "空置区",
 					"pathName": "pages/vacancy/vacancy",
 					"query": "",
 					"scene": null
@@ -156,6 +157,34 @@
 					"id": -1,
 					"name": "文件",
 					"pathName": "pages/file/file",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "滚动",
+					"pathName": "pages/rolling/rolling",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "cellswipe",
+					"pathName": "pages/cellswipe/cellswipe",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "滑动选择器",
+					"pathName": "pages/slider/slider",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "全局消息",
+					"pathName": "pages/message/message",
 					"scene": null
 				}
 			]

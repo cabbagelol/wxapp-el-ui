@@ -1,1 +1,17 @@
-/* pages/layout/layout.wxss */
+.layout-block {
+  padding: 10rpx 60rpx;
+  background: #18b6c1;
+  color: #FFF;
+  text-align: center;
+  border-radius: .3rem;
+  margin: 0 5rpx;
+  font-size: 25rpx;
+}
+
+.layout-block-lg {
+  padding: 50rpx 60rpx;
+}
+
+.layout-margin {
+  margin: 0 0 20rpx 0;
+}

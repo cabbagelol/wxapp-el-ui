@@ -1,4 +1,8 @@
+const app = getApp();
+
 Page({
+  $: app.e.$,
+  
   data: {
     head: {
       title: '标签页',
@@ -14,7 +18,8 @@ Page({
       data: [
         {
           title: '领袖',
-          cont: '国家导航'
+          cont: '国家导航',
+          disabled: true
         },
         {
           title: '设计',
@@ -31,12 +36,10 @@ Page({
         {
           title: '水源',
           cont: '人类来源',
-          disabled: true
         },
         {
           title: '动物',
           cont: '生物链',
-          disabled: true
         },
         {
           title: '代码',
@@ -52,17 +55,4 @@ Page({
       'tab.title': e.detail.title
     })
   },
-
-  onInput(e) {
-    this.setData({
-      [e.target.dataset.e]: e.detail.value
-    })
-  },
-
-  onSwitch(e) {
-    this.setData({
-      [e.target.dataset.e]: e.detail.value
-    })
-  }
-  
 })

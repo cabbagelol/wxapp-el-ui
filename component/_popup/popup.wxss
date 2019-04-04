@@ -30,12 +30,17 @@
 }
 
 .__popup-top-animation__ {
-  animation: top .25s;
+  animation: top 0.25s;
 }
 
 @keyframes top {
-  0% { top: -100% }
-  100% { top: 0 }
+  0% {
+    top: -100%;
+  }
+
+  100% {
+    top: 0;
+  }
 }
 
 .__popup__content-right__ {
@@ -48,12 +53,17 @@
 }
 
 .__popup-right-animation__ {
-  animation: right .25s;
+  animation: right 0.25s;
 }
 
 @keyframes right {
-  0% { right: -100% }
-  100% { right: 0 }
+  0% {
+    right: -100%;
+  }
+
+  100% {
+    right: 0;
+  }
 }
 
 .__popup__content-bottom__ {
@@ -64,12 +74,40 @@
 }
 
 .__popup-bottom-animation__ {
-  animation: bottom .25s;
+  animation: bottom 0.25s;
 }
 
 @keyframes bottom {
-  0% { bottom: -100% }
-  100% { bottom: 0 }
+  0% {
+    bottom: -100%;
+  }
+
+  100% {
+    bottom: 0;
+  }
+}
+
+.__popup__content-center__ {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
+.__popup-center-animation__ {
+  animation: center 0.25s;
+}
+
+@keyframes center {
+  0% {
+    bottom: -100%;
+  }
+
+  100% {
+    bottom: 0;
+  }
 }
 
 .__popup__content-left__ {
@@ -82,14 +120,19 @@
 }
 
 .__popup-left-animation__ {
-  animation: left .25s;
+  animation: left 0.25s;
 }
 
 @keyframes left {
-  0% { left: -100% }
-  100% { left: 0 }
+  0% {
+    left: -100%;
+  }
+
+  100% {
+    left: 0;
+  }
 }
 
 .__popup-animation__ {
-  transition:  all .25s;
+  transition: all 0.25s;
 }

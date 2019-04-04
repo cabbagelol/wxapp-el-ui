@@ -1,15 +1,27 @@
 <el-head head='{{head}}' stickie='true'></el-head>
 <view class='container'>
-  <el-input placeholder='输入内容'></el-input>
-  <el-input title='名字' bindinput='onInput'></el-input>
-  <el-input title='年龄' type='number'></el-input>
-  <el-input title='描述' value='默认内容' type='number'></el-input>
-  <el-input title='学历' mustchoose='true' placeholder='输入你的学历信息' type='number'></el-input>
-
-  <el-input>
-    <el-input-title max='290rpx'>
-      <view class='tag'>正面</view> 真实的身份证照片
-      <text style='color:red'>*</text>
-    </el-input-title>
-  </el-input>
+  <text class='container-text'>
+文本框:{{value.a || '未填写'}}
+名字:{{value.b || '未填写'}}
+年龄:{{value.c  || '未填写'}}
+描述:{{value.d  || '未填写'}}
+学历:{{value.e  || '未填写'}}
+身份证:{{value.f  || '未填写'}}
+  </text>
+  <el-layout>
+    <el-input placeholder='输入内容' data-e='value.a' bindinput='$'></el-input>
+    <el-input title='名字' data-e='value.b' bindinput='$'></el-input>
+    <el-input title='年龄' type='number' data-e='value.c' bindinput='$'></el-input>
+    <el-input title='描述' value='{{value.d}}' type='number' clear data-e='value.d' bindinput='$'></el-input>
+    <el-input title='学历' mustchoose='true' placeholder='输入你的学历信息' type='number' clear data-e='value.e' bindinput='$'></el-input>
+    <el-input data-e='value.f' bindinput='$'>
+      <el-input-title max='290rpx'>
+        <el-tag size='3' color='orange' textColor='#FFF'>正面</el-tag>身份证照片
+        <text style='color:red'>*</text>
+      </el-input-title>
+      <view slot='right'>
+        <icon type='success' size='30'></icon>
+      </view>
+    </el-input>
+  </el-layout>
 </view>

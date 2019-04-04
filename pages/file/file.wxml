@@ -1,2 +1,15 @@
-<!--pages/file/file.wxml-->
-<text>pages/file/file.wxml</text>
+<el-head head='{{head}}' stickie='true'></el-head>
+<view class='container'>
+  <el-file file='{{file}}' album='{{true}}' camera='{{false}}' files='{{false}}' video='{{false}}' bindsucceed='onFile'>
+    <el-button>选择</el-button>
+  </el-file>
+  <view wx:for='{{filelist}}' wx:key='{{index}}' class='file-item'>
+    <image src='{{item.path}}' wx:if='{{item.type=="image"}}'></image>
+    <video src='{{item.path}}' wx:if='{{item.type=="video"}}'></video>
+  </view>
+  <el-vacancy cont='true' height='600rpx' wx:if='{{filelist.length <= 0}}'>
+    <view slot='cont'>
+      <el-img src='https://gw.alipayobjects.com/mdn/miniapp_social/afts/img/A*pevERLJC9v0AAAAAAAAAAABjAQAAAQ/original' style='margin: 0 auto;display:block;width: 350rpx; height: 320rpx' mode='scaleToFill' />
+    </view>
+  </el-vacancy>
+</view>

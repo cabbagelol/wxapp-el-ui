@@ -1,17 +1,18 @@
+const config = require("../index.js");
+
 Component({
   properties: {
-    size: String,
-    type: String
-  },
-  
-  ready () {
-    var that = this
-    wx.createSelectorQuery().in(this).select('#load').boundingClientRect(function (rect) {
-      if (!!that.data.size) {
-        that.setData({
-          size: (rect.width * rect.height) / 1000
-        })
+    color: {
+      type: Object,
+      value: {
+        essential: '',
+        deputy: 'rgba(0, 0, 0, 0.06)'
       }
-    }).exec()
+    },
+    size: {
+      type: String,
+      value: 1
+    },
+    type: String
   },
 })

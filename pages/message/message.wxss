@@ -1,0 +1,10 @@
+.message {
+  white-space: nowrap;
+}
+
+.message-tip {
+  font-size: 30rpx;
+  color: #999;
+  display: block;
+  margin: 0 0 20rpx 0;
+}

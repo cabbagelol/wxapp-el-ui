@@ -7,23 +7,30 @@ Page({
     content: {
       head: 0,
       body: 0,
-      footer: 0,
-      scrollbar: false,
-      scrollButtonY: 0,
-      upperThreshold: 100,  
-      lowerThreshold: 100,
-      autoFullscreenf: true,
-      rubber: true,
-      y: 0,
-      tap: {
-        y: -200
-      }
-    }
+      footer: 0
+    },
+    message: false
   },
 
-  onScroll (e) {
-    this.setData({
-      'content.y': e.detail.scrollY
+  onReady () {
+    this.body = this.selectComponent(".body");
+  },
+
+  openMessage () {
+    var that =this;
+    if (that.data.message) {return}
+    that.setData({ message: true})
+    that.body.data.message.onMessage({
+      type: 'success',
+      cont: '内容' + new Date(),
+      time: 3000,
+      succeed() {
+        wx.showToast({
+          title: '成功',
+          icon: 'none'
+        })
+        that.setData({ message: false })
+      }
     })
   },
 
@@ -35,22 +42,4 @@ Page({
       'content.scrollButtonY': e.detail.body.scrollButtonY
     })
   },
-
-  onSetScroll (e) {
-    this.setData({
-      'content.y': e.target.dataset.value
-    })
-  },
-
-  onInput(e) {
-    this.setData({
-      [e.target.dataset.e]: e.detail.value
-    })
-  },
-
-  onSwitch(e) {
-    this.setData({
-      [e.target.dataset.e]: e.detail.value
-    })
-  }
 })  

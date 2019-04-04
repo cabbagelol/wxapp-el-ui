@@ -6,13 +6,13 @@
   </view>
 
   <el-cell title="滚动" label='禁用滚动, 当滚动时禁用需完成一次滚动生效'>
-    <switch slot="content" checked="{{scroll.isscroll}}" data-e="scroll.isscroll" bindchange="onSwitch"/>
+    <switch slot="content" checked="{{scroll.isscroll}}" data-e="scroll.isscroll" bindchange="$"/>
   </el-cell>
   <el-cell title="拖拽" label='允许手势左右拖拽查看弹幕'>
-    <switch slot="content" checked="{{scroll.drag}}" data-e="scroll.drag" bindchange="onSwitch"/>
+    <switch slot="content" checked="{{scroll.drag}}" data-e="scroll.drag" bindchange="$"/>
   </el-cell>
   <el-cell title="内容">
-    <input slot="content" value="{{scroll.cont}}" data-e="scroll.cont" bindinput="onInput" disabled />
+    <input slot="content" value="{{scroll.cont}}" data-e="scroll.cont" bindinput="$" disabled />
   </el-cell>
   <el-cell title='方向' label='需要在弹幕滚动结束后生效'>
     <picker slot='content' range-key='n' bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
@@ -22,19 +22,19 @@
     </picker>
   </el-cell>
   <el-cell title="字体颜色">
-    <input slot="content" value="{{scroll.color}}" data-e="scroll.color" bindinput="onInput" />
+    <input slot="content" value="{{scroll.color}}" data-e="scroll.color" bindinput="$" />
   </el-cell>
   <el-cell title="背景">
-    <input slot="content" value="{{scroll.background}}" data-e="scroll.background" bindinput="onInput" />
+    <input slot="content" value="{{scroll.background}}" data-e="scroll.background" bindinput="$" />
   </el-cell>
   <el-cell title="宽度: {{scroll.width}}">
     <view slot="content">
-      <slider style='width: 300rpx' bindchange="onSlider" data-e="scroll.width" value='{{scroll.width}}' min="200" max="600" step="1" />
+      <slider style='width: 300rpx' bindchange="$" data-e="scroll.width" value='{{scroll.width}}' min="200" max="600" step="1" />
     </view>
   </el-cell>
   <el-cell title="滚动速度: {{scroll.velocity}}">
     <view slot="content">
-      <slider style='width: 300rpx' bindchange="onSlider" data-e="scroll.velocity" value='{{scroll.velocity}}' min="0" max="10" step="1" />
+      <slider style='width: 300rpx' bindchange="$" data-e="scroll.velocity" value='{{scroll.velocity}}' min="0" max="10" step="1" />
     </view>
   </el-cell>
 </view>

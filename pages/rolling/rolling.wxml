@@ -1,0 +1,36 @@
+<el-head head='{{head}}' stickie='true' class='content-head'></el-head>
+
+<view class='rolling'>
+  <el-rolling animation='200' scrollbar='{{rolling.scrollbar}}' upperThreshold='{{rolling.upperThreshold}}' lowerThreshold='{{rolling.lowerThreshold}}' fullscreen='{{rolling.autoFullscreenf}}' rubber='{{rolling.rubber}}' isscroll='{{rolling.isscroll}}'
+    scrollY='{{rolling.y}}' bindscroll='onScroll' bindready='onScrollReady' class='rolling-body'>
+
+    <el-cell title="橡皮筋">
+      <switch slot="content" checked="{{rolling.rubber}}" data-e="rolling.rubber" bindchange="$" />
+    </el-cell>
+    <el-cell title="滚动条">
+      <switch slot="content" checked="{{rolling.scrollbar}}" data-e="rolling.scrollbar" bindchange="$" />
+    </el-cell>
+    <el-cell title="是否滚动">
+      <switch slot="content" checked="{{rolling.isscroll}}" data-e="rolling.isscroll" bindchange="$" />
+    </el-cell>
+    <el-cell title="最大下拉值">
+      <input slot="content" value="{{rolling.upperThreshold}}" data-e="rolling.upperThreshold" bindinput="$" />
+    </el-cell>
+    <el-cell title="最大上拉值">
+      <input slot="content" value="{{rolling.lowerThreshold}}" data-e="rolling.lowerThreshold" bindinput="$" />
+    </el-cell>
+    <el-cell title='Y轴' class='content-body'>
+      <el-numIndicator slot='content' value='{{rolling.tap.y}}' data-e='rolling.tap.y' bindchange='$'></el-numIndicator>
+    </el-cell>
+    <view class='container'>
+      <el-button bindtap='onSetScroll' data-value='{{rolling.tap.y}}'>滚动到{{rolling.tap.y}}</el-button>
+      <el-button bindtap='onSetScroll' data-value='{{rolling.scrollButtonY}}'>滚动到底部</el-button>
+      <el-vacancy cont='true' height='1000rpx'>
+        <view slot='cont'>
+          <el-img src='https://gw.alipayobjects.com/mdn/miniapp_social/afts/img/A*pevERLJC9v0AAAAAAAAAAABjAQAAAQ/original' style='margin: 0 auto;display:block;width: 350rpx; height: 320rpx' mode='scaleToFill' />
+        </view>
+      </el-vacancy>
+      <el-button bindtap='onSetScroll' data-value='0'>置顶</el-button>
+    </view>
+  </el-rolling>
+</view>

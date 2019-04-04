@@ -1,31 +1,28 @@
 <!-- 导航 -->
 <view class='__head__' style='height: {{nav.interne.navHeight + "px"}}'>
-    <image class='__head-background__' src='{{head.style.background || ""}}' wx:if='{{!!head.style.background}}'></image>
+  <image class='__head-background__' src='{{head.style.backgroundImage || ""}}' wx:if='{{!!head.style.backgroundImage}}'></image>
 
-    <view class='__head_up__'
-          style='margin:{{nav.statusBarHeight}}px 0 0 0; background: {{head.style.background ? head.style.background : "inherit"}}'
-          wx:if='{{stickie}}'></view>
+  <view class='__head_up__' style='margin:{{nav.statusBarHeight}}px 0 0 0; background: {{head.style.background ? head.style.background : "inherit"}}' wx:if='{{stickie}}'></view>
 
-    <view class='__head_block__ {{stickie ? "__head_stickie__" :  ""}}'
-          style='padding:{{nav.statusBarHeight}}px 0 0 0; background: {{head.style.background ? head.style.background : "inherit"}}'>
+  <view class='__head_block__ {{stickie ? "__head_stickie__" :  ""}}' style='padding:{{nav.statusBarHeight}}px 0 0 0; background: {{head.style.background ? head.style.background : "inherit"}}'>
 
-        <view class='__head_block_rbtns__'>
-            <view bindtap='onBack' wx:if='{{head.back}}'>
-                <image class='__head_block_rbtns_back__' src='./images/head_back.png'></image>
-            </view>
-            <slot name='nav-left'></slot>
-        </view>
-
-        <view class='__head_block_title__' style='color: {{head.style.textColor ? head.style.textColor : "#000"}}'>
-            <slot name='nav-tit' style='font-size: {{nav.fontSizeSetting ? nav.fontSizeSetting : ""}}'></slot>
-            <view>{{head.title || '标题'}}</view>
-            <el-load size='.6' wx:if="{{load}}"/>
-        </view>
-
-        <view class="__head_block_rbtns__">
-            <slot name='nav-right'></slot>
-        </view>
-
+    <view class='__head_block_rbtns__'>
+      <view bindtap='onBack' wx:if='{{head.back}}'>
+        <view class='icon-fanhui' style='color: {{head.style.textColor ? head.style.textColor : "#000"}}'></view>
+      </view>
+      <slot name='nav-left'></slot>
     </view>
+
+    <view class='__head_block_title__' style='color: {{head.style.textColor ? head.style.textColor : "#000"}}'>
+      <slot name='nav-tit' style='font-size: {{nav.fontSizeSetting ? nav.fontSizeSetting : ""}}'></slot>
+      <view>{{head.title || '标题'}}</view>
+      <el-load size='.6' wx:if="{{load}}" />
+    </view>
+
+    <view class="__head_block_rbtns__">
+      <slot name='nav-right'></slot>
+    </view>
+
+  </view>
 
 </view>

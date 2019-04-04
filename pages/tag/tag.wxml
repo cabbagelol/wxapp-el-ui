@@ -1,2 +1,34 @@
-<!--pages/tag/tag.wxml-->
-<text>pages/tag/tag.wxml</text>
+<el-head head='{{head}}' stickie='true'></el-head>
+<view class='container'>
+  <el-cell title='标准标签'>
+    <el-tag slot='content' wx:for='{{2}}' color='#FFF' textColor='#000' wx:key='{{index}}'>测试 {{index}}</el-tag>
+  </el-cell>
+
+  <el-cell title='幽灵' label='幽灵状态下，背景是继承父容器'>
+    <el-tag slot='content' plain>幽灵</el-tag>
+  </el-cell>
+
+  <el-cell title='3号' label='大小'>
+    <el-tag slot='content' size='3' textColor='#1A1A1A'>测试文本</el-tag>
+  </el-cell>
+
+  <el-cell title='5号' label='大小'>
+    <el-tag slot='content' size='5' textColor='#1A1A1A'>测试文本</el-tag>
+  </el-cell>
+
+  <el-cell title='7号' label='大小'>
+    <el-tag slot='content' size='7' textColor='#1A1A1A'>测试文本</el-tag>
+  </el-cell>
+
+  <el-cell title='自定义字体颜色'>
+    <el-tag slot='content' textColor='#1A1A1A'>字体颜色</el-tag>
+  </el-cell>
+
+  <el-cell title='自定义背景颜色'>
+    <el-tag slot='content' color='#F57724' textColor='#FFF'>背景颜色</el-tag>
+  </el-cell>
+
+  <el-cell title='圆角'>
+    <el-tag slot='content' color='#F57724' textColor='#FFF' round>圆角标签</el-tag>
+  </el-cell>
+</view>

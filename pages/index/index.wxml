@@ -35,9 +35,24 @@
     <el-cell title='下拉刷新' label='refresh' islink></el-cell>
   </navigator>
   <navigator url="../tab/tab" open-type="navigate">
-    <el-cell title=' 标签页' label='tab' islink></el-cell>
+    <el-cell title='标签页' label='tab' islink></el-cell>
   </navigator>
-
+  <navigator url="../rolling/rolling" open-type="navigate">
+    <el-cell title='滚动' label='rolling' islink></el-cell>
+  </navigator>
+  <navigator url="../file/file" open-type="navigate">
+    <el-cell title='文件' label='file' islink></el-cell>
+  </navigator>
+  <navigator url="../cellswipe/cellswipe" open-type="navigate">
+    <el-cell title='cellswipe' label='cellswipe' islink></el-cell>
+  </navigator>
+  <navigator url="../slider/slider" open-type="navigate">
+    <el-cell title='滑动选择器' label='slider' islink></el-cell>
+  </navigator>
+  <navigator url="../message/message" open-type="navigate">
+    <el-cell title='全局消息' label='message' islink></el-cell>
+  </navigator>
+  
   <view class='htitle'>界面</view>
   <navigator url="../load/load" open-type="navigate">
     <el-cell title='装载' label='load' islink></el-cell>
@@ -56,10 +71,5 @@
   </navigator>
   <navigator url="../layout/layout" open-type="navigate">
     <el-cell title='布局' label='layout' islink></el-cell>
-  </navigator>
-
-  <view class='htitle'>第三方</view>
-  <navigator url="../file/file" open-type="navigate">
-    <el-cell title='七牛云图片上传' label='file' islink></el-cell>
   </navigator>
 </view>

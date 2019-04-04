@@ -1,8 +1,16 @@
 <!-- 装载 -->
-<view class='_load_' id='load' style='transform: scale({{size || 1}})'>
-  <view class='_load_main' wx:if='{{type == "main" || type == ""}}'></view>
-  <view class='_load_circular loading' wx:elif='{{type == "circular"}}'>
-      <view wx:for='{{5}}' wx:key='{{index}}'></view>
+<view class='__load__' id='load' style='transform: scale({{size || 1}})'>
+  <view class='_load_main' wx:if='{{type == "main" || type == ""}}' style='border-top: 5rpx solid {{color.essential || "#18b6c1"}};border-left: 5rpx solid {{color.deputy || "rgba(0, 0, 0, 0.1)"}}; border-right: 5rpx solid {{color.deputy || "rgba(0, 0, 0, 0.1)"}}; border-bottom: 5rpx solid {{color.deputy || "rgba(0, 0, 0, 0.1)"}}'></view>
+
+  <view class='_load_circular location_indicator' wx:elif='{{type == "location"}}'>
+    <view style='box-shadow: 0px 0px 0px 5rpx {{color.essential || "#18b6c1"}}'></view>
+    <view style='background-color: {{color.deputy || rgba(0, 0, 0, 0.06)}};'></view>
   </view>
-  <view class='_load_line' wx:elif='{{type == "line"}}'></view>
+
+  <view class='_load_line' wx:elif='{{type == "line"}}'>
+    <view style='background: {{color.deputy || "rgba(0, 0, 0, 0.2)"}};'></view>
+    <view style='  background: {{color.essential || "#18b6c1"}};'></view>
+  </view>
+
+  <icon type='{{type}}' color='{{color.essential}}' wx:else />
 </view>

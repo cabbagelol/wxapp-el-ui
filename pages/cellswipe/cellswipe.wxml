@@ -1,0 +1,87 @@
+<el-head head='{{head}}' stickie='true' class='content-head'></el-head>
+<view class='container'>
+
+  <el-cellswipe color='red' disabled bindchange='onCellswipe'>
+    <el-cell slot='cont' title='禁用' label='禁用控件'></el-cell>
+    <view slot='right' class='cellswipe-buttons'>
+      <view class='cellswipe-cancel' bindtap='onSucceed'>完成</view>
+      <view class='cellswipe-delete'>删除</view>
+    </view>
+  </el-cellswipe>
+
+  <el-cellswipe color='red' bindchange='onCellswipe'>
+    <el-cell slot='cont' title='左滑动' label='请在此区域触摸屏幕从右向左滑动'></el-cell>
+    <view slot='right' class='cellswipe-buttons'>
+      <view class='cellswipe-cancel' bindtap='onSucceed'>完成</view>
+      <view class='cellswipe-delete'>删除</view>
+    </view>
+  </el-cellswipe>
+
+  <el-cellswipe color='#18b6c1' bindchange='onCellswipe'>
+    <view slot='left' class='cellswipe-buttons'>
+      <view class='cellswipe-cancel' bindtap='onSucceed'>完成</view>
+      <view class='cellswipe-delete'>删除</view>
+    </view>
+    <el-cell slot='cont' title='右滑动' label='请在此区域触摸屏幕从左向右滑动'></el-cell>
+  </el-cellswipe>
+
+  <el-cellswipe color='red' bindchange='onCellswipe'>
+    <view slot='left'>
+      <el-row>
+        <view class='cellswipe-delete'>删除</view>
+        <view class='cellswipe-cancel' bindtap='onSucceed'>完成</view>
+      </el-row>
+    </view>
+    <el-cell slot='cont' title='左右滑动' label='请在此区域触摸屏幕从左或右滑动'></el-cell>
+    <view slot='right'>
+      <el-row>
+        <view class='cellswipe-cancel' bindtap='onSucceed'>完成</view>
+        <view class='cellswipe-delete'>删除</view>
+      </el-row>
+    </view>
+  </el-cellswipe>
+
+  <el-cellswipe show='left' bindchange='onCellswipe'>
+    <view slot='left' class='cellswipe-buttons'>
+      <view class='cellswipe-delete'>删除</view>
+    </view>
+    <el-cell slot='cont' title='默认显示' label='左'></el-cell>
+  </el-cellswipe>
+
+  <el-cellswipe show='right' bindchange='onCellswipe'>
+    <el-cell slot='cont' title='默认显示' label='右'></el-cell>
+    <view slot='right' class='cellswipe-buttons'>
+      <view class='cellswipe-delete'>删除</view>
+    </view>
+  </el-cellswipe>
+
+  <el-cellswipe show='{{cellswipe.left.show}}'>
+    <el-cell slot='cont' title='主动收起' label='左'></el-cell>
+    <view slot='left' class='cellswipe-buttons'>
+      <view class='cellswipe-delete' bindtap='onSetShow' data-e='cellswipe.left.show'>收起</view>
+    </view>
+  </el-cellswipe>
+
+  <el-cellswipe show='{{cellswipe.right.show}}'>
+    <el-cell slot='cont' title='主动收起' label='右'></el-cell>
+    <view slot='right' class='cellswipe-buttons'>
+      <view class='cellswipe-delete' bindtap='onSetShow' data-e='cellswipe.right.show'>收起</view>
+    </view>
+  </el-cellswipe>
+</view>
+
+<el-cellswipe bindchange='onCellswipe'>
+  <view slot='left' class='cellswipe-h'>
+    <el-button>上一页</el-button>
+  </view>
+  <el-vacancy cont class='cellswipe-vacancy vacancy' slot='cont'>
+    <view slot='cont'>
+      <view class='vacancy-text'>
+        触摸这里，左右滑动
+      </view>
+    </view>
+  </el-vacancy>
+  <view slot='right' class='cellswipe-h'>
+    <el-button>下一页</el-button>
+  </view>
+</el-cellswipe>

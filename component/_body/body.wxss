@@ -11,34 +11,7 @@ page {
 
 .__content-body__ {
   width: 100%;
-  overflow: hidden;
+  overflow: auto;
   position: relative;
 }
 
-.__content-body__ > view {
-  overflow: hidden;
-}
-
-.__content-body-scrollbar__ {
-  position: absolute;
-  z-index: 10;
-  top: 0;
-  right: 0;
-  width: 10rpx;
-  background: rgba(0, 0, 0, 0.05);
-}
-
-.__content-body-scrollbar-body__ {
-  position: relative;
-  height: calc(100%);
-  width: 90%;
-}
-
-.__content-body-scrollbar-body__ > view {
-  position: absolute;
-  transition:  top .5s;
-  width: 100%;
-  display: block;
-  background: rgba(0, 0, 0, 0.2);
-  border-radius: 50px;
-}

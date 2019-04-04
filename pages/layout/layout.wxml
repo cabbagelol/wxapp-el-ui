@@ -1,2 +1,83 @@
-<!--pages/layout/layout.wxml-->
-<text>pages/layout/layout.wxml</text>
+<el-head head='{{head}}' stickie='true'></el-head>
+
+<el-layout>
+  <el-cell title='固定尺寸'></el-cell>
+  <view class='container'>
+    <el-column class='layout-margin'>
+      <el-column-xs class='layout-block'>20%</el-column-xs>
+      <el-column-xl></el-column-xl>
+    </el-column>
+    <el-column class='layout-margin'>
+      <el-column-sm class='layout-block'>40%</el-column-sm>
+      <el-column-lg></el-column-lg>
+    </el-column>
+    <el-column class='layout-margin'>
+      <el-column-sub class='layout-block'>50%</el-column-sub>
+      <el-column-sub></el-column-sub>
+    </el-column>
+    <el-column class='layout-margin'>
+      <el-column-lg class='layout-block'>60%</el-column-lg>
+      <el-column-sm></el-column-sm>
+    </el-column>
+    <el-column class='layout-margin'>
+      <el-column-xl class='layout-block'>80%</el-column-xl>
+      <el-column-xs></el-column-xs>
+    </el-column>
+  </view>
+</el-layout>
+
+<el-layout>
+  <el-cell title='比例'></el-cell>
+  <view class='container'>
+    <el-column class='layout-margin'>
+      <el-column-5 class='layout-block'> 5 </el-column-5>
+      <el-column-2 class='layout-block'> 2 </el-column-2>
+      <el-column-5 class='layout-block'> 5 </el-column-5>
+    </el-column>
+    <el-column class='layout-margin'>
+      <el-column-1 class='layout-block'> 1 </el-column-1>
+      <el-column-2 class='layout-block'> 2 </el-column-2>
+      <el-column-3 class='layout-block'> 3 </el-column-3>
+    </el-column>
+    <el-column class='layout-margin'>
+      <el-column-5 class='layout-block'> 5 </el-column-5>
+      <el-column-5 class='layout-block'> 5 </el-column-5>
+    </el-column>
+  </view>
+</el-layout>
+
+<el-layout>
+  <el-cell title='水平'></el-cell>
+  <view class='container'>
+    <el-column class='layout-margin' alignX='start'>
+      <view class='layout-block'> 方向 </view>
+      <view class='layout-block'> 方向 </view>
+    </el-column>
+    <el-column class='layout-margin' alignX='center'>
+      <view class='layout-block'> 方向 </view>
+      <view class='layout-block'> 方向 </view>
+    </el-column>
+    <el-column class='layout-margin' alignX='end'>
+      <view class='layout-block'> 方向 </view>
+      <view class='layout-block'> 方向 </view>
+    </el-column>
+  </view>
+</el-layout>
+
+<el-layout>
+  <el-cell title='垂直'></el-cell>
+  <view class='container'>
+    <el-row class='layout-margin' align='start'>
+      <view class='layout-block layout-block-lg'> 参照物 </view>
+      <view class='layout-block'> 对比 </view>
+    </el-row>
+    <el-row class='layout-margin' align='center'>
+      <view class='layout-block layout-block-lg'> 参照物 </view>
+      <view class='layout-block'> 对比 </view>
+    </el-row>
+    <el-row class='layout-margin' align='end'>
+      <view class='layout-block layout-block-lg'> 参照物 </view>
+      <view class='layout-block'> 对比 </view>
+    </el-row>
+  </view>
+</el-layout>

@@ -1,0 +1,16 @@
+.rolling {
+  display: inline-flex;
+  width: 100%;
+  height: calc(100% - 200rpx);
+  justify-content: center;
+  align-items: center;
+}
+
+.rolling-body {
+  border: 1px solid #eee;
+  display: block;
+  height: 1000rpx;
+  width: 80%;
+  background: #555;
+  overflow: hidden;
+}

@@ -1,4 +1,8 @@
+const app = getApp();
+
 Page({
+  $: app.e.$,
+
   data: {
     head: {
       stickie: true,
@@ -23,16 +27,4 @@ Page({
       }
     )
   },
-
-  onInput (e) {
-    this.setData({
-      [e.target.dataset.e]: e.detail.value
-    })
-  },
-
-  onSwitch (e) {
-    this.setData({
-      [e.target.dataset.e]: e.detail.value
-    })
-  }
 })

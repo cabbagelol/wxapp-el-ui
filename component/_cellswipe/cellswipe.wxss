@@ -1,0 +1,48 @@
+.__cellswipe__ {
+  overflow: hidden;
+}
+
+.__cellswipe-controller__ {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.__cellswipe-controller-center__ {
+  width: 100%;
+  min-height: 100%;
+  min-width: 100%;
+}
+
+.__cellswipe-controller-right__, .__cellswipe-controller-left__,
+.__cellswipe-controller-center__ {
+  position: relative;
+  display: inline-block;
+  letter-spacing: -2rpx;
+}
+
+.__cellswipe-controller-right-cont__, .__cellswipe-controller-left-cont__ {
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+  height: 100%;
+}
+
+.__cellswipe-controller-right-cont-d__ {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0px;
+  height: 100%;
+  width: 200%;
+}
+
+.__cellswipe-controller-left-cont-d__ {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 200%;
+}

@@ -1,0 +1,79 @@
+.__message__ {
+  position: fixed;
+  z-index: 100;
+  top: -100%;
+  left: 0;
+  right: 0;
+  background: #fff;
+  box-shadow: 0 0 20rpx rgba(0, 0, 0, 0.06);
+}
+
+.__message-top__ {
+  width: calc(100% - 200rpx);
+  display: inline-flex;
+  min-height: 65rpx;
+}
+
+.__message-animation__ {
+  animation: message 0.5s both;
+}
+
+.__message-animation-up__ {
+  animation: messageup 0.5s both;
+}
+
+.__message-icon__, .__message-text__ {
+  display: inline-flex;
+  align-items: center;
+}
+
+.__message-icon__ el-load {
+  display: block;
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.__message-text__ {
+  font-size: 25rpx;
+}
+
+.__message-success__ {
+  background: #8bc34a;
+  color: #fff;
+}
+
+.__message-warning__ {
+  background: #ffc107;
+  color: #fff;
+}
+
+.__message-danger__ {
+  background: #f44336;
+  color: #fff;
+}
+
+@keyframes messageup {
+  0% {
+    top: 0;
+  }
+
+  100% {
+    top: -100%;
+  }
+}
+
+@keyframes message {
+  0% {
+    top: -100%;
+  }
+
+  80% {
+    top: 0;
+    padding: 60rpx 50rpx 20rpx 50rpx;
+  }
+
+  100% {
+    padding: 20rpx 50rpx;
+    top: 0;
+  }
+}

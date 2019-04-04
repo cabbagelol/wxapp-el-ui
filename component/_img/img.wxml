@@ -2,8 +2,8 @@
   * 控件
   * 图片
  -->
- <view class="__img__">
-  <image class='__img-item__' src="{{src}}{{imageslim ? '?imageslim' : ''}}"
+ <view class="__img__ ">
+  <image class='__img-item__ fade_in' src="{{src + (imageslim ? '?imageslim' : '')}}"
          lazy-load="{{lazyload}}"
          aria-label="{{arialabel}}"
          data-url="{{src}}"
@@ -13,6 +13,7 @@
          wx:if="{{src}}" 
          bindload="onLoad"
          binderror="onError"
-         mode="{{mode || 'aspectFill'}}"></image>
-  <image class='__img-item__' src="{{placeholder ? placeholder : './images/cover.png'}}" style='{{style}}' wx:if="{{!src || src == ''}}" mode="aspectFill"></image>
+         mode="{{mode || 'aspectFill'}}"
+         wx:if='{{src}}'></image>
+  <image class='__img-item__ fade_in' src="{{placeholder ? placeholder : './images/cover.png'}}" style='{{style}}' wx:if="{{!src || src == ''}}" mode="aspectFill"></image>
  </view>

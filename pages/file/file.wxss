@@ -1,1 +1,5 @@
-/* pages/file/file.wxss */
+.file-item image,
+.file-item video {
+  width: 100%;
+  display: block;
+}
