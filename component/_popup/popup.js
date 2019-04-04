@@ -19,7 +19,7 @@ Component({
 
   methods: {
     onModal(e) {
-      var that = this
+      var that = this;
       that.setData({ 'show': that.data.show != true })
       that.triggerEvent('change', {
         value: that.data.show,

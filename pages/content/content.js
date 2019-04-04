@@ -8,7 +8,30 @@ Page({
       head: 0,
       body: 0,
       footer: 0
-    }
+    },
+    message: false
+  },
+
+  onReady () {
+    this.body = this.selectComponent(".body");
+  },
+
+  openMessage () {
+    var that =this;
+    if (that.data.message) {return}
+    that.setData({ message: true})
+    that.body.data.message.onMessage({
+      type: 'success',
+      cont: '内容' + new Date(),
+      time: 3000,
+      succeed() {
+        wx.showToast({
+          title: '成功',
+          icon: 'none'
+        })
+        that.setData({ message: false })
+      }
+    })
   },
 
   onScrollReady (e) {

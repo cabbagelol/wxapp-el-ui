@@ -10,12 +10,13 @@ Component({
     show: {
       type: String,
       value: ''
-    }
+    },
+    disabled: Boolean
   },
 
   observers: {
     'show': function(show_) {
-      this.onSetShowValue(show_)
+      this.onSetShowValue(show_, 200)
     }
   },
 
@@ -37,10 +38,10 @@ Component({
     if (config.util.in(that)) {
       config.util.$('.__cellswipe-controller-right__,.__cellswipe-controller-center__,.__cellswipe-controller-left__').then(function(e) {
         that.setData({
-          'cellswipe.rightW': e['.__cellswipe-controller-right__'].width,
-          'cellswipe.leftW': e['.__cellswipe-controller-left__'].width,
-          'cellswipe.centerH': e['.__cellswipe-controller-center__'].height,
-          'cellswipe.left': that.data.cellswipe.left - e['.__cellswipe-controller-left__'].width
+          'cellswipe.rightW': e['.__cellswipe-controller-right__'] ? e['.__cellswipe-controller-right__'].width : 0,
+          'cellswipe.leftW': e['.__cellswipe-controller-left__'] ? e['.__cellswipe-controller-left__'].width : 0,
+          'cellswipe.centerH': e['.__cellswipe-controller-center__'] ? e['.__cellswipe-controller-center__'].height : 0,
+          'cellswipe.left': that.data.cellswipe.left - e['.__cellswipe-controller-left__'] ? e['.__cellswipe-controller-left__'].width : 0
         })
         that.onSetShowValue(that.data.show)
       })
@@ -95,7 +96,7 @@ Component({
       var point = e.changedTouches[0];
       var calcX = point.pageX - (that.data.cellswipe.startX + that.data.cellswipe.endX);
       if (e.changedTouches.length > 1) {
-        return
+        return;
       }
       if (that.data.cellswipe.leftW <= 0 && calcX > that.data.cellswipe.leftW) {
         calcX = 0
@@ -103,10 +104,13 @@ Component({
       if (that.data.cellswipe.rightW <= 0 && calcX < -that.data.cellswipe.leftW) {
         calcX = -that.data.cellswipe.leftW
       }
+      if (!!that.data.color == false && (calcX >= 0 || calcX <= -that.data.cellswipe.leftW)) {
+        return;
+      }
       this.setData({
         'cellswipe.left': calcX,
-        'cellswipe.rightWs': that.data.cellswipe.rightW + (-calcX - that.data.cellswipe.rightW),
-        'cellswipe.leftWs': that.data.cellswipe.leftW - (-calcX - that.data.cellswipe.leftW)
+        'cellswipe.rightWs': that.data.cellswipe.rightW + (-calcX - that.data.cellswipe.rightW) || 0,
+        'cellswipe.leftWs': that.data.cellswipe.leftW - (-calcX - that.data.cellswipe.leftW) || 0
       })
     },
 
@@ -127,12 +131,13 @@ Component({
     },
 
     onChange(data_) {
+      if (this.data.disabled) {return}
       this.triggerEvent('change', Object.assign(data_, {
         type: 'cellswipe'
       }))
     },
 
-    onSetShowValue(show_) {
+    onSetShowValue(show_, time_) {
       var that = this;
       if (show_) {
         var val = 0;
@@ -148,7 +153,8 @@ Component({
         val = -that.data.cellswipe.leftW
       }
       that.setData({
-        'cellswipe.left': val
+        'cellswipe.left': val,
+        'cellswipe.duration': time_ || 0
       })
     },
   }

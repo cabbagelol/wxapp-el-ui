@@ -20,7 +20,8 @@
     "pages/file/file",
     "pages/rolling/rolling",
     "pages/cellswipe/cellswipe",
-    "pages/slider/slider"
+    "pages/slider/slider",
+    "pages/message/message"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -52,6 +53,7 @@
     "el-file": "./component/_file/file",
     "el-rolling": "./component/_rolling/rolling",
     "el-cellswipe": "./component/_cellswipe/cellswipe",
-    "el-slider": "./component/_slider/slider"
+    "el-slider": "./component/_slider/slider",
+    "el-message": "./component/_message/message"
   }
 }

@@ -1,5 +1,7 @@
 {
   "component": true,
   "enablePullDownRefresh": true,
-  "usingComponents": {}
+  "usingComponents": {
+    "el-message": "../_message/message"
+  }
 }

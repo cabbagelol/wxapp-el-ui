@@ -9,9 +9,25 @@ Page({
         show: 'right'
       },
       left: {
-        show: 'left'
+        show: ''
       }
     }
+  },
+
+  onShow () {
+    var that = this;
+    setTimeout(function () {
+      that.setData({
+        cellswipe: Object.assign(that.data.cellswipe, {
+          right: {
+            show: ''
+          },
+          left: {
+            show: 'left'
+          }
+        })
+      })
+    }, 2000)
   },
 
   onSetShow (e) {

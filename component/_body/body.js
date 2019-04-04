@@ -3,12 +3,10 @@ const config = require("../index.js");
 Component({
   options: {
     multipleSlots: true
-  },  
-
-  properties: {
   },
 
   data: {
+    message: {},
     content: {
       head: {
         height: 0
@@ -41,7 +39,10 @@ Component({
       })
       config.util.$('.__content-body__').then(function(e) {
         const height = info.screenHeight - that.data.content.head.height - that.data.content.footer.height;
-        that.setData({ 'content.body.height': height })
+        that.setData({
+          'content.body.height': height,
+          message: that.selectComponent(".messgae")
+        })
         that.srcollHead = -(that.data.content.body.view.height - that.data.content.body.height);
         that.triggerEvent('ready', {
           body: {

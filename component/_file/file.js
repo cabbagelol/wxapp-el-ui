@@ -1,6 +1,13 @@
 const config = require("../index.js");
 
 Component({
+  externalClasses: [
+    'el-curtain',
+    'el-button-right',
+    'el-input'
+  ],
+
+
   properties: {
     file: {
       type: Object,
@@ -19,10 +26,22 @@ Component({
         }
       }
     },
-    album: Boolean,
-    camera: Boolean,
-    files: Boolean,
-    video: Boolean
+    album: {
+      type: Boolean,
+      value: false
+    },
+    camera: {
+      type: Boolean,
+      value: false
+    },
+    files: {
+      type: Boolean,
+      value: false
+    },
+    video: {
+      type: Boolean,
+      value: false
+    }
   },
 
   methods: {

@@ -1,20 +1,8 @@
 <view class='__content__'>
+  <el-message class='messgae'></el-message>
   <view class='__content-head__'>
     <slot name='head' />
   </view>
-
-  <!-- <view class='__content-body__' style='height: {{content.body.height}}px' bindtouchstart='onBodyStart' bindtouchend='onBodyEnd' catchtouchmove="onBodyMove">
-        <view class='__content-footer-view__' style='transition: transform {{content.body.tap.duration / 1000}}s; transform: translateY({{content.body.tap.top}}px)'>
-            <slot name='body' /> 
-        </view>
-
-        <view class='__content-body-scrollbar__' style='height: {{content.body.height}}px;' wx:if='{{scrollbar}}'>
-            <view class='__content-body-scrollbar-body__'>
-                <view style='height:{{content.body.scrollbarHeight}}px; top:{{content.body.scrollbarTop}}%'>
-                </view>
-            </view>
-        </view>
-    </view> -->
 
   <view class='__content-body__' style='height: {{content.body.height}}px'>
     <slot name='body' />

@@ -4,7 +4,8 @@
 
 .__cellswipe-controller__ {
   display: flex;
-  white-space:nowrap;
+  align-items: center;
+  white-space: nowrap;
   width: 100%;
 }
 
@@ -14,9 +15,11 @@
   min-width: 100%;
 }
 
-.__cellswipe-controller-right__, .__cellswipe-controller-left__,.__cellswipe-controller-center__ {
+.__cellswipe-controller-right__, .__cellswipe-controller-left__,
+.__cellswipe-controller-center__ {
   position: relative;
-  display:inline-block;
+  display: inline-block;
+  letter-spacing: -2rpx;
 }
 
 .__cellswipe-controller-right-cont__, .__cellswipe-controller-left-cont__ {
@@ -31,7 +34,7 @@
   z-index: 0;
   top: 0;
   left: 0px;
-  height: calc(100% - 2rpx);
+  height: 100%;
   width: 200%;
 }
 
@@ -40,6 +43,6 @@
   z-index: 0;
   top: 0;
   right: 0;
-  height: calc(100% - 2rpx);
+  height: 100%;
   width: 200%;
 }

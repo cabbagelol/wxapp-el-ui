@@ -39,7 +39,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 19,
+			"current": 20,
 			"list": [
 				{
 					"id": -1,
@@ -178,6 +178,13 @@
 					"id": -1,
 					"name": "滑动选择器",
 					"pathName": "pages/slider/slider",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "全局消息",
+					"pathName": "pages/message/message",
 					"scene": null
 				}
 			]

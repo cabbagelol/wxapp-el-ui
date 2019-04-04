@@ -49,7 +49,10 @@
   <navigator url="../slider/slider" open-type="navigate">
     <el-cell title='滑动选择器' label='slider' islink></el-cell>
   </navigator>
-
+  <navigator url="../message/message" open-type="navigate">
+    <el-cell title='全局消息' label='message' islink></el-cell>
+  </navigator>
+  
   <view class='htitle'>界面</view>
   <navigator url="../load/load" open-type="navigate">
     <el-cell title='装载' label='load' islink></el-cell>

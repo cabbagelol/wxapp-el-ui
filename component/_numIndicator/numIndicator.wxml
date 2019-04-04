@@ -1,4 +1,7 @@
-<!--数字指示器-->
+<!--
+  * 控件
+  ** 数字指示器
+-->
 <view class='__numIndicator__'>
     <view class='__numIndicator_btn__ __numIndicator_btnleft__' data-type='reduce' bindtap='onChange' bindtouchstart='onTapStart' bindtouchend='onTapEnd'>
       <slot name='left'></slot>-
