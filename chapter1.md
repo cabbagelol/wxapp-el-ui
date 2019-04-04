@@ -28,8 +28,8 @@
 | 名称 | 类型 | 描述 | 版本 |
 | :--- | :--- | :--- | :--- |
 | head | Object | head参数属于Object对象，内部可规定导航控件样式、是否允许返回、标题内容等等基础设定 | 1.0.1 |
-| stickie | Boolean | 悬浮置顶\(单同时出现若干导航控件，会出现遮盖问题\) | 1.0.1 |
-| load | Boolean | 显示在标题后的load | 1.0.2 |
+| stickie | Boolean | 悬浮置顶\(单同时出现若干导航控件，会出现遮盖问题\) | 0.0.2 |
+| load | Boolean | 显示在标题后的load | 0.0.3 |
 
 ##### head属性包含:
 
@@ -48,20 +48,20 @@
 
 | 名称 | 类型 | 默认状态 | 描述 | 版本 |
 | :--- | :--- | :--- | :--- | :--- |
-| title | String | "" | 标题 | 1.0.1 |
-| style | Object | {} | 含background/textColor | 1.0.1 |
-| background | String | "" | 默认状态下将直接继承父容器属性 | 1.0.1 |
-| backgroundImage | String | "" | 背景地址，注意在background为inherit下使用 | 1.0.2 |
-| textColor | String | "" | 默认状态下将直接继承父容器属性 | 1.0.1 |
-| back | Boolean | false | 是否可见返回上一页按钮 | 1.0.1 |
+| title | String | "" | 标题 | 0.0.2 |
+| style | Object | {} | 含background/textColor | 0.0.2 |
+| background | String | "" | 默认状态下将直接继承父容器属性 | 0.0.2 |
+| backgroundImage | String | "" | 背景地址，注意在background为inherit下使用 | 0.0.3 |
+| textColor | String | "" | 默认状态下将直接继承父容器属性 | 0.0.2 |
+| back | Boolean | false | 是否可见返回上一页按钮 | 0.0.2 |
 
 ### 插槽
 
 | 名称 | 说明 | 版本 |
 | :--- | :--- | :--- |
-| nav-left | 左侧卡槽 | 1.0.1 |
-| nav-title | 中间卡槽 | 1.0.1 |
-| nav-right | 右侧卡槽 | 1.0.1 |
+| nav-left | 左侧卡槽 | 0.0.2 |
+| nav-title | 中间卡槽 | 0.0.2 |
+| nav-right | 右侧卡槽 | 0.0.2 |
 
 使用例子:
 
