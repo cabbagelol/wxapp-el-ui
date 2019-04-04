@@ -25,8 +25,8 @@
 | value | Number | 0 | 值 | 0.0.2 |
 | min | Number | - | 最小值 | 0.0.2 |
 | max | Number | - | 最大值 | 0.0.2 |
-| superposition | Number | 1 | 一次叠加值 | 0.0.2 |
-| longtag | Boolean | false | 是否允许加速 | 0.0.2 |
+| superposition | Number | 1 | 单次叠加值 | 0.0.2 |
+| longtag | Boolean | false | 长按叠加 | 0.0.2 |
 
 ### 方法
 
