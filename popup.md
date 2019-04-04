@@ -26,6 +26,8 @@
 | modal | Boolean | true | 遮盖层 | 0.0.2 |
 | show | Boolean | false | 是否可见popup | 0.0.2 |
 | closeOnModal | Boolean | true | 是否可通过点击遮盖返回bindchange事件 | 0.0.2 |
+| background | String | true | 遮盖层颜色 | 0.0.4 |
+
 
 ### 方法
 
