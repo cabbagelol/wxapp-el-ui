@@ -29,6 +29,9 @@
 | placeholder | String | "" | 预选 | 0.0.2 |
 | value | String | "" | 值 | 0.0.2 |
 | clear | Boolean | false | 擦除键 | 0.0.3 |
+| focus | Boolean | false | 初始聚焦 | 0.0.4 |
+| maxlenght | Number | 140 | 最大长度 | 0.0.4 |
+| disabled | Boolean | false | 是否禁用 | 0.0.4 |
 
 \* title优先于el-input-title，当title属性存在时以title内容为准
 
