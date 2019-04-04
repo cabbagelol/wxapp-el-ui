@@ -1,6 +1,6 @@
 <el-head head='{{head}}' stickie='true'></el-head>
 <view class='container'>
-  <el-file file='{{file}}' album='{{true}}' camera='{{false}}' files='{{false}}' video='{{false}}' bindsucceed='onFile'>
+  <el-file file='{{file}}' album='{{true}}' camera='{{true}}' files='{{true}}' video='{{true}}' bindsucceed='onFile'>
     <el-button>选择</el-button>
   </el-file>
   <view wx:for='{{filelist}}' wx:key='{{index}}' class='file-item'>

@@ -4,6 +4,11 @@ button {
   margin: 0 0 30rpx 0;
 }
  
+button::after,
+button::before {
+  contain: '';
+}
+
 button:hover,
 button:active {
   position: relative;

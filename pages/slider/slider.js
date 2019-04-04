@@ -1,12 +1,12 @@
 const app = getApp();
 
 Page({
-  $: app.e.$,
+    $: app.e.$,
 
-  data: {
-    head: {
-      title: '滑动选择器',
-      back: true
+    data: {
+        head: {
+            title: '滑动选择器',
+            back: true
+        },
     },
-  },
 })
