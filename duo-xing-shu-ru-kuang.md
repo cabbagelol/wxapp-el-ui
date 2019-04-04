@@ -41,11 +41,15 @@
 
 ### 样式
 
+##### 2. 局部
+
 | 名称 | 说明 | 版本 |
 | :--- | :--- | :--- |
 | el-textarea | textarea控件样式 | 0.0.3 |
 | el-title | 标题 | 0.0.3 |
 | el-wordcount | 统计器 | 0.0.3 |
+
+使用方式请参考这里[重写Class类](http://hn.cabbagelol.net/wxapp-el-ui/zhong-xie-class-lei.html)。
 
 ### 使用
 
