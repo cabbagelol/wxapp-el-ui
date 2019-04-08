@@ -10,5 +10,9 @@ Page({
         background: '#18b6c1'
       }
     }
+  },
+
+  onReady () {
+
   }
 })
