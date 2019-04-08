@@ -35,8 +35,8 @@ Component({
           'tabs.data': this.data.tabs.data
         })
       },
-      linkChanged(target) {},
-      unlinked(target) {}
+      linkChanged(target) { },
+      unlinked(target) { }
     }
   },
 
@@ -49,7 +49,7 @@ Component({
   ready() {
     var that = this;
     if (config.util.in(that)) {
-      config.util.$('.__tab-nav-title__').then(function(e) {
+      config.util.$('.__tab-nav-title__').then(function (e) {
         for (var i = 0; i < e.length; i++) {
           if (e['.__tab-nav-title__' + i].width > 0) {
             that.data.tabs.data[i]['isTitle'] = true
@@ -60,7 +60,7 @@ Component({
         })
       })
     }
-    wx.createSelectorQuery().in(that).select('.__tab-nav__').boundingClientRect(function(tabnav) {
+    wx.createSelectorQuery().in(that).select('.__tab-nav__').boundingClientRect(function (tabnav) {
       if (that.data.scroll.x <= (tabnav.width / 2)) {
         that.setData({
           'tabs.title': that.data.active || that.data.tabs.data[0].title,
@@ -69,7 +69,7 @@ Component({
         that.setSelectContent();
         that.onChange();
       }
-    this.scollSelect();
+    }).exec();
   },
 
   created() {
@@ -99,17 +99,18 @@ Component({
       var scroll = wx.getSystemInfoSync().windowWidth;
       var paddingWidth = 0;
       var myScroll = 0;
-      wx.createSelectorQuery().in(this).select('.__tab-nav__').boundingClientRect(function(rect) {
+      wx.createSelectorQuery().in(this).select('.__tab-nav__').boundingClientRect(function (rect) {
         allWidth = rect.width
       }).exec()
-      wx.createSelectorQuery().in(this).selectAll('.__tab-nav-item__').boundingClientRect(function(rect) {
+      wx.createSelectorQuery().in(this).selectAll('.__tab-nav-item__').boundingClientRect(function (rect) {
         var allScroll = 0;
         for (var i in rect) {
-          if (i > that.data.tabs.index) {} else {
+          if (i > that.data.tabs.index) { } else {
             myScroll = rect[i].width + myScroll
           }
           allScroll = rect[i].width + allScroll
         }
+        myScroll = myScroll + (allWidth - allScroll) / 2
         that.setData({
           'scroll.x': myScroll - scroll / 2 - rect[that.data.tabs.index].width / 2
         })
@@ -127,7 +128,7 @@ Component({
 
     setSelectContent() {
       var that = this
-      that.getRelationNodes('./tab-item').forEach(function(i) {
+      that.getRelationNodes('./tab-item').forEach(function (i) {
         i.onTabSelect()
       })
     },

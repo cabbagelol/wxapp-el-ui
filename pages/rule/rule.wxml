@@ -1,0 +1,26 @@
+<el-head head="{{head}}"></el-head>
+
+<view class='container'>
+  <el-rule rule="{{rule}}" class="rule"></el-rule>
+  <el-cell title="标题">
+    <input slot="content" value="{{rule.title}}" data-e="rule.title" bindinput="$" />
+  </el-cell>
+  <el-cell title="字体颜色">
+    <input slot="content" value="{{rule.font.color}}" data-e="rule.font.color" bindinput="$" />
+  </el-cell>
+  <el-cell title="字体大小">
+    <input slot="content" value="{{rule.font.size}}" data-e="rule.font.size" bindinput="$" />
+  </el-cell>
+  <el-cell title="横线长度">
+    <input slot="content" value="{{rule.lines.width}}" data-e="rule.lines.width" bindinput="$" />
+  </el-cell>
+  <el-cell title="横线粗细">
+    <input slot="content" value="{{rule.lines.height}}" data-e="rule.lines.height" bindinput="$" />
+  </el-cell>
+  <el-cell title="横线颜色">
+    <input slot="content" value="{{rule.lines.color}}" data-e="rule.lines.color" bindinput="$" />
+  </el-cell>
+  <el-cell title="横线与字体间距">
+    <input slot="content" value="{{rule.font.margin}}" data-e="rule.font.margin" bindinput="$" />
+  </el-cell>
+</view>
