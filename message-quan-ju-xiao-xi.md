@@ -35,6 +35,7 @@
 | type | String | "" | 类型 | 0.0.3 |
 | cont | String | "" | 内容 | 0.0.3 |
 | time | Number | 3000 | 显示时间 | 0.0.3 |
+| mask | Boolean | true | 遮盖，当全局消息执行状态中，无法点击页面其他元素 | 0.0.4 |
 | succeed | event | function | 当显示成功时触发该事件。 | 0.0.3 |
 
 ### 使用
