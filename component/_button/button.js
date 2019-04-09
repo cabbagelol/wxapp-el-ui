@@ -21,35 +21,51 @@ Component({
       type: null,
       value: null
     },
+    type: String,
     page: {
       type: String,
       value: 'index'
     }
   },
- 
-  ready() {
+
+  relations: {
+    '../_form/form': {
+      type: 'parent'
+    }
   },
 
+  ready() {},
+
   methods: {
-    onvibrate () {
+    onvibrate() {
       if (this.data.vibrate) {
         wx.vibrateShort();
       }
     },
 
     onTap(e) {
-      this.triggerEvent('tag', e);
-      this.onvibrate();
-    },
-
-    onLongtap () {
       var that = this;
-      that.taping = setInterval(function () {
-        that.onvibrate();
-      }, 200) 
+      const form = this.getRelationNodes('../_form/form');
+      that.triggerEvent('tag', e);
+      that.onvibrate();
+      switch (that.data.type) {
+        case 'submit':
+          form[0].onFormSubmit();
+          break;
+        case 'reset':  
+          form[0].onFormReset();
+          break;
+      }
     },
 
-    onLogintapEnd () {
+    onLongtap() {
+      var that = this;
+      that.taping = setInterval(function() {
+        that.onvibrate();
+      }, 200)
+    },
+
+    onLogintapEnd() {
       clearInterval(this.taping)
     }
   }

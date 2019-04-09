@@ -19,6 +19,7 @@ Component({
       value: false
     },
     maxlength: Number,
+    name: String,
     disabled: {
       type: Boolean,
       value: false
@@ -61,5 +62,12 @@ Component({
         length: 0
       })
     },
+
+    onEmpty () {
+      this.setData({
+        value: '',
+        length: 0
+      })
+    }
   }
 })

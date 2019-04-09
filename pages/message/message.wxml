@@ -17,6 +17,9 @@
   <el-cell title="图标">
     <switch slot="content" checked="{{message.icon}}" data-e="message.icon" bindchange="$" />
   </el-cell>
+  <el-cell title="图标">
+    <switch slot="content" checked="{{message.icon}}" data-e="message.icon" bindchange="$" />
+  </el-cell>
 </view>
 <view class="container">
   <el-column class='message-tip'>

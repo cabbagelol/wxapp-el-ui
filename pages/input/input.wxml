@@ -10,7 +10,7 @@
   </text>
   <el-layout>
     <el-input placeholder='输入内容' data-e='value.a' bindinput='$'></el-input>
-    <el-input placeholder='禁用' disabled></el-input>
+    <el-input title='禁用' placeholder='禁用' disabled></el-input>
     <el-input title='密码' placeholder='密码类型' type='password'></el-input>
     <el-input title='名字' data-e='value.b' bindinput='$'></el-input>
     <el-input title='年龄' type='number' data-e='value.c' bindinput='$' focus></el-input>

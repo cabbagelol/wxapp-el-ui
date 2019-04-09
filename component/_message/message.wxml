@@ -15,3 +15,4 @@
     </view>
   </view>
 </view>
+<view class='__message-mask__' wx:if='{{message.mask}}'></view>

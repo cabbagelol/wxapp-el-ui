@@ -10,7 +10,7 @@ Component({
       type: '',
       icon: true,
       list: [],
-      time: function () {}
+      time: function () { }
     },
     start: false
   },
@@ -25,7 +25,7 @@ Component({
     runMessage(callback) {
       var that = this;
       that.logtime;
-      if (that.data.message.list.length <= 0) {return}
+      if (that.data.message.list.length <= 0) { return }
       if (that.data.start) { that.setData({ start: false }); }
       clearTimeout(that.data.message.time);
       that.setData({
@@ -34,10 +34,11 @@ Component({
         'message.title': that.data.message.list[0].title,
         'message.icon': that.data.message.list[0].icon,
         'message.type': that.data.message.list[0].type,
+        'message.mask': that.data.message.list[0].mask
       });
-      that.data.message.time = setTimeout(function() {
+      that.data.message.time = setTimeout(function () {
         var list = that.data.message.list;
-        list.splice(0,1);
+        list.splice(0, 1);
         that.setData({
           start: false,
           'message.list': list
@@ -56,9 +57,10 @@ Component({
         time: 3000,
         type: '',
         icon: true,
+        mask: true,
         cont: '',
         title: '',
-        succeed() {}
+        succeed() { }
       }, data_);
       list.push(data_);
       if (list.length > 1) {
@@ -69,7 +71,10 @@ Component({
       that.setData({
         'message.list': list
       });
-      that.runMessage(function() {
+      that.runMessage(function () {
+        that.setData({
+          'message.mask': false
+        })
         data_.succeed();
       })
     }

@@ -15,3 +15,6 @@ page {
   position: relative;
 }
 
+.__content-footer__ {
+  padding-bottom:env(safe-area-inset-bottom);
+}

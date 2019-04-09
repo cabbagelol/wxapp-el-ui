@@ -41,6 +41,12 @@ Component({
     }
   },
 
+  relations: {
+    '../_form/form': {
+      type: 'parent'
+    }
+  },
+
   data: {
     textareaMaxHeight: 0,
     placeholder: '输入内容',
@@ -89,6 +95,12 @@ Component({
             code: -1
           })
         }
+      })
+    },
+
+    onEmpty () {
+      this.setData({
+        value: ''
       })
     }
   }
