@@ -22,8 +22,8 @@
     "pages/cellswipe/cellswipe",
     "pages/slider/slider",
     "pages/message/message",
-    "pages/rule/rule",
-    "pages/form/form"
+    "pages/form/form",
+    "pages/rule/rule"
   ],
   "window": {
     "backgroundTextStyle": "light",
