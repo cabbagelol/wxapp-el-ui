@@ -6,8 +6,10 @@
 
 * 修订popup为center时淡入动画和个别设备安全区、自定义遮盖层颜色.
 * 修订vacancy默认水平/垂直居中.
-* 修订message支持html标签.
+* 修订message支持html标签、新增遮盖层.
 * 修订numlndicto触摸交互.
+* 修订popup插槽.
+* 修订content安全区.
 * 修订column上一版本水平居中未生效问题.
 * 新增textarea长按复制与回调事件.
 * 新增组件: 表单、
