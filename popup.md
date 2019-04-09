@@ -26,25 +26,28 @@
 | modal | Boolean | true | 遮盖层 | 0.0.2 |
 | show | Boolean | false | 是否可见popup | 0.0.2 |
 | closeOnModal | Boolean | true | 是否可通过点击遮盖返回bindchange事件 | 0.0.2 |
-| background | String | rgba(0, 0, 0, 0.3) | 遮盖层颜色 | 0.0.4 |
-
+| background | String | rgba\(0, 0, 0, 0.3\) | 遮盖层颜色 | 0.0.4 |
 
 ### 方法
 
 change : function \(e\)
 
-@e.value: 值
-
-@e.el: view
+| 名称 | 类型 | 说明 | 版本 |
+| :--- | :--- | :--- | :--- |
+| value |  | 值 | 0.0.2 |
+| el |  | {} | 0.0.2 |
 
 ### 插槽
--
+
+| 名称 | 说明 | 版本 |
+| :--- | :--- | :--- |
+| content | 内容插槽 | 0.0.2 - 0.0.3 |
 
 ### 使用
 
 ```html
 <el-popup show='{{popup.show}}' modal='{{popup.modal}}' position='top' bindchange='onPopup'>
-  <view slot='content'>
+  <view>
     <!-- do -->
   </view>
 </el-popup>
@@ -58,7 +61,7 @@ page({
       "modal": true
     }
   },
-    
+
   onPopup () {
     this.setData({
       'popup.show': this.data.popup.show != true
@@ -67,7 +70,13 @@ page({
 })
 ```
 
+---
 
+### 已知问题
+
+Q: **升0.0.4到后，popup不再显示**
+
+A:在之后popup移除了content插槽，因此不需在slot='content'声明，现在popup的默认插槽便是content。
 
 
 
