@@ -18,6 +18,7 @@
   * [form 表单](form-biao-dan.md)
   * [address 地址选择器](address-di-zhi.md)
   * [file 文件](file-wen-jian.md)
+  * [cellswipe 滑动单元格](cellswipe.md)
 * [界面](jie-mian.md)
   * [load 装载](jia-zai-fu.md)
   * [button 按钮](an-niu.md)
