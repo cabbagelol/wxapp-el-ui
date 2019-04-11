@@ -30,7 +30,7 @@
 
 | 名称 | 类型 | 默认 | 说明 | 版本 |
 | :--- | :--- | :--- | :--- | :--- |
-| title | String | "" | 标题 | 0.0.3 |
+| title | String | "" | 标题 | 0.0.4 |
 | icon | Boolean | true | 图标 | 0.0.3 |
 | type | String | "" | 类型 | 0.0.3 |
 | cont | String | "" | 内容 | 0.0.3 |

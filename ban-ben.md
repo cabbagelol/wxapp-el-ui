@@ -12,9 +12,10 @@
 * 修订content安全区.
 * 修订column上一版本水平居中未生效问题.
 * 修订numIndicator插槽与样式.
+* 修订form支持input、textarea、address控件.
 * 重命名cellswipe控件为滑动单元格.
 * 新增textarea长按复制与回调事件.
-* 新增组件: 表单、页底提示、地址
+* 新增组件: 表单、页底提示、地址选择器
 
 ### v: 0.0.3
 

@@ -31,4 +31,5 @@
   * [rule 页底提示](rule-ye-di-ti-shi.md)
 * [设计规范](she-ji-gui-fan.md)
 * [设计资源](she-ji-zi-yuan.md)
+* [版本](ban-ben.md)
 
