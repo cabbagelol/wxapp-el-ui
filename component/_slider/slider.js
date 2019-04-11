@@ -76,14 +76,13 @@ Component({
       var calcX = p.clientX - that.data.slider.startX + that.data.slider.endX - that.data.slider.height
 
       if (calcX < 0 || calcX > that.data.slider.lineW - that.data.slider.height) {return}
-
+ 
       if (that.data.max > 0 && calcX >= that.interval_) {
         that.setData({
           'slider.value': that.data.slider.value + 1
         })
         that.interval_ = that.data.slider.max[that.data.slider.value]
       }
-
       if (calcX >= that.interval * that.data.max) {
         calcX = that.interval * that.data.max
         that.interval_ = calcX

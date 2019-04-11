@@ -30,4 +30,28 @@
   <el-cell title="右" label="右卡槽">
     <switch slot="content" checked="{{head.slot.r}}" data-e="head.slot.r" bindchange="$"/>
   </el-cell>
+    <el-cell title="右" label="右卡槽">
+    <switch slot="content" checked="{{head.slot.r}}" data-e="head.slot.r" bindchange="$"/>
+  </el-cell>
+    <el-cell title="右" label="右卡槽">
+    <switch slot="content" checked="{{head.slot.r}}" data-e="head.slot.r" bindchange="$"/>
+  </el-cell>
+    <el-cell title="右" label="右卡槽">
+    <switch slot="content" checked="{{head.slot.r}}" data-e="head.slot.r" bindchange="$"/>
+  </el-cell>
+    <el-cell title="右" label="右卡槽">
+    <switch slot="content" checked="{{head.slot.r}}" data-e="head.slot.r" bindchange="$"/>
+  </el-cell>
+    <el-cell title="右" label="右卡槽">
+    <switch slot="content" checked="{{head.slot.r}}" data-e="head.slot.r" bindchange="$"/>
+  </el-cell>
+    <el-cell title="右" label="右卡槽">
+    <switch slot="content" checked="{{head.slot.r}}" data-e="head.slot.r" bindchange="$"/>
+  </el-cell>
+    <el-cell title="右" label="右卡槽">
+    <switch slot="content" checked="{{head.slot.r}}" data-e="head.slot.r" bindchange="$"/>
+  </el-cell>
+    <el-cell title="右" label="右卡槽">
+    <switch slot="content" checked="{{head.slot.r}}" data-e="head.slot.r" bindchange="$"/>
+  </el-cell>
 </view>
