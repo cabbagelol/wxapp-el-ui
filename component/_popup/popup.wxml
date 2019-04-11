@@ -3,10 +3,8 @@
   ** 弹窗
  -->
 <view class='__popup__' wx:if='{{show}}'>
-  <view class='__popup__modal__' wx:if='{{!!modal}}' bindtap='onModal'></view>
-  <view
-    id='popupContent' 
-    class='__popup__content__ {{(!!animation) ? "__popup-" + position + "-animation__" : ""}} __popup__content-{{position || "bottom"}}__' >
-    <slot name='content'></slot> 
+  <view class='__popup-modal__' style='background: {{background || "rgba(0, 0, 0, 0.3)"}}' wx:if='{{!!modal}}' bindtap='onModal'></view>
+  <view id='popupContent' class='__popup-content__ {{(!!animation) ? "__popup-" + position + "-animation__" : ""}} __popup-content-{{position || "bottom"}}__'>
+    <slot name='content'></slot>
   </view>
-</view> 
+</view>

@@ -10,7 +10,7 @@
   </el-cellswipe>
 
   <el-cellswipe color='red' bindchange='onCellswipe'>
-    <el-cell slot='cont' title='左滑动' label='请在此区域触摸屏幕从右向左滑动'></el-cell>
+    <el-cell slot='cont' title='←左滑动' label='请在此区域触摸屏幕从右向左滑动'></el-cell>
     <view slot='right' class='cellswipe-buttons'>
       <view class='cellswipe-cancel' bindtap='onSucceed'>完成</view>
       <view class='cellswipe-delete'>删除</view>
@@ -22,7 +22,7 @@
       <view class='cellswipe-cancel' bindtap='onSucceed'>完成</view>
       <view class='cellswipe-delete'>删除</view>
     </view>
-    <el-cell slot='cont' title='右滑动' label='请在此区域触摸屏幕从左向右滑动'></el-cell>
+    <el-cell slot='cont' title='右滑动→' label='请在此区域触摸屏幕从左向右滑动'></el-cell>
   </el-cellswipe>
 
   <el-cellswipe color='red' bindchange='onCellswipe'>
@@ -32,7 +32,7 @@
         <view class='cellswipe-cancel' bindtap='onSucceed'>完成</view>
       </el-row>
     </view>
-    <el-cell slot='cont' title='左右滑动' label='请在此区域触摸屏幕从左或右滑动'></el-cell>
+    <el-cell slot='cont' title='←左右滑动→' label='请在此区域触摸屏幕从左或右滑动'></el-cell>
     <view slot='right'>
       <el-row>
         <view class='cellswipe-cancel' bindtap='onSucceed'>完成</view>

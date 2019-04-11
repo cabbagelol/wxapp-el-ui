@@ -4,6 +4,10 @@ Component({
   },
 
   properties: {
+    background: {
+      type: String,
+      value: ''
+    },
     position: String,
     modal: Boolean,
     show: {

@@ -22,7 +22,9 @@
     "pages/cellswipe/cellswipe",
     "pages/slider/slider",
     "pages/message/message",
-    "pages/rule/rule"
+    "pages/form/form",
+    "pages/rule/rule",
+    "pages/address/address"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -56,6 +58,8 @@
     "el-cellswipe": "./component/_cellswipe/cellswipe",
     "el-slider": "./component/_slider/slider",
     "el-message": "./component/_message/message",
-    "el-rule": "./component/_rule/rule"
+    "el-form": "./component/_form/form",
+    "el-rule": "./component/_rule/rule",
+    "el-address": "./component/_address/address"
   }
 }

@@ -3,7 +3,7 @@
   <el-button size='{{button.size}}' align='{{button.align}}' disabled='{{button.disabled}}' radius='{{button.radius}}' wx:if='{{button.show}}' bindtap='onButton'>
     按钮
     <block wx:if='{{button.load}}'>, 出现
-      <el-load></el-load>图标</block>
+      <el-load color='{{button.color}}'></el-load>图标</block>
   </el-button>
 
   <el-cell title='大小' label='mini,normal,large'>

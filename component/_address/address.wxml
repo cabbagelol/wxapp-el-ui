@@ -1,0 +1,10 @@
+<picker class="__address__" mode="multiSelector" bindchange="changeCitysChange" bindcolumnchange="changeCitysChangeColumn" value="{{ citysIndex }}" range="{{ cityArray }}">
+  <view class="__address-picker__">
+    <block wx:if='{{!!value}}'>
+      {{value}}
+    </block>
+    <block wx:if='{{!!value == false && !!placeholder}}'>
+      {{placeholder}}
+    </block>
+  </view>
+</picker>

@@ -2,7 +2,7 @@
 <view class='__textarea__'>
   <view class='__input__title__ el-title' wx:if='{{title}}'>{{title}}</view>
   <view class='__textarea_cont__ el-textarea'>
-    <textarea name='{{name}}' placeholder='{{placeholder}}' maxlength='{{wordcount}}' style='height:{{style.height}} px;max-height: {{textareaMaxHeight}}px ' disabled='{{disabled}}' value='{{value}}' auto-height='true' bindinput='onInput' bindconfirm='onInput'>{{data}}</textarea>
+    <textarea name='{{name}}' placeholder='{{placeholder}}' maxlength='{{wordcount}}' style='height:{{style.height}} px;max-height: {{textareaMaxHeight}}px ' disabled='{{disabled}}' value='{{value}}' auto-height='true' bindinput='onInput' bindconfirm='onInput' bindlongtap='onLongTap'>{{data}}</textarea>
     <view wx:if='{{wordcount || wordcount > 0}}' class='__textarea_contwordcount__ el-wordcount'>{{cursor + '/' + wordcount}}</view>
   </view>
 </view>

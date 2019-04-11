@@ -33,6 +33,11 @@
   font-size: 20rpx;
 }
 
+.__tag-4__ {
+  padding: 0 10rpx;
+  font-size: 24rpx;
+}
+
 .__tag-5__ {
   padding: 12rpx 20rpx;
   font-size: 24rpx;

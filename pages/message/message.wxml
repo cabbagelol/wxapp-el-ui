@@ -4,11 +4,18 @@
   <el-cell title="内容">
     <input slot="content" value="{{message.cont}}" data-e="message.cont" bindinput="$" />
   </el-cell>
-  <el-cell title="类型" label='success,warning,danger'>
-    <input slot="content" value="{{message.type}}" data-e="message.type" bindinput="$" />
+  <el-cell title="类型">
+    <picker slot='content' bindchange="onPicker" value="{{message.typelisti}}" range="{{message.typelist}}">
+      <view class="picker">
+        {{message.typelist[message.typelisti]}}
+      </view>
+    </picker>
   </el-cell>
   <el-cell title="停留时间">
     <input slot="content" value="{{message.time}}" data-e="message.time" bindinput="$" />
+  </el-cell>
+  <el-cell title="图标">
+    <switch slot="content" checked="{{message.icon}}" data-e="message.icon" bindchange="$" />
   </el-cell>
   <el-cell title="图标">
     <switch slot="content" checked="{{message.icon}}" data-e="message.icon" bindchange="$" />

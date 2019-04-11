@@ -9,19 +9,26 @@ Page({
       back: true
     },
     message: {
-      cont: `现在时间是:
-${new Date()}`,
+      typelist: ['success', 'warning', 'danger'],
+      typelisti: 0,
+      cont: `<div>现在时间是: </div><div>${new Date()}</div>`,
       type: 'success',
       icon: true,
       time: 3000
     }
   },
 
-  onReady () {
+  onReady() {
     this.messgae = this.selectComponent(".messgae");
   },
 
-  onMessageShow () {
+  onPicker (e) {
+    this.setData({
+      'message.typelisti': e.detail.value
+    })
+  },
+
+  onMessageShow() {
     var that = this;
     that.setData({
       'message.ing': true
@@ -30,8 +37,8 @@ ${new Date()}`,
       cont: that.data.message.cont,
       time: that.data.message.time,
       icon: that.data.message.icon,
-      type: that.data.message.type,
-      succeed () {
+      type: that.data.message.typelist[that.data.message.typelisti],
+      succeed() {
         wx.showToast({
           title: '成功',
           icon: 'none'

@@ -53,7 +53,13 @@
     <el-cell title='全局消息' label='message' islink></el-cell>
   </navigator>
   <navigator url="../rule/rule" open-type="navigate">
-    <el-cell title='标签页标题' label='rule' islink></el-cell>
+    <el-cell title='页底提示' label='rule' islink></el-cell>
+  </navigator>
+  <navigator url="../form/form" open-type="navigate">
+    <el-cell title='表单' label='form' islink></el-cell>
+  </navigator>
+  <navigator url="../address/address" open-type="navigate">
+    <el-cell title='地址' label='address' islink></el-cell>
   </navigator>
 
   <view class='htitle'>界面</view>

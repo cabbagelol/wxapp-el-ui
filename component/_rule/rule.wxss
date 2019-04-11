@@ -2,9 +2,9 @@
   text-align: center;
   height: 50rpx;
   margin-top: 10rpx;
-  display:flex;
-  align-items:center;
-  justify-content:center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .recommend-rule {

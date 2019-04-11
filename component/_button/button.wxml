@@ -1,3 +1,3 @@
-<button class='__button__ el-button {{class || ""}} {{size ? "__button_" + size + "__" : "__button_normal__"}} {{align ? "__button_" + align + "__" : "__button_center__"}} {{radius ? "__button_radius__" : ""}}' style='{{elstyle || ""}}' disabled='{{disabled || false}}' bindtap='onTap'>
+<button class='__button__ el-button {{class || ""}} {{size ? "__button_" + size + "__" : "__button_normal__"}} {{align ? "__button_" + align + "__" : "__button_center__"}} {{radius ? "__button_radius__" : ""}}' style='{{elstyle || ""}}' disabled='{{disabled || false}}' bindtap='onTap' bindtouchstart='onLongtap' bindtouchend='onLogintapEnd'>
   <slot></slot>
 </button>

@@ -1,26 +1,23 @@
 const app = getApp();
+
 Page({
   $: app.e.$,
-  /**
-   * 页面的初始数据
-   */
   data: {
     head: {
-      title: '标签页标题',
+      title: '页底提示',
       back: true
     },
     rule: {
       lines: {
-        color: "#666",
+        color: "#E3E3E3",
         width: 20,
         height: 1
       },
       font: {
-        color:"#666",
+        color: "#555",
         margin: 10,
-        size: 30
+        size: 15
       }
     }
-
   }
 })

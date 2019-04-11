@@ -1,5 +1,4 @@
 <el-head head='{{head}}' stickie='true'></el-head>
-
 <el-layout>
   <el-cell title='固定尺寸'></el-cell>
   <view class='container'>
@@ -49,15 +48,15 @@
 <el-layout>
   <el-cell title='水平'></el-cell>
   <view class='container'>
-    <el-column class='layout-margin' alignX='start'>
+    <el-column class='layout-margin' align='start'>
       <view class='layout-block'> 方向 </view>
       <view class='layout-block'> 方向 </view>
     </el-column>
-    <el-column class='layout-margin' alignX='center'>
+    <el-column class='layout-margin' align='center'>
       <view class='layout-block'> 方向 </view>
       <view class='layout-block'> 方向 </view>
     </el-column>
-    <el-column class='layout-margin' alignX='end'>
+    <el-column class='layout-margin' align='end'>
       <view class='layout-block'> 方向 </view>
       <view class='layout-block'> 方向 </view>
     </el-column>

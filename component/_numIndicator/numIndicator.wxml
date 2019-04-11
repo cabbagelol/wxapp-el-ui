@@ -4,12 +4,18 @@
 -->
 <view class='__numIndicator__'>
     <view class='__numIndicator_btn__ __numIndicator_btnleft__' data-type='reduce' bindtap='onChange' bindtouchstart='onTapStart' bindtouchend='onTapEnd'>
-      <slot name='left'></slot>-
+      <view class='__numIndicator-left__'><slot name='left'></slot></view>
+      <block  wx:if='{{!numlndicator.left}}'>
+        <view class='__numIndicator-left-minus__'></view>
+      </block>
     </view>
     <view class='__numIndicator_value__'>
         <input type='number' value='{{value}}' bindinput='onStop' bindinput='onInput' style='width:{{inputWidth || 0}}rpx'/>
     </view>
     <view class='__numIndicator_btn__ __numIndicator_btnright__' data-type='add' bindtap='onChange' bindtouchstart='onTapStart' bindtouchend='onTapEnd'>
-      <slot name='right'></slot>+
+      <view class='__numIndicator-right__'><slot name='right'></slot></view>
+      <block  wx:if='{{!numlndicator.right}}'>
+        <view class='__numIndicator-left-add__'></view>
+      </block>
     </view>
 </view>

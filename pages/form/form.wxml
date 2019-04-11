@@ -1,0 +1,12 @@
+<el-head head='{{head}}' stickie='true' class='content-head'></el-head>
+<el-form bindsubmit='onForm'>
+  <view class='container'>
+    <el-input title='姓名' name='name' value='小米' placeholder='姓名'></el-input>
+    <el-textarea title='备忘' name='remark' value='财务异常说明' placeholder='备忘'></el-textarea>
+  </view>
+
+  <view class='container'>
+    <el-button type='submit'>提交</el-button>
+    <el-button type='reset'>重置</el-button>
+  </view>
+</el-form>

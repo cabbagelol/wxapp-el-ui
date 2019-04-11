@@ -11,7 +11,8 @@
     </view>
     <view class='__message-text__'>
       <slot />
-      <text>{{message.cont}}</text>
+      <rich-text nodes='{{message.cont}}'></rich-text>
     </view>
   </view>
 </view>
+<view class='__message-mask__' wx:if='{{message.mask}}'></view>

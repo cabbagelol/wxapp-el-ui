@@ -1,4 +1,4 @@
-<!-- 
+<!--
   * 控件
   ** 输入器
  -->
@@ -12,7 +12,13 @@
     </block>
   </view>
   <view class='__input-cont__'>
-    <input type='{{type || "text"}}' placeholder='{{placeholder || (title ? ("请输入" + title) : "请输入内容")}}' value='{{value}}' bindinput='onInput' />
+    <block wx:if='{{type == "address"}}'>
+      <el-address class='__input-cont-address__' />
+    </block>
+    <block wx:else>
+      <input type='{{type || "text"}}' placeholder='{{placeholder || (title ? ("请输入" + title) : "请输入内容")}}' focus='{{focus}}' value='{{value}}' disabled='{{disabled ? "disabled" : false}}' password='{{type == "password" ? true : false}}' maxlength='{{maxlength || 140}}'
+        adjust-position='true' bindinput='onInput' />
+    </block>
   </view>
   <view class='__input-clear__' bindtap='onClearValue' wx:if='{{clear && length > 0}}'>
     <icon type='clear' color='#A1A1A1' size="10"></icon>

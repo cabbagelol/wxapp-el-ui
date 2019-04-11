@@ -1,0 +1,9 @@
+<el-head head='{{head}}' stickie='true'></el-head>
+<view class='container'>
+  <el-input title='地址' type='address'></el-input>
+  <el-cell title='自定义' islink>
+    <el-address slot='content' bindtapchange='onColumnChange' bindchange='onChange'>
+      自定义
+    </el-address>
+  </el-cell>
+</view>

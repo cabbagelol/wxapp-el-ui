@@ -5,7 +5,7 @@
     <button bindtap='onPopup'>{{!popup.show ? "显示" : "隐藏"}}</button>
   </view>
 
-  <el-popup show='{{popup.show}}' modal='{{popup.modal}}' position='{{array[arrayi].v}}' animation='{{popup.animation}}' bindchange='onPopup'>
+  <el-popup show='{{popup.show}}' background='{{popup.background}}' modal='{{popup.modal}}' position='{{array[arrayi].v}}' animation='{{popup.animation}}' bindchange='onPopup'>
     <view slot='content' class='popup-content {{"popup-content-" + array[arrayi].v}}'>
       <view class='popup-content-text'>
         <image src='https://gw.alipayobjects.com/mdn/miniapp_social/afts/img/A*pevERLJC9v0AAAAAAAAAAABjAQAAAQ/original' class='popup-content-img' />
@@ -22,6 +22,9 @@
   </el-cell>
   <el-cell title="遮盖层" label='为false时无法点击非聚焦区域隐藏'>
     <switch slot="content" checked="{{popup.modal}}" data-e="popup.modal" bindchange="$" />
+  </el-cell>
+  <el-cell title="自定义遮盖层颜色">
+    <input slot="content" value='{{popup.background}}' data-e="popup.background" bindchange="$" />
   </el-cell>
   <el-cell title="方向">
     <picker slot='content' range-key='n' bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
