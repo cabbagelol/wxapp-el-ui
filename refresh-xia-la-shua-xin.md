@@ -10,15 +10,11 @@
 
 在page.json中引入组件
 
-```
+```json
 {
-"usingComponents"
-:
-{
-"el-refresh"
-:
-"component/_refresh/refresh"
-}
+    "usingComponents": {
+      "el-refresh": "component/_refresh/refresh"
+    }
 }
 ```
 
