@@ -68,5 +68,25 @@
 | address | 0.0.4 |
 | button | 0.0.4 |
 
+### 已知问题
+
+Q: **无法获取所支持表单值**
+
+A: 当使用cell等这类控件包裹时、form无法获取。
+
+```html
+<el-from>
+ <!-- 这种情况无法获取 -->
+ <el-cell>
+  <el-input />
+ </el-cell>
+ 
+ <!-- 改成这样既可 -->
+ <view>
+  <el-input />
+ </view>
+</el-form>
+```
+
 
 
