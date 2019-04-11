@@ -20,7 +20,7 @@
   * [file 文件](file-wen-jian.md)
   * [cellswipe 滑动单元格](cellswipe.md)
   * [rolling 滚动](rolling-gun-dong.md)
-  * [refresh](refresh.md)
+  * [refresh 下拉刷新](refresh-xia-la-shua-xin.md)
 * [界面](jie-mian.md)
   * [load 装载](jia-zai-fu.md)
   * [button 按钮](an-niu.md)
