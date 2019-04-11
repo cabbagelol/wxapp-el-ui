@@ -31,7 +31,7 @@ layout并非一定使用，可单独使用row和column
 </el-layout>
 ```
 
-## &lt;el-row&gt;
+## &lt;el-row&gt; 垂直
 
 ### 属性
 
@@ -55,7 +55,7 @@ layout并非一定使用，可单独使用row和column
 </el-row>
 ```
 
-## &lt;el-column&gt;
+## &lt;el-column&gt; 水平
 
 ### 属性
 
