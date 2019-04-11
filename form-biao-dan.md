@@ -41,7 +41,7 @@
 | :--- | :--- | :--- | :--- | :--- |
 | value | Object | {} | 表单结果集合 | 0.0.4 |
 
-`bindreset`: function \(e\) {} 擦除
+`bindreset`: function \(e\) {} 重置
 
 ### 使用
 
@@ -80,7 +80,7 @@ A: 当使用cell等这类控件包裹时、form无法获取。
  <el-cell>
   <el-input />
  </el-cell>
- 
+
  <!-- 改成这样既可 -->
  <view>
   <el-input />

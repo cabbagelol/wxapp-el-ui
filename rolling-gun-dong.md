@@ -46,5 +46,50 @@
 
 ### 使用
 
+```html
+<el-rolling animation='200' scrollbar='{{rolling.scrollbar}}' upperThreshold='{{rolling.upperThreshold}}' lowerThreshold='{{rolling.lowerThreshold}}' fullscreen='{{rolling.autoFullscreenf}}' rubber='{{rolling.rubber}}' isscroll='{{rolling.isscroll}}'
+    scrollY='{{rolling.y}}' bindscroll='onScroll' bindready='onScrollReady' class='rolling-body'>   
+    
+     <!-- do --> 
+</el-rolling>
+```
+
+```js
+Page({
+  data: {
+    head: {
+      title: '滚动',
+      back: true
+    },
+    rolling: {
+      isscroll: true,
+      scrollbar: true,
+      scrollButtonY: 0,
+      upperThreshold: 100,
+      lowerThreshold: 100,
+      autoFullscreenf: true,
+      rubber: true,
+      y: 0,
+      tap: {
+        y: -200
+      }
+    }
+  },
+  
+  onScrollReady (e) {
+    this.setData({
+      'rolling.scrollButtonY': e.detail.scrollButtonY
+    })
+  },
+
+  onScroll(e) {
+    this.setData({
+      'rolling.y': e.detail.scrollY
+    })
+  },
+  
+})
+```
+
 
 
