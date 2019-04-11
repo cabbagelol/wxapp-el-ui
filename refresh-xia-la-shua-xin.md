@@ -4,7 +4,7 @@
 
 ---
 
-![](/assets/refresh01.png)![](/assets/refresh02.png)
+![](/assets/refresh01.png)
 
 ## 使用指南 {#使用指南}
 
