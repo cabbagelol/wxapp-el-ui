@@ -1,6 +1,6 @@
 # form-表单
 
-获取表单控件值，联动`<el-input>` `<el-textarea>`控件
+获取表单控件值，联动`<el-input>` `<el-textarea>` `<el-address>`控件
 
 ---
 
@@ -43,13 +43,14 @@
     <!-- 详细的表达控件请看控件说明 -->
     <el-input />
     <el-textarea />
-    
+    <el-address />
+
     <el-button type='submit'>提交</el-button>
     <el-button type='reset'>重置</el-button>
 </el-form>
 ```
 
-参考[&lt;el-input&gt;](/shu-ru-kuang.md)、[&lt;el-textarea&gt;](/duo-xing-shu-ru-kuang.md) .
+参考[&lt;el-input&gt;](/shu-ru-kuang.md)、[&lt;el-textarea&gt;](/duo-xing-shu-ru-kuang.md) 、[&lt;el-address&gt;](/address-di-zhi.md).
 
 ### 依赖
 
@@ -57,6 +58,7 @@
 | :--- | :--- |
 | input | 0.0.4 |
 | textarea | 0.0.4 |
+| address | 0.0.4 |
 | button | 0.0.4 |
 
 
