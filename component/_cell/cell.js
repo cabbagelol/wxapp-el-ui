@@ -1,21 +1,21 @@
+const config = require("../index.js");
+
 Component({
-    options: {
-        multipleSlots: true
-    },
+  options: {
+    multipleSlots: true
+  },
 
-    properties: {
-        title: String,
-        label: String,
-        icon: Boolean,
-        elclass: String,
-        islink: Boolean
-    },
+  properties: {
+    title: String,
+    label: String,
+    icon: Boolean,
+    elclass: String,
+    islink: Boolean
+  },
 
-    data: {},
-
-    methods: {
-        onclick (e) {
-            this.triggerEvent('click', e)
-        }
+  methods: {
+    onclick(e) {
+      this.triggerEvent('click', e)
     }
+  }
 })

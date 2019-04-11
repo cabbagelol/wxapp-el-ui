@@ -23,7 +23,8 @@
     "pages/slider/slider",
     "pages/message/message",
     "pages/form/form",
-    "pages/rule/rule"
+    "pages/rule/rule",
+    "pages/address/address"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -57,7 +58,8 @@
     "el-cellswipe": "./component/_cellswipe/cellswipe",
     "el-slider": "./component/_slider/slider",
     "el-message": "./component/_message/message",
+    "el-form": "./component/_form/form",
     "el-rule": "./component/_rule/rule",
-    "el-form": "./component/_form/form"
+    "el-address": "./component/_address/address"
   }
 }

@@ -1,14 +1,14 @@
 ._cell_ {
     display: inline-flex;
-    width: calc(100% - 120rpx);
+    width: calc(100% - 80rpx);
     background-color: #FFF;
-    padding: 15rpx 60rpx;
+    padding: 15rpx 40rpx;
     min-height: 40px;
 }
 
-._cell_hover:active {
-    /*background-color: #F2F2F2;*/
-}
+/* ._cell_hover:active {
+    background-color: initial;
+} */
 
 ._cell_center_ {
     text-align: center;

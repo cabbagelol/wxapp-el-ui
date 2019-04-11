@@ -1,5 +1,6 @@
 {
   "component": true,
   "usingComponents": {
+    "el-address": "../_address/address"
   }
 }

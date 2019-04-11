@@ -7,9 +7,7 @@
         <view class='_cell_title_positivetitle_ _cell_center_' wx:if='{{title}}'>{{title}}</view>
         <view class='_cell_title_subhead_ _cell_center_' wx:if='{{label}}'>{{label}}</view>
     </view>
-    <view class='_cell_title_content_ _cell_center_'>
-        <slot name='content'></slot>
-    </view>
+    <view class='_cell_title_content_ _cell_center_'><slot name='content'></slot></view>
     <view class='_cell_title_icon_ _cell_center_' wx:if='{{islink}}'>
         <image src='./images/onward.png' ></image>
     </view>

@@ -1,6 +1,6 @@
 <el-head head="{{head}}"></el-head>
-
 <view class='container'>
+  <el-rule></el-rule>
   <el-rule rule="{{rule}}" class="rule"></el-rule>
   <el-cell title="标题">
     <input slot="content" value="{{rule.title}}" data-e="rule.title" bindinput="$" />

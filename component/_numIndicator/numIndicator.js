@@ -22,6 +22,10 @@ Component({
   },
 
   data: {
+    numlndicator: {
+      left: true,
+      right: true
+    },
     value: 0,
     setTime: () => {}
   },
@@ -31,6 +35,23 @@ Component({
     if (!that.data.value) {
       that.setData({
         value: that.data.min
+      })
+    }
+    if (config.util.in(that)) {
+      config.util.$('.__numIndicator-left__,.__numIndicator-right__').then(function (e) {
+        var conf = {
+          left: true,
+          right: true
+        };
+        if (e[".__numIndicator-left__"].width == 0) {
+          conf.left = false
+        }
+        if (e[".__numIndicator-right__"].width == 0) {
+          conf.right = false
+        }
+        that.setData({
+          numlndicator: Object.assign(that.data.numlndicator, conf)
+        })
       })
     }
   },

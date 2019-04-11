@@ -11,6 +11,12 @@
   align-items: center;
 }
 
+.__input__ .__input-cont-address__ {
+  width: 100%;
+  display: block;
+  font-size: 30rpx;
+}
+
 .__input__ .__input__title__ {
   display: inline-flex;
   align-items: center;
