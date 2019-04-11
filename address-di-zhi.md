@@ -16,6 +16,14 @@
 }
 ```
 
+### 属性
+
+| 名称 | 类型 | 默认 | 说明 | 版本 |
+| :--- | :--- | :--- | :--- | :--- |
+| value | String | "" | 默认的值 | 0.0.4 |
+| name | String | "" | 关联form | 0.0.4 |
+| placeholder | String | "" |  | 0.0.4 |
+
 ### 事件
 
 `bindtapchange`: function \(e\) {} 当用户按下"确认"触发

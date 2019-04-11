@@ -25,6 +25,7 @@
 | :--- | :--- | :--- | :--- | :--- |
 | title | String | "" | 输入框头部标题 | 0.0.2 |
 | type | String | text | 输入类型 | 0.0.2 |
+| name | String | "" | 关联form | 0.0.4 |
 | mustchoose | Boolean | false | 是否出现必选符 | 0.0.2 |
 | placeholder | String | "" | 预选 | 0.0.2 |
 | value | String | "" | 值 | 0.0.2 |

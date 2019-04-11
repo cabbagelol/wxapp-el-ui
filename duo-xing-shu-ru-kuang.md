@@ -24,6 +24,7 @@
 | :--- | :--- | :--- | :--- | :--- |
 | title | String | "" | 标题 | 0.0.2 |
 | placeholder | String | "" | placeholder | 0.0.2 |
+| name | String | "" | 关联form | 0.0.4 |
 | value\(~~data~~\) | String | "" | 内容 | 0.0.2 |
 | wordcount | Number | 0 | 限制与统计,当为0时表示不在限制与统计 | 0.0.2 |
 | vibrate | Boolean | false | 触摸交互 | 0.0.4 |
