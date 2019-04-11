@@ -43,6 +43,8 @@ file:
 
 `succeed`: function \(e\) {}
 
+@e.detail
+
 | 名称 | 说明 | 版本 |
 | :--- | :--- | :--- |
 | type | 类型 | 0.0.3 |

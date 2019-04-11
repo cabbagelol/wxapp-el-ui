@@ -28,7 +28,7 @@
 
 ### 事件
 
-`bindscroll`: function \(e\) {}
+`bindscroll`: function \(e\) {} 滚动时
 
 @e.detail
 
@@ -38,7 +38,7 @@
 
 `bindready`: function \(e\) {}
 
-@e.detail
+@e.detail 渲染成功时
 
 | 名称 | 说明 | 版本 |
 | :--- | :--- | :--- |
@@ -49,7 +49,7 @@
 ```html
 <el-rolling animation='200' scrollbar='{{rolling.scrollbar}}' upperThreshold='{{rolling.upperThreshold}}' lowerThreshold='{{rolling.lowerThreshold}}' fullscreen='{{rolling.autoFullscreenf}}' rubber='{{rolling.rubber}}' isscroll='{{rolling.isscroll}}'
     scrollY='{{rolling.y}}' bindscroll='onScroll' bindready='onScrollReady' class='rolling-body'>   
-    
+
      <!-- do --> 
 </el-rolling>
 ```
@@ -75,7 +75,7 @@ Page({
       }
     }
   },
-  
+
   onScrollReady (e) {
     this.setData({
       'rolling.scrollButtonY': e.detail.scrollButtonY
@@ -87,7 +87,7 @@ Page({
       'rolling.y': e.detail.scrollY
     })
   },
-  
+
 })
 ```
 

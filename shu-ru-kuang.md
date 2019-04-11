@@ -60,6 +60,8 @@ value的合法值:
 
 `bindinput`: function \(e\) {}
 
+@e.detail
+
 | 名称 | 说明 | 版本 |
 | :--- | :--- | :--- |
 | value | 值 | 0.0.2 |
