@@ -19,6 +19,8 @@
   * [address 地址选择器](address-di-zhi.md)
   * [file 文件](file-wen-jian.md)
   * [cellswipe 滑动单元格](cellswipe.md)
+  * [rolling 滚动](rolling-gun-dong.md)
+  * [refresh](refresh.md)
 * [界面](jie-mian.md)
   * [load 装载](jia-zai-fu.md)
   * [button 按钮](an-niu.md)
@@ -29,5 +31,4 @@
   * [rule 页底提示](rule-ye-di-ti-shi.md)
 * [设计规范](she-ji-gui-fan.md)
 * [设计资源](she-ji-zi-yuan.md)
-* [版本](ban-ben.md)
 
