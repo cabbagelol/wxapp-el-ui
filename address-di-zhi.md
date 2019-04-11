@@ -50,7 +50,7 @@
 ### 使用
 
 ```html
-<el-address>
+<el-address bindtapchange='' bindchange='' placeholder='请选择地区'>
     <!-- 将需要选择器触发的标签放置这里 -->
 </el-address>
 ```
