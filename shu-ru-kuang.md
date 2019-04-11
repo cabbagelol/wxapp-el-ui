@@ -36,6 +36,16 @@
 
 \* title优先于el-input-title，当title属性存在时以title内容为准
 
+value的合法值:
+
+| 类型名称 | 说明 | 版本 |
+| :--- | :--- | :--- |
+| address | 地址选择器 | 0.0.4 |
+| text | 文本输入键盘 | - |
+| number | 数字输入键盘 | - |
+| idcard | 身份证输入键盘 | - |
+| digit | 带小数点数字键盘 | - |
+
 #### el-input-title属性\(子\)
 
 当标题需要自定义时，使用el-input-title标签中放置view
