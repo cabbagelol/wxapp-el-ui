@@ -37,12 +37,20 @@ layout并非一定使用，可单独使用row和column
 
 | 名称 | 类型 | 默认 | 说明 | 版本 |
 | :--- | :--- | :--- | :--- | :--- |
-| align | String | start | 垂直对齐，start、center、end | 0.0.3 |
+| align | String | start | 垂直对齐方式 | 0.0.3 |
+
+##### align的合法值:
+
+| 名称 | 说明 | 版本 |
+| :--- | :--- | :--- |
+| start | 左对齐 | 0.0.3 |
+| center | 居中 | 0.0.3 |
+| end | 右对齐 | 0.0.3 |
 
 ### 使用
 
 ```html
-<el-row>
+<el-row align='center'>
  <view>文本</view>
 </el-row>
 ```
@@ -53,7 +61,15 @@ layout并非一定使用，可单独使用row和column
 
 | 名称 | 类型 | 默认 | 说明 | 版本 |
 | :--- | :--- | :--- | :--- | :--- |
-| align | String | start | 水平对齐，start、center、end | 0.0.3 |
+| align | String | start | 水平对齐方式 | 0.0.3 |
+
+##### align的合法值:
+
+| 名称 | 说明 | 版本 |
+| :--- | :--- | :--- |
+| start | 左对齐 | 0.0.3 |
+| center | 居中 | 0.0.3 |
+| end | 右对齐 | 0.0.3 |
 
 ### 标签
 
@@ -73,7 +89,7 @@ layout并非一定使用，可单独使用row和column
 ### 使用
 
 ```html
-<el-column>
+<el-column align='center'>
     <!-- 等比尺寸 -->
     <el-column-1> 1 </el-column-1>
 
