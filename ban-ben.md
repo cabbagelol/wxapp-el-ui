@@ -7,14 +7,21 @@
 * 修订popup为center时淡入动画和个别设备安全区、自定义遮盖层颜色.
 * 修订vacancy默认水平/垂直居中.
 * 修订message支持html标签、新增遮盖层.
-* 修订numlndicto触摸交互、新增自定义卡槽,优化默认增减图标.
+* 修订numlndicto触摸反馈、新增自定义卡槽,优化默认增减图标.
 * 修订popup插槽.
 * 修订content安全区.
 * 修订column上一版本水平居中未生效问题.
 * 修订numIndicator插槽与样式.
 * 修订form支持input、textarea、address控件.
+* 修订input控件内置支持address，新增name的支持以便被form铺抓值、触发反馈、最大长度、是否聚焦等.
+* 修订textarea支持form铺抓值、触摸反馈.
+* 修订button触发反馈.
+* 修订message控件，新增遮盖层.
 * 重命名cellswipe控件为滑动单元格.
 * 重命名load为加载符、loading为装载器.
+* 新增address控件.
+* 新增rule页底提示.
+* 新增loading装载器.
 * 新增textarea长按复制与回调事件.
 * 新增组件: 表单、页底提示、地址选择器、装载器
 
