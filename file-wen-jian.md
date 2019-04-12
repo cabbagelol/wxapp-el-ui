@@ -41,7 +41,7 @@ file:
 
 ### 事件
 
-`succeed`: function \(e\) {}
+`bindsucceed`: function \(e\) {}
 
 @e.detail
 
