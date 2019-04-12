@@ -14,8 +14,9 @@
 * 修订numIndicator插槽与样式.
 * 修订form支持input、textarea、address控件.
 * 重命名cellswipe控件为滑动单元格.
+* 重命名load为加载符、loading为装载器.
 * 新增textarea长按复制与回调事件.
-* 新增组件: 表单、页底提示、地址选择器
+* 新增组件: 表单、页底提示、地址选择器、装载器
 
 ### v: 0.0.3
 

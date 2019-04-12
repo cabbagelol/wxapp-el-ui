@@ -22,7 +22,7 @@
   * [form 表单](form-biao-dan.md)
   * [address 地址选择器](address-di-zhi.md)
 * [界面](jie-mian.md)
-  * [load 装载](jia-zai-fu.md)
+  * [load 装载器与加载符](jia-zai-fu.md)
   * [button 按钮](an-niu.md)
   * [vacancy 空置区](kong-zhi-qu.md)
   * [body 主体](content-zhu-ti.md)

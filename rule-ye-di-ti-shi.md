@@ -38,7 +38,7 @@
 ### 使用
 
 ```html
-<el-rule rule='{{rule}}'></el-rule>
+<el-rule title='标题文本' rule='{{rule}}'></el-rule>
 ```
 
 ```js
