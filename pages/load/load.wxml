@@ -4,7 +4,7 @@
     <el-vacancy class='load-vacancy'></el-vacancy>
   </el-loading>
   <el-loading show='{{loading.show}}' class='load-card' maskbackground='rgba(255, 255, 255, .3)'>
-    <el-cell titile='内容' label='测试内容{{index}}' wx:for='{{3}}' wx:key='{{index}}'></el-cell>
+    <el-cell titile='内容' label='测试内容{{index}}' wx:for='{{3}}' wx:key='{{index}}' bindtap='onLoadtoast'></el-cell>
   </el-loading>
   <el-button bindtap='onLoading'>{{!loading.show ? "隐藏" : "显示"}}</el-button>
 </view>

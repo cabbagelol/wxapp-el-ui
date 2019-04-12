@@ -21,5 +21,12 @@ Page({
     this.setData({
       'loading.show': this.data.loading.show != true
     })
-  }
+  },
+
+  onLoadtoast () {
+    wx.showToast({
+      title: '提示',
+      icon: 'none'
+    })
+  },
 })
