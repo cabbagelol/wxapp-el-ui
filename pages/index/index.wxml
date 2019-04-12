@@ -46,9 +46,9 @@
   <navigator url="../cellswipe/cellswipe" open-type="navigate">
     <el-cell title='滑动单元格' label='cellswipe' islink></el-cell>
   </navigator>
-  <navigator url="../slider/slider" open-type="navigate">
+  <!-- <navigator url="../slider/slider" open-type="navigate">
     <el-cell title='滑动选择器' label='slider' islink></el-cell>
-  </navigator>
+  </navigator> -->
   <navigator url="../message/message" open-type="navigate">
     <el-cell title='全局消息' label='message' islink></el-cell>
   </navigator>
