@@ -36,6 +36,7 @@
     "el-head": "./component/_head/head",
     "el-cell": "./component/_cell/cell",
     "el-load": "./component/_load/load",
+    "el-loading": "./component/_loading/loading",
     "el-button": "./component/_button/button",
     "el-textarea": "./component/_textarea/textarea",
     "el-scrolltxt": "../../component/_scrolltxt/scrolltxt",

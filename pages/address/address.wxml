@@ -1,9 +1,11 @@
 <el-head head='{{head}}' stickie='true'></el-head>
 <view class='container'>
   <el-input title='地址' type='address'></el-input>
-  <el-cell title='自定义' islink>
-    <el-address slot='content' bindtapchange='onColumnChange' bindchange='onChange'>
-      自定义
-    </el-address>
+  <el-cell title='混合使用' islink>
+    <el-address slot='content' bindtapchange='onColumnChange' bindchange='onChange'></el-address>
   </el-cell>
+  <view class='address-vacancy'>
+    <el-address placeholder='请点击这里选择地区' bindtapchange='onColumnChange' bindchange='onChange'></el-address>
+    <view>{{province ? "省:" + province : ""}} {{city ? "市:" + city : city}} {{area ? "区:" + area || "" : ""}} </view>
+  </view>
 </view>

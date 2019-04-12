@@ -39,7 +39,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 23,
+			"current": 10,
 			"list": [
 				{
 					"id": -1,
@@ -112,8 +112,8 @@
 					"scene": null
 				},
 				{
-					"id": -1,
-					"name": "装载",
+					"id": 10,
+					"name": "装载与加载符",
 					"pathName": "pages/load/load",
 					"query": "",
 					"scene": null
@@ -203,9 +203,10 @@
 					"scene": null
 				},
 				{
-					"id": -1,
-					"name": "地址",
+					"id": 23,
+					"name": "地址选择器",
 					"pathName": "pages/address/address",
+					"query": "",
 					"scene": null
 				}
 			]

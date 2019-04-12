@@ -1,8 +1,13 @@
 Component({
   properties: {
+    title: {
+      type: String,
+      value: ''
+    },
     rule: {
       type: Object,
       value: {
+        title: '',
         lines: {
           color: "#E3E3E3",
           width: 20,

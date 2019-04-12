@@ -1,0 +1,13 @@
+.address-vacancy {
+  color: #999;
+  text-align: center;
+  padding: 50rpx;
+  font-size: 40rpx;
+  display: block;
+  margin: 30rpx 0 0 0;
+  border: 4rpx dashed #e9e9e9;
+}
+
+.address-vacancy > view {
+  font-size: 25rpx;
+}

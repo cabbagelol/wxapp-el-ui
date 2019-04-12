@@ -2,16 +2,19 @@
   * 控件
   ** 全局消息
 -->
-<view class='__message__  {{start ? "__message-animation__" : "__message-animation-up__"}} {{message.type ? "__message-" + message.type + "__" : "__message-succeed__"}}'>
+<view class='__message__ el-message  {{start ? "__message-animation__" : "__message-animation-up__"}} {{message.type ? "__message-" + message.type + "__" : "__message-succeed__"}}'>
   <view class='__message-top__' style='margin-top: {{systemnfo.statusBarHeight}}px'>
     <view class='__message-icon__' wx:if='{{message.icon}}'>
       <el-load size='.6' color='{{color}}' type='success' wx:if='{{message.type == "success"}}'></el-load>
       <el-load size='.6' color='{{color}}' type='warn' wx:if='{{message.type == "warning"}}'></el-load>
       <el-load size='.6' color='{{color}}' type='info' wx:if='{{message.type == "danger"}}'></el-load>
     </view>
-    <view class='__message-text__'>
-      <slot />
-      <rich-text nodes='{{message.cont}}'></rich-text>
+    <view>
+      <text class='__message-title__ el-title' wx:if='{{message.title}}'>{{message.title}}</text>
+      <view class='__message-text__'>
+        <slot class='el-content'  />
+        <rich-text nodes='{{message.cont}}'></rich-text>
+      </view>
     </view>
   </view>
 </view>

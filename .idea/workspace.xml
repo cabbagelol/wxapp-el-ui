@@ -1,7 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bcb96f6b-c814-45f6-bc20-aea94fe2cee1" name="Default Changelist" comment="Merge branch 'master' of https://github.com/cabbagelol/wxapp-el-ui&#10;&#10;# Conflicts:&#10;#&#9;component/_tab/tab.js" />
+    <list default="true" id="bcb96f6b-c814-45f6-bc20-aea94fe2cee1" name="Default Changelist" comment="Merge branch 'master' of https://github.com/cabbagelol/wxapp-el-ui&#10;&#10;# Conflicts:&#10;#&#9;component/_tab/tab.js">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/component/_address/address.js" beforeDir="false" afterPath="$PROJECT_DIR$/component/_address/address.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/component/_address/address.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/component/_address/address.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/component/_address/address.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/component/_address/address.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/component/_form/form.js" beforeDir="false" afterPath="$PROJECT_DIR$/component/_form/form.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/component/_img/cover.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/component/_input/input.js" beforeDir="false" afterPath="$PROJECT_DIR$/component/_input/input.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/component/_input/input.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/component/_input/input.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/component/_input/input.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/component/_input/input.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/component/_load/load.json" beforeDir="false" afterPath="$PROJECT_DIR$/component/_load/load.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/component/_load/load.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/component/_load/load.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/component/_load/load.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/component/_load/load.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/component/_message/message.js" beforeDir="false" afterPath="$PROJECT_DIR$/component/_message/message.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/component/_message/message.json" beforeDir="false" afterPath="$PROJECT_DIR$/component/_message/message.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/component/_message/message.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/component/_message/message.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/component/_message/message.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/component/_message/message.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/component/_rule/rule.js" beforeDir="false" afterPath="$PROJECT_DIR$/component/_rule/rule.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/component/_rule/rule.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/component/_rule/rule.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/component/_tab/tab.js" beforeDir="false" afterPath="$PROJECT_DIR$/component/_tab/tab.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/address/address.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/address/address.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/address/address.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/address/address.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/address/address.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/address/address.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/cellswipe/cellswipe.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/cellswipe/cellswipe.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/form/form.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/form/form.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/form/form.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/form/form.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/form/form.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/form/form.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index/index.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index/index.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/load/load.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/load/load.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/load/load.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/load/load.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/load/load.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/load/load.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/message/message.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/message/message.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/rule/rule.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/rule/rule.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project.config.json" beforeDir="false" afterPath="$PROJECT_DIR$/project.config.json" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -11,65 +46,126 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="2023690054">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="1" />
-          <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.13" value="2" />
-          <entry key="project.opened" value="3" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="txt" value="18" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="PLAIN_TEXT" value="18" />
-        </counts>
-      </usages-collector>
-    </session>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="package.json" />
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="PUSH_TAGS">
+      <GitPushTagMode />
+    </option>
   </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
-  </component>
-  <component name="NodePackageJsonFileManager">
-    <packageJsonPaths>
-      <path value="$PROJECT_DIR$/package.json" />
-    </packageJsonPaths>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/component/_head/head.wxml" />
+        <option value="$PROJECT_DIR$/component/_head/head.json" />
+        <option value="$PROJECT_DIR$/component/_img/img.js" />
+        <option value="$PROJECT_DIR$/component/_scrolltxt/scrolltxt.wxml" />
+        <option value="$PROJECT_DIR$/component/_scrolltxt/scrolltxt.js" />
+        <option value="$PROJECT_DIR$/component/_button/button.wxss" />
+        <option value="$PROJECT_DIR$/component/_numIndicator/numIndicator.wxss" />
+        <option value="$PROJECT_DIR$/component/_numIndicator/numIndicator.wxml" />
+        <option value="$PROJECT_DIR$/component/_button/button.js" />
+        <option value="$PROJECT_DIR$/component/_button/button.wxml" />
+        <option value="$PROJECT_DIR$/component/_load/load.wxss" />
+        <option value="$PROJECT_DIR$/pages/content/content.wxml" />
+        <option value="$PROJECT_DIR$/pages/content/content.js" />
+        <option value="$PROJECT_DIR$/package-lock.json" />
+        <option value="$PROJECT_DIR$/project.config.json" />
+        <option value="$PROJECT_DIR$/component/_body/body.wxml" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/.npmignore" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/pages/slider/slider.js" />
+        <option value="$PROJECT_DIR$/pages/slider/slider.json" />
+        <option value="$PROJECT_DIR$/pages/slider/slider.wxml" />
+        <option value="$PROJECT_DIR$/component/_head/head.js" />
+        <option value="$PROJECT_DIR$/component/_body/body.js" />
+        <option value="$PROJECT_DIR$/component/_input/input.wxml" />
+        <option value="$PROJECT_DIR$/component/_tag/tag.wxss" />
+        <option value="$PROJECT_DIR$/component/_tag/index.html" />
+        <option value="$USER_HOME$/Desktop/style.css" />
+        <option value="$USER_HOME$/Desktop/index.html" />
+        <option value="$PROJECT_DIR$/pages/rule/rule.js" />
+        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
+        <option value="$PROJECT_DIR$/pages/index/index.wxml" />
+        <option value="$PROJECT_DIR$/component/_tab/tab.js" />
+        <option value="$PROJECT_DIR$/app.json" />
+        <option value="$PROJECT_DIR$/component/_address/address.json" />
+        <option value="$PROJECT_DIR$/component/_address/address.wxml" />
+        <option value="$PROJECT_DIR$/component/_address/address.wxss" />
+        <option value="$PROJECT_DIR$/pages/address/address.json" />
+        <option value="$PROJECT_DIR$/pages/address/address.wxml" />
+        <option value="$PROJECT_DIR$/pages/address/address.wxss" />
+        <option value="$PROJECT_DIR$/pages/address/address.js" />
+        <option value="$PROJECT_DIR$/pages/form/form.wxml" />
+        <option value="$PROJECT_DIR$/pages/form/form.wxss" />
+        <option value="$PROJECT_DIR$/pages/form/form.js" />
+        <option value="$PROJECT_DIR$/pages/form/form.json" />
+        <option value="$PROJECT_DIR$/component/_form/form.js" />
+        <option value="$PROJECT_DIR$/component/_form/form.json" />
+        <option value="$PROJECT_DIR$/component/_form/form.wxml" />
+        <option value="$PROJECT_DIR$/component/_address/js/cityArray.js" />
+        <option value="$PROJECT_DIR$/component/_address/address.js" />
+      </list>
+    </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="40" />
-    <option name="y" value="168" />
-    <option name="width" value="1400" />
-    <option name="height" value="957" />
+    <option name="x" value="372" />
+    <option name="y" value="147" />
+    <option name="width" value="1442" />
+    <option name="height" value="850" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="wxapp-el-ui" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wxapp-el-ui" type="462c0819:PsiDirectoryNode" />
+              <item name="wxapp-components" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wxapp-components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wxapp-components" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wxapp-components" type="462c0819:PsiDirectoryNode" />
+              <item name="component" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wxapp-components" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wxapp-components" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wxapp-components" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wxapp-components" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="address" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wxapp-components" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wxapp-components" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="form" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -121,12 +217,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4347000" />
+    <option name="totallyTimeSpent" value="7206000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="54" y="-8" width="1874" height="1096" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18293333" />
+      <window_info id="Repositories" weight="0.32984003" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.16492002" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -138,9 +235,9 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Weex Console" order="7" sideWeight="0.49813294" weight="0.32846716" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="9" sideWeight="0.4992" visible="true" weight="0.32899022" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="9" sideWeight="0.4992" visible="true" weight="0.2983368" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.32899022" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5008" side_tool="true" visible="true" weight="0.32899022" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5008" side_tool="true" weight="0.49028572" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -150,12 +247,244 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_WIDTH">
+                <map>
+                  <entry key="2" value="84" />
+                  <entry key="3" value="128" />
+                </map>
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="2" />
+                  <option value="1" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="2019年3月26日09:56:18" />
     <MESSAGE value="Merge branch 'master' of https://github.com/cabbagelol/wxapp-el-ui&#10;&#10;# Conflicts:&#10;#&#9;component/_tab/tab.js" />
     <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'master' of https://github.com/cabbagelol/wxapp-el-ui&#10;&#10;# Conflicts:&#10;#&#9;component/_tab/tab.js" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="40" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/rule/rule.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="22" column="2" selection-start-line="22" selection-start-column="2" selection-end-line="22" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.wxss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="11" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_config.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.npmignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="7" selection-start-line="3" selection-end-line="3" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.eslintrc.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/address/address.wxss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/address/address.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/address/address.wxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="7" lean-forward="true" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="21" column="18" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/form/form.wxss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/form/form.wxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/form/form.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/form/form.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/component/_form/form.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="59" column="2" selection-start-line="59" selection-start-column="2" selection-end-line="59" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/component/_form/form.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/component/_form/form.wxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="8" selection-start-column="8" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/component/_form/form.wxss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/component/_body/body.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/component/_address/js/cityArray.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret column="1092" selection-start-column="1092" selection-end-column="1092" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/component/_address/address.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/component/_address/address.wxss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/component/_address/address.wxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/component/_address/address.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/component/_input/input.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/component/_input/input.wxss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/component/_input/input.wxml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/component/_input/input.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/component/_input/input-title.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/component/_input/input-title.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/address/address.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>

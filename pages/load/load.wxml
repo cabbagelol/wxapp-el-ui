@@ -1,5 +1,17 @@
 <el-head class='el' head='{{head}}' stickie='true'></el-head>
 <view class="container">
+  <el-loading show='{{loading.show}}' class='load-card' type='line' color='{{loading.color}}'>
+    <el-vacancy class='load-vacancy'></el-vacancy>
+  </el-loading>
+  <el-loading show='{{loading.show}}' class='load-card' maskbackground='rgba(255, 255, 255, .3)'>
+    <el-cell titile='内容' label='测试内容{{index}}' wx:for='{{3}}' wx:key='{{index}}'></el-cell>
+  </el-loading>
+  <el-button bindtap='onLoading'>{{!loading.show ? "隐藏" : "显示"}}</el-button>
+</view>
+<view class="container">
+  <el-rule title='更多' />
+</view>
+<view class="container">
   <el-cell title="main" label="标准">
     <el-load slot="content" type="main" size="1" color="{{color}}"></el-load>
   </el-cell>
@@ -31,12 +43,12 @@
   </el-cell>
 
   <el-cell title="success" label="标准">
-    <el-load slot="content" type="success" size="1" color="{{color}}"></el-load>
+    <el-load slot="content" type="success" size="1" color="{{color}}" />
   </el-cell>
   <el-cell title="success">
-    <el-load slot="content" type="success" size=".8"></el-load>
+    <el-load slot="content" type="success" size=".8" />
   </el-cell>
   <el-cell title="success" label="小">
-    <el-load slot="content" type="success" size=".6"></el-load>
+    <el-load slot="content" type="success" size=".6" />
   </el-cell>
 </view>

@@ -1,0 +1,38 @@
+.__loading__{
+  background: #EEE;
+  position: relative;
+}
+
+.__loading-mask__ {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.__loading-z-index__ {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+}
+
+.__loading-z-show__  {
+  top: -100%;
+  left: -100%;
+  opacity: 0;
+  animation: show .25s;
+  transition:  all .25s;
+}
+
+@keyframes show {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}

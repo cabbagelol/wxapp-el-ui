@@ -1,1 +1,4 @@
-/* pages/form/form.wxss */
+.form-rich-text {
+  font-size: 30rpx;
+  color: #999;
+}

@@ -18,7 +18,10 @@ Component({
       type: Boolean,
       value: false
     },
-    maxlength: Number,
+    maxlength: {
+      type: Number,
+      value: 140
+    },
     name: String,
     disabled: {
       type: Boolean,

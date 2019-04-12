@@ -7,23 +7,19 @@ Component({
     '../_input/input': {
       type: 'child',
       linked(target) {
-        var that = this;
-        var data = that.data.form.data;
-        data.push(target)
-        that.setData({
-          'form.data': data
-        })
+        this.setValue(target)
       }
     },
     '../_textarea/textarea': {
       type: 'child',
       linked(target) {
-        var that = this;
-        var data = that.data.form.data;
-        data.push(target)
-        that.setData({
-          'form.data': data
-        })
+        this.setValue(target)
+      }
+    },
+    '../_address/address': {
+      type: 'child',
+      linked(target) {
+        this.setValue(target)
       }
     },
     '../_button/button': {
@@ -38,10 +34,20 @@ Component({
   },
 
   methods: {
+    setValue(target) {
+      var that = this;
+      var data = that.data.form.data;
+      data.push(target)
+      that.setData({
+        'form.data': data
+      })
+    },
+
     onFormSubmit(e) {
       var that = this;
       var data = {}
       that.data.form.data.forEach(function(i, index) {
+        console.log(i)
         data[i.data.name || index] = i.data.value
       })
       this.triggerEvent('submit', {

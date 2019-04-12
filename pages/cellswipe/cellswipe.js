@@ -1,7 +1,7 @@
 Page({
   data: {
     head: {
-      title: 'cellswipe',
+      title: '滑动单元格',
       back: true
     },
     cellswipe: {

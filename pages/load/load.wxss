@@ -1,0 +1,4 @@
+.load-card {
+  display: block;
+  margin-bottom: 30rpx;
+}

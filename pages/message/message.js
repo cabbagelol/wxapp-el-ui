@@ -34,6 +34,7 @@ Page({
       'message.ing': true
     })
     that.messgae.onMessage({
+      title: '通知:',
       cont: that.data.message.cont,
       time: that.data.message.time,
       icon: that.data.message.icon,
