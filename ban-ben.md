@@ -10,7 +10,7 @@
 * 修订numlndicto触摸反馈、新增自定义卡槽,优化默认增减图标.
 * 修订popup插槽.
 * 修订content安全区.
-* 修订column上一版本水平居中未生效问题.
+* 修订column和row、layout之间适配.
 * 修订numIndicator插槽与样式.
 * 修订form支持input、textarea、address控件.
 * 修订input控件内置支持address，新增name的支持以便被form铺抓值、触发反馈、最大长度、是否聚焦等.
