@@ -1,5 +1,5 @@
 <view class='__loading__'>
-  <el-load class='__loading-z-index__ {{show ? "__loading-z-show__" : ""}}' style='top: calc(50% - {{loadindW / 2}}px);left: calc(50% - {{loadindW / 2}}px)' color='{{color}}' type='{{type}}' size='{{size}}'></el-load>
+  <el-load class='__loading-z-index__ {{!show ? "__loading-z-show__" : "__loading-z-hide__"}}' style='top: calc(50% - {{loadindW / 2}}px);left: calc(50% - {{loadindW / 2}}px)' color='{{color}}' type='{{type}}' size='{{size}}'></el-load>
   <view class='__loading-slot__'><slot /></view>
   <view class='__loading-mask__' style='background: {{maskbackground}}' wx:if='{{!show}}'></view>
 </view>

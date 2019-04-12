@@ -1,4 +1,4 @@
-.__loading__{
+.__loading__ {
   position: relative;
 }
 
@@ -14,22 +14,23 @@
 .__loading-z-index__ {
   position: absolute;
   z-index: 2;
-  top: 50%;
-  left: 50%;
 }
 
-.__loading-z-show__  {
-  top: -100%;
-  left: -100%;
+.__loading-z-show__ {
+  opacity: 1;
+}
+
+.__loading-z-hide__ {
   opacity: 0;
-  animation: show .25s;
-  transition:  all .25s;
+  animation: show 0.25s alternate forwards;
+  transition: all 0.25s;
 }
 
 @keyframes show {
   0% {
     opacity: 1;
   }
+
   100% {
     opacity: 0;
     z-index: -1;

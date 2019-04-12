@@ -36,7 +36,6 @@ Component({
     var that = this;
     if (config.util.in(that)) {
       config.util.$('.__loading-slot__,.__loading-z-index__').then(function (e) {
-        console.log(e['.__loading-slot__'].width)
         if (e['.__loading-slot__'].width != 0) {
           that.setData({
             floated: true,
