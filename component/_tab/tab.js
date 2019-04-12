@@ -64,7 +64,6 @@ Component({
       })
       config.util.$('.__tab-nav__').then(function (e) {
         if (that.data.scroll.x <= (e['.__tab-nav__'].width / 2)) {
-          console.log(that.data.tabs.data)
           that.data.tabs.data.forEach(function (i, index) {
             if (i.title == that.data.active) {
               that.setData({
