@@ -27,7 +27,7 @@ Component({
       right: true
     },
     value: 0,
-    setTime: () => {}
+    setTime: () => { }
   },
 
   ready() {
@@ -83,13 +83,13 @@ Component({
       this.settriggerEvent(e)
     },
 
-    onStop () {
+    onStop() {
       clearInterval(that.data.setTime)
     },
 
-    onTapStart (e) {
-      var that = this
-      if (!that.data.longtag) {return}
+    onTapStart(e) {
+      var that = this;
+      if (!that.data.longtag) { return }
       that.setData({
         setTime: setInterval(function () {
           that.onChange(e)
@@ -101,10 +101,10 @@ Component({
       })
     },
 
-    onTapEnd (e) {
-      var that = this
+    onTapEnd(e) {
+      var that = this;
       if (!that.data.longtag) { return }
-      clearInterval(that.data.setTime)
+      clearInterval(that.data.setTime);
       that.triggerEvent('tapend', {
         el: e,
         value: that.data.value
@@ -112,10 +112,10 @@ Component({
     },
 
     onChange(e) {
-      var that = this
+      var that = this;
       switch (e.target.dataset.type) {
         case 'reduce':
-          if (that.data.min ? that.data.value > that.data.min : true ) {
+          if (that.data.min ? that.data.value > that.data.min : true) {
             that.setData({
               value: that.data.value -= Number(that.data.superposition.toFixed(2)) || 1
             })
