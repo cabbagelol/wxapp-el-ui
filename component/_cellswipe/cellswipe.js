@@ -6,7 +6,10 @@ Component({
   },
 
   properties: {
-    color: String,
+    color: {
+      type: String,
+      value: 'inherit'
+    },
     show: {
       type: String,
       value: ''
@@ -78,11 +81,19 @@ Component({
       var point = e.changedTouches[0];
       var calcX = that.data.cellswipe.left;
       if (e.changedTouches.length > 1) {
-        return
-      }
-      calcX = that.isF() ? 0 : -that.data.cellswipe.rightW - that.data.cellswipe.leftW;
+        return;
+      };
       that.onChange({
-        show: calcX == 0 ? 'left' : 'right'
+        show: (function() {
+          if (that.isF() > 0) {
+            calcX = 0;
+          } else if (that.isF() < 0) {
+            calcX = -that.data.cellswipe.rightW - that.data.cellswipe.leftW;
+          } else if (that.isF() == 0) {
+            calcX = -that.data.cellswipe.leftW
+          }
+          return calcX;
+        })()
       })
       that.setData({
         'cellswipe.left': calcX,
@@ -92,20 +103,26 @@ Component({
     },
 
     touchMove(e) {
-      var that = this;
-      var point = e.changedTouches[0];
+      const that = this;
+      const point = e.changedTouches[0];
+      const scroollx = that.data.cellswipe.left;
       var calcX = point.pageX - (that.data.cellswipe.startX + that.data.cellswipe.endX);
-      if (e.changedTouches.length > 1) {
-        return;
-      }
       if (that.data.cellswipe.leftW <= 0 && calcX > that.data.cellswipe.leftW) {
         calcX = 0
       }
       if (that.data.cellswipe.rightW <= 0 && calcX < -that.data.cellswipe.leftW) {
         calcX = -that.data.cellswipe.leftW
       }
-      if (!!that.data.color == false && (calcX >= 0 || calcX <= -that.data.cellswipe.leftW)) {
-        return;
+      if (that.isF() > 0) {
+        if (that.data.color == 'inherit' && calcX > 0) {
+          calcX = 0;
+          return;
+        }
+      } else if (that.isF() < 0) {
+        if (that.data.color == 'inherit' & calcX < -that.data.cellswipe.rightW) {
+          calcX = -that.data.cellswipe.rightW;
+          return;
+        }
       }
       this.setData({
         'cellswipe.left': calcX,
@@ -115,23 +132,29 @@ Component({
     },
 
     /**
+     * 判断正反
      * true 正， false 反
      */
     isF() {
       var ret;
-      var val = this.data.cellswipe.left + this.data.cellswipe.leftW > 0;
+      const val = this.data.cellswipe.left + this.data.cellswipe.leftW;
       if (val > 0) {
-        ret = true
+        ret = 1
       } else if (val < 0) {
-        ret = false;
+        ret = -1;
       } else {
-        ret = 0
+        ret = val
       }
       return ret;
     },
 
+    /**
+     * 更新滑动控制器的值
+     */
     onChange(data_) {
-      if (this.data.disabled) {return}
+      if (this.data.disabled) {
+        return
+      }
       this.triggerEvent('change', Object.assign(data_, {
         type: 'cellswipe'
       }))
