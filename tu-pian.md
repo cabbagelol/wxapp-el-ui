@@ -28,6 +28,8 @@
 | mode | String | aspectFill | [https://developers.weixin.qq.com/miniprogram/dev/component/image.html，控件默认是aspectFill](https://developers.weixin.qq.com/miniprogram/dev/component/image.html，控件默认是aspectFill) | 0.0.2 |
 | lazyload | Boolean | false |  | 0.0.2 |
 | arialabel | String |  |  | 0.0.2 |
+| loadtype | String | “” | 加载符类型，参考[load](/jia-zai-fu.md)控件的属性 | 0.0.5 |
+| loadcolor | Object | {} | 加载符颜色，参考[load](/jia-zai-fu.md)控件的属性 | 0.0.5 |
 
 * 以上，除了事件外都基本可获得，由于已将image封装不需再继续关注error和load事件，如果需要请直接使用image控件。
 * 独立CSS
@@ -39,6 +41,12 @@
 
 <el-img src="https://"></el-img>
 ```
+
+### 依赖
+
+| 名称 | 版本 |
+| :--- | :--- |
+| loading | 0.0.5 |
 
 
 
