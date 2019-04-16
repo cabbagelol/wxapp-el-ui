@@ -1,0 +1,18 @@
+<el-body>
+  <el-head slot='head' head='{{head}}' stickie='true'></el-head>
+  <el-tip slot='head' type='{{tip.type}}'>这里是一个通知</el-tip>
+  <view slot='body'>
+    <view class='container'>
+      <el-cell title='成功' label='success' data-type='success' bindtap='setTipType' islink>
+        <el-tip slot='content' type='success'>提示标签</el-tip>
+      </el-cell>
+      <el-cell title='警示' label='warning' data-type='warning' bindtap='setTipType' islink>
+        <el-tip slot='content' type='warning'>提示标签</el-tip>
+      </el-cell>
+      <el-cell title='严重' label='danger' data-type='danger' bindtap='setTipType' islink>
+        <el-tip slot='content' type='danger'>提示标签</el-tip>
+      </el-cell>
+    </view>
+  </view>
+  <el-tip slot='footer'>注意这里是页脚</el-tip>
+</el-body>

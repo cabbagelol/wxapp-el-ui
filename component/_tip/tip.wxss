@@ -1,0 +1,19 @@
+.__tip__ {
+  padding: 10rpx 20rpx;
+  font-size: 25rpx;
+}
+
+.__tip-success__ {
+  background: rgba(139, 195, 74, 0.5);
+  color: #FFF;
+}
+
+.__tip-warning__ {
+  background: rgba(255, 193, 5, 0.5);
+  color: #FFF;
+}
+
+.__tip-danger__ {
+  background: rgba(244, 67, 54, 0.5);
+  color: #FFF;
+}
