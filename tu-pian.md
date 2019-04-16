@@ -28,8 +28,8 @@
 | mode | String | aspectFill | [https://developers.weixin.qq.com/miniprogram/dev/component/image.html，控件默认是aspectFill](https://developers.weixin.qq.com/miniprogram/dev/component/image.html，控件默认是aspectFill) | 0.0.2 |
 | lazyload | Boolean | false |  | 0.0.2 |
 | arialabel | String |  |  | 0.0.2 |
-| loadtype | String | “” | 加载符类型，参考[load](/jia-zai-fu.md)控件的属性 | 0.0.5 |
-| loadcolor | Object | {} | 加载符颜色，参考[load](/jia-zai-fu.md)控件的属性 | 0.0.5 |
+| loadtype | String | “” | 加载符类型，参考[load](/jia-zai-fu.md)控件的type属性 | 0.0.5 |
+| loadcolor | Object | {} | 加载符颜色，参考[load](/jia-zai-fu.md)控件的color属性 | 0.0.5 |
 
 ### 事件
 
@@ -37,15 +37,19 @@
 
 | 名称 | 说明 | 版本 |
 | :--- | :--- | :--- |
-|  |  |  |
-|  |  |  |
+| type | 执行类型 | 0.0.5 |
+| height | 图片高度 | 0.0.5 |
+| width | 图片宽度 | 0.0.5 |
+| url | 图片地址 | 0.0.5 |
 
 `binderror`: function \(e\) {}
 
 | 名称 | 说明 | 版本 |
 | :--- | :--- | :--- |
-|  |  |  |
-|  |  |  |
+| type | 执行类型 | 0.0.5 |
+| height | 图片高度 | 0.0.5 |
+| width | 图片宽度 | 0.0.5 |
+| url | 图片地址 | 0.0.5 |
 
 ### 使用
 
