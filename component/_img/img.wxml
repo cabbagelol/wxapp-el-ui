@@ -2,18 +2,10 @@
   * 控件
   * 图片
  -->
- <view class="__img__ ">
-  <image class='__img-item__ fade_in' src="{{src + (imageslim ? '?imageslim' : '')}}"
-         lazy-load="{{lazyload}}"
-         aria-label="{{arialabel}}"
-         data-url="{{src}}"
-         style='{{style}}'
-         lazy-load="true" 
-         alt="{{src || alt}}"
-         wx:if="{{src}}" 
-         bindload="onLoad"
-         binderror="onError"
-         mode="{{mode || 'aspectFill'}}"
-         wx:if='{{src}}'></image>
-  <image class='__img-item__ fade_in' src="{{placeholder ? placeholder : './images/cover.png'}}" style='{{style}}' wx:if="{{!src || src == ''}}" mode="aspectFill"></image>
- </view>
+<view class="__img__ fade_in">
+  <el-loading class='__img-loading__' type='{{loadtype}}' color='{{loadcolor}}' maskbackground='rgba(255,255,255,.8)' show='{{!load}}'>
+    <image class='__img-item__ ' src="{{src + (imageslim ? '?imageslim' : '')}}" lazy-load="{{lazyload}}" aria-label="{{arialabel}}" data-url="{{src}}" style='{{style}}' lazy-load="true" alt="{{src || alt}}" wx:if="{{src}}" bindload="onLoad" binderror="onError"
+      mode="{{mode || 'aspectFill'}}" wx:if='{{src}}'></image>
+    <image class='__img-item__ fade_in' src="{{placeholder ? placeholder : './images/cover.png'}}" style='{{style}}' wx:if="{{!src || src == ''}}" mode="aspectFill"></image>
+  </el-loading>
+</view>

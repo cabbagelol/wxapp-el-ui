@@ -4,39 +4,81 @@ Component({
   properties: {
     src: {
       type: String,
-      value: './images/cover.png'
+      value: './images/cover.png',
+      observer (newVal_, oldVal_) {
+        this.setData({
+          src_: oldVal_
+        })
+      }
     },
-    style: String,
-    mode: String,
+    style: {
+      type: String,
+      value: ''
+    },
+    mode: {
+      type: String,
+      value: ''
+    },
     placeholder: {
       type: String,
       value: false
     },
-    lazyload: Boolean,
-    arialabel: String
+    lazyload: {
+      type: Boolean,
+      value: false
+    },
+    arialabel: {
+      type: String,
+      value: ''
+    },
+    loadtpye: {
+      type: String,
+      value: ''
+    },
+    loadcolor: {
+      type: Object,
+      value: {}
+    }
   },
 
   data: {
+    src_ : '',
     load: true
   },
 
   methods: {
+    getValue (e) {
+      var object = Object.assign(e.currentTarget.dataset, e.detail, {
+        oldsrc: this.data.src_
+      })
+      return object;
+    },
+
     onError(e) {
-      this.setData({
+      const result = {
         src: '',
         load: false
-      })
+      }
+      this.setData(result)
+      this.triggerEvent('error', Object.assign(that.getValue(_e), {
+        type: 'error'
+      }));
     },
 
     onLoad(e) {
+      const _e = e;
       var that = this;
       if (config.util.in(that)) {
         config.util.$([".__img__", ".__img-item__"]).then(function (e) {
-          if (e['.__img__'].width == 0 || e['.__img__'].height == 0) {
+          const _img = e['.__img__'];
+          if (_img.width == 0 || _img.height == 0) {
             that.setData({
               style: (that.data.style || "") + ';width:' + 50 + 'px;height:' + 50 + 'px'
             })
           }
+          that.triggerEvent('load', Object.assign(that.getValue(_e), {
+            type: 'succeed'
+          }));
         })
       }
       that.setData({

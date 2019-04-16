@@ -2,7 +2,7 @@
   * 控件
   ** 输入器
  -->
-<view class='__input__'>
+<view class='__input__ {{!Internalstyle ? "__input-Internal__" : ""}}'>
   <view class='__input__title__ {{!title ? "__input__title-null__" : ""}}'>
     <block wx:if='{{title}}'>
       <text style='color:red' wx:if='{{mustchoose}}'>*</text>{{title}}

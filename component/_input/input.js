@@ -22,11 +22,18 @@ Component({
       type: Number,
       value: 140
     },
-    name: String,
+    name: {
+      type: String,
+      value: ''
+    },
     disabled: {
       type: Boolean,
       value: false
-    }
+    },
+    Internalstyle: {
+      type: Boolean,
+      value: false
+    },
   },
 
   relations: {

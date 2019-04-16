@@ -32,7 +32,7 @@
 ._cell_title_subhead_ {
     font-size: 24rpx;
     color: #999;
-    white-space: nowrap;
+    text-align: left;
 }
 
 ._cell_title_content_ {

@@ -13,8 +13,8 @@ Page({
   },
 
   onFile (e) {
-    var that = this
-    var filelist = that.data.filelist
+    var that = this;
+    var filelist = that.data.filelist;
     e.detail.tempFiles.forEach(function (i) {
       i.type = e.detail.type;
       filelist.push(i);
@@ -22,5 +22,6 @@ Page({
     this.setData({
       'filelist': filelist
     })
+    console.log(filelist)
   }
 })

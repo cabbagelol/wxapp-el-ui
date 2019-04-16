@@ -6,6 +6,9 @@
   <view wx:for='{{filelist}}' wx:key='{{index}}' class='file-item'>
     <image src='{{item.path}}' wx:if='{{item.type=="image"}}'></image>
     <video src='{{item.path}}' wx:if='{{item.type=="video"}}'></video>
+    <view src='{{item.path}}' wx:if='{{item.type=="file"}}'>
+      文件名称: {{item.name}}
+    </view>
   </view>
   <el-vacancy cont='true' height='600rpx' wx:if='{{filelist.length <= 0}}'>
     <view slot='cont'>

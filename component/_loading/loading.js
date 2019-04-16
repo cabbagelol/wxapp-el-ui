@@ -28,18 +28,16 @@ Component({
   },
 
   data: {
-    floated: false,
-    loadindW: 0
+    floated: false
   },
 
   ready () {
     var that = this;
     if (config.util.in(that)) {
-      config.util.$('.__loading-slot__,.__loading-z-index__').then(function (e) {
+      config.util.$('.__loading-slot__').then(function (e) {
         if (e['.__loading-slot__'].width != 0) {
           that.setData({
-            floated: true,
-            loadindW: e['.__loading-z-index__'].width
+            floated: true
           })
         }
       })

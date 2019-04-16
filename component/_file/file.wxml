@@ -3,7 +3,7 @@
     <slot/>
   </view>
 
-  <el-popup show='{{file.show}}' position='bottom' modal='{{file.modal}}' bindchange='onPopup' animation='true'>
+  <el-popup show='{{file_.show}}' position='bottom' modal='{{file_.modal}}' bindchange='onPopup' animation='true'>
     <view slot='content' class='__file-popup__'>
       <view class='__file-popup-item__' data-type='camera' bindtap='onSelechFileType' wx:if='{{camera}}'>拍摄</view>
       <view class='__file-popup-item__' data-type='album' bindtap='onSelechFileType' wx:if='{{album}}'>相册</view>

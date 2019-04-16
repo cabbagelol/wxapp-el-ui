@@ -9,6 +9,11 @@ el-column {
   display: block;
 }
 
+el-column,
+el-row {
+  height: 100%;
+}
+
 el-img,
 el-layout {
   max-width: 100%;
