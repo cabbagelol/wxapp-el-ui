@@ -2,7 +2,7 @@
   * 控件
   ** 输入器
  -->
-<view class='__input__'>
+<view class='__input__ {{!Internalstyle ? "__input-Internal__" : ""}}'>
   <view class='__input__title__ {{!title ? "__input__title-null__" : ""}}'>
     <block wx:if='{{title}}'>
       <text style='color:red' wx:if='{{mustchoose}}'>*</text>{{title}}
@@ -13,7 +13,7 @@
   </view>
   <view class='__input-cont__'>
     <block wx:if='{{type == "address"}}'>
-      <el-address class='__input-cont-address__' />
+      <el-address class='__input-cont-address__' value='{{value}}' bindtapchange='onInput'/>
     </block>
     <block wx:else>
       <input type='{{type || "text"}}' placeholder='{{placeholder || (title ? ("请输入" + title) : "请输入内容")}}' focus='{{focus}}' value='{{value}}' disabled='{{disabled ? "disabled" : false}}' password='{{type == "password" ? true : false}}' maxlength='{{maxlength || 140}}'

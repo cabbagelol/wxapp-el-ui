@@ -7,7 +7,6 @@ Component({
     'el-input'
   ],
 
-
   properties: {
     file: {
       type: Object,
@@ -22,8 +21,13 @@ Component({
         },
         files: {
           type: 'all',
-          extension: null
-        }
+          extension: false
+        },
+      },
+      observer: function (newVal, oldVal) {
+        this.setData({
+          file_: Object.assign(oldVal, newVal)
+        })
       }
     },
     album: {
@@ -44,11 +48,15 @@ Component({
     }
   },
 
+  data: {
+    file_: {}
+  },
+
   methods: {
     onPopup() {
       if (!this.data.album && !this.data.camera && !this.data.files && !this.data.video) { return }
       this.setData({
-        'file.show': this.data.file.show != true
+        'file_.show': this.data.file_.show != true
       })
     },
 
@@ -65,8 +73,8 @@ Component({
         case 'album':
         case 'camera':
           wx.chooseImage({
-            count: that.data.file.count,
-            sizeType: that.data.file.sizeType,
+            count: that.data.file_.count,
+            sizeType: that.data.file_.sizeType,
             sourceType: [e.target.dataset.type],
             success(img_) {
               if (img_.errMsg == 'chooseImage:ok') {
@@ -76,23 +84,25 @@ Component({
           })
           break;
         case 'file':
-          wx.chooseMessageFile({
-            count: that.data.file.count,
-            type: that.data.file.files.type,
-            extension: that.data.file.files.extension,
-            success (files_) {
+          console.log(that.data.file_)
+          let conf = {
+            count: that.data.file_.count,
+            type: that.data.file_.files.type,
+            success(files_) {
               if (files_.errMsg == 'chooseMessageFile:ok') {
                 that.onSucceed(files_, 'file')
               }
             }
-          })
+          };
+          if (that.data.file_.files.extension) { conf.extension = that.data.file_.files.extension}
+          wx.chooseMessageFile(conf);
           break;
         case 'video': 
           wx.chooseVideo({
             sourceType: ['camera'],
-            compressed: that.data.file.video.compressed,
-            maxDuration: that.data.file.video.maxDuration,
-            camera: that.data.file.video.camera,
+            compressed: that.data.file_.video.compressed,
+            maxDuration: that.data.file_.video.maxDuration,
+            camera: that.data.file_.video.camera,
             success(video_) {
               video_.tempFilePath = [video_.tempFilePath]
               video_.tempFiles = [{

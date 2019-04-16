@@ -18,12 +18,22 @@ Component({
       type: Boolean,
       value: false
     },
-    maxlength: Number,
-    name: String,
+    maxlength: {
+      type: Number,
+      value: 140
+    },
+    name: {
+      type: String,
+      value: ''
+    },
     disabled: {
       type: Boolean,
       value: false
-    }
+    },
+    Internalstyle: {
+      type: Boolean,
+      value: false
+    },
   },
 
   relations: {

@@ -5,7 +5,7 @@
   </el-cell>
 
   <el-cell title='限制' label='限制最小值与最大值，0-10'>
-    <el-numIndicator slot='content' min='1' max='10'></el-numIndicator>
+    <el-numIndicator slot='content' value='1' min='1' max='10'></el-numIndicator>
   </el-cell>
 
   <el-cell title='值' label='初始值'>

@@ -22,6 +22,11 @@
   animation: messageup 0.5s both;
 }
 
+.__message-title__ {
+  font-size: 30rpx;
+  font-weight: 700;
+}
+
 .__message-icon__, .__message-text__ {
   display: inline-flex;
   align-items: center;

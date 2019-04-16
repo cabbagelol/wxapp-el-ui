@@ -13,7 +13,10 @@ Component({
   },
 
   properties: {
-    active: String,
+    active: {
+      type: String,
+      value: ''
+    },
     isscroll: {
       type: Boolean,
       value: true
@@ -49,7 +52,7 @@ Component({
   ready() {
     var that = this;
     if (config.util.in(that)) {
-      config.util.$('.__tab-nav-title__').then(function(e) {
+      config.util.$('.__tab-nav-title__').then(function (e) {
         for (var i = 0; i < e.length; i++) {
           if (e['.__tab-nav-title__' + i].width > 0) {
             that.data.tabs.data[i]['isTitle'] = true
@@ -61,10 +64,15 @@ Component({
       })
       config.util.$('.__tab-nav__').then(function (e) {
         if (that.data.scroll.x <= (e['.__tab-nav__'].width / 2)) {
-          that.setData({
-            'tabs.title': that.data.active || that.data.tabs.data[0].title,
-            tabnav: e['.__tab-nav__']
-          });
+          that.data.tabs.data.forEach(function (i, index) {
+            if (i.title == that.data.active) {
+              that.setData({
+                'tabs.title': that.data.active || that.data.tabs.data[0].title,
+                'tabs.index': index,
+                tabnav: e['.__tab-nav__']
+              });
+            }
+          })
           that.setSelectContent();
           that.onChange();
         }
@@ -118,7 +126,7 @@ Component({
     },
 
     onChange(onType_) {
-      var that = this
+      var that = this;
       that.triggerEvent('change', {
         index: that.data.tabs.index,
         title: that.data.tabs.title,

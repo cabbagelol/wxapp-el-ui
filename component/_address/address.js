@@ -2,6 +2,14 @@ var arrays;
 
 Component({
   properties: {
+    value: {
+      type: String,
+      value: ''
+    },
+    name: {
+      type: String,
+      value: ''
+    },
     placeholder: {
       type: String,
       value: '请选择'
@@ -9,7 +17,14 @@ Component({
   },
 
   data: {
+    value: '',
     citysIndex: [0, 0, 0]
+  },
+
+  relations: {
+    '../_form/form': {
+      type: 'parent'
+    }
   },
 
   ready() {
@@ -61,9 +76,9 @@ Component({
       that.triggerEvent('change', {
         value: String(address),
         citysIndex: that.data.citysIndex,
-        province: that.data.cityArray[0][that.data.citysIndex[0]],
-        city: that.data.cityArray[1][that.data.citysIndex[1]],
-        area: that.data.cityArray[2][that.data.citysIndex[2]]
+        province: that.data.cityArray[0][that.data.citysIndex[0]] || '',
+        city: that.data.cityArray[1][that.data.citysIndex[1]] || '',
+        area: that.data.cityArray[2][that.data.citysIndex[2]] || ''
       })
     },
 

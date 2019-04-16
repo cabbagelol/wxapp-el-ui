@@ -3,3 +3,8 @@
   height: 100%;
   width: 100%;
 } 
+
+.__img-loading__ {
+  display: block;
+  height: 100%;
+}

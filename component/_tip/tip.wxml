@@ -1,0 +1,3 @@
+<view class='__tip__ {{type ? "__tip-" + type + "__" : ""}}'>
+  <slot />
+</view>

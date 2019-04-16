@@ -1,4 +1,10 @@
 Component({
+  externalClasses: [
+    'el-message',
+    'el-title',
+    'el-content'
+  ],
+
   data: {
     color: {
       essential: '#FFF'

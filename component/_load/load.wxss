@@ -1,17 +1,17 @@
 .__load__ {
-  display: block;
+  width: 100%;
+  position: relative;
 }
 
 /* 标准 */
 
-._load_main {
+.__load-main__ {
   margin: 0 auto;
   width: 35rpx;
   height: 35rpx;
   border-radius: 50%;
   position: relative;
-  /* border: 5rpx solid rgba(0, 0, 0, 0.1); */
-  /* border-top-color: #18b6c1; */
+  /* border: 5rpx solid rgba(0, 0, 0, 0.1); *//* border-top-color: #18b6c1; */
   transform: rotate(360deg);
   animation: stretchdelay 0.5s infinite ease-in-out;
 }
@@ -28,14 +28,14 @@
 
 /* 线形 */
 
-._load_line {
+.__load-line__ {
   margin: 0 auto;
   position: relative;
   width: 40rpx;
   height: 40rpx;
 }
 
-._load_line > view {
+.__load-line__ > view {
   margin: 0 auto;
   content: "";
   display: block;
@@ -46,14 +46,12 @@
   border-radius: 0.1rem;
 }
 
-._load_line > view:first-child {
+.__load-line__ > view:first-child {
   animation: k-loadingK 2s ease-in-out infinite, k-loadingM 0.66s ease-in-out infinite;
-  
 }
 
-._load_line > view:last-child {
+.__load-line__ > view:last-child {
   animation: k-loadingL 2s ease-in-out infinite, k-loadingN 0.66s ease-in-out infinite;
-
 }
 
 @keyframes k-loadingK {

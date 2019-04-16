@@ -2,7 +2,7 @@
 <el-layout>
   <view class='container'>
     <el-cell title='占位图' lab>
-      <el-img slot="content" class="img-style"></el-img>
+      <el-img slot="content" class="img-style" binderro='onImgerror' bindload='onImgload'></el-img>
     </el-cell>
     <el-cell title='带地址图标' label='网络图片'>
       <el-img slot="content" src="https://developers.weixin.qq.com/miniprogram/dev/image/cat/0.jpg?t=19031116" class="img-style"></el-img>
