@@ -5,7 +5,7 @@ Component({
     src: {
       type: String,
       value: './images/cover.png',
-      observer (newVal_, oldVal_) {
+      observer(newVal_, oldVal_) {
         this.setData({
           src_: oldVal_
         })
@@ -42,12 +42,20 @@ Component({
   },
 
   data: {
-    src_ : '',
+    src_: '',
     load: true
   },
 
+  observers: {
+    'src': function () {
+      this.setData({
+        load: false
+      })
+    }
+  },
+
   methods: {
-    getValue (e) {
+    getValue(e) {
       var object = Object.assign(e.currentTarget.dataset, e.detail, {
         oldsrc: this.data.src_
       })
@@ -55,12 +63,11 @@ Component({
     },
 
     onError(e) {
-      const result = {
+      this.setData({
         src: '',
         load: false
-      }
-      this.setData(result)
-      this.triggerEvent('error', Object.assign(that.getValue(_e), {
+      })
+      this.triggerEvent('error', Object.assign(this.getValue(e), {
         type: 'error'
       }));
     },
@@ -73,7 +80,8 @@ Component({
           const _img = e['.__img__'];
           if (_img.width == 0 || _img.height == 0) {
             that.setData({
-              style: (that.data.style || "") + ';width:' + 50 + 'px;height:' + 50 + 'px'
+              style: (that.data.style || "") + ';width:' + 50 + 'px;height:' + 50 + 'px',
+              load: false
             })
           }
           that.triggerEvent('load', Object.assign(that.getValue(_e), {

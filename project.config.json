@@ -39,7 +39,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 18,
+			"current": 24,
 			"list": [
 				{
 					"id": -1,
@@ -206,6 +206,13 @@
 					"id": 23,
 					"name": "地址选择器",
 					"pathName": "pages/address/address",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "提示",
+					"pathName": "pages/tip/tip",
 					"query": "",
 					"scene": null
 				}

@@ -81,4 +81,7 @@
   <navigator url="../rule/rule" open-type="navigate">
     <el-cell title='页底提示' label='rule' islink></el-cell>
   </navigator>
+  <navigator url="../tip/tip" open-type="navigate">
+    <el-cell title='提示' label='tip' islink></el-cell>
+  </navigator>
 </view>

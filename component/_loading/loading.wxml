@@ -2,7 +2,7 @@
   <view class='__loading-slot__'>
     <slot /> 
   </view>
-  <view class='__loading-mask__ {{!show ? "__loading-z-show__" : "__loading-z-hide__"}}' style='background: {{maskbackground}}' >
+  <view class='__loading-mask__ {{show ? "__loading-z-show__" : "__loading-z-hide__"}}' style='background: {{maskbackground}}' >
     <el-load class='__loading-z-index__ ' color='{{color}}' type='{{type}}' size='{{size}}'></el-load>
   </view>
 </view>
