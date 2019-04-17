@@ -1,5 +1,5 @@
+<el-message class='messgae'></el-message>
 <view class='__content__'>
-  <el-message class='messgae'></el-message>
   <view class='__content-head__'>
     <slot name='head' />
   </view>

@@ -6,7 +6,7 @@
   </view>
 
   <el-popup show='{{popup.show}}' background='{{popup.background}}' modal='{{popup.modal}}' position='{{array[arrayi].v}}' animation='{{popup.animation}}' bindchange='onPopup'>
-    <view slot='content' class='popup-content {{"popup-content-" + array[arrayi].v}}'>
+    <view class='popup-content {{"popup-content-" + array[arrayi].v}}'>
       <view class='popup-content-text'>
         <image src='https://gw.alipayobjects.com/mdn/miniapp_social/afts/img/A*pevERLJC9v0AAAAAAAAAAABjAQAAAQ/original' class='popup-content-img' />
       </view>

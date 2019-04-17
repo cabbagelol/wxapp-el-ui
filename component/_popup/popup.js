@@ -30,5 +30,5 @@ Component({
         el: e
       })
     }
-  } 
+  }
 })

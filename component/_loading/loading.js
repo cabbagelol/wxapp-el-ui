@@ -35,16 +35,12 @@ Component({
     var that = this;
     if (config.util.in(that)) {
       config.util.$('.__loading-slot__').then(function (e) {
-        if (e['.__loading-slot__'].width != 0) {
+        if (e['.__loading-slot__'] && e['.__loading-slot__'].width != 0) {
           that.setData({
             floated: true
           })
         }
       })
     }
-  },
-
-  methods: {
-
   },
 })

@@ -1,7 +1,10 @@
 <el-head head='{{head}}' stickie='true'></el-head>
 <el-layout>
   <view class='container'>
-    <el-cell title='占位图' lab>
+    <el-cell title='关闭加载器'>
+      <el-img slot="content" class="img-style" binderro='onImgerror' bindload='onImgload' isload='{{false}}' src='https://developers.weixin.qq.com/miniprogram/dev/image/cat/0.jpg?t=19031116'></el-img>
+    </el-cell>
+    <el-cell title='占位图'>
       <el-img slot="content" class="img-style" binderro='onImgerror' bindload='onImgload'></el-img>
     </el-cell>
     <el-cell title='带地址图标' label='网络图片'>

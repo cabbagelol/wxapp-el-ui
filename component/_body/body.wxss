@@ -13,6 +13,7 @@ page {
   width: 100%;
   overflow: auto;
   position: relative;
+  -webkit-overflow-scrolling:  touch;
 }
 
 .__content-footer__ {
