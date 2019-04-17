@@ -29,6 +29,7 @@
   * [tag 标签](tag.md)
   * [layout 布局](layout-bu-ju.md)
   * [rule 页底提示](rule-ye-di-ti-shi.md)
+  * [tip 提示](tip-ti-shi.md)
 * [设计规范](she-ji-gui-fan.md)
 * [设计资源](she-ji-zi-yuan.md)
 * [版本](ban-ben.md)
