@@ -3,17 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="bcb96f6b-c814-45f6-bc20-aea94fe2cee1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/_body/body.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/component/_body/body.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/_body/body.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/component/_body/body.wxss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/_file/file.js" beforeDir="false" afterPath="$PROJECT_DIR$/component/_file/file.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/_file/file.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/component/_file/file.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/_img/img.js" beforeDir="false" afterPath="$PROJECT_DIR$/component/_img/img.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/_img/img.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/component/_img/img.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/_loading/loading.js" beforeDir="false" afterPath="$PROJECT_DIR$/component/_loading/loading.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/_popup/popup.js" beforeDir="false" afterPath="$PROJECT_DIR$/component/_popup/popup.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/_popup/popup.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/component/_popup/popup.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/img/img.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/img/img.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/popup/popup.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/popup/popup.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/component/_tip/tip.js" beforeDir="false" afterPath="$PROJECT_DIR$/component/_tip/tip.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/component/_tip/tip.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/component/_tip/tip.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/component/_tip/tip.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/component/_tip/tip.wxss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/tip/tip.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/tip/tip.wxml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -54,7 +46,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package-lock.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="152">
@@ -68,7 +60,7 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.npmignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="19">
@@ -82,6 +74,15 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="38">
               <caret line="2" column="5" selection-start-line="2" selection-end-line="2" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.eslintrc.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="152">
+              <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -170,8 +171,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="486" />
-    <option name="y" value="175" />
+    <option name="x" value="361" />
+    <option name="y" value="41" />
     <option name="width" value="1289" />
     <option name="height" value="970" />
   </component>
@@ -180,6 +181,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane" />
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -187,22 +189,10 @@
               <item name="wxapp-components" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
             </path>
-            <path>
-              <item name="wxapp-components" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="component" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="wxapp-components" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="component" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="_column" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -245,7 +235,8 @@
       <workItem from="1555051113894" duration="2902000" />
       <workItem from="1555116362606" duration="2054000" />
       <workItem from="1555294469593" duration="2815000" />
-      <workItem from="1555461061123" duration="599000" />
+      <workItem from="1555461061123" duration="1920000" />
+      <workItem from="1555653370670" duration="598000" />
     </task>
     <task id="LOCAL-00001" summary="2019年3月26日09:56:18">
       <created>1553565384081</created>
@@ -331,17 +322,24 @@
       <option name="project" value="LOCAL" />
       <updated>1555400851240</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="[修复] popup and file问题">
+      <created>1555494207950</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1555494207950</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20574000" />
+    <option name="totallyTimeSpent" value="22493000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="33" y="246" width="1289" height="970" extended-state="1" />
+    <frame x="361" y="41" width="1289" height="970" extended-state="1" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.262215" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.267101" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="Repositories" order="3" weight="0.32984003" />
@@ -424,7 +422,8 @@
     <MESSAGE value="更新 2019-4-16 09:44:08" />
     <MESSAGE value="2019-4-16 15:46:54" />
     <MESSAGE value="[add] 2019-4-16 15:47:26" />
-    <option name="LAST_COMMIT_MESSAGE" value="[add] 2019-4-16 15:47:26" />
+    <MESSAGE value="[修复] popup and file问题" />
+    <option name="LAST_COMMIT_MESSAGE" value="[修复] popup and file问题" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$USER_HOME$/Desktop/index.html" />
@@ -437,13 +436,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_config.yml">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.eslintrc.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/address/address.wxss">
       <provider selected="true" editor-type-id="text-editor" />
@@ -618,20 +610,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/project.config.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.npmignore">
+    <entry file="file://$PROJECT_DIR$/package-lock.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
+        <state relative-caret-position="152">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project.config.json">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
           <caret line="2" column="5" selection-start-line="2" selection-end-line="2" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.eslintrc.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -642,10 +641,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package-lock.json">
+    <entry file="file://$PROJECT_DIR$/.npmignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="19">
+          <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
         </state>
       </provider>
     </entry>

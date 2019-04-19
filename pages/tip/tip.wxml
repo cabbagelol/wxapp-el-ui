@@ -1,7 +1,7 @@
 <el-body>
   <el-head slot='head' head='{{head}}' stickie='true'></el-head>
   <el-tip slot='head' type='{{tip.type}}'>
-    <el-scrolltxt drag >这里是一个通知</el-scrolltxt>
+    <el-scrolltxt drag border>这里是一个通知，这里是一个通知，这里是一个通知，这里是一个通知，这里是一个通知</el-scrolltxt>
   </el-tip>
   <view slot='body'>
     <view class='container'>
