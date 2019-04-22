@@ -50,7 +50,18 @@
 <!-- 省略使用 -->
 <el-load />
 
-<el-load type="main" size=".6"></el-load>
+<el-load color="{{color}}" type="main" size=".6"></el-load>
+```
+
+```
+Page({
+    data: {
+        color: {
+            essential: '',
+            deputy: ''
+        }
+    }
+})
 ```
 
 ### &lt;el-loading&gt; 装载器
