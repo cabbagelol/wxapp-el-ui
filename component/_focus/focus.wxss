@@ -1,0 +1,24 @@
+.__focus__ {
+  transition: all 0.25s;
+  border: 0 solid #fff;
+}
+
+.__focus__ > view {
+  position: relative;
+}
+
+.__focus-warning__ {
+  border: 5rpx solid rgba(243, 210, 111, 0.4);
+}
+
+.__focus-warning__ > view {
+  border: 5rpx solid #f3d26f;
+}
+
+.__focus-danger__ {
+  border: 5rpx solid rgba(255, 0, 0, 0.4);
+}
+
+.__focus-danger__ > view {
+  border: 5rpx solid red;
+}

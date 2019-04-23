@@ -1,0 +1,4 @@
+.radio-form {
+  font-size: 28rpx;
+  color: #666;
+}

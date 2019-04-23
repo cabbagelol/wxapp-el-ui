@@ -3,10 +3,23 @@
   <component name="ChangeListManager">
     <list default="true" id="bcb96f6b-c814-45f6-bc20-aea94fe2cee1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/_tip/tip.js" beforeDir="false" afterPath="$PROJECT_DIR$/component/_tip/tip.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/_tip/tip.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/component/_tip/tip.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/_tip/tip.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/component/_tip/tip.wxss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/tip/tip.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/tip/tip.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/app.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/component/_address/address.js" beforeDir="false" afterPath="$PROJECT_DIR$/component/_address/address.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/component/_address/address.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/component/_address/address.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/component/_address/js/cityArray.js" beforeDir="false" afterPath="$PROJECT_DIR$/component/_address/js/cityArray.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/component/_loading/loading.js" beforeDir="false" afterPath="$PROJECT_DIR$/component/_loading/loading.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/component/_loading/loading.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/component/_loading/loading.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/component/_popup/popup.js" beforeDir="false" afterPath="$PROJECT_DIR$/component/_popup/popup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/component/_radio/radio.js" beforeDir="false" afterPath="$PROJECT_DIR$/component/_radio/radio.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/component/_radio/radio.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/component/_radio/radio.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/component/_radio/radio.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/component/_radio/radio.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/address/address.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/address/address.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/address/address.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/address/address.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index/index.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index/index.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/rolling/rolling.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/rolling/rolling.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project.config.json" beforeDir="false" afterPath="$PROJECT_DIR$/project.config.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -31,8 +44,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="589">
-              <caret line="31" column="43" selection-start-line="31" selection-start-column="43" selection-end-line="31" selection-end-column="43" />
+            <state relative-caret-position="627">
+              <caret line="33" column="43" selection-start-line="33" selection-start-column="43" selection-end-line="33" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -50,7 +63,7 @@
         <entry file="file://$PROJECT_DIR$/package-lock.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="152">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
             </state>
           </provider>
         </entry>
@@ -171,17 +184,16 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="361" />
-    <option name="y" value="41" />
-    <option name="width" value="1289" />
-    <option name="height" value="970" />
+    <option name="x" value="2131" />
+    <option name="y" value="237" />
+    <option name="width" value="943" />
+    <option name="height" value="540" />
   </component>
   <component name="ProjectView">
     <navigator currentView="Scope" currentSubView="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -193,11 +205,12 @@
           <select />
         </subPane>
       </pane>
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="E:/xiaochengxu/small_program" />
+    <property name="last_opened_file_path" value="F:/YouEjia" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
@@ -237,6 +250,8 @@
       <workItem from="1555294469593" duration="2815000" />
       <workItem from="1555461061123" duration="1920000" />
       <workItem from="1555653370670" duration="598000" />
+      <workItem from="1555912321074" duration="712000" />
+      <workItem from="1555914824225" duration="596000" />
     </task>
     <task id="LOCAL-00001" summary="2019年3月26日09:56:18">
       <created>1553565384081</created>
@@ -333,13 +348,12 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22493000" />
+    <option name="totallyTimeSpent" value="23801000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="361" y="41" width="1289" height="970" extended-state="1" />
-    <editor active="true" />
+    <frame x="2131" y="237" width="943" height="540" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.267101" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3877551" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="Repositories" order="3" weight="0.32984003" />
@@ -350,7 +364,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Weex Console" order="7" sideWeight="0.49813294" visible="true" weight="0.37679425" />
+      <window_info anchor="bottom" id="Weex Console" order="7" sideWeight="0.49813294" visible="true" weight="0.7758621" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.4992" weight="0.328" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.2983368" />
@@ -598,8 +612,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="589">
-          <caret line="31" column="43" selection-start-line="31" selection-start-column="43" selection-end-line="31" selection-end-column="43" />
+        <state relative-caret-position="627">
+          <caret line="33" column="43" selection-start-line="33" selection-start-column="43" selection-end-line="33" selection-end-column="43" />
         </state>
       </provider>
     </entry>
@@ -613,7 +627,7 @@
     <entry file="file://$PROJECT_DIR$/package-lock.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>

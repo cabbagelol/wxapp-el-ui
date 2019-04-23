@@ -1,8 +1,8 @@
 <!-- 单选 -->
-<radio-group class='_radio_' bindchange='radioChange'>
-    <label class="_radio_item" wx:for="{{datas}}" wx:key='{{index}}'>
-        <radio value="{{item.value}}" checked="{{item.checked}}" style='display: none'/>
-        <view class='_radio_checked {{value == item.value ? "checked" : ""}}'></view>
-        {{item.name}}
-    </label>
-</radio-group>
+<label class='__radio__' bindtap='setValue'>
+  <radio checked='{{checked}}' value='{{value}}' disabled='{{disabled}}' />
+  <view class='__radio-dot__ {{checked ? "" : "__radio-dot-checked__"}}'>
+    <view class='__radio-dot-item__'></view>
+  </view>
+  <slot /> {{value}}
+</label>

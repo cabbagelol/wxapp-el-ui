@@ -1,0 +1,28 @@
+<el-head head='{{head}}' stickie='true'></el-head>
+<el-focus focus='{{focus.starts}}' type='{{focus.type}}'>
+  <el-cell title='焦点' bindtap='onTap'>
+    <view slot='content'>这里是焦点，通常用于表单内部，以提醒用户</view>
+  </el-cell>
+</el-focus>
+
+<el-form>
+  <view class='container'>
+    <el-focus focus='{{focus.starts}}'>
+      <el-input title='姓名' type='text' name='name' value='小明' placeholder='请输入姓名'></el-input>
+    </el-focus>
+    <el-focus focus='{{focus.starts}}'>
+      <el-input title='年龄' type='number' name='text' value='2' placeholder='请输入年龄'></el-input>
+    </el-focus>
+    <el-focus focus='{{focus.starts}}'>
+      <el-textarea title='备忘' name='remark' value='财务异常说明' placeholder='备忘'></el-textarea>
+    </el-focus>
+    <el-input title='地址' type='address' name='address' value='' placeholder='请选择地址'></el-input>
+  </view>
+</el-form>
+
+<el-cell title='聚焦状态'>
+  <switch slot="content" checked="{{focus.starts}}" data-e="focus.starts" bindchange="$" />
+</el-cell>
+<el-cell title='类型' label='danger,warning'>
+  <input slot="content" value="{{focus.type}}" data-e="focus.type" bindinput="$" />
+</el-cell>

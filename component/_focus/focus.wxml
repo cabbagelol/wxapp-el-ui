@@ -1,0 +1,3 @@
+<view class='__focus__ {{focus ? type ? "__focus-" + type + "__" : "__focus-danger__" : ""}}'>
+  <view><slot /></view>
+</view>

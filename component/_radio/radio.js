@@ -1,31 +1,33 @@
 Component({
-    properties: {
-        value: String,
-        datas: Array
+  properties: {
+    checked: {
+      type: Boolean,
+      value: false
     },
-
-    data: {
-        datas: [],
-        value: ''
+    disabled: {
+      type: Boolean,
+      value: false
     },
-
-    ready () {
-        var that = this
-        var datas = []
-        this.data.datas.forEach(function (i, index) {
-            datas.push(Object.assign(i,{
-                checked: (that.data.value == i.value ? true : false)
-            }))
-        })
-        this.setData({ datas })
-    },
-
-    methods: {
-        radioChange: function (e) {
-            this.setData({
-                value: e.detail.value
-            })
-            this.triggerEvent('change', e)
-        }
+    value: {
+      type: String,
+      value: ''
     }
+  },
+
+  relations: {
+    '../_radio-group/radio-group': {
+      type: 'parent'
+    }
+  },
+
+  data: {
+  },
+
+  methods: {
+    setValue(checked_) {
+      this.setData({
+        checked: typeof checked_ === 'boolean' ? checked_ : false || this.data.checked != true
+      })
+    }
+  }
 })

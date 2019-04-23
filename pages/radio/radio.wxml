@@ -1,0 +1,14 @@
+<el-head head='{{head}}' bindhead='onGetHead'></el-head>
+<view class='container'>
+
+  <view class='radio-form'>
+    <el-radio>单选内容</el-radio>
+  </view>
+
+  <el-form class='radio-form'>
+    <el-radio-group>
+      <el-radio>单选内容</el-radio>
+      <el-radio>单选内容</el-radio>
+    </el-radio-group>
+  </el-form>
+</view>

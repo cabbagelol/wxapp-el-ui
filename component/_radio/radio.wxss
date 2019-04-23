@@ -1,23 +1,29 @@
-._radio_ {
-    position: relative;
+.__radio__ {
+  display: inline-flex;
+  align-items: center;
+  font-size: inherit;
 }
 
-._radio_checked {
-    border: 3px solid #CCCCCC;
-    width: 8px;
-    height: 8px;
-    background-color: #CCCCCC;
-    border-radius: 50%;
-    margin: 0 5px 0 0;
+.__radio-dot__ {
+  width: 20rpx;
+  height: 20rpx;
+  padding: 6rpx;
+  background: #18B6C1;
+  border-radius: 50%;
+  margin-right: 10rpx;
 }
 
-._radio_checked.checked {
-    border: 3px solid #18B6C1;
-    background-color: #FFF;
+.__radio-dot-checked__ {
+  background: #CCCCCC;
 }
 
-._radio_item {
-    display: inline-flex;
-    align-items:center;
-    margin: 0 0 0 20px;
+.__radio__ .__radio-dot-item__ {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #FFF;
+}
+
+.__radio__ .__radio-dot-checked__ .__radio-dot-item__ {
+  background: #CCCCCC;
 }
