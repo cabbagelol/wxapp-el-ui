@@ -33,19 +33,23 @@
 | 名称 | 类型 | 默认 | 说明 | 版本 |
 | :--- | :--- | :--- | :--- | :--- |
 | value | String | "" | 值 | 0.0.4 |
-| citysIndex | Array | \[\] | 内部选择器的index | 0.0.4 |
+| citysIndex | Array | \[\] | 内部选择器的index | 0.0.4 - 0.0.4 |
 | province | String | "" | 省 | 0.0.4 |
 | city | String | "" | 市 | 0.0.4 |
 | area | String | "" | 区 | 0.0.4 |
+| postcode | String | "" | 省区号 | 0.0.5 |
+| code | Array | \[\] | 邮编 | 0.0.5 |
 
-`bindchange`: function \(e\) {} 当滑动时触发
+`bindcancel`: funciton \(e\) {} 取消选择
 
-@e.detail
+~~`bindchange`: function \(e\) {} 当滑动时触发~~
+
+~~@e.detail~~
 
 | 名称 | 类型 | 默认 | 说明 | 版本 |
 | :--- | :--- | :--- | :--- | :--- |
-| citysIndex | Array | \[\] | 内部选择器的index | 0.0.4 |
-| value | String | "" | 值 | 0.0.4 |
+| citysIndex | Array | \[\] | 内部选择器的index | 0.0.4 - 0.0.4 |
+| value | String | "" | 值 | 0.0.4 - 0.0.4 |
 
 ### 使用
 
