@@ -33,7 +33,7 @@
 | 名称 | 类型 | 默认 | 说明 | 版本 |
 | :--- | :--- | :--- | :--- | :--- |
 | value | String | "" | 值 | 0.0.4 |
-| citysIndex | Array | \[\] | 内部选择器的index | 0.0.4 - 0.0.4 |
+| ~~citysIndex~~ | ~~Array~~ | ~~\[\]~~ | ~~内部选择器的index~~ | 0.0.4 - 0.0.4 |
 | province | String | "" | 省 | 0.0.4 |
 | city | String | "" | 市 | 0.0.4 |
 | area | String | "" | 区 | 0.0.4 |
@@ -42,7 +42,7 @@
 
 `bindcancel`: funciton \(e\) {} 取消选择
 
-~~`bindchange`: function \(e\) {} 当滑动时触发~~
+`bindchange`~~: function \(e\) {} 当滑动时触发~~
 
 ~~@e.detail~~
 

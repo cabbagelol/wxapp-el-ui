@@ -22,11 +22,21 @@
 
 | 名称 | 类型 | 默认 | 说明 | 版本 |
 | :--- | :--- | :--- | :--- | ---: |
-| position | String | "" | 方向，left/top/right/button | 0.0.2 |
+| position | String | center | 方向，left/top/right/button | 0.0.2 |
 | modal | Boolean | true | 遮盖层 | 0.0.2 |
-| show | Boolean | false | 是否可见popup | 0.0.2 |
+| show | Boolean | true | 是否可见popup | 0.0.2 |
 | closeOnModal | Boolean | true | 是否可通过点击遮盖返回bindchange事件 | 0.0.2 |
 | background | String | rgba\(0, 0, 0, 0.3\) | 遮盖层颜色 | 0.0.4 |
+
+##### position的合法值:
+
+| 名称 | 说明 | 版本 |
+| :--- | :--- | :--- |
+| left |  |  |
+| right |  |  |
+| top |  |  |
+| bottom |  |  |
+| center |  |  |
 
 ### 方法
 
@@ -77,6 +87,4 @@ page({
 Q: **升0.0.4到后，popup不再显示**
 
 A:在之后popup移除了content插槽，因此不需在slot='content'声明，现在popup的默认插槽便是content。
-
-
 
