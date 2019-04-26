@@ -1,6 +1,6 @@
 # focus-焦点
 
-焦点与验证
+焦点与校验
 
 ---
 
@@ -21,12 +21,13 @@
 | 名称 | 类型 | 默认 | 说明 | 版本 |
 | :--- | :--- | :--- | :--- | :--- |
 | verification | String | "" | 验证类型 | 0.0.5 |
+| verification | Object | {} | 自定义校验 |  |
 | type | String | "" | 聚焦颜色类型 | 0.0.5 |
 | show | Boolan | false | 是否主动出现焦点,颜色处决于[type](#type的合法值) | 0.0.5 |
 
 ##### verification的合法值:
 
-|  | 说明 | 版本 |
+| 名称 | 说明 | 版本 |
 | :--- | :--- | :--- |
 | 1001 | 区配中文 | 0.0.5 |
 | 1002 | 区配英文 | 0.0.5 |
@@ -36,10 +37,16 @@
 
 ##### type的合法值:
 
-|  | 说明 | 版本 |
+| 名称 | 说明 | 版本 |
 | :--- | :--- | :--- |
 | danger | 严重 | 0.0.5 |
 | warning | 警告 | 0.0.5 |
+
+##### verifications的属性:
+
+| 名称 | 说明 | 版本 |
+| :--- | :--- | :--- |
+| title | 提示标题 | 0.0.5 |
 
 ### 使用
 
@@ -48,9 +55,24 @@
     <!-- do -->
 </el-focus>
 
-<el-focus verification='1001,1002'>
-    <el-input name='userName' value='小明2' />
+<el-focus verification='{{verification}}' verifications='{{verifications}}'>
+    <el-input name='userName' value='小明 w2' />
 </el-focus>
+```
+
+```js
+Page({
+    data: {
+      verification: '1001,1002,0', // 区配存在类型
+      verifications: {
+        title: '不通过验证，存在以下问题:',
+        0: {
+          v: (value) => { return '您好'.indexOf(value) >= 0},
+          msg: '不允许包含"您好"'
+        }
+      }
+    }
+})
 ```
 
 ---
