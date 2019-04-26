@@ -21,6 +21,7 @@
   * [message 全局消息](message-quan-ju-xiao-xi.md)
   * [form 表单](form-biao-dan.md)
   * [address 地址选择器](address-di-zhi.md)
+  * [focus 焦点](focus-jiao-dian.md)
 * [界面](jie-mian.md)
   * [load 装载器与加载符](jia-zai-fu.md)
   * [button 按钮](an-niu.md)
