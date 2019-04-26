@@ -102,6 +102,10 @@ Page({
           url: '../radio/radio',
           title: '单选',
           label: 'radio'
+        }, {
+          url: '../focus/focus',
+          title: '焦点与校验',
+          label: 'focus'
         }
       ],
     }, {
@@ -134,10 +138,6 @@ Page({
         url: '../tip/tip',
         title: '提示',
         label: 'tip'
-      }, {
-        url: '../focus/focus',
-        title: '焦点',
-        label: 'focus'
       }]
     }]
   },

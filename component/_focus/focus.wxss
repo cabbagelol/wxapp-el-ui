@@ -1,24 +1,49 @@
 .__focus__ {
+  position: relative;
   transition: all 0.25s;
   border: 0 solid #fff;
 }
 
-.__focus__ > view {
+.__focus-tip__ {
+  position: relative;
+  z-index: 14;
+  width: calc(100% - 40rpx);
+  font-size: 22rpx;
+  padding: 20rpx;
+}
+
+.__focus-tip__ > view {
+  margin-left: 20rpx;
+}
+
+.__focus__ .__focus-slot__ {
   position: relative;
 }
 
+/* warning */
+.__focus-warning__ .__focus-tip__ {
+  background: rgba(243, 210, 111, 0.4);
+}
+
 .__focus-warning__ {
-  border: 5rpx solid rgba(243, 210, 111, 0.4);
+  border: 6rpx solid rgba(243, 210, 111, 0.4);
 }
 
 .__focus-warning__ > view {
-  border: 5rpx solid #f3d26f;
+  border: 2rpx solid #f3d26f;
+}
+
+/* danger */
+.__focus-danger__ .__focus-tip__ {
+  background-color: #ffdada;
+  color: #f44336;
+  margin: 0 0 12rpx 0;
 }
 
 .__focus-danger__ {
-  border: 5rpx solid rgba(255, 0, 0, 0.4);
+  outline: 6rpx solid rgba(255, 0, 0, 0.4);
 }
 
 .__focus-danger__ > view {
-  border: 5rpx solid red;
+  outline: 2rpx solid #f44336;
 }

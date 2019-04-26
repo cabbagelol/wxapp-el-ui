@@ -5,6 +5,7 @@ el-vacancy,
 el-row,
 el-input,
 el-layout,
+el-numIndicator,
 el-column {
   display: block;
 }

@@ -14,7 +14,8 @@ Page({
       cont: `<div>现在时间是: </div><div>${new Date()}</div>`,
       type: 'success',
       icon: true,
-      time: 3000
+      time: 3000,
+      mask: false
     }
   },
 
@@ -39,6 +40,7 @@ Page({
       time: that.data.message.time,
       icon: that.data.message.icon,
       type: that.data.message.typelist[that.data.message.typelisti],
+      mask: that.data.message.mask,
       succeed() {
         wx.showToast({
           title: '成功',

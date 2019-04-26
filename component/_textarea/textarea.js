@@ -44,7 +44,10 @@ Component({
   relations: {
     '../_form/form': {
       type: 'parent'
-    }
+    },
+    '../_focus/focus': {
+      type: 'parent'
+    },
   },
 
   data: {

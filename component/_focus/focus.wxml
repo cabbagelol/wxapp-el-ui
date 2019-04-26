@@ -1,3 +1,13 @@
-<view class='__focus__ {{focus ? type ? "__focus-" + type + "__" : "__focus-danger__" : ""}}'>
-  <view><slot /></view>
+<view class='__focus__ {{(!focus &&  verificationErr.length <= 0) ? false : true ? type ? "__focus-" + type + "__" : "__focus-danger__" : ""}}'>
+  <view>
+    <view class='__focus-slot__'>
+      <slot />
+    </view>
+    <view class='__focus-tip__' wx:if='{{verificationErr.length > 0}}'>
+      {{verifications.title || '存在以下问题'}}:
+      <view wx:for='{{verificationErr}}' wx:key='{{index}}'>
+        · {{item.msg}}
+      </view>
+    </view>
+  </view>
 </view>

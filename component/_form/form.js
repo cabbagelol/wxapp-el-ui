@@ -4,6 +4,12 @@ Component({
   },
 
   relations: {
+    '../_focus/focus': {
+      type: 'child',
+      linked(target) {
+        this.setValue(target)
+      }
+    },
     '../_input/input': {
       type: 'child',
       linked(target) {
@@ -45,12 +51,19 @@ Component({
 
     onFormSubmit(e) {
       var that = this;
-      var data = {}
+      var data = {};
+      var verify = 0;
       that.data.form.data.forEach(function(i, index) {
-        console.log(i)
-        data[i.data.name || index] = i.data.value
+        if (typeof i.onVerify == 'function') {
+          i.onVerify();
+        }
+        if (i.data.verify) {
+          verify = i.data.verify++;
+        }
+        data[i.data.name || index] = i.data.value;
       })
       this.triggerEvent('submit', {
+        verify: verify>0 ? true : false ,
         value: data
       });
     },
@@ -58,7 +71,12 @@ Component({
     onFormReset() {
       var that = this;
       that.data.form.data.forEach(function(i, index) {
-        i.onEmpty();
+        if (typeof i.onEmpty == 'function') {
+          i.onEmpty();
+        }
+        if (typeof i.onVerify == 'function') {
+          i.onVerify();
+        }
       })
       this.triggerEvent('reset');
     },

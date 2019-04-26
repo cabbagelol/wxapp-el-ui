@@ -1,11 +1,9 @@
 <el-head head='{{head}}' stickie></el-head>
 <view class='container'>
-
   <view class='title'>
     <view>Elui</view>
-    <text>微信UI组件</text>
+    <text>小程序UI组件库</text>
   </view>
-
   <el-input bindinput='onSearch' clear></el-input>
   <block wx:for='{{module_}}' wx:key='{{index}}' wx:if='{{module_[index].data.length > 0}}'>
     <view class='htitle'>{{item.title}}</view>
