@@ -17,7 +17,7 @@
 }
 ```
 
-### &lt;radio-group&gt;
+## &lt;radio-group&gt;
 
 ### 属性
 
@@ -32,7 +32,7 @@
 
 | 名称 | 类型 | 说明 | 版本 |
 | :--- | :--- | :--- | :--- |
-| type | String |  | 0.0.5 |
+| type | String | radio-group | 0.0.5 |
 | value | String | 值 | 0.0.5 |
 | data | Array | 单选数组 | 0.0.5 |
 
@@ -52,7 +52,7 @@ Page({
 })
 ```
 
-### &lt;radio&gt;
+## &lt;radio&gt;
 
 ### 属性
 
