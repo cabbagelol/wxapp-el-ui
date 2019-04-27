@@ -1,1 +1,1 @@
-/* pages/checkbox/checkbox.wxss */
+@import '../radio/radio';

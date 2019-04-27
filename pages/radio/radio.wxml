@@ -1,6 +1,6 @@
 <el-head head='{{head}}' bindhead='onGetHead'></el-head>
 <view>
-  <el-tip type='warning'>独立radio在没有radio-group时，都不会组成单选组和，之间没有任何联系</el-tip>
+  <el-tip type='warning'>独立radio在没有radio-group时，都不会组成单选组，它们之间没有任何联系</el-tip>
   <el-cell title='独立' label='可单独使用radio，自身可控制选择状态' class='radio'>
     <view slot='content'>
       <el-column>

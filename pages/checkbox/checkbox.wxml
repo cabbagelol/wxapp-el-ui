@@ -1,5 +1,44 @@
 <el-head head='{{head}}' stickie='true' class='content-head'></el-head>
-<view class='container'>
-  <el-checkbox>
-  </el-checkbox>
+<view>
+  <el-tip type='warning'>独立checkbox在没有checkbox-group时，都不会组成复选组，它们之间没有任何联系</el-tip>
+  <el-cell title='独立' label='可单独使用checkbox，自身可控制选择状态' class='radio'>
+    <view slot='content'>
+      <el-column>
+        <el-checkbox checked='{{false}}' wx:for='{{3}}' wx:key='{{index}}'></el-checkbox>
+      </el-column>
+      <el-checkbox checked='{{false}}' value='0-1'>单个未选择复选</el-checkbox>
+      <el-checkbox checked='{{true}}' value='0-2'>单个选择复选</el-checkbox>
+    </view>
+  </el-cell>
+
+  <el-form class='radio-form' bindsubmit='onForm'>
+    <el-cell title='[{{checkbox.a.value}}]' label='复选'></el-cell>
+    <el-checkbox-group name='checkbox-a' value='{{checkbox.a.value}}' bindchange='onCheckboxGroup' data-e='checkbox.a.value'>
+      <el-checkbox class='radio' wx:for='{{10}}' wx:key='{{index}}' ischeckbox='{{false}}' disabled='{{index == 4}}' value='a{{index}}'>
+        <el-column style="width: 100%;">
+          <el-column-1>
+            <el-row align='center'>
+              <el-checkbox checked='{{checkbox.a.data[index].checked}}' />
+            </el-row>
+          </el-column-1>
+          <el-column-2 style="height: 100rpx;">
+            <el-img src='http://odum9helk.qnssl.com/resource/gogopher.jpg?imageView2/2/w/200' />
+          </el-column-2>
+          <el-column-3 style="text-align: right;">
+            <view>复选-{{index}}</view>
+            <switch color='#18B6C1' disabled='{{index == 1}}' checked='{{checkbox.a.data[index].checked}}'></switch>
+          </el-column-3>
+        </el-column>
+      </el-checkbox>
+    </el-checkbox-group>
+
+    <el-cell title='[{{checkbox.b.value}}]' label='复选'></el-cell>
+    <el-checkbox-group name='checkbox-b' value='{{checkbox.b.value}}' bindchange='$' data-e='checkbox.b.value'>
+      <el-checkbox class='radio' wx:for='{{10}}' wx:key='{{index}}' disabled='{{index == 4}}' value='a{{index}}'>复选{{index}}</el-checkbox>
+    </el-checkbox-group>
+
+    <view class='container'>
+      <el-button type='submit'>提交</el-button>
+    </view>
+  </el-form>
 </view>

@@ -39,7 +39,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 26,
+			"current": 27,
 			"list": [
 				{
 					"id": -1,
@@ -228,6 +228,12 @@
 					"name": "焦点与校验",
 					"pathName": "pages/focus/focus",
 					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "复选",
+					"pathName": "pages/checkbox/checkbox",
 					"scene": null
 				}
 			]

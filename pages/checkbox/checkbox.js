@@ -1,66 +1,32 @@
-// pages/checkbox/checkbox.js
+const app = getApp();
+
 Page({
+  $: app.e.$,
 
-  /**
-   * 页面的初始数据
-   */
   data: {
-
+    head: {
+      title: '复选框',
+      back: true
+    },
+    checkbox: {
+      a: {
+        value: [],
+        data: []
+      },
+      b: {
+        value: ["a1", "a2", "a8", "a9"]
+      }
+    }
   },
 
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
+  onForm (e) {
+    console.log(e.detail.value)
   },
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
+  onCheckboxGroup (e) {
+    this.setData({
+      'checkbox.a.value': e.detail.value,
+      'checkbox.a.data': e.detail.data
+    })
   }
 })

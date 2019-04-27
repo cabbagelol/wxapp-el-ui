@@ -1,8 +1,4 @@
 Component({
-  properties: {
-
-  },
-
   relations: {
     '../_focus/focus': {
       type: 'child',
@@ -23,6 +19,12 @@ Component({
       }
     },
     '../_radio-group/radio-group': {
+      type: 'child',
+      linked(target) {
+        this.setValue(target)
+      }
+    },
+    '../_checkbox-group/checkbox-group': {
       type: 'child',
       linked(target) {
         this.setValue(target)
@@ -69,7 +71,7 @@ Component({
         data[i.data.name || index] = i.data.value;
       })
       this.triggerEvent('submit', {
-        verify: verify>0 ? true : false ,
+        verify: verify > 0 ? true : false,
         value: data
       });
     },
