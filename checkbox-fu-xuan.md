@@ -17,7 +17,7 @@
 }
 ```
 
-## &lt;radio-group&gt;
+## &lt;checkbox-group&gt;
 
 ### 属性
 
@@ -32,7 +32,7 @@
 
 | 名称 | 类型 | 说明 | 版本 |
 | :--- | :--- | :--- | :--- |
-| type | String | radio-group | 0.0.5 |
+| type | String | checkbox-group | 0.0.5 |
 | value | String | 值 | 0.0.5 |
 | data | Array | 复选数组 | 0.0.5 |
 
@@ -40,7 +40,7 @@
 
 ```html
 <el-checkbox-group name='radio' bindchange='onCheckboxGroup'>
-  <el-checkbox value='2-{{index}}' wx:for='{{3}}' wx:key='{{index}}'>单选内容-radio2-{{index}}</el-checkbox>
+  <el-checkbox value='2-{{index}}' wx:for='{{3}}' wx:key='{{index}}'>复选内容-radio2-{{index}}</el-checkbox>
 </el-checkbox-group>
 ```
 
