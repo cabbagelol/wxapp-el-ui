@@ -50,7 +50,7 @@ Component({
         v: (t) => {
           return /\s/g.test(t)
         },
-        msg: '含空符合'
+        msg: '含空符号'
       },
       901: {
         v: (t) => {

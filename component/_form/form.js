@@ -22,6 +22,12 @@ Component({
         this.setValue(target)
       }
     },
+    '../_radio-group/radio-group': {
+      type: 'child',
+      linked(target) {
+        this.setValue(target)
+      }
+    },
     '../_address/address': {
       type: 'child',
       linked(target) {

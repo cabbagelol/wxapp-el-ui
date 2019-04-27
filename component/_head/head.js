@@ -1,48 +1,48 @@
 Component({
-    options: {
-        multipleSlots: true
-    },
+  options: {
+    multipleSlots: true
+  },
 
-    properties: {
-        load: {
-            type: Boolean,
-            value: false
-        },
-        stickie: {
-            type: Boolean,
-            value: true
-        },
-        head: Object
+  properties: {
+    load: {
+      type: Boolean,
+      value: false
     },
-
-    data: {
-        nav: {
-            interne: {
-                navHeight: 100
-            }
-        }
+    stickie: {
+      type: Boolean,
+      value: true
     },
+    head: Object
+  },
 
-    attached() {
-        var that = this
-        wx.getSystemInfo({
-            success(res) {
-                that.setData({
-                    nav: Object.assign(res, {
-                        interne: {
-                            navHeight: res.statusBarHeight + 45
-                        }
-                    })
-                })
-            }
-        })
-    },
-
-    methods: {
-        onBack() {
-            wx.navigateBack({
-                delta: 1
-            })
-        }
+  data: {
+    nav: {
+      interne: {
+        navHeight: 100
+      }
     }
+  },
+
+  attached() {
+    var that = this
+    wx.getSystemInfo({
+      success(res) {
+        that.setData({
+          nav: Object.assign(res, {
+            interne: {
+              navHeight: res.statusBarHeight + 45
+            }
+          })
+        })
+      }
+    })
+  },
+
+  methods: {
+    onBack() {
+      wx.navigateBack({
+        delta: this.data.head.backlenght || 1
+      })
+    }
+  }
 })

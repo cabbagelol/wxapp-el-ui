@@ -27,7 +27,8 @@
     "pages/address/address",
     "pages/tip/tip",
     "pages/radio/radio",
-    "pages/focus/focus"
+    "pages/focus/focus",
+    "pages/checkbox/checkbox"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -66,8 +67,10 @@
     "el-rule": "./component/_rule/rule",
     "el-address": "./component/_address/address",
     "el-tip": "./component/_tip/tip",
+    "el-focus": "./component/_focus/focus",
     "el-radio-group": "./component/_radio-group/radio-group",
     "el-radio": "./component/_radio/radio",
-    "el-focus": "./component/_focus/focus"
+    "el-checkbox-group": "./component/_checkbox-group/checkbox-group",
+    "el-checkbox": "./component/_checkbox/checkbox"
   }
 }

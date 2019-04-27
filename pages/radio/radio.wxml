@@ -1,14 +1,44 @@
 <el-head head='{{head}}' bindhead='onGetHead'></el-head>
-<view class='container'>
+<view>
+  <el-tip type='warning'>独立radio在没有radio-group时，都不会组成单选组和，之间没有任何联系</el-tip>
+  <el-cell title='独立' label='可单独使用radio，自身可控制选择状态' class='radio'>
+    <view slot='content'>
+      <el-column>
+        <el-radio checked='{{false}}' wx:for='{{3}}' wx:key='{{index}}'></el-radio>
+      </el-column>
+      <el-radio checked='{{false}}' value='0-1'>单个未选择单选</el-radio>
+      <el-radio checked='{{true}}' value='0-2'>单个选择单选</el-radio>
+    </view>
+  </el-cell>
 
-  <view class='radio-form'>
-    <el-radio>单选内容</el-radio>
-  </view>
-
-  <el-form class='radio-form'>
-    <el-radio-group>
-      <el-radio>单选内容</el-radio>
-      <el-radio>单选内容</el-radio>
+  <el-form class='radio-form' bindsubmit='onForm'>
+    <el-cell title='{{radio.a.value}}' label='你可以完全的自定义它，无论放在哪里'></el-cell>
+    <el-radio-group name='radio1' value='{{radio.a.value}}' bindchange='onRadioGroup' data-e='radio.a.value'>
+      <el-radio class='radio' isradio='{{radio.a.isradio}}' value='1-{{index}}' wx:for='{{5}}' wx:key='{{index}}' disabled='{{index == 1}}'>
+        <el-column style="width: 100%;">
+          <el-column-1>
+            <el-row align='center'>
+              <el-radio checked='{{radio.a.data[index].checked}}' wx:if='{{!radio.a.isradio}}' />
+            </el-row>
+          </el-column-1>
+          <el-column-2 style="height: 100rpx;">
+            <el-img src='http://odum9helk.qnssl.com/resource/gogopher.jpg?imageView2/2/w/200' />
+          </el-column-2>
+          <el-column-3 style="text-align: right;">
+            <view>单选内容-radio1-{{index}}</view>
+            <switch color='#18B6C1' disabled='{{index == 1}}' checked='{{radio.a.data[index].checked}}'></switch>
+          </el-column-3>
+        </el-column>
+      </el-radio>
     </el-radio-group>
+
+    <el-cell title='{{radio.b.value}}' label='默认'></el-cell>
+    <el-radio-group name='radio2' bindchange='$' data-e='radio.b.value'>
+      <el-radio class='radio' value='2-{{index}}' wx:for='{{3}}' wx:key='{{index}}'>单选内容-radio2-{{index}}</el-radio>
+    </el-radio-group>
+
+    <view class='container'>
+      <el-button type='submit'>提交</el-button>
+    </view>
   </el-form>
 </view>

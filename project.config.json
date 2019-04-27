@@ -224,9 +224,10 @@
 					"scene": null
 				},
 				{
-					"id": -1,
-					"name": "焦点",
+					"id": 26,
+					"name": "焦点与校验",
 					"pathName": "pages/focus/focus",
+					"query": "",
 					"scene": null
 				}
 			]

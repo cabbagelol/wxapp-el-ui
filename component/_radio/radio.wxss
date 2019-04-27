@@ -1,7 +1,12 @@
 .__radio__ {
   display: inline-flex;
+  width: 100%;
   align-items: center;
   font-size: inherit;
+}
+
+.__radio__ > radio {
+  display: none;
 }
 
 .__radio-dot__ {
@@ -13,8 +18,8 @@
   margin-right: 10rpx;
 }
 
-.__radio-dot-checked__ {
-  background: #CCCCCC;
+.__radio-disabled__ {
+  opacity: .5;
 }
 
 .__radio__ .__radio-dot-item__ {
@@ -24,6 +29,7 @@
   background: #FFF;
 }
 
+.__radio-dot-checked__,
 .__radio__ .__radio-dot-checked__ .__radio-dot-item__ {
   background: #CCCCCC;
 }

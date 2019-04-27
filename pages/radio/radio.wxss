@@ -2,3 +2,10 @@
   font-size: 28rpx;
   color: #666;
 }
+
+.radio {
+  display: block;
+  padding: 30rpx 40rpx;
+  background: #FFF;
+  border-bottom: 1px solid #eee;
+}

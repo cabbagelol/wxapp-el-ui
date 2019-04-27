@@ -1,0 +1,5 @@
+<el-head head='{{head}}' stickie='true' class='content-head'></el-head>
+<view class='container'>
+  <el-checkbox>
+  </el-checkbox>
+</view>

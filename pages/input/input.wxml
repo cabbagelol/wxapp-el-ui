@@ -11,6 +11,7 @@
 身份证:{{value.h  || '未填写'}}
   </text>
   <el-layout>
+    <el-input placeholder='无样式' Internalstyle></el-input>
     <el-input placeholder='输入内容' data-e='value.a' bindinput='$'></el-input>
     <el-input title='禁用' placeholder='禁用' disabled></el-input>
     <el-cell title='禁用内部样式' label='与普通输入框没有任何区别，方便搭配其他控件'>

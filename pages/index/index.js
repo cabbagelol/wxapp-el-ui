@@ -102,7 +102,13 @@ Page({
           url: '../radio/radio',
           title: '单选',
           label: 'radio'
-        }, {
+        },
+        {
+          url: '../checkbox/checkbox',
+          title: '复选',
+          label: 'checkbox'
+        }, 
+        {
           url: '../focus/focus',
           title: '焦点与校验',
           label: 'focus'

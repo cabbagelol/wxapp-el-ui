@@ -1,12 +1,17 @@
 <el-head head='{{head}}' stickie='true' class='content-head'></el-head>
 <el-form bindsubmit='onForm'>
-  <view class='container'>
-    <el-input title='姓名' type='text' name='name' value='小明' placeholder='请输入姓名'></el-input>
-    <el-input title='年龄' type='number' name='text' value='2' placeholder='请输入年龄'></el-input>
-    <el-textarea title='备忘' name='remark' value='财务异常说明' placeholder='备忘'></el-textarea>
-    <el-input title='年龄' type='address' name='address' value='' placeholder='请选择地址'></el-input>
+  <el-tip type='warning'>在form中使用类似cell包裹form控件是无法取得值，应避免使用</el-tip>
+  <view>
+    <el-input title='姓名:' type='text' name='name' value='小明' placeholder='请输入姓名'></el-input>
+    <el-input title='年龄:' type='number' name='text' value='2' placeholder='请输入年龄'></el-input>
+    <el-textarea title='备忘:' name='remark' value='财务异常说明' placeholder='备忘'></el-textarea>
+    <el-input title='地址:' type='address' name='address' value='' placeholder='请选择地址'></el-input>
+    <el-cell title='性别:' />
+    <el-radio-group slot='content' name='sex' class='form-radio-group'>
+      <el-radio value='0' class='form-radio-group-item'>男</el-radio>
+      <el-radio value='1' class='form-radio-group-item'>女</el-radio>
+    </el-radio-group>
   </view>
-
   <view class='container'>
     <el-button type='submit'>提交</el-button>
     <el-button type='reset'>重置</el-button>

@@ -1,6 +1,5 @@
 <el-head head='{{head}}' stickie='true' class='content-head'></el-head>
 <view class='container'>
-
   <el-cellswipe color='red' disabled bindchange='onCellswipe'>
     <el-cell slot='cont' title='禁用' label='禁用控件'></el-cell>
     <view slot='right' class='cellswipe-buttons'>
