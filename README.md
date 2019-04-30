@@ -1,6 +1,8 @@
 # 介绍
 小程序组件库，仅适用微信小程序。若有疑问请提交到Issues中。
 
+群：586394214
+
 # 快速配置
 在之前你应该阅读[微信自定义组件](https://developers.weixin.qq.com/miniprogram/dev/framework/custom-component/component.html)文档。根目录执行：
 ```

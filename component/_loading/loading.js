@@ -26,25 +26,4 @@ Component({
       value: 1
     }
   },
-
-  data: {
-    floated: false
-  },
-
-  ready () {
-    var that = this;
-    if (config.util.in(that)) {
-      config.util.$('.__loading-slot__').then(function (e) {
-        if (e['.__loading-slot__'].width != 0) {
-          that.setData({
-            floated: true
-          })
-        }
-      })
-    }
-  },
-
-  methods: {
-
-  },
 })

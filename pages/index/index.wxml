@@ -1,87 +1,19 @@
 <el-head head='{{head}}' stickie></el-head>
 <view class='container'>
-
   <view class='title'>
     <view>Elui</view>
-    <text>微信UI组件</text>
+    <text>小程序UI组件库</text>
   </view>
-
-  <view class='htitle'>组件</view>
-  <navigator url="../nav/nav" open-type="navigate">
-    <el-cell title='导航' label='head' islink></el-cell>
-  </navigator>
-  <navigator url="../img/img" open-type="navigate">
-    <el-cell title='图片' label='img' islink></el-cell>
-  </navigator>
-  <navigator url="../cell/cell" open-type="navigate">
-    <el-cell title='单元格' label='cell' islink></el-cell>
-  </navigator>
-  <navigator url="../scrolltxt/scrolltxt" open-type="navigate">
-    <el-cell title='滚动幕布' label='scrolltxt' islink></el-cell>
-  </navigator>
-  <navigator url="../input/input" open-type="navigate">
-    <el-cell title='输入框' label='input' islink></el-cell>
-  </navigator>
-  <navigator url="../textarea/textarea" open-type="navigate">
-    <el-cell title='多行输入框' label='textarea' islink></el-cell>
-  </navigator>
-  <navigator url="../numIndicator/numIndicator" open-type="navigate">
-    <el-cell title='数字指示器' label='numIndicator' islink></el-cell>
-  </navigator>
-  <navigator url="../popup/popup" open-type="navigate">
-    <el-cell title='弹出框' label='popup' islink></el-cell>
-  </navigator>
-  <navigator url="../refresh/refresh" open-type="navigate">
-    <el-cell title='下拉刷新' label='refresh' islink></el-cell>
-  </navigator>
-  <navigator url="../tab/tab" open-type="navigate">
-    <el-cell title='标签页' label='tab' islink></el-cell>
-  </navigator>
-  <navigator url="../rolling/rolling" open-type="navigate">
-    <el-cell title='滚动' label='rolling' islink></el-cell>
-  </navigator>
-  <navigator url="../file/file" open-type="navigate">
-    <el-cell title='文件' label='file' islink></el-cell>
-  </navigator>
-  <navigator url="../cellswipe/cellswipe" open-type="navigate">
-    <el-cell title='滑动单元格' label='cellswipe' islink></el-cell>
-  </navigator>
-  <!-- <navigator url="../slider/slider" open-type="navigate">
-    <el-cell title='滑动选择器' label='slider' islink></el-cell>
-  </navigator> -->
-  <navigator url="../message/message" open-type="navigate">
-    <el-cell title='全局消息' label='message' islink></el-cell>
-  </navigator>
-  <navigator url="../form/form" open-type="navigate">
-    <el-cell title='表单' label='form' islink></el-cell>
-  </navigator>
-  <navigator url="../address/address" open-type="navigate">
-    <el-cell title='地址选择器' label='address' islink></el-cell>
-  </navigator>
-
-  <view class='htitle'>界面</view>
-  <navigator url="../load/load" open-type="navigate">
-    <el-cell title='装载与加载符' label='load' islink></el-cell>
-  </navigator>
-  <navigator url="../button/button" open-type="navigate">
-    <el-cell title='按钮' label='button' islink></el-cell>
-  </navigator>
-  <navigator url="../vacancy/vacancy" open-type="navigate">
-    <el-cell title='空置区' label='vacancy' islink></el-cell>
-  </navigator>
-  <navigator url="../content/content" open-type="navigate">
-    <el-cell title='主体' label='content' islink></el-cell>
-  </navigator>
-  <navigator url="../tag/tag" open-type="navigate">
-    <el-cell title='标签' label='tag' islink></el-cell>
-  </navigator>
-  <navigator url="../layout/layout" open-type="navigate">
-    <el-cell title='布局' label='layout' islink></el-cell>
-  </navigator>
-  <navigator url="../rule/rule" open-type="navigate">
-    <el-cell title='页底提示' label='rule' islink></el-cell>
-  </navigator>
-  <navigator url="../tip/tip" open-type="navigate">
-    <el-cell title='提示' label='tip' islink></el-cell>
-  </navigator>
+  <el-input bindinput='onSearch' clear></el-input>
+  <block wx:for='{{module_}}' wx:key='{{index}}' wx:if='{{module_[index].data.length > 0}}'>
+    <view class='htitle'>{{item.title}}</view>
+    <navigator url="{{i.url}}" open-type="navigate" wx:for='{{item.data}}' wx:for-item='i' wx:key='{{i}}'>
+      <el-cell title='{{i.title}}' label='{{i.label}}' islink></el-cell>
+    </navigator>
+  </block>
+  <el-vacancy cont height='500rpx' wx:if='{{vacancy}}'>
+    <view slot='cont' class='title'>
+      <text>似乎没有你要的控件，要不你提出来？</text>
+    </view>
+  </el-vacancy>
 </view>

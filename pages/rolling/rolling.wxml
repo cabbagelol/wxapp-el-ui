@@ -1,5 +1,5 @@
 <el-head head='{{head}}' stickie='true' class='content-head'></el-head>
-
+<el-tip type='warning'>rolling对于较低版本的安卓机型，表现并不理想，应当做好降级切换原生控件</el-tip>
 <view class='rolling'>
   <el-rolling animation='200' scrollbar='{{rolling.scrollbar}}' upperThreshold='{{rolling.upperThreshold}}' lowerThreshold='{{rolling.lowerThreshold}}' fullscreen='{{rolling.autoFullscreenf}}' rubber='{{rolling.rubber}}' isscroll='{{rolling.isscroll}}'
     scrollY='{{rolling.y}}' bindscroll='onScroll' bindready='onScrollReady' class='rolling-body'>

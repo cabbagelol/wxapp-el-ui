@@ -1,0 +1,15 @@
+.radio-form {
+  font-size: 28rpx;
+  color: #666;
+}
+
+.radio {
+  display: block;
+  background: #fff;
+  border-bottom: 1px solid #f9f9f9;
+}
+
+.radio > label {
+  padding: 40rpx 40rpx;
+  width: calc(100% - 80rpx);
+}

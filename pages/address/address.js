@@ -9,13 +9,6 @@ Page({
     city: ''
   },
 
-  onColumnChange(e) {
-    wx.showToast({
-      title: e.detail.value,
-      icon: 'none'
-    })
-  },
-
   onChange(e) {
     wx.showToast({
       title: e.detail.value,

@@ -11,6 +11,6 @@
   display: block;
   height: 1000rpx;
   width: 80%;
-  background: #555;
+  background: #FFF;
   overflow: hidden;
 }

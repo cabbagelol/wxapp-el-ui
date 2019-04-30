@@ -1,0 +1,36 @@
+<el-head head='{{head}}' stickie='true'></el-head>
+<el-focus focus='{{focus.starts}}' type='{{focus.type}}'>
+  <el-cell title='焦点' bindtap='onTap'>
+    <view slot='content'>这里是焦点，通常用于表单内部，以提醒用户</view>
+  </el-cell>
+</el-focus>
+
+<el-cell title='聚焦状态'>
+  <switch slot="content" checked="{{focus.starts}}" data-e="focus.starts" bindchange="$" />
+</el-cell>
+<el-cell title='类型' label='danger,warning'>
+  <input slot="content" value="{{focus.type}}" data-e="focus.type" bindinput="$" />
+</el-cell>
+
+<el-form class='focus-form' bindsubmit='onForm'>
+  <view class='container'>
+    <el-focus verification='901,900,1001,1002'>
+      <el-input title='姓名' type='text' name='name' value='小明 2W' placeholder='请输入姓名'>
+        <el-tag slot='right'>具有校验功能</el-tag>
+      </el-input>
+    </el-focus>
+    <el-focus verification='0' verifications='{{focus.verifications}}'>
+      <el-input title='校验' type='text' name='name' value='您好' placeholder=''>
+        <el-tag slot='right'>自定义校验</el-tag>
+      </el-input>
+    </el-focus>
+    <el-focus verification='0' verifications='{{focus.verifications}}'>
+      <el-textarea title='备忘' name='remark' value='您好先生，请问我可以要杯饮料吗?' placeholder='备忘'></el-textarea>
+    </el-focus>
+  </view>
+
+  <view class='container'>
+    <el-button type='submit'>提交</el-button>
+    <el-button type='reset'>重置</el-button>
+  </view>
+</el-form>

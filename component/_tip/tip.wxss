@@ -5,15 +5,30 @@
 
 .__tip-success__ {
   background: rgba(139, 195, 74, 0.5);
-  color: #FFF;
+  color: #fff;
+}
+
+.__tip-border-success__ {
+  border: 1px solid rgba(96, 138, 48, 0.5);
+  margin: 0 -2rpx;
 }
 
 .__tip-warning__ {
-  background: rgba(255, 193, 5, 0.5);
-  color: #FFF;
+  background: #fffae9;
+  color: #c59b0b;
+}
+
+.__tip-border-warning__ {
+  border: 1px solid #f5edd2;
+  margin: 0 -2rpx;
 }
 
 .__tip-danger__ {
   background: rgba(244, 67, 54, 0.5);
-  color: #FFF;
+  color: #fff;
+}
+
+.__tip-border-danger__ {
+  border: 1px solid rgba(226, 48, 35, 0.5);
+  margin: 0 -2rpx;
 }

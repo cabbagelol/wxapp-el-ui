@@ -16,7 +16,8 @@ Page({
           c: false,
           r: false
       },
-      back: true
+      back: true,
+      backlenght: 2
     }
   },
 

@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bcb96f6b-c814-45f6-bc20-aea94fe2cee1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/_img/img.js" beforeDir="false" afterPath="$PROJECT_DIR$/component/_img/img.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/_img/img.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/component/_img/img.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/_loading/loading.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/component/_loading/loading.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index/index.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index/index.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project.config.json" beforeDir="false" afterPath="$PROJECT_DIR$/project.config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -22,25 +18,16 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app.wxss">
+        <entry file="file://$PROJECT_DIR$/component/_checkbox/checkbox.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
+            <state relative-caret-position="95">
+              <caret line="11" column="20" lean-forward="true" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="589">
-              <caret line="31" column="43" selection-start-line="31" selection-start-column="43" selection-end-line="31" selection-end-column="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package.json">
+        <entry file="file://$PROJECT_DIR$/package-lock.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="38">
               <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
@@ -49,43 +36,18 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/package-lock.json">
+        <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+            <state relative-caret-position="76">
+              <caret line="4" column="18" lean-forward="true" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/project.config.json">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.npmignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="2" column="5" selection-start-line="2" selection-end-line="2" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/component/_column/column.wxss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
-            </state>
+            <state relative-caret-position="-171" />
           </provider>
         </entry>
       </file>
@@ -95,10 +57,22 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="package.json" />
-        <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>_related</find>
+      <find>return</find>
+      <find>JSZipUtils</find>
+      <find>JSZipUtils</find>
+      <find>Reset</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -109,12 +83,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/component/_head/head.json" />
-        <option value="$PROJECT_DIR$/component/_img/img.js" />
-        <option value="$PROJECT_DIR$/component/_scrolltxt/scrolltxt.wxml" />
-        <option value="$PROJECT_DIR$/component/_scrolltxt/scrolltxt.js" />
-        <option value="$PROJECT_DIR$/component/_button/button.wxss" />
-        <option value="$PROJECT_DIR$/component/_numIndicator/numIndicator.wxss" />
         <option value="$PROJECT_DIR$/component/_numIndicator/numIndicator.wxml" />
         <option value="$PROJECT_DIR$/component/_button/button.js" />
         <option value="$PROJECT_DIR$/component/_button/button.wxml" />
@@ -123,7 +91,6 @@
         <option value="$PROJECT_DIR$/pages/content/content.js" />
         <option value="$PROJECT_DIR$/project.config.json" />
         <option value="$PROJECT_DIR$/component/_body/body.wxml" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/pages/slider/slider.js" />
         <option value="$PROJECT_DIR$/pages/slider/slider.json" />
         <option value="$PROJECT_DIR$/pages/slider/slider.wxml" />
@@ -158,22 +125,31 @@
         <option value="$PROJECT_DIR$/.npmignore" />
         <option value="$PROJECT_DIR$/app.json" />
         <option value="$PROJECT_DIR$/component/_column/column.wxss" />
-        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/www/js/jq.js" />
+        <option value="$PROJECT_DIR$/www/js/jszip.js" />
+        <option value="$PROJECT_DIR$/www/Hello.txt" />
+        <option value="$PROJECT_DIR$/www/index.html" />
+        <option value="$USER_HOME$/Desktop/www/index.html" />
+        <option value="$PROJECT_DIR$/component/_checkbox/checkbox.js" />
         <option value="$PROJECT_DIR$/package-lock.json" />
+        <option value="$PROJECT_DIR$/package.json" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="54" />
-    <option name="y" value="-8" />
+    <option name="x" value="1489" />
+    <option name="y" value="355" />
     <option name="width" value="1874" />
     <option name="height" value="1096" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="Scope" currentSubView="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane" />
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -190,22 +166,22 @@
               <item name="wxapp-components" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="component" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="_column" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="_checkbox" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="E:/xiaochengxu/small_program" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../YouEjia" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\wxapp-components\www" />
       <recent name="F:\wxapp-components\demo\src" />
     </key>
   </component>
@@ -238,7 +214,17 @@
       <workItem from="1555050526227" duration="551000" />
       <workItem from="1555051113894" duration="2902000" />
       <workItem from="1555116362606" duration="2054000" />
-      <workItem from="1555294469593" duration="1314000" />
+      <workItem from="1555294469593" duration="2815000" />
+      <workItem from="1555461061123" duration="1920000" />
+      <workItem from="1555653370670" duration="598000" />
+      <workItem from="1555912321074" duration="712000" />
+      <workItem from="1555914824225" duration="1818000" />
+      <workItem from="1556240062276" duration="277000" />
+      <workItem from="1556242297143" duration="1691000" />
+      <workItem from="1556256122287" duration="599000" />
+      <workItem from="1556259419667" duration="5157000" />
+      <workItem from="1556346651794" duration="1368000" />
+      <workItem from="1556352282621" duration="201000" />
     </task>
     <task id="LOCAL-00001" summary="2019年3月26日09:56:18">
       <created>1553565384081</created>
@@ -310,17 +296,66 @@
       <option name="project" value="LOCAL" />
       <updated>1555379055055</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="2019-4-16 15:46:54">
+      <created>1555400819410</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1555400819410</updated>
+    </task>
+    <task id="LOCAL-00012" summary="[add] 2019-4-16 15:47:26">
+      <created>1555400851240</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1555400851240</updated>
+    </task>
+    <task id="LOCAL-00013" summary="[修复] popup and file问题">
+      <created>1555494207950</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1555494207950</updated>
+    </task>
+    <task id="LOCAL-00014" summary="2019-4-23 17:48:08">
+      <created>1556012910854</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1556012910855</updated>
+    </task>
+    <task id="LOCAL-00015" summary="2019-4-26 19:01:25">
+      <created>1556276499898</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1556276499898</updated>
+    </task>
+    <task id="LOCAL-00016" summary="2019-4-27 14:32:53">
+      <created>1556346780330</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1556346780330</updated>
+    </task>
+    <task id="LOCAL-00017" summary="2019-4-27 16:05:00">
+      <created>1556352365575</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1556352365601</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18474000" />
+    <option name="totallyTimeSpent" value="34316000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="54" y="-8" width="1874" height="1096" extended-state="6" />
+    <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17539988" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.0992" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="Repositories" order="3" weight="0.32984003" />
@@ -341,6 +376,28 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Weex Documents" order="3" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20106667" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info id="Repositories" order="3" weight="0.32984003" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Weex Console" order="7" sideWeight="0.49813294" weight="0.32744282" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.4992" weight="0.328" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.2983368" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5008" side_tool="true" weight="0.49028572" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Weex Documents" order="3" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -401,45 +458,16 @@
     <MESSAGE value="2019-4-13 11:10:32" />
     <MESSAGE value="2019-4-13 11:12:39" />
     <MESSAGE value="更新 2019-4-16 09:44:08" />
-    <option name="LAST_COMMIT_MESSAGE" value="更新 2019-4-16 09:44:08" />
+    <MESSAGE value="2019-4-16 15:46:54" />
+    <MESSAGE value="[add] 2019-4-16 15:47:26" />
+    <MESSAGE value="[修复] popup and file问题" />
+    <MESSAGE value="2019-4-23 17:48:08" />
+    <MESSAGE value="2019-4-26 19:01:25" />
+    <MESSAGE value="2019-4-27 14:32:53" />
+    <MESSAGE value="2019-4-27 16:05:00" />
+    <option name="LAST_COMMIT_MESSAGE" value="2019-4-27 16:05:00" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/Desktop/index.html" />
-    <entry file="file://$PROJECT_DIR$/pages/rule/rule.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="22" column="2" selection-start-line="22" selection-start-column="2" selection-end-line="22" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_config.yml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.eslintrc.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/address/address.wxss">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/address/address.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/address/address.wxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="7" lean-forward="true" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/style.css" />
     <entry file="file://$PROJECT_DIR$/pages/form/form.wxss">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -564,14 +592,6 @@
     <entry file="file://$PROJECT_DIR$/demo/src/reset.wxss" />
     <entry file="file://$PROJECT_DIR$/demo/src/index.json" />
     <entry file="file://$PROJECT_DIR$/demo/src/common.wxss" />
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/demo/src/_address/js/cityArray.js" />
     <entry file="file://$PROJECT_DIR$/demo/README.md" />
     <entry file="file://$PROJECT_DIR$/app.wxss">
@@ -583,25 +603,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="589">
-          <caret line="31" column="43" selection-start-line="31" selection-start-column="43" selection-end-line="31" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project.config.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.npmignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
+        <state relative-caret-position="627">
+          <caret line="33" column="43" selection-start-line="33" selection-start-column="43" selection-end-line="33" selection-end-column="43" />
         </state>
       </provider>
     </entry>
@@ -612,6 +615,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.eslintrc.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/component/_column/column.wxss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
@@ -619,10 +629,58 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.npmignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="228">
+            <caret line="11" column="3" lean-forward="true" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/Stuk-jszip-4cbbb64/lib/nodejs/NodejsStreamInputAdapter.js" />
+    <entry file="file://$PROJECT_DIR$/www/js/jq.js" />
+    <entry file="file://$PROJECT_DIR$/www/js/jszip.js" />
+    <entry file="file://$PROJECT_DIR$/www/Hello.txt" />
+    <entry file="file://$PROJECT_DIR$/www/index.html" />
+    <entry file="file://$USER_HOME$/Desktop/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="26" lean-forward="true" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/component/_checkbox/checkbox.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="11" column="20" lean-forward="true" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project.config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-171" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/package-lock.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        <state relative-caret-position="38">
+          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="18" lean-forward="true" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
         </state>
       </provider>
     </entry>

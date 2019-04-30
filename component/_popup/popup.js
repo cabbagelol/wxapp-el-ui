@@ -8,8 +8,14 @@ Component({
       type: String,
       value: ''
     },
-    position: String,
-    modal: Boolean,
+    position: {
+      type: String,
+      value: 'center'
+    },
+    modal: {
+      type: Boolean,
+      value: true
+    },
     show: {
       type: Boolean,
       value: false
@@ -30,5 +36,5 @@ Component({
         el: e
       })
     }
-  } 
+  }
 })

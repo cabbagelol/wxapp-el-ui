@@ -31,6 +31,10 @@ Component({
       type: String,
       value: ''
     },
+    isload: {
+      type: Boolean,
+      value: true
+    },
     loadtpye: {
       type: String,
       value: ''
@@ -44,14 +48,6 @@ Component({
   data: {
     src_: '',
     load: true
-  },
-
-  observers: {
-    'src': function () {
-      this.setData({
-        load: false
-      })
-    }
   },
 
   methods: {
@@ -80,7 +76,7 @@ Component({
           const _img = e['.__img__'];
           if (_img.width == 0 || _img.height == 0) {
             that.setData({
-              style: (that.data.style || "") + ';width:' + 50 + 'px;height:' + 50 + 'px',
+              style: `${that.data.style || ""};width:${50}px;height:${50}px`,
               load: false
             })
           }

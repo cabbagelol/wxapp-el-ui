@@ -60,7 +60,7 @@ Component({
       })
     },
 
-    onSucceed (d_, type_) {
+    onSucceed(d_, type_) {
       var that = this;
       d_.type = type_;
       that.triggerEvent('succeed', d_)
@@ -94,10 +94,10 @@ Component({
               }
             }
           };
-          if (that.data.file_.files.extension) { conf.extension = that.data.file_.files.extension}
+          if (that.data.file_.files.extension) { conf.extension = that.data.file_.files.extension }
           wx.chooseMessageFile(conf);
           break;
-        case 'video': 
+        case 'video':
           wx.chooseVideo({
             sourceType: ['camera'],
             compressed: that.data.file_.video.compressed,
@@ -111,7 +111,7 @@ Component({
               that.onSucceed(video_, 'video')
             }
           })
-        break;
+          break;
       }
     }
   }

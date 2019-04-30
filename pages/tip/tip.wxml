@@ -1,6 +1,8 @@
 <el-body>
   <el-head slot='head' head='{{head}}' stickie='true'></el-head>
-  <el-tip slot='head' type='{{tip.type}}'>这里是一个通知</el-tip>
+  <el-tip slot='head' type='{{tip.type}}'>
+    <el-scrolltxt drag border>这里是一个通知，这里是一个通知，这里是一个通知，这里是一个通知，这里是一个通知</el-scrolltxt>
+  </el-tip>
   <view slot='body'>
     <view class='container'>
       <el-cell title='成功' label='success' data-type='success' bindtap='setTipType' islink>

@@ -1,31 +1,61 @@
 Component({
-    properties: {
-        value: String,
-        datas: Array
+  properties: {
+    name: {
+      type: String,
+      value: ''
     },
-
-    data: {
-        datas: [],
-        value: ''
+    checked: {
+      type: Boolean,
+      value: false
     },
-
-    ready () {
-        var that = this
-        var datas = []
-        this.data.datas.forEach(function (i, index) {
-            datas.push(Object.assign(i,{
-                checked: (that.data.value == i.value ? true : false)
-            }))
-        })
-        this.setData({ datas })
+    disabled: {
+      type: Boolean,
+      value: false
     },
-
-    methods: {
-        radioChange: function (e) {
-            this.setData({
-                value: e.detail.value
-            })
-            this.triggerEvent('change', e)
-        }
+    value: {
+      type: String,
+      value: ''
+    },
+    isradio: {
+      type: Boolean,
+      value: true
     }
+  },
+
+  relations: {
+    '../_radio-group/radio-group': {
+      type: 'parent',
+      linked(target) {
+        this.parent_ = target;
+      }
+    },
+  },
+
+  methods: {
+    getValue() {
+      return this.data.checked;
+    },
+
+    setValueChecked() {
+      var that = this;
+      if (that.data.disabled) {
+        return
+      }
+      that.setData({
+        checked: true
+      })
+      if (that.parent_ && typeof this.parent_.onRadioGroup == 'function') {
+        that.parent_.onRadioGroup({
+          data: that.data
+        });
+      }
+    },
+
+    setValue(checked_) {
+      var that = this;
+      that.setData({
+        checked: typeof checked_ === 'boolean' ? checked_ : false
+      })
+    }
+  }
 })

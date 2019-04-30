@@ -17,8 +17,8 @@
   <el-cell title="图标">
     <switch slot="content" checked="{{message.icon}}" data-e="message.icon" bindchange="$" />
   </el-cell>
-  <el-cell title="图标">
-    <switch slot="content" checked="{{message.icon}}" data-e="message.icon" bindchange="$" />
+  <el-cell title="遮盖层">
+    <switch slot="content" checked="{{message.mask}}" data-e="message.mask" bindchange="$" />
   </el-cell>
 </view>
 <view class="container">
