@@ -10,6 +10,13 @@
   width: 100%;
 }
 
+.__button-active__ {
+  position: relative;
+  content: '';
+  background: #10a9b4;
+  color: #fff;
+}
+
 .__button_left__ {
   justify-content: flex-start;
 }

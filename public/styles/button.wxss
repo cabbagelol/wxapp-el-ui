@@ -8,10 +8,3 @@ button::after, button::before {
   contain: '';
   background: #10a9b4;
 }
-
-button:hover, button:active {
-  position: relative;
-  content: '';
-  background: #10a9b4;
-  color: #fff;
-}

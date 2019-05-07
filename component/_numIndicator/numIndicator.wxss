@@ -2,6 +2,10 @@
   display: inline-flex;
 }
 
+.__numIndicator-disabled__ {
+  opacity: .5;
+}
+
 .__numIndicator__ > view {
   width: 100%;
   display: inline-flex;
@@ -58,7 +62,6 @@
   padding: 5px 10px;
   background-color: #f2f2f2;
   border-radius: 0.3rem;
-  margin: 0 10px;
   position: relative;
 }
 
@@ -76,6 +79,11 @@
   color: inherit;
   font-size: 45rpx;
   font-weight: 500;
+  padding: 0 10px;
+}
+
+.__numIndicator_btn__.__numIndicator-left-disabled__ {
+  opacity: 0.4;
 }
 
 .__numIndicator_btn__::after {

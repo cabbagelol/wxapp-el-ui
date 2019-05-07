@@ -1,6 +1,6 @@
 <el-head head='{{head}}' stickie='true'></el-head>
 <view class='container'>
-  <el-button size='{{button.size}}' align='{{button.align}}' disabled='{{button.disabled}}' radius='{{button.radius}}' wx:if='{{button.show}}' bindtap='onButton'>
+  <el-button size='{{button.size}}' align='{{button.align}}' disabled='{{button.disabled}}' radius='{{button.radius}}' vibrate='{{button.vibrate}}' wx:if='{{button.show}}' bindtap='onButton'>
     按钮
     <block wx:if='{{button.load}}'>, 出现
       <el-load color='{{button.color}}'></el-load>图标</block>
@@ -20,5 +20,8 @@
   </el-cell>
   <el-cell title='加载'>
     <switch slot="content" checked="{{button.load}}" data-e="button.load" bindchange="$" />
+  </el-cell>
+  <el-cell title='触摸反馈'>
+    <switch slot="content" checked="{{button.vibrate}}" data-e="button.vibrate" bindchange="$" />
   </el-cell>
 </view>

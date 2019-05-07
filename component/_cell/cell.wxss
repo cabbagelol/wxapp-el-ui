@@ -11,7 +11,7 @@
 } */
 
 ._cell_center_ {
-    text-align: center;
+    text-align: left;
     display: inline-flex;
     align-items: center;
 }

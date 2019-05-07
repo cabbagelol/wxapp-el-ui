@@ -1,8 +1,7 @@
 <view class='recommend'>
   <view class='recommend-rule' style='background-color: {{rule.lines.color || "black"}};width: {{rule.lines.width || "30"}}%;height: {{rule.lines.height}}rpx'></view>
-  <text class='recommend-title' style='font-size: {{rule.font.size + "px"}};color: {{rule.font.color || "black"}};margin: 0 {{rule.font.margin || "20"}}px'>
-    {{title || rule.title || "标题"}}
-    <slot name='rule-custom'></slot>
-  </text>
+  <view class='recommend-title' style='font-size: {{rule.font.size + "px"}};color: {{rule.font.color || "black"}};margin: 0 {{rule.font.margin || "20"}}px'>
+    <slot />
+  </view>
   <view class='recommend-rule' style='background-color: {{rule.lines.color || "black"}};width: {{rule.lines.width || "30"}}%;height: {{rule.lines.height}}rpx'></view>
 </view>

@@ -1,23 +1,28 @@
 @import './style/font.wxss';
 
-.__head-background__ {
+.__head__ {
+  overflow: hidden;
   position: relative;
-  z-index: 15;
+}
+
+.__head-background__ {
+  position: absolute;
+  z-index: 8;
   top: 0;
   left: 0;
   width: 100%;
 }
 
-.__head__ {
-  overflow: hidden;
+.__head-height__ {
+  min-height: 45px;
 }
 
 .__head_up__ {
   position: relative;
-  z-index: 4;
+  z-index: 55;
   width: 100%;
   height: 90rpx;
-  transition:  all .25s;
+  transition: all 0.25s;
 }
 
 .__head_stickie__ {
@@ -28,22 +33,18 @@
 
 .__head_block__ {
   z-index: 55;
+  overflow: hidden;
   display: inline-flex;
+  align-items: center;
   width: 100%;
   transition: background 0.25s;
 }
 
-.__head_block__ > view {
-  width: 100%;
-  min-width: 80px;
-}
-
 .__head_block_title__ {
+  z-index: 55;
   font-weight: 500;
   font-size: 34rpx;
-  text-align: center;
   width: 100%;
-  min-height: 45px;
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -57,6 +58,7 @@
 }
 
 .__head_block_rbtns__ {
+  z-index: 55;
   text-align: left;
   width: 100%;
   display: inline-flex;
@@ -65,11 +67,11 @@
 }
 
 .__head_block_rbtns__ > view:first-child {
-  margin: 0 0 0 25px;
+  padding: 0 0 0 25rpx;
+  min-width: 50rpx;
 }
 
 .__head_block_rbtns__ > view {
-  width: 50px;
   height: 100%;
   display: inline-flex;
   align-items: center;

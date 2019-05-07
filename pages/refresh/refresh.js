@@ -5,42 +5,42 @@ Page({
   data: {
     head: {
       title: '下拉刷新',
+      style: {
+        background: 'linear-gradient(45deg, rgba(11, 156, 167, 0.89), rgba(24, 182, 193, 0.87))',
+        textColor: '#FFF'
+      },
       back: true
+    },
+    refresh: {
+      load: false
     }
   },
 
-  //事件处理函数
-  bindViewTap: function() {
-    wx.navigateTo({
-      url: path,
-    })
-  },
-
   onLoad() {
-    this.refreshView = this.selectComponent("#refreshView")
+    this.refreshView = this.selectComponent(".refresh");
   },
 
-  handletouchstart: function(event) {
-    this.refreshView.handletouchstart(event)
+  /**
+   * 内部刷新状态变动
+   */
+  onRefreshEvent (value_) {
+    console.log(value_.detail)
   },
 
-  handletouchmove: function(event) {
-    this.refreshView.handletouchmove(event)
+  /**
+   * 处于设置refreshHeight的值触发刷新
+   */
+  onPullRefresh() {
+    var that = this;
+    console.log('onPullRefresh')
+    that.setData({
+      'refresh.load': true
+    })
+    setTimeout(() => {
+      that.setData({
+        'refresh.load': false
+      })
+      that.refreshView.stopPullRefresh();
+    }, 2000);
   },
-
-  handletouchend: function(event) {
-    this.refreshView.handletouchend(event)
-  },
-
-  handletouchcancel: function(event) {
-    this.refreshView.handletouchcancel(event)
-  },
-
-  onPageScroll: function(event) {
-    this.refreshView.onPageScroll(event)
-  },
-
-  onPullDownRefresh: function() {
-    this.refreshView.stopPullRefresh()
-  }
 })

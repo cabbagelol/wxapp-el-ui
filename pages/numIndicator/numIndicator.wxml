@@ -1,5 +1,13 @@
 <el-head head='{{head}}' stickie='true'></el-head>
 <view class='container'>
+  <el-cell title='禁用'>
+    <el-numIndicator slot='content' disabled></el-numIndicator>
+  </el-cell>
+   
+  <el-cell title='长按复制'>
+    <el-numIndicator slot='content' bindcopy='onCopy'></el-numIndicator>
+  </el-cell>
+
   <el-cell title='数字指示器'>
     <el-numIndicator slot='content' value='-10' bindchange='onNumIndicator'></el-numIndicator>
   </el-cell>
@@ -13,11 +21,11 @@
   </el-cell>
 
   <el-cell title='叠' label='改变一次叠加或减少值'>
-    <el-numIndicator slot='content' value='0' superposition='10'></el-numIndicator>
+    <el-numIndicator slot='content' value='0' superposition='0.1'></el-numIndicator>
   </el-cell>
 
   <el-cell title='自定义样式'>
-    <el-numIndicator slot='content' class='numIndicator-custom'></el-numIndicator>
+    <el-numIndicator slot='content' class='numIndicator-custom' el-button-disabled='numIndicator-custom-disabled' min='-10' max='5'></el-numIndicator>
   </el-cell>
 
   <el-cell title='快速叠加' label='按住加减符快速叠加或减少'>

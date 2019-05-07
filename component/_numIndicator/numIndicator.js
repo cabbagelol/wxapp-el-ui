@@ -4,7 +4,9 @@ Component({
   externalClasses: [
     'el-button-left',
     'el-button-right',
-    'el-input'
+    'el-button-disabled',
+    'el-input',
+    'el-input-disabled'
   ],
 
   options: {
@@ -13,11 +15,22 @@ Component({
   },
 
   properties: {
+    disabled: {
+      type: Boolean,
+      value: false
+    },
+    copy: {
+      type: Boolean,
+      value: true
+    },
     index: Number,
     value: Number,
     min: Number,
     max: Number,
-    superposition: Number,
+    superposition: {
+      type: Number,
+      value: 1
+    },
     longtag: Boolean
   },
 
@@ -113,18 +126,22 @@ Component({
 
     onChange(e) {
       var that = this;
+      const V_ = that.data.value;
+      const S_ = that.data.superposition;
+      if (that.data.disabled) {return}
       switch (e.target.dataset.type) {
         case 'reduce':
           if (that.data.min ? that.data.value > that.data.min : true) {
             that.setData({
-              value: that.data.value -= Number(that.data.superposition.toFixed(2)) || 1
+              value: ((S_ % 1 == 0 ? V_ : V_ * 1000) - (S_ % 1 == 0 ? S_ : S_ * 1000)) / (S_ % 1 == 0 ? 1 : 1000) || 1
             })
           }
           break
         case 'add':
+        //  number_ % 1 === 0 ? number_ : number_ * 1000
           if (that.data.value < that.data.max || !that.data.max) {
             that.setData({
-              value: that.data.value += that.data.superposition || 1
+              value: ((S_ % 1 == 0 ? V_ : V_ * 1000) + (S_ % 1 == 0 ? S_ : S_ * 1000)) / (S_ % 1 == 0 ? 1 : 1000) || 1
             })
           }
           break
@@ -134,6 +151,25 @@ Component({
         inputWidth: that.data.value.toString().length * 20
       })
       that.settriggerEvent(e)
-    }
+    },
+
+    onLongTap() {
+      var that = this;
+      if (!that.data.copy && that.data.disabled) { return }
+      wx.setClipboardData({
+        data: String(that.data.value),
+        success() {
+          that.triggerEvent('copy', {
+            code: 0,
+            value: that.data.value
+          })
+        },
+        fail(err) {
+          that.triggerEvent('copy', {
+            code: -1
+          })
+        }
+      })
+    },
   }
 })

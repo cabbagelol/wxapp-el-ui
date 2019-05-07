@@ -2,3 +2,8 @@
   display: block;
   margin: 30px 0;
 }
+
+.rule-input {
+  display: inline-flex;
+  width: auto !important;
+}

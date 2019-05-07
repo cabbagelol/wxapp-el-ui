@@ -1,16 +1,17 @@
 .__tip__ {
   padding: 10rpx 20rpx;
   font-size: 25rpx;
+  transition: all .25s;
 }
 
 .__tip-success__ {
-  background: rgba(139, 195, 74, 0.5);
-  color: #fff;
+  background: rgba(139, 195, 74, 0.2);
+  color: #78ad3a;
 }
 
 .__tip-border-success__ {
-  border: 1px solid rgba(96, 138, 48, 0.5);
-  margin: 0 -2rpx;
+  border: 1px solid rgba(96, 138, 48, 0.2);
+  margin: auto -2rpx;
 }
 
 .__tip-warning__ {
@@ -24,11 +25,11 @@
 }
 
 .__tip-danger__ {
-  background: rgba(244, 67, 54, 0.5);
-  color: #fff;
+  background: rgba(244, 67, 54, 0.2);
+  color: #c92d22;
 }
 
 .__tip-border-danger__ {
-  border: 1px solid rgba(226, 48, 35, 0.5);
+  border: 1px solid rgba(226, 48, 35, 0.2);
   margin: 0 -2rpx;
 }

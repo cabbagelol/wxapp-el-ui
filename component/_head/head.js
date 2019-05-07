@@ -12,7 +12,10 @@ Component({
       type: Boolean,
       value: true
     },
-    head: Object
+    head: {
+      type: Object,
+      value: {}
+    }
   },
 
   data: {
@@ -24,7 +27,7 @@ Component({
   },
 
   attached() {
-    var that = this
+    var that = this;
     wx.getSystemInfo({
       success(res) {
         that.setData({
@@ -39,7 +42,7 @@ Component({
   },
 
   methods: {
-    onBack() {
+    onBack(data_) {
       wx.navigateBack({
         delta: this.data.head.backlenght || 1
       })
