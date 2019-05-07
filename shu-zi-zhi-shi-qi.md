@@ -27,8 +27,8 @@
 | max | Number | - | 最大值 | 0.0.2 |
 | superposition | Number | 1 | 单次叠加值 | 0.0.2 |
 | longtag | Boolean | false | 长按叠加 | 0.0.2 |
-| disabled | Boolean | false | 禁用 | 0.0.5 |
-| copy | Boolean | true | 是否允许长按复制 | 0.0.5 |
+| disabled | Boolean | false | 禁用 | 0.0.6 |
+| copy | Boolean | true | 是否允许长按复制 | 0.0.6 |
 
 ### 方法
 
@@ -86,7 +86,7 @@
 | :--- | :--- | :--- |
 | el-button-left | 左侧按钮 | 0.0.2 |
 | el-button-right | 右侧按钮 | 0.0.2 |
-| el-button-disabled | 按钮禁用状态 | 0.0.5 |
+| el-button-disabled | 按钮禁用状态 | 0.0.6 |
 | el-input | 输入框 | 0.0.2 |
 
 使用方式请参考这里[重写Class类](/zhong-xie-class-lei.md)。
