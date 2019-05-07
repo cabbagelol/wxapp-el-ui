@@ -32,7 +32,7 @@
 
 ### 方法
 
-`bindchange`: function \(e\) 当数字变动时，无论是主动还是被动
+`bindchange`: function \(e\) 当数字变动时，无论是主动还是被动 \| 0.0.2
 
 @e.detail:
 
@@ -42,7 +42,7 @@
 | index | Number | 序列\(一般无用\) | 0.0.2 |
 | value | Number | 数字变动返回的值 | 0.0.2 |
 
-`bindholdtap`: function \(e\) 当触摸一直保持
+`bindholdtap`: function \(e\) 当触摸一直保持 \| 0.0.2
 
 @e.detail:
 
@@ -51,7 +51,7 @@
 | el | Object | 内部输入框对象 | 0.0.2 |
 | value | Number | 值 | 0.0.2 |
 
-`bindtapend`: function \(e\) 触摸离开
+`bindtapend`: function \(e\) 触摸离开 \| 0.0.2
 
 @e.detail:
 
@@ -59,6 +59,8 @@
 | :--- | :--- | :--- | :--- |
 | el | Object | 内部输入框对象 | 0.0.2 |
 | value | Number | 值 | 0.0.2 |
+
+`bindcody`: function \(\) 复制事件 \| 0.0.5
 
 ### 插槽
 
