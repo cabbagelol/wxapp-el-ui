@@ -28,7 +28,7 @@
 | superposition | Number | 1 | 单次叠加值 | 0.0.2 |
 | longtag | Boolean | false | 长按叠加 | 0.0.2 |
 | disabled | Boolean | false | 禁用 | 0.0.5 |
-| copy | Boolean | true | 长按复制 | 0.0.5 |
+| copy | Boolean | true | 是否允许长按复制 | 0.0.5 |
 
 ### 方法
 
@@ -60,7 +60,7 @@
 | el | Object | 内部输入框对象 | 0.0.2 |
 | value | Number | 值 | 0.0.2 |
 
-`bindcody`: function \(\) 复制事件 \| 0.0.5
+`bindcopy`: function \(\) 复制事件 \| 0.0.5
 
 ### 插槽
 
