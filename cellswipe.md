@@ -47,7 +47,7 @@
 
 ### 事件
 
-`bindchange`: function \(e\) {}
+`bindchange`: function \(e\) {} \| 0.0.3
 
 @e.detail
 
@@ -58,7 +58,7 @@
 
 ### 使用 {#shiyon}
 
-```
+```html
 <el-cellswipe>
     <view slot='left'>
         <!-- 左边内容 -->

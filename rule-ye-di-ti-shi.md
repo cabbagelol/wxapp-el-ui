@@ -21,13 +21,13 @@
 | 名称 | 类型 | 默认 | 说明 | 版本 |
 | :--- | :--- | :--- | :--- | :--- |
 | rule | Object | {} | 配置 | 0.0.4 |
-| title | String | "" | 标题，优先于rule.title | 0.0.4 |
+| title | String | "" | 标题，优先于rule.title | 0.0.4 - 0.0.5 |
 
 ##### rule的属性:
 
 | 名称 | 说明 | 版本 |
 | :--- | :--- | :--- |
-| title | 内容 | 0.0.4 |
+| title | 内容 | 0.0.4 - 0.0.5 |
 | lines.color | 线条颜色 | 0.0.4 |
 | lines.width | 线条长度 | 0.0.4 |
 | lines.height | 线条粗细 | 0.0.4 |
@@ -38,7 +38,7 @@
 ### 使用
 
 ```html
-<el-rule title='标题文本' rule='{{rule}}'></el-rule>
+<el-rule rule='{{rule}}'>标题文本</el-rule>
 ```
 
 ```js

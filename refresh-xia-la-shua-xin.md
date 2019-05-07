@@ -32,6 +32,8 @@
 
 `bindchange`: function \(data\_\) {} 下拉控件变动 \| 0.0.6
 
+@e.detail
+
 | 名称 | 描述 | 版本 |
 | :--- | :--- | :--- |
 | data\_.start | 下拉刷新状态 | 0.0.6 |
