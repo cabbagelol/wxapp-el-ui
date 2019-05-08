@@ -1,6 +1,6 @@
+import Elui from '../baseComponent';
 const config = require("../index.js");
-
-Component({
+Elui({
   externalClasses: [
     'el-textarea',
     'el-title',

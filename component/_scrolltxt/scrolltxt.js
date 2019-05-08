@@ -1,4 +1,5 @@
-Component({
+import Elui from '../baseComponent';
+Elui({
   properties: {
     isscroll: {
       type: Boolean,

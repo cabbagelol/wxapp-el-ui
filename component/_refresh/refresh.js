@@ -1,3 +1,4 @@
+import Elui from '../baseComponent';
 let lastY = 0
 const PULL_DEFAULT = -1 //默认
 const PULL_LT_HEIGHT = 1 //下拉小于高度
@@ -6,7 +7,7 @@ const PULL_REFRESHING = 0 //刷新中
 let platform = 'ios',
   scale = 375 / wx.getSystemInfoSync().windowWidth * 2;
 
-Component({
+Elui({
   properties: {
     backgroundColor: {
       type: String,

@@ -1,4 +1,5 @@
-Component({
+import Elui from '../baseComponent';
+Elui({
   externalClasses: [
     'el-message',
     'el-title',
