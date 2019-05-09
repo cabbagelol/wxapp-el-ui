@@ -17,7 +17,7 @@
 }
 ```
 
-## &lt;radio-group&gt;
+## &lt;el-radio-group&gt;
 
 ### 属性
 
@@ -52,7 +52,7 @@ Page({
 })
 ```
 
-## &lt;radio&gt;
+## &lt;el-radio&gt;
 
 ### 属性
 
