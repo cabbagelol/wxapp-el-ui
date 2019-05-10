@@ -34,6 +34,7 @@
 | maxlenght | Number | 140 | 最大长度 | 0.0.4 |
 | disabled | Boolean | false | 是否禁用 | 0.0.4 |
 | vibrate | Boolean | false | 触摸反馈 | 0.0.4 |
+| Internalstyle | Boolean | false | 摒弃控件样式 | 0.0.5 |
 
 \* title优先于el-input-title，当title属性存在时以title内容为准
 
