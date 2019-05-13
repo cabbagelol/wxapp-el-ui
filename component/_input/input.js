@@ -9,11 +9,26 @@ Elui({
       type: Boolean,
       value: false
     },
-    title: String,
-    placeholder: String,
-    value: String,
-    clear: Boolean,
-    mustchoose: Boolean,
+    title: {
+      type: String,
+      value: ''
+    },
+    placeholder: {
+      type: String,
+      value: ''
+    },
+    value: {
+      type: String,
+      value:''
+    },
+    clear: {
+      type: Boolean,
+      value: false
+    },
+    mustchoose: {
+      type: Boolean,
+      value: false
+    },
     type: String,
     focus: {
       type: Boolean,
@@ -52,6 +67,14 @@ Elui({
   data: {
     value: '',
     length: 0
+  },
+
+  ready () {
+    var that = this;
+    that.setData({
+      length: that.data.value.length,
+      clear: that.data.value.length >= 0 ? true : false
+    })
   },
 
   methods: {
