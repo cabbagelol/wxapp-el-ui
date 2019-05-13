@@ -1,20 +1,38 @@
 <el-body>
   <el-head slot='head' head='{{head}}' stickie='true'></el-head>
-  <el-tip slot='head' type='{{tip.type}}'>
-    <el-scrolltxt drag border>这里是一个通知，这里是一个通知，这里是一个通知，这里是一个通知，这里是一个通知</el-scrolltxt>
-  </el-tip>
   <view slot='body'>
+    <el-tip type='{{tip.type}}'>
+      <el-layout>
+        <el-column>
+          <el-scrolltxt drag border>这里是一个通知，这里是一个通知，这里是一个通知，这里是一个通知，这里是一个通知</el-scrolltxt>
+        </el-column>
+      </el-layout>
+    </el-tip>
     <view class='container'>
       <el-cell title='成功' label='success' data-type='success' bindtap='setTipType' islink>
-        <el-tip slot='content' type='success'>提示标签</el-tip>
+        <el-tip slot='content' type='success'>
+          <icon size='15' type='success' />
+          <text space='ensp'> 提示标签</text>
+        </el-tip>
       </el-cell>
       <el-cell title='警示' label='warning' data-type='warning' bindtap='setTipType' islink>
-        <el-tip slot='content' type='warning'>提示标签</el-tip>
+        <el-tip slot='content' type='warning'>
+          <icon size='15' type='info' color='orange' />
+          <text space='ensp'> 提示标签</text>
+        </el-tip>
       </el-cell>
       <el-cell title='严重' label='danger' data-type='danger' bindtap='setTipType' islink>
-        <el-tip slot='content' type='danger'>提示标签</el-tip>
+        <el-tip slot='content' type='danger'>
+          <icon size='15' type='warn' />
+          <text space='ensp'> 提示标签</text>
+        </el-tip>
       </el-cell>
     </view>
   </view>
-  <el-tip slot='footer'>注意这里是页脚</el-tip>
+  <view slot='footer'>
+    <el-tip>
+      <icon size='15' type='success' />
+      <text space='emsp'> 注意这里是页脚</text>
+    </el-tip>
+  </view>
 </el-body>

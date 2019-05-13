@@ -6,7 +6,7 @@
     <el-cell title='head高度' label='{{content.head}}' class='content-body'></el-cell>
     <el-cell title='body高度' label='{{content.body}}' class='content-body'></el-cell>
     <el-cell title='footer高度' label='{{content.footer}}' class='content-body'></el-cell>
-    <view class='container'>
+    <view class='container' >
       <el-button bindtap='openMessage'>全局消息</el-button>
     </view>
   </view>

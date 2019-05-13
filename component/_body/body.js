@@ -35,12 +35,13 @@ Elui({
     getDom() {
       var that = this;
       var info = wx.getSystemInfoSync();
+      console.log(info)
       that.$fields('.body,.head,.footer', {
         computedStyle: ['height']
       }).then(res => {
         that.setData({
           'content.head.height': parseInt(res['.head'].height),
-          'content.body.height': info.screenHeight - parseInt(res['.head'].height) - parseInt(res['.footer'].height),
+          'content.body.height': info.screenHeight - parseInt(res['.head'].height) - parseInt(res['.footer'].height) - info.statusBarHeight,
           'content.footer.height': parseInt(res['.footer'].height),
           message: that.selectComponent(".messgae")
         })
