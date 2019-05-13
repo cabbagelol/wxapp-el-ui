@@ -72,8 +72,7 @@ Elui({
   ready () {
     var that = this;
     that.setData({
-      length: that.data.value.length,
-      clear: that.data.value.length >= 0 ? true : false
+      length: that.data.value.length
     })
   },
 
