@@ -1,6 +1,6 @@
+import Elui from '../baseComponent';
 const config = require("../index.js");
-
-Component({
+Elui({
   properties: {
     src: {
       type: String,
@@ -71,22 +71,22 @@ Component({
     onLoad(e) {
       const _e = e;
       var that = this;
-      if (config.util.in(that)) {
-        config.util.$([".__img__", ".__img-item__"]).then(function (e) {
-          const _img = e['.__img__'];
-          if (_img.width == 0 || _img.height == 0) {
-            that.setData({
-              style: `${that.data.style || ""};width:${50}px;height:${50}px`,
-              load: false
-            })
-          }
-          that.triggerEvent('load', Object.assign(that.getValue(_e), {
-            type: 'succeed'
-          }));
-        })
-      }
+      that.$fields('.__img__,.__img-item__', {
+        computedStyle: ['height', 'width']
+      }).then(e => {
+        const _img = e['.__img__'];
+        if (parseInt(_img.width) == 0 || parseInt(_img.height) == 0) {
+          that.setData({
+            style: `${that.data.style || ""};width:${50}px;height:${50}px`,
+            load: false // 网络
+          })
+        }
+        that.triggerEvent('load', Object.assign(that.getValue(_e), {
+          type: 'succeed'
+        }));
+      })
       that.setData({
-        load: false
+        load: false // 非网络
       })
     }
   }

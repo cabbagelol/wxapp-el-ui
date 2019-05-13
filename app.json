@@ -28,13 +28,14 @@
     "pages/tip/tip",
     "pages/radio/radio",
     "pages/focus/focus",
-    "pages/checkbox/checkbox"
+    "pages/checkbox/checkbox",
+    "pages/nav/navto/navto"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "wxapp-component",
-    "navigationBarTextStyle": "black"
+    "navigationBarTextStyle": "white"
   },
   "usingComponents": {
     "el-head": "./component/_head/head",

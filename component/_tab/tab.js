@@ -1,7 +1,7 @@
+import Elui from '../baseComponent';
 const config = require("../index.js");
 const tabBehavior = require('tabBehavior');
-
-Component({
+Elui({
   externalClasses: [
     'el-nav',
     'el-nav-item',

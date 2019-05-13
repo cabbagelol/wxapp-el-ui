@@ -1,4 +1,5 @@
-Component({
+import Elui from '../baseComponent';
+Elui({
   properties: {
     type: {
       type: String,
@@ -9,12 +10,4 @@ Component({
       value: true
     }
   },
-
-  data: {
-
-  },
-
-  methods: {
-
-  }
 })

@@ -1,8 +1,7 @@
-<view class='__content-body__' bindtouchstart='onBodyStart' bindtouchend='onBodyEnd' catchtouchmove="onBodyMove">
-  <view class='__content-footer-view__' style='transition: transform {{content.body.tap.duration / 1000}}s; transform: translateY({{content.body.tap.top}}px)'>
+<view id='.__content-body__' class='__content-body__' bindtouchstart='onBodyStart' bindtouchend='onBodyEnd' catchtouchmove="onBodyMove">
+  <view id='.__content-footer-view__' class='__content-footer-view__' style='transition: transform {{content.body.tap.duration / 1000}}s; transform: translateY({{content.body.tap.top}}px)'>
     <slot />
   </view>
-
   <view class='__content-body-scrollbar__' style='height: {{content.body.height}}px;' wx:if='{{scrollbar}}'>
     <view class='__content-body-scrollbar-body__'>
       <view style='height:{{content.body.scrollbarHeight}}px; top:{{content.body.scrollbarTop}}%'>

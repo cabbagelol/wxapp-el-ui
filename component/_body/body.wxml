@@ -1,14 +1,12 @@
 <el-message class='messgae'></el-message>
 <view class='__content__'>
-  <view class='__content-head__'>
+  <view id='.head' class='__content-head__ head'>
     <slot name='head' />
   </view>
-
-  <view class='__content-body__' style='height: {{content.body.height}}px'>
+  <view id='.body' class='__content-body__ body' style='height: {{content.body.height}}px'>
     <slot name='body' />
   </view>
-
-  <view class='__content-footer__'>
+  <view id='.footer' class='__content-footer__ footer'>
     <slot name='footer' />
   </view>
 </view>

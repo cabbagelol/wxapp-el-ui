@@ -1,6 +1,6 @@
+import Elui from '../baseComponent';
 const config = require("../index.js");
-
-Component({
+Elui({
   options: {
     multipleSlots: true
   },
@@ -38,17 +38,18 @@ Component({
   ready() {
     var that = this;
     that.systeminfo = wx.getSystemInfoSync();
-    if (config.util.in(that)) {
-      config.util.$('.__cellswipe-controller-right__,.__cellswipe-controller-center__,.__cellswipe-controller-left__').then(function(e) {
-        that.setData({
-          'cellswipe.rightW': e['.__cellswipe-controller-right__'] ? e['.__cellswipe-controller-right__'].width : 0,
-          'cellswipe.leftW': e['.__cellswipe-controller-left__'] ? e['.__cellswipe-controller-left__'].width : 0,
-          'cellswipe.centerH': e['.__cellswipe-controller-center__'] ? e['.__cellswipe-controller-center__'].height : 0,
-          'cellswipe.left': that.data.cellswipe.left - e['.__cellswipe-controller-left__'] ? e['.__cellswipe-controller-left__'].width : 0
-        })
-        that.onSetShowValue(that.data.show)
+    that.$fields('.__cellswipe-controller-right__,.__cellswipe-controller-left__,.__cellswipe-controller-center__', {
+      computedStyle: ['height', 'width']
+    }).then(e => {
+      console.log(e)
+      that.setData({
+        'cellswipe.rightW': parseInt(e['.__cellswipe-controller-right__'].width),
+        'cellswipe.leftW': parseInt(e['.__cellswipe-controller-left__'].width),
+        'cellswipe.centerH': parseInt(e['.__cellswipe-controller-center__'].height),
+        'cellswipe.left': that.data.cellswipe.left - parseInt(e['.__cellswipe-controller-left__'].width)
       })
-    }
+      that.onSetShowValue(that.data.show);
+    })
   },
 
   methods: {

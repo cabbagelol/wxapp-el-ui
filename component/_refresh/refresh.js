@@ -1,10 +1,13 @@
+import Elui from '../baseComponent';
 let lastY = 0
 const PULL_DEFAULT = -1 //默认
 const PULL_LT_HEIGHT = 1 //下拉小于高度
 const PULL_GT_HEIGHT = 2 //下拉大于高度
 const PULL_REFRESHING = 0 //刷新中
-let platform = 'ios', scale = 375 / wx.getSystemInfoSync().windowWidth * 2
-Component({
+let platform = 'ios',
+  scale = 375 / wx.getSystemInfoSync().windowWidth * 2;
+
+Elui({
   properties: {
     backgroundColor: {
       type: String,
@@ -31,15 +34,17 @@ Component({
     scrollTop: 0
   },
 
-  created () {
-    platform = wx.getSystemInfoSync().platform
-    scale = wx.getSystemInfoSync().windowWidth / 375 * 2
+  created() {
+    platform = wx.getSystemInfoSync().platform;
+    scale = wx.getSystemInfoSync().windowWidth / 375 * 2;
   },
 
   methods: {
     autoRefresh() {
-      this._pullStateChange(PULL_REFRESHING, this.data.refreshHeight)
-      this.triggerEvent("onRefresh")
+      this._pullStateChange(PULL_REFRESHING, this.data.refreshHeight);
+      this.triggerEvent("change", {
+        start: this.data.pullState
+      })
     },
 
     stopPullRefresh() {
@@ -48,68 +53,81 @@ Component({
         pullState: PULL_DEFAULT,
         'refresh.dynamicHeight': 0
       }, () => {
-        wx.pageScrollTo({ scrollTop: 0, duration: 0 })
+        wx.pageScrollTo({
+          scrollTop: 0,
+          duration: 0
+        });
       })
     },
 
     isRefreshing() {
-      return PULL_REFRESHING == this.data.pullState
+      return PULL_REFRESHING == this.data.pullState;
     },
 
     isPullState() {
-      return PULL_DEFAULT != this.data.pullState
+      return PULL_DEFAULT != this.data.pullState;
     },
 
-    handletouchstart (event) {
-      lastY = event.touches[0].clientY
+    handletouchstart(event) {
+      lastY = event.touches[0].clientY;
+      this.refresh = false;
     },
 
-    handletouchmove (event) {
-      let pageY = event.touches[0].pageY
-      let clientY = event.touches[0].clientY
-      let offsetY = clientY - lastY
+    handletouchmove(event) {
+      let pageY = event.touches[0].pageY;
+      let clientY = event.touches[0].clientY;
+      let offsetY = clientY - lastY;
       if (this.data.scrollTop > 0 || offsetY < 0) return
-      let dynamicHeight = this.data.refresh.dynamicHeight + offsetY
+      let dynamicHeight = this.data.refresh.dynamicHeight + offsetY;
       if (dynamicHeight > this.data.refreshHeight) {
-        this._pullStateChange((0 == this.data.pullState) ? 0 : PULL_GT_HEIGHT, dynamicHeight, 0)
+        this._pullStateChange((0 == this.data.pullState) ? 0 : PULL_GT_HEIGHT, dynamicHeight, 0);
+        if (!this.refresh) this.triggerEvent("refresh");
+        this.refresh = true;
       } else {
         dynamicHeight = dynamicHeight < 0 ? 0 : dynamicHeight //如果动态高度小于0处理
-        this._pullStateChange((0 == this.data.pullState) ? 0 : PULL_LT_HEIGHT, dynamicHeight, 0)
+        this._pullStateChange((0 == this.data.pullState) ? 0 : PULL_LT_HEIGHT, dynamicHeight, 0);
       }
-      lastY = event.touches[0].clientY
+      lastY = event.touches[0].clientY;
     },
 
-    handletouchend (event) {
-      let refreshHeight = this.data.refreshHeight
+    handletouchend(event) {
+      let refreshHeight = this.data.refreshHeight;
       if (0 == this.data.pullState) {
-        this._pullStateChange(PULL_REFRESHING, refreshHeight, 200)
+        this._pullStateChange(PULL_REFRESHING, refreshHeight, 200);
         return
       }
-
-      let dynamicHeight = this.data.refresh.dynamicHeight
+      let dynamicHeight = this.data.refresh.dynamicHeight;
       if (this.data.scrollTop > 0 && PULL_DEFAULT != this.data.pullState) {
         if (dynamicHeight - scale * this.data.scrollTop > refreshHeight) {
-          this._pullStateChange(PULL_REFRESHING, refreshHeight, 200)
-          this.triggerEvent("onRefresh")
+          this._pullStateChange(PULL_REFRESHING, refreshHeight, 200);
+          this.triggerEvent("change", {
+            start: this.data.pullState
+          })
         } else {
           this._pullStateChange(PULL_DEFAULT, 0, 200)
-          wx.pageScrollTo({ scrollTop: 0, duration: 0 })
+          wx.pageScrollTo({
+            scrollTop: 0,
+            duration: 0
+          });
         }
         return
       }
       if (dynamicHeight >= this.data.refreshHeight) {
-        this._pullStateChange(PULL_REFRESHING, refreshHeight, 200)
-        this.triggerEvent("onRefresh")
+        this._pullStateChange(PULL_REFRESHING, refreshHeight, 200);
+        this.triggerEvent("change", {
+          start: this.data.pullState
+        })
       } else {
-        this._pullStateChange(PULL_DEFAULT, 0, 200)
+        this._pullStateChange(PULL_DEFAULT, 0, 200);
       }
+      this.refresh = false;
     },
 
-    handletouchcancel (event) {
-      this._pullStateChange(PULL_DEFAULT, 0, 200)
+    handletouchcancel(event) {
+      this._pullStateChange(PULL_DEFAULT, 0, 200);
     },
 
-    onPageScroll (event) {
+    onPageScroll(event) {
       if (event.scrollTop > 0 && PULL_DEFAULT != this.data.pullState) {
         if (this.data.dynamicHeight - scale * event.scrollTop < this.data.refreshHeight) {
           this.setData({
@@ -121,20 +139,25 @@ Component({
           })
         }
       }
-      this.data.scrollTop = event.scrollTop
+      this.data.scrollTop = event.scrollTop;
     },
 
     _isAndriod() {
-      return 'ios' == platform
+      return 'ios' == platform;
     },
 
     _pullStateChange(state_, dynamicHeight_, time_) {
+      if (this.pullState != this.data.pullState) {
+        this.triggerEvent("change", {
+          start: this.data.pullState
+        })
+      }
+      this.pullState = this.data.pullState;
       this.setData({
         pullState: state_,
         'refresh.dynamicHeight': dynamicHeight_,
         'refresh.transition': time_ || 0
       })
-      this.triggerEvent("onPullState")
     }
   }
 })

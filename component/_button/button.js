@@ -1,4 +1,5 @@
-Component({
+import Elui from '../baseComponent';
+Elui({
   externalClasses: [
     'el-button'
   ],
@@ -12,19 +13,29 @@ Component({
       type: Boolean,
       value: true
     },
-    style: String,
-    disabled: Boolean,
-    radius: Boolean,
-    size: String,
-    align: String,
+    disabled: {
+      type: Boolean,
+      value: false
+    },
+    radius: {
+      type: Boolean,
+      value: false
+    },
+    size: {
+      type: String,
+      value: '5'
+    },
+    align: {
+      type: String,
+      value: 'center'
+    },
     playIndex: {
       type: null,
       value: null
     },
-    type: String,
-    page: {
+    type: {
       type: String,
-      value: 'index'
+      value: ''
     }
   },
 
@@ -34,10 +45,8 @@ Component({
     }
   },
 
-  ready() {},
-
   methods: {
-    onvibrate() {
+    onVibrate() {
       if (this.data.vibrate) {
         wx.vibrateShort();
       }
@@ -47,7 +56,7 @@ Component({
       var that = this;
       const form = this.getRelationNodes('../_form/form');
       that.triggerEvent('tag', e);
-      that.onvibrate();
+      that.onVibrate();
       switch (that.data.type) {
         case 'submit':
           form[0].onFormSubmit();
@@ -61,12 +70,12 @@ Component({
     onLongtap() {
       var that = this;
       that.taping = setInterval(function() {
-        that.onvibrate();
+        that.onVibrate();
       }, 200)
     },
 
     onLogintapEnd() {
-      clearInterval(this.taping)
+      clearInterval(this.taping);
     }
   }
 })

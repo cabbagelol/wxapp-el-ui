@@ -6,10 +6,12 @@ el-row,
 el-input,
 el-layout,
 el-numIndicator,
+el-scrolltxt,
 el-column {
   display: block;
 }
 
+el-scrolltxt,
 el-column,
 el-row {
   height: 100%;

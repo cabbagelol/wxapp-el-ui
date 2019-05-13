@@ -1,6 +1,5 @@
-const config = require("../index.js");
-
-Component({
+import Elui from '../baseComponent';
+Elui({
   options: {
     multipleSlots: true
   },
@@ -32,7 +31,7 @@ Component({
   },
 
   observers: {
-    'scrollY': function (newNumber_) {
+    'scrollY': function(newNumber_) {
       this.setSrcollData(newNumber_, this.data.animation || 200)
     }
   },
@@ -64,22 +63,20 @@ Component({
   ready() {
     var that = this;
     var info = wx.getSystemInfoSync();
-    if (config.util.in(that)) {
-      config.util.$('.__content-footer-view__').then(function (e) {
-        that.setData({
-          'content.body.view.height': e['.__content-footer-view__'].height
-        })
+    that.$fields('.__content-footer-view__,.__content-body__', {
+      computedStyle: ['height']
+    }).then(e => {
+      that.srcollHead = -(parseInt(e['.__content-footer-view__'].height) - parseInt(e['.__content-body__'].height));
+      that.setData({
+        'content.body.view.height': parseInt(e['.__content-footer-view__'].height),
+        'content.body.height': parseInt(e['.__content-body__'].height),
+        'content.body.scrollbarHeight': -(parseInt(e['.__content-footer-view__'].height) / that.srcollHead) * 100
       })
-      config.util.$('.__content-body__').then(function (e) {
-        that.setData({ 'content.body.height': e['.__content-body__'].height })
-        that.srcollHead = -(that.data.content.body.view.height - that.data.content.body.height);
-        that.setData({ 'content.body.scrollbarHeight': -(that.data.content.body.height / that.srcollHead) * 100 })
-        that.triggerEvent('ready', {
-          height: that.data.content.body.height,
-          scrollButtonY: that.srcollHead
-        })
+      that.triggerEvent('ready', {
+        height: that.data.content.body.height,
+        scrollButtonY: that.srcollHead
       })
-    }
+    });
   },
 
   methods: {
@@ -107,17 +104,16 @@ Component({
 
     onBodyMove(e) {
       var that = this;
-      var point = e.changedTouches[0]
+      var point = e.changedTouches[0];
       var calcY = point.pageY - that.data.content.body.tap.start + that.data.content.body.tap.end;
-
-      if (!that.data.isscroll) { return }
-
+      if (!that.data.isscroll) {
+        return
+      }
       if (that.data.upperThreshold && calcY > that.data.upperThreshold) {
         calcY = that.data.upperThreshold
       } else if (that.data.lowerThreshold > 0 && calcY < that.srcollHead - that.data.lowerThreshold) {
         calcY = that.srcollHead - that.data.lowerThreshold
       }
-
       if (!that.data.rubber && calcY >= 0) {
         calcY = 0
       } else if (!that.data.rubber && calcY < that.srcollHead) {

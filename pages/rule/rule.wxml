@@ -1,9 +1,11 @@
 <el-head head="{{head}}"></el-head>
 <view class='container'>
-  <el-rule></el-rule>
-  <el-rule rule="{{rule}}" class="rule"></el-rule>
+  <el-rule>默认标题</el-rule>
+  <el-rule rule="{{rule}}" class="rule">
+    <el-input value='{{rule.title}}' disabled Internalstyle class='rule-input'/>
+  </el-rule>
   <el-cell title="标题">
-    <input slot="content" value="{{rule.title}}" data-e="rule.title" bindinput="$" />
+    <input slot="content" value="{{rule.title}}" data-e="rule.title" maxlength='10' bindinput="$" />
   </el-cell>
   <el-cell title="字体颜色">
     <input slot="content" value="{{rule.font.color}}" data-e="rule.font.color" bindinput="$" />

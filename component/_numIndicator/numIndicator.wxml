@@ -2,18 +2,18 @@
   * 控件
   ** 数字指示器
 -->
-<view class='__numIndicator__'>
-    <view class='__numIndicator_btn__ __numIndicator_btnleft__' data-type='reduce' bindtap='onChange' bindtouchstart='onTapStart' bindtouchend='onTapEnd'>
-      <view class='__numIndicator-left__'><slot name='left'></slot></view>
+<view class='__numIndicator__ {{disabled ? "el-input-disabled __numIndicator-disabled__" : ""}}'>
+    <view class='__numIndicator_btn__ __numIndicator_btnleft__ {{min ? value <= min ? "__numIndicator-left-disabled__ el-button-disabled" : "" : ""}}' data-type='reduce' bindtap='onChange' bindtouchstart='onTapStart' bindtouchend='onTapEnd'>
+      <view class='__numIndicator-left__' id='.__numIndicator-left__'><slot name='left'></slot></view>
       <block  wx:if='{{!numlndicator.left}}'>
         <view class='__numIndicator-left-minus__'></view>
       </block>
     </view>
     <view class='__numIndicator_value__'>
-        <input type='number' value='{{value}}' bindinput='onStop' bindinput='onInput' style='width:{{inputWidth || 0}}rpx'/>
+        <input type='number' value='{{value}}' disabled='{{disabled}}' bindinput='onStop' bindinput='onInput' bindlongtap='onLongTap' style='width:{{inputWidth || 0}}rpx'/>
     </view>
-    <view class='__numIndicator_btn__ __numIndicator_btnright__' data-type='add' bindtap='onChange' bindtouchstart='onTapStart' bindtouchend='onTapEnd'>
-      <view class='__numIndicator-right__'><slot name='right'></slot></view>
+    <view class='__numIndicator_btn__ __numIndicator_btnright__ {{max ? value >= max ? "__numIndicator-left-disabled__ el-button-disabled" : "" : ""}}' data-type='add' bindtap='onChange' bindtouchstart='onTapStart' bindtouchend='onTapEnd'>
+      <view class='__numIndicator-right__' id='.__numIndicator-right__'><slot name='right'></slot></view>
       <block  wx:if='{{!numlndicator.right}}'>
         <view class='__numIndicator-left-add__'></view>
       </block>

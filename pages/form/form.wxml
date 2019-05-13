@@ -11,6 +11,11 @@
       <el-radio value='0' class='form-radio-group-item'>男</el-radio>
       <el-radio value='1' class='form-radio-group-item'>女</el-radio>
     </el-radio-group>
+    <el-checkbox-group slot='content' name='hobby' class='form-radio-group'>
+      <el-checkbox value='basketball' class='form-radio-group-item'>篮球</el-checkbox>
+      <el-checkbox value='swimming' class='form-radio-group-item'>游泳</el-checkbox>
+      <el-checkbox value='bed' class='form-radio-group-item'>睡觉</el-checkbox>
+    </el-checkbox-group>
   </view>
   <view class='container'>
     <el-button type='submit'>提交</el-button>

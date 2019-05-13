@@ -1,19 +1,32 @@
-Component({
+import Elui from '../baseComponent';
+Elui({
   properties: {
     isscroll: {
       type: Boolean,
       value: true
     },
-    scrolltxt: Object,
-    width: String,
-    velocity: Number,
-    drag: Boolean
+    scrolltxt: {
+      type: Object,
+      value: {}
+    },
+    width: {
+      type: String,
+      value: ''
+    },
+    velocity: {
+      type: Number,
+      value: 0
+    },
+    drag: {
+      type: Boolean,
+      value: true
+    }
   },
 
   observers: {
     'isscroll': function(e) {
       if (e) {
-        this.onscrolltxt()
+        this.onscrolltxt(e);
         this.setData({
           omittxt: e
         })
@@ -27,6 +40,7 @@ Component({
 
   ready() {
     var that = this;
+    console.log(that)
     that.setData({
       scrolltxt: Object.assign({
         delay: 3000,
@@ -34,11 +48,10 @@ Component({
         velocity: 1
       }, that.data.scrolltxt || {})
     });
-    that.onscrolltxt()
+    that.onscrolltxt();
   },
 
   data: {
-    windowWidth: 0,
     velocity_: 0,
     marquee: {
       x: 0,
@@ -49,23 +62,25 @@ Component({
   },
 
   methods: {
-    onscrolltxt() {
-      var that = this
-      var maxscrollwidth = 0;
+    onscrolltxt(isscroll_) {
+      var that = this;
+      var interval;
+      var maxscrollWidth = 0;
       var windowWidth = 0;
-      wx.createSelectorQuery().in(this).selectAll('#marquee_cont,#marquee').boundingClientRect(function(rect) {
-        for (var i of rect) {
-          if (i.id == 'marquee') {
-            windowWidth = i.width;
-          }
-          if (i.id == 'marquee_cont') {
-            maxscrollwidth = i.width;
-          }
+      var info = wx.getSystemInfoSync();
+      that.$fields('.marquee,.marqueecont', {
+        computedStyle: ['width']
+      }).then(rect => {
+        if (!rect.length) {
+          return;
         }
+        windowWidth = parseInt(rect['.marquee'].width)  ;
+        maxscrollWidth = parseInt(rect['.marqueecont'].width);
         that.setData({
-          omittxt: maxscrollwidth < windowWidth ? true : false
+          omittxt: maxscrollWidth < windowWidth ? true : false,
+          'windowWidth': windowWidth,
+          'marquee.nowrap': (that.data.scrolltxt.orientation == 'left' || that.data.scrolltxt.orientation == 'right') ? true : false
         })
-
         if (!that.data.isscroll) {
           that.setData({
             'marquee.x': 0,
@@ -73,24 +88,19 @@ Component({
           })
           return;
         }
-
-        that.setData({
-          'windowWidth': windowWidth,
-          'marquee.nowrap': (that.data.scrolltxt.orientation == 'left' || that.data.scrolltxt.orientation == 'right') ? true : false
-        })
         switch (that.data.scrolltxt.orientation) {
           case 'right':
-            if (maxscrollwidth > windowWidth) {
-              that.data.marquee.x = windowWidth
-              var interval = setInterval(function() {
+            if (maxscrollWidth > windowWidth) {
+              that.data.marquee.x = windowWidth;
+              interval = setInterval(function () {
                 var crentleft = that.data.marquee.x;
-                if (-crentleft < maxscrollwidth) {
+                if (-crentleft < maxscrollWidth) {
                   that.setData({
                     'marquee.x': crentleft - that.data.scrolltxt.velocity
                   });
                 } else {
                   that.setData({
-                    'marquee.x': maxscrollwidth
+                    'marquee.x': maxscrollWidth
                   });
                   clearInterval(interval);
                   that.onscrolltxt();
@@ -99,9 +109,9 @@ Component({
             }
             break;
           case 'left':
-            if (maxscrollwidth > windowWidth) {
-              that.data.marquee.x = -maxscrollwidth
-              var interval = setInterval(function() {
+            if (maxscrollWidth > windowWidth) {
+              that.data.marquee.x = -maxscrollWidth;
+              interval = setInterval(() => {
                 var crentleft = that.data.marquee.x;
                 if (crentleft < windowWidth) {
                   that.setData({
@@ -109,7 +119,48 @@ Component({
                   });
                 } else {
                   that.setData({
-                    'marquee.x': -maxscrollwidth
+                    'marquee.x': -maxscrollWidth
+                  });
+                  clearInterval(interval)
+                  that.onscrolltxt();
+                }
+              }, that.data.interval);
+            }
+            break;
+        }
+      })
+      return;
+      that._dom('#marquee,#marquee_cont').then(function(rect) {
+        if (!rect.length) {
+          return;
+        }
+        windowWidth = rect['#marquee_cont'].width;
+        maxscrollWidth = rect['#marquee'].width;
+        that.setData({
+          omittxt: maxscrollWidth < windowWidth ? true : false,
+          'windowWidth': windowWidth,
+          'marquee.nowrap': (that.data.scrolltxt.orientation == 'left' || that.data.scrolltxt.orientation == 'right') ? true : false
+        })
+        if (!that.data.isscroll) {
+          that.setData({
+            'marquee.x': 0,
+            omittxt: that.data.isscroll ? false : true
+          })
+          return;
+        }
+        switch (that.data.scrolltxt.orientation) {
+          case 'right':
+            if (maxscrollWidth > windowWidth) {
+              that.data.marquee.x = windowWidth;
+              interval = setInterval(function() {
+                var crentleft = that.data.marquee.x;
+                if (-crentleft < maxscrollWidth) {
+                  that.setData({
+                    'marquee.x': crentleft - that.data.scrolltxt.velocity
+                  });
+                } else {
+                  that.setData({
+                    'marquee.x': maxscrollWidth
                   });
                   clearInterval(interval);
                   that.onscrolltxt();
@@ -117,52 +168,70 @@ Component({
               }, that.data.interval);
             }
             break;
-          case 'top':
-            // do
-            break;
-          case 'button':
-            // do
+          case 'left':
+            if (maxscrollWidth > windowWidth) {
+              that.data.marquee.x = -maxscrollWidth;
+              interval = setInterval(() => {
+                var crentleft = that.data.marquee.x;
+                if (crentleft < windowWidth) {
+                  that.setData({
+                    'marquee.x': crentleft + that.data.scrolltxt.velocity
+                  });
+                } else {
+                  that.setData({
+                    'marquee.x': -maxscrollWidth
+                  });
+                  clearInterval(interval)
+                  that.onscrolltxt();
+                }
+              }, that.data.interval);
+            }
             break;
         }
-      }).exec()
+      })
     },
 
-    onStart(e) {
-      if (!this.data.drag) {
+    onScrolltxtStart(e) {
+      var that = this;
+      var point = e.touches[0];
+      if (!that.data.drag) {
         return
       }
-      this.setData({
-        velocity_: this.data.scrolltxt.velocity,
-        tap: {
-          x: e.touches[0].clientX
-        },
-        scrolltxt: Object.assign(this.data.scrolltxt, {
+      that.setData({
+        'tap.start': point.pageY,
+        'tap.end': that.data.marquee.x,
+        velocity_: that.data.scrolltxt.velocity,
+        scrolltxt: Object.assign(that.data.scrolltxt, {
           velocity: 0
         })
       })
     },
 
-    onMove(e) {
-      if (!this.data.drag) {
-        return
+    onScrolltxtMove(e) {
+      var that = this;
+      var point = e.touches[0];
+      if (!this.data.drag || !this.data.isscroll) {
+        return;
       }
-      var calc = ((e.touches[0].clientX / 50) - (this.data.tap.x / 50))
       this.setData({
         marquee: Object.assign(this.data.marquee, {
-          x: this.data.marquee.x + calc,
+          x: point.pageX - this.data.tap.start + this.data.tap.end,
           y: 0
         })
       })
     },
 
-    onEnd() {
+    onScrolltxtEnd(e) {
+      var that = this;
+      var point = e.changedTouches[0];
       if (!this.data.drag) {
         return
       }
       this.setData({
         scrolltxt: Object.assign(this.data.scrolltxt, {
           velocity: this.data.velocity_ <= 0 ? 1 : this.data.velocity_
-        })
+        }),
+        'tap.end': point.pageX
       })
     }
   }

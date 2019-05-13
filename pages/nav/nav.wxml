@@ -4,6 +4,10 @@
   <view slot="nav-right" wx:if="{{head.slot.r}}" bindtap="onToast" style='color:{{head.style.textColor}}'>右</view>
 </el-head>
 
+<navigator url='navto/navto'>
+  <el-cell title="返回路由位置" label='通过设置backlenght来决定返回的位置' islink></el-cell>
+</navigator>
+
 <view class="container">
   <el-cell title="标题">
     <input slot="content" value="{{head.title}}" data-e="head.title" bindinput="$"/>
@@ -30,28 +34,24 @@
   <el-cell title="右" label="右卡槽">
     <switch slot="content" checked="{{head.slot.r}}" data-e="head.slot.r" bindchange="$"/>
   </el-cell>
-    <el-cell title="右" label="右卡槽">
-    <switch slot="content" checked="{{head.slot.r}}" data-e="head.slot.r" bindchange="$"/>
-  </el-cell>
-    <el-cell title="右" label="右卡槽">
-    <switch slot="content" checked="{{head.slot.r}}" data-e="head.slot.r" bindchange="$"/>
-  </el-cell>
-    <el-cell title="右" label="右卡槽">
-    <switch slot="content" checked="{{head.slot.r}}" data-e="head.slot.r" bindchange="$"/>
-  </el-cell>
-    <el-cell title="右" label="右卡槽">
-    <switch slot="content" checked="{{head.slot.r}}" data-e="head.slot.r" bindchange="$"/>
-  </el-cell>
-    <el-cell title="右" label="右卡槽">
-    <switch slot="content" checked="{{head.slot.r}}" data-e="head.slot.r" bindchange="$"/>
-  </el-cell>
-    <el-cell title="右" label="右卡槽">
-    <switch slot="content" checked="{{head.slot.r}}" data-e="head.slot.r" bindchange="$"/>
-  </el-cell>
-    <el-cell title="右" label="右卡槽">
-    <switch slot="content" checked="{{head.slot.r}}" data-e="head.slot.r" bindchange="$"/>
-  </el-cell>
-    <el-cell title="右" label="右卡槽">
-    <switch slot="content" checked="{{head.slot.r}}" data-e="head.slot.r" bindchange="$"/>
-  </el-cell>
 </view>
+
+<el-cell title='例子' />
+<view class="container">
+  <el-head head='{{headtwo}}' stickie='{{false}}'>
+    <view slot='nav-tit' class="index-head-search" style='margin: 0 20rpx 0 100rpx;'>
+      <icon type="search" size="15" color="#999"></icon>
+      <view>搜索你想要的房子</view>
+    </view>
+  </el-head>
+  <el-head head='{{headthree}}' stickie='{{false}}'>
+    <view slot='nav-tit' class="index-head-search" style='margin: 0 100rpx;'>
+      <icon type="search" size="15" color="#999"></icon>
+      <view>搜索你想要的房子</view>
+    </view>
+    <view slot='nav-right' style='color:{{head.style.textColor}}' bindtap="onToast">
+      右
+    </view>
+  </el-head>
+</view>
+<view style='height: 100vh'></view>

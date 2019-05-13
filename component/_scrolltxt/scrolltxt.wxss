@@ -23,6 +23,6 @@
   white-space: nowrap;
 }
 
-.marquee_text {
+.__marquee_text__ {
   float: left;
 }

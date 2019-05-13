@@ -1,10 +1,12 @@
+import Elui from '../baseComponent';
 const config = require("../index.js");
-
-Component({
+Elui({
   externalClasses: [
     'el-button-left',
     'el-button-right',
-    'el-input'
+    'el-button-disabled',
+    'el-input',
+    'el-input-disabled'
   ],
 
   options: {
@@ -13,11 +15,22 @@ Component({
   },
 
   properties: {
+    disabled: {
+      type: Boolean,
+      value: false
+    },
+    copy: {
+      type: Boolean,
+      value: true
+    },
     index: Number,
     value: Number,
     min: Number,
     max: Number,
-    superposition: Number,
+    superposition: {
+      type: Number,
+      value: 1
+    },
     longtag: Boolean
   },
 
@@ -37,23 +50,24 @@ Component({
         value: that.data.min
       })
     }
-    if (config.util.in(that)) {
-      config.util.$('.__numIndicator-left__,.__numIndicator-right__').then(function (e) {
-        var conf = {
-          left: true,
-          right: true
-        };
-        if (e[".__numIndicator-left__"].width == 0) {
-          conf.left = false
-        }
-        if (e[".__numIndicator-right__"].width == 0) {
-          conf.right = false
-        }
-        that.setData({
-          numlndicator: Object.assign(that.data.numlndicator, conf)
-        })
+    that.$fields('.__numIndicator-left__,.__numIndicator-right__', {
+      computedStyle: ['width']
+    }).then(e => {
+      console.log(e)
+      var conf = {
+        left: true,
+        right: true
+      };
+      if (parseInt(e[".__numIndicator-left__"].width) == 0) {
+        conf.left = false
+      }
+      if (parseInt(e[".__numIndicator-right__"].width) == 0) {
+        conf.right = false
+      }
+      that.setData({
+        numlndicator: Object.assign(that.data.numlndicator, conf)
       })
-    }
+    });
   },
 
   methods: {
@@ -61,16 +75,16 @@ Component({
       var that = this;
       var calcValue = that.data.value;
       if (that.data.min && calcValue <= that.data.min) {
-        calcValue = that.data.min
+        calcValue = that.data.min;
       } else if (that.data.max && calcValue >= that.data.max) {
-        calcValue = that.data.max
+        calcValue = that.data.max;
       }
       that.triggerEvent('change', {
         el: e,
         index: that.data.index,
         value: calcValue
       })
-      that.setData({ value: calcValue })
+      that.setData({ value: calcValue });
     },
 
     onInput(e) {
@@ -84,7 +98,7 @@ Component({
     },
 
     onStop() {
-      clearInterval(that.data.setTime)
+      clearInterval(that.data.setTime);
     },
 
     onTapStart(e) {
@@ -113,18 +127,22 @@ Component({
 
     onChange(e) {
       var that = this;
+      const V_ = that.data.value;
+      const S_ = that.data.superposition;
+      if (that.data.disabled) {return}
       switch (e.target.dataset.type) {
         case 'reduce':
           if (that.data.min ? that.data.value > that.data.min : true) {
             that.setData({
-              value: that.data.value -= Number(that.data.superposition.toFixed(2)) || 1
+              value: ((S_ % 1 == 0 ? V_ : V_ * 1000) - (S_ % 1 == 0 ? S_ : S_ * 1000)) / (S_ % 1 == 0 ? 1 : 1000) || 1
             })
           }
           break
         case 'add':
+        //  number_ % 1 === 0 ? number_ : number_ * 1000
           if (that.data.value < that.data.max || !that.data.max) {
             that.setData({
-              value: that.data.value += that.data.superposition || 1
+              value: ((S_ % 1 == 0 ? V_ : V_ * 1000) + (S_ % 1 == 0 ? S_ : S_ * 1000)) / (S_ % 1 == 0 ? 1 : 1000) || 1
             })
           }
           break
@@ -134,6 +152,25 @@ Component({
         inputWidth: that.data.value.toString().length * 20
       })
       that.settriggerEvent(e)
-    }
+    },
+
+    onLongTap() {
+      var that = this;
+      if (!that.data.copy && that.data.disabled) { return }
+      wx.setClipboardData({
+        data: String(that.data.value),
+        success() {
+          that.triggerEvent('copy', {
+            code: 0,
+            value: that.data.value
+          })
+        },
+        fail(err) {
+          that.triggerEvent('copy', {
+            code: -1
+          })
+        }
+      })
+    },
   }
 })

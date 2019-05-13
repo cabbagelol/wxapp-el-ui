@@ -1,4 +1,5 @@
-Component({
+import Elui from '../baseComponent';
+Elui({
   relations: {
     '../_row/row': {
       type: 'child'

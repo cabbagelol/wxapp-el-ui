@@ -1,16 +1,18 @@
 <el-body>
   <el-head slot='head' head='{{head}}' bindhead='onGetHead' stickie='true'></el-head>
   <view slot='body'>
-    <el-refresh id='refreshView' backgroundColor="#FFF" />
-    <view class='container'>
-      <view bindtouchstart='handletouchstart' bindtouchmove='handletouchmove' bindtouchend='handletouchend' bindtouchcancel='handletouchcancel'>
+    <el-tip type='warning'>触摸该区域下拉滑动</el-tip>
+    <el-refresh class='refresh' backgroundColor="#FFF" bindchange='onRefreshEvent' bindrefresh='onPullRefresh' refreshHeight='150'>
+      <view class='container'>
         <el-vacancy cont='true' height='100%'>
           <view slot='cont'>
             <el-img src='https://gw.alipayobjects.com/mdn/miniapp_social/afts/img/A*pevERLJC9v0AAAAAAAAAAABjAQAAAQ/original' style='margin: 0 auto;display:block;width: 350rpx; height: 320rpx' mode='scaleToFill' />
-            <el-button bindtap='onPullDownRefresh'>收起</el-button>
+            <view class='container' wx:if='{{refresh.load}}'>
+              <el-load/>
+            </view>
           </view>
         </el-vacancy>
       </view>
-    </view>
+    </el-refresh>
   </view>
 </el-body>

@@ -1,6 +1,10 @@
-@import './style/button.wxss';
+button {
+  box-sizing: none !important;
+  overflow: none !important;
+}
 
 .__button__ {
+  position: relative;
   text-align: center;
   font-weight: 500;
   line-height: 28px;
@@ -8,6 +12,19 @@
   justify-content: center;
   align-items: center;
   width: 100%;
+  animation: all 25s;
+}
+
+.__button-active__::after {
+  transition: all .25s;
+  content: '';
+  position: absolute;
+  background: #000;
+  opacity: .1;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 200%;
 }
 
 .__button_left__ {
@@ -22,24 +39,21 @@
   justify-content: flex-end;
 }
 
-.__button_mini__,
-.__button_3__ {
+.__button_mini__, .__button_3__ {
   padding: 5rpx 20rpx !important;
   font-size: 36rpx !important;
 }
 
-.__button_normal__,
-.__button_5__ {
+.__button_normal__, .__button_5__ {
   padding: 15rpx 20rpx !important;
   font-size: 34rpx !important;
 }
 
-.__button_large__,
-.__button_7__ {
+.__button_large__, .__button_7__ {
   padding: 30rpx 20rpx !important;
   font-size: 36rpx !important;
 }
 
 .__button_radius__ {
-  border-radius: 50px  !important;
+  border-radius: 50px !important;
 }

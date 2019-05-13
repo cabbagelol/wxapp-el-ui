@@ -1,5 +1,5 @@
 <el-head class='el' head='{{head}}' stickie='true'></el-head>
-<el-message class='messgae'></el-message>
+<el-message class='messgae' bindsucceed='onContent' bindcancel='onContent' bindmarch='onContent'></el-message>
 <view class="container">
   <el-cell title="内容">
     <input slot="content" value="{{message.cont}}" data-e="message.cont" bindinput="$" />
@@ -27,6 +27,6 @@
     <el-column-5>支持队列消息,快速触摸下方按钮开始</el-column-5>
   </el-column>
   <el-button bindtap='onMessageShow'>
-    {{message.ing ? "处理中" : "显示"}}
+    {{message.ing ? "处理中,剩余" + message.index : "显示"}}
   </el-button>
 </view>

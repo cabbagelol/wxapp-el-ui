@@ -14,7 +14,7 @@
 		"uglifyFileName": false
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.6.2",
+	"libVersion": "2.6.6",
 	"appid": "wx2e4f76011b282639",
 	"projectname": "wxapp-elui",
 	"debugOptions": {

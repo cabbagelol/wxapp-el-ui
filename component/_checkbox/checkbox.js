@@ -1,4 +1,5 @@
-Component({
+import Elui from '../baseComponent';
+Elui({
   properties: {
     name: {
       type: String,
@@ -27,6 +28,7 @@ Component({
       type: 'parent',
       linked(target) {
         this.parent_ = target;
+        target.onPull(this);
       }
     },
   },
