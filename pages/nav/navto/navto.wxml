@@ -1,0 +1,8 @@
+<el-head head='{{head}}'></el-head>
+<el-tip>路由可以通过官方接口获取，决定跳转位置</el-tip>
+<view class="container">
+  <el-cell title='点击上方"返回"按钮"' label='路由仅"首页>导航>导航",依照backlenght的值返回位置'></el-cell>
+  <el-cell title="backlenght">
+    <input slot="content" value="{{head.backlenght}}" data-e="head.backlenght" bindinput="$" />
+  </el-cell>
+</view>
