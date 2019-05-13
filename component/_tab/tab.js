@@ -38,8 +38,8 @@ Elui({
           'tabs.data': this.data.tabs.data
         })
       },
-      linkChanged(target) { },
-      unlinked(target) { }
+      linkChanged(target) {},
+      unlinked(target) {}
     }
   },
 
@@ -52,7 +52,7 @@ Elui({
   ready() {
     var that = this;
     if (config.util.in(that)) {
-      config.util.$('.__tab-nav-title__').then(function (e) {
+      config.util.$('.__tab-nav-title__').then(function(e) {
         for (var i = 0; i < e.length; i++) {
           if (e['.__tab-nav-title__' + i].width > 0) {
             that.data.tabs.data[i]['isTitle'] = true
@@ -62,9 +62,9 @@ Elui({
           'tabs.data': that.data.tabs.data
         })
       })
-      config.util.$('.__tab-nav__').then(function (e) {
+      config.util.$('.__tab-nav__').then(function(e) {
         if (that.data.scroll.x <= (e['.__tab-nav__'].width / 2)) {
-          that.data.tabs.data.forEach(function (i, index) {
+          that.data.tabs.data.forEach(function(i, index) {
             if (i.title == that.data.active) {
               that.setData({
                 'tabs.title': that.data.active || that.data.tabs.data[0].title,
@@ -107,25 +107,21 @@ Elui({
       var scroll = wx.getSystemInfoSync().windowWidth;
       var paddingWidth = 0;
       var myScroll = 0;
-      wx.createSelectorQuery().in(this).select('.__tab-nav__').boundingClientRect(function (rect) {
-        console.log(rect)
+      var scrollWidth = 0;
+      var paddingDiploid = wx.getSystemInfoSync().windowWidth / 1024  
+      wx.createSelectorQuery().in(this).select('.__tab-nav__').boundingClientRect(function(rect) {
         allWidth = rect.width
       }).exec()
-      wx.createSelectorQuery().in(this).selectAll('.__tab-nav-item__').boundingClientRect(function (rect) {
-        console.log(rect)
-        var allScroll = 0;
-        var num = 0
+      wx.createSelectorQuery().in(this).selectAll('.__tab-nav-item__').boundingClientRect(function(rect) {
+        var num = 0;
         for (var i in rect) {
-          num++
-          if (i > that.data.tabs.index) { } else {
-            myScroll = rect[i].width + myScroll
+          num = rect[i].width + num
+          if (i > that.data.tabs.index) {} else {
+            that.setData({
+              'scroll.x': e.currentTarget.offsetLeft / 2 - rect[i].width / 2 + 40 * paddingDiploid
+            })
           }
-          allScroll = rect[i].width + allScroll
         }
-        myScroll = myScroll + (allWidth - allScroll) / 2 + scroll / 4
-        that.setData({
-          'scroll.x': myScroll - scroll / 2 - rect[that.data.tabs.index].width / 4 - myScroll / num + rect[that.data.tabs.index].width / num
-        })
       }).exec()
     },
 
@@ -140,7 +136,7 @@ Elui({
 
     setSelectContent() {
       var that = this
-      that.getRelationNodes('./tab-item').forEach(function (i) {
+      that.getRelationNodes('./tab-item').forEach(function(i) {
         i.onTabSelect()
       })
     },
@@ -149,7 +145,6 @@ Elui({
       this.setData({
         'scroll.x': e.detail.scrollLeft
       })
-      console.log(e.detail.scrollLeft)
     },
   },
 })
