@@ -1,5 +1,6 @@
 <el-body animation='200' scrollbar='{{content.scrollbar}}' upperThreshold='{{content.upperThreshold}}' lowerThreshold='{{content.lowerThreshold}}' fullscreen='{{content.autoFullscreenf}}' rubber='{{content.rubber}}' isscroll='{{false}}' scrollY='{{content.y}}'
   bindscroll='onScroll' bindready='onScrollReady' class='body'>
+  <!-- <view slot='head'></view> -->
   <el-head slot='head' head='{{head}}' stickie='true' class='content-head'></el-head>
   <view slot='body'>
     <el-cell title='head高度' label='{{content.head}}' class='content-body'></el-cell>

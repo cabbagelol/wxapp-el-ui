@@ -1,6 +1,10 @@
-@import './style/button.wxss';
+button {
+  box-sizing: none !important;
+  overflow: none !important;
+}
 
 .__button__ {
+  position: relative;
   text-align: center;
   font-weight: 500;
   line-height: 28px;
@@ -11,11 +15,16 @@
   animation: all 25s;
 }
 
-.__button-active__ {
-  position: relative;
+.__button-active__::after {
+  transition: all .25s;
   content: '';
-  background: #10a9b4;
-  color: #fff;
+  position: absolute;
+  background: #000;
+  opacity: .1;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 200%;
 }
 
 .__button_left__ {

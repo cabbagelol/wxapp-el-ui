@@ -34,7 +34,7 @@
 
     <el-cell title='{{radio.b.value}}' label='默认'></el-cell>
     <el-radio-group name='radio2' bindchange='$' data-e='radio.b.value'>
-      <el-radio class='radio' value='2-{{index}}' wx:for='{{3}}' wx:key='{{index}}'>单选内容-radio2-{{index}}</el-radio>
+      <el-radio class='radio' value='2-{{index}}' wx:for='{{radio.c.data}}' wx:key='{{index}}'>单选内容-radio2-{{index}}</el-radio>
     </el-radio-group>
 
     <view class='container'>

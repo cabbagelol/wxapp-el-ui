@@ -3,7 +3,7 @@
 }
 
 .__input-Internal__ {
-  width: calc(100% - 40px);
+  width: calc(100% - 80rpx);
   padding: 30rpx 40rpx;
   background-color: #fff;
 }

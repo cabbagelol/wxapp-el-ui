@@ -28,6 +28,7 @@ Elui({
       type: 'parent',
       linked(target) {
         this.parent_ = target;
+        target.onPull(this);
       }
     },
   },

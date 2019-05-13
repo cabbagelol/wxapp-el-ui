@@ -70,7 +70,7 @@ Elui({
     onLongtap() {
       var that = this;
       that.taping = setInterval(function() {
-        that.onvibrate();
+        that.onVibrate();
       }, 200)
     },
 

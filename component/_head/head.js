@@ -29,23 +29,23 @@ Elui({
 
   attached() {
     var that = this;
-    wx.getSystemInfo({
-      success(res) {
-        that.setData({
-          nav: Object.assign(res, {
-            interne: {
-              navHeight: res.statusBarHeight + 45
-            }
-          })
-        })
-      }
+    var info = wx.getSystemInfoSync();
+    that.setData({
+      nav: Object.assign(info, {
+        interne: {
+          navHeight: info.statusBarHeight + 45
+        }
+      })
     })
   },
 
   methods: {
     onBack(data_) {
       wx.navigateBack({
-        delta: this.data.head.backlenght || 1
+        delta: this.data.head.backlenght || 1,
+        fail (err) {
+          console.log(err)
+        }
       })
     }
   }

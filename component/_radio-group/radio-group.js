@@ -16,16 +16,7 @@ Elui({
       type: 'parent'
     },
     '../_radio/radio': {
-      type: 'child',
-      linked(target) {
-        let group = this.data.group;
-        if (target.data.value) {
-          group.push(target);
-          this.setData({
-            group
-          })
-        }
-      }
+      type: 'child'
     }
   },
 
@@ -36,26 +27,39 @@ Elui({
     value: ''
   },
 
-  ready() {
-    var that = this;
-    !that.data.value ? that.onRadioGroup({
-      data: {
-        name: that.data.group[0].data.name,
-        value: that.data.group[0].data.value
-      }
-    }) : that.data.group.forEach(function(i, index) {
-      if (that.data.value == i.data.value) {
-        that.onRadioGroup({
-          data: {
-            name: i.data.name,
-            value: i.data.value
-          }
-        })
-      }
-    })
-  },
-
   methods: {
+    onPull(target) {
+      let group = this.data.group;
+      if (target.data.value) {
+        group.push(target);
+        this.setData({
+          group
+        })
+        this.onReady();
+      }
+    },
+
+    onReady() {
+      var that = this;
+      if (that.data.group.length <= 0) {
+        return
+      }!that.data.value ? that.onRadioGroup({
+        data: {
+          name: that.data.group[0].data.name,
+          value: that.data.group[0].data.value
+        }
+      }) : that.data.group.forEach(function(i, index) {
+        if (that.data.value == i.data.value) {
+          that.onRadioGroup({
+            data: {
+              name: i.data.name,
+              value: i.data.value
+            }
+          })
+        }
+      })
+    },
+
     onChange(data_) {
       this.triggerEvent("change", Object.assign({
         type: 'radio-group',

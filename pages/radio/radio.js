@@ -21,16 +21,26 @@ Page({
         value: ''
       },
       c: {
-        value: ''
+        value: '',
+        data: []
       }
     }
   },
 
-  onForm (e) {
-    console.log(e.detail)
-  } ,
+  onReady () {
+    var that = this;
+    setTimeout(function () {
+      that.setData({
+        'radio.c.data': [1, 2, 3]
+      })
+    }, 200)
+  },
 
-  onRadioGroup (e) {
+  onForm(e) {
+    console.log(e.detail)
+  },
+
+  onRadioGroup(e) {
     this.setData({
       'radio.a.value': e.detail.value,
       'radio.a.data': e.detail.data

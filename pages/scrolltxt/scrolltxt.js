@@ -14,7 +14,7 @@ Page({
     },
     scroll: {
       isscroll: false,
-      drag: false,
+      drag: true,
       start: true,
       delay:3000,
       orientation: 'left',

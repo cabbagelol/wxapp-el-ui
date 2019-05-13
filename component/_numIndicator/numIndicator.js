@@ -50,23 +50,24 @@ Elui({
         value: that.data.min
       })
     }
-    if (config.util.in(that)) {
-      config.util.$('.__numIndicator-left__,.__numIndicator-right__').then(function (e) {
-        var conf = {
-          left: true,
-          right: true
-        };
-        if (e[".__numIndicator-left__"].width == 0) {
-          conf.left = false
-        }
-        if (e[".__numIndicator-right__"].width == 0) {
-          conf.right = false
-        }
-        that.setData({
-          numlndicator: Object.assign(that.data.numlndicator, conf)
-        })
+    that.$fields('.__numIndicator-left__,.__numIndicator-right__', {
+      computedStyle: ['width']
+    }).then(e => {
+      console.log(e)
+      var conf = {
+        left: true,
+        right: true
+      };
+      if (parseInt(e[".__numIndicator-left__"].width) == 0) {
+        conf.left = false
+      }
+      if (parseInt(e[".__numIndicator-right__"].width) == 0) {
+        conf.right = false
+      }
+      that.setData({
+        numlndicator: Object.assign(that.data.numlndicator, conf)
       })
-    }
+    });
   },
 
   methods: {
@@ -74,16 +75,16 @@ Elui({
       var that = this;
       var calcValue = that.data.value;
       if (that.data.min && calcValue <= that.data.min) {
-        calcValue = that.data.min
+        calcValue = that.data.min;
       } else if (that.data.max && calcValue >= that.data.max) {
-        calcValue = that.data.max
+        calcValue = that.data.max;
       }
       that.triggerEvent('change', {
         el: e,
         index: that.data.index,
         value: calcValue
       })
-      that.setData({ value: calcValue })
+      that.setData({ value: calcValue });
     },
 
     onInput(e) {
@@ -97,7 +98,7 @@ Elui({
     },
 
     onStop() {
-      clearInterval(that.data.setTime)
+      clearInterval(that.data.setTime);
     },
 
     onTapStart(e) {

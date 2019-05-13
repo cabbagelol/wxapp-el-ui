@@ -27,7 +27,7 @@ Page({
     this.messgae = this.selectComponent(".messgae");
   },
 
-  onPicker (e) {
+  onPicker(e) {
     this.setData({
       'message.typelisti': e.detail.value
     })
@@ -46,6 +46,20 @@ Page({
       type: that.data.message.typelist[that.data.message.typelisti],
       mask: that.data.message.mask,
       succeed() {
+        console.log('调用成功');
+      }
+    })
+  },
+
+  onContent(e) {
+    var that = this;
+    switch (e.detail.type) {
+      case 'march':
+        that.setData({
+          'message.index': e.detail.list.length || 0
+        })
+        break;
+      case 'succeed':
         wx.showToast({
           title: '成功',
           icon: 'none'
@@ -53,7 +67,16 @@ Page({
         that.setData({
           'message.ing': false
         })
-      }
-    })
-  }
+        break;
+      case 'cancel':
+        wx.showToast({
+          title: '取消操作',
+          icon: 'none'
+        })
+        that.setData({
+          'message.ing': false
+        })
+        break;
+    }
+  },
 })

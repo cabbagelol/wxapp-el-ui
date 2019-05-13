@@ -2,7 +2,7 @@
   * 控件
   * 图片
  -->
-<view class="__img__ fade_in">
+<view class="__img__ fade_in" id='.__img__'>
   <block wx:if='{{isload}}'>
     <el-loading class='__img-loading__' type='{{loadtype}}' color='{{loadcolor}}' maskbackground='rgba(255,255,255,.8)' show='{{load}}'>
       <import src='./imgtemplate.wxml' />

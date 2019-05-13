@@ -18,6 +18,22 @@ var page = {
       },
       back: true,
       backlenght: 2
+    },
+    headtwo: {
+      title: false,
+      back: true,
+      style: {
+        background: '#03A9F4',
+        textColor: '#FFF'
+      },
+    },
+    headthree: {
+      title: false,
+      back: true,
+      style: {
+        background: '#FF9800',
+        textColor: '#FFF'
+      },
     }
   },
 

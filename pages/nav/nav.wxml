@@ -36,4 +36,22 @@
   </el-cell>
 </view>
 
+<el-cell title='例子' />
+<view class="container">
+  <el-head head='{{headtwo}}' stickie='{{false}}'>
+    <view slot='nav-tit' class="index-head-search" style='margin: 0 20rpx 0 100rpx;'>
+      <icon type="search" size="15" color="#999"></icon>
+      <view>搜索你想要的房子</view>
+    </view>
+  </el-head>
+  <el-head head='{{headthree}}' stickie='{{false}}'>
+    <view slot='nav-tit' class="index-head-search" style='margin: 0 100rpx;'>
+      <icon type="search" size="15" color="#999"></icon>
+      <view>搜索你想要的房子</view>
+    </view>
+    <view slot='nav-right' style='color:{{head.style.textColor}}' bindtap="onToast">
+      右
+    </view>
+  </el-head>
+</view>
 <view style='height: 100vh'></view>

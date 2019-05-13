@@ -3,8 +3,3 @@ button {
   color: #fff;
   margin: 0 0 30rpx 0;
 }
-
-button::after, button::before {
-  contain: '';
-  background: #10a9b4;
-}

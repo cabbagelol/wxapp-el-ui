@@ -16,16 +16,7 @@ Elui({
       type: 'parent'
     },
     '../_checkbox/checkbox': {
-      type: 'child',
-      linked(target) {
-        let group = this.data.group;
-        if (target.data.value) {
-          group.push(target);
-          this.setData({
-            group
-          })
-        }
-      }
+      type: 'child'
     }
   },
 
@@ -37,16 +28,35 @@ Elui({
 
   ready() {
     var that = this;
-    that.data.value ? that.data.group.forEach(function (i, index) {
-      that.data.value.forEach(function (j) {
-        if (i.data.value == j) {
-          i.setValue(true);
-        }
-      })
-    }) : null;
+
   },
 
   methods: {
+    onPull(target) {
+      let group = this.data.group;
+      if (target.data.value) {
+        group.push(target);
+        this.setData({
+          group
+        })
+        this.onReady();
+      }
+    },
+
+    onReady () {
+      var that = this;
+      if (that.data.group.length <= 0) {
+        return
+      }
+      that.data.value ? that.data.group.forEach(function (i, index) {
+        that.data.value.forEach(function (j) {
+          if (i.data.value == j) {
+            i.setValue(true);
+          }
+        })
+      }) : null;
+    },
+
     onChange(data_) {
       this.triggerEvent("change", Object.assign({
         type: 'checkbox-group',

@@ -22,6 +22,21 @@ Elui({
     start: false
   },
 
+  observers: {
+    'message.list': function (data_) {
+      if (data_ && data_.length <= 0) {
+        this.triggerEvent('succeed', {
+          type: 'succeed'
+        });
+        return;
+      }
+      this.triggerEvent('march', {
+        type: 'march',
+        list: data_
+      });
+    }
+  },
+
   ready() {
     this.setData({
       systemnfo: wx.getSystemInfoSync()
@@ -29,6 +44,18 @@ Elui({
   },
 
   methods: {
+    stopMessage () {
+      var that = this;
+      clearTimeout(that.data.message.time);
+      that.setData({
+        'start': false,
+        'message.list': []
+      });
+      that.triggerEvent('cancel', {
+        tpye: 'cancel'
+      });
+    },
+
     runMessage(callback) {
       var that = this;
       that.logtime;
@@ -36,7 +63,7 @@ Elui({
       if (that.data.start) { that.setData({ start: false }); }
       clearTimeout(that.data.message.time);
       that.setData({
-        start: true,
+        'start': true,
         'message.cont': that.data.message.list[0].cont,
         'message.title': that.data.message.list[0].title,
         'message.icon': that.data.message.list[0].icon,
@@ -47,12 +74,12 @@ Elui({
         var list = that.data.message.list;
         list.splice(0, 1);
         that.setData({
-          start: false,
+          'start': false,
           'message.list': list
         });
-        if (list <= 0) { callback() }
+        if (list <= 0) { typeof callback == 'function' ? callback() : null }
         that.runMessage(function () {
-          callback()
+          typeof callback == 'function' ? callback() : null;
         })
       }, that.data.message.list[0].time);
     },
@@ -84,6 +111,20 @@ Elui({
         })
         data_.succeed();
       })
-    }
+    },
+
+    onMessageStart (e) {
+      var that = this;
+      var point = e.changedTouches[0];
+      that.y = point.clientY;
+    },
+
+    onMessageEnd (e) {
+      var that = this;
+      var point = e.changedTouches[0];
+      if (point.clientY - that.y <= 20) {
+        that.stopMessage();
+      }
+    },
   }
 })
