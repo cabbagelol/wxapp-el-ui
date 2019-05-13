@@ -72,5 +72,6 @@
     "el-radio": "./component/_radio/radio",
     "el-checkbox-group": "./component/_checkbox-group/checkbox-group",
     "el-checkbox": "./component/_checkbox/checkbox"
-  }
+  },
+  "sitemapLocation": "sitemap.json"
 }
