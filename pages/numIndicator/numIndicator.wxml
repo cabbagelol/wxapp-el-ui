@@ -32,7 +32,7 @@
     <el-numIndicator slot='content' value='100' min='0' superposition='100' longtag class='numIndicator-custom'></el-numIndicator>
   </el-cell>
   <el-cell title='自定义插槽'>
-    <el-numIndicator slot='content' value='100' longtag class='numIndicator-custom'>
+    <el-numIndicator slot='content' value='100' max='500' longtag class='numIndicator-custom'>
       <block wx:if='{{numlndicatorslot == 0}}'>
         <view slot='left'>减少</view>
         <view slot='right'>增加</view>
