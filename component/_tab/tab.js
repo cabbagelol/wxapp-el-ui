@@ -108,19 +108,23 @@ Component({
       var paddingWidth = 0;
       var myScroll = 0;
       wx.createSelectorQuery().in(this).select('.__tab-nav__').boundingClientRect(function (rect) {
+        console.log(rect)
         allWidth = rect.width
       }).exec()
       wx.createSelectorQuery().in(this).selectAll('.__tab-nav-item__').boundingClientRect(function (rect) {
+        console.log(rect)
         var allScroll = 0;
+        var num = 0
         for (var i in rect) {
+          num++
           if (i > that.data.tabs.index) { } else {
             myScroll = rect[i].width + myScroll
           }
           allScroll = rect[i].width + allScroll
         }
-        myScroll = myScroll + (allWidth - allScroll) / 2
+        myScroll = myScroll + (allWidth - allScroll) / 2 + scroll / 4
         that.setData({
-          'scroll.x': myScroll - scroll / 2 - rect[that.data.tabs.index].width / 2
+          'scroll.x': myScroll - scroll / 2 - rect[that.data.tabs.index].width / 4 - myScroll / num + rect[that.data.tabs.index].width / num
         })
       }).exec()
     },
@@ -145,6 +149,7 @@ Component({
       this.setData({
         'scroll.x': e.detail.scrollLeft
       })
+      console.log(e.detail.scrollLeft)
     },
   },
 })
