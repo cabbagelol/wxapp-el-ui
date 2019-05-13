@@ -35,7 +35,6 @@ Elui({
     getDom() {
       var that = this;
       var info = wx.getSystemInfoSync();
-      console.log(info)
       that.$fields('.body,.head,.footer', {
         computedStyle: ['height']
       }).then(res => {

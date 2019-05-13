@@ -3,49 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="bcb96f6b-c814-45f6-bc20-aea94fe2cee1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/_address/js/cityArray.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/component/_body/body.js" beforeDir="false" afterPath="$PROJECT_DIR$/component/_body/body.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/_body/body.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/component/_body/body.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/_body/body.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/component/_body/body.wxss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/_button/button.js" beforeDir="false" afterPath="$PROJECT_DIR$/component/_button/button.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/_button/button.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/component/_button/button.wxss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/_button/style/button.wxss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/_cellswipe/cellswipe.js" beforeDir="false" afterPath="$PROJECT_DIR$/component/_cellswipe/cellswipe.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/_cellswipe/cellswipe.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/component/_cellswipe/cellswipe.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/_checkbox-group/checkbox-group.js" beforeDir="false" afterPath="$PROJECT_DIR$/component/_checkbox-group/checkbox-group.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/_checkbox/checkbox.js" beforeDir="false" afterPath="$PROJECT_DIR$/component/_checkbox/checkbox.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/_head/head.js" beforeDir="false" afterPath="$PROJECT_DIR$/component/_head/head.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/_head/head.json" beforeDir="false" afterPath="$PROJECT_DIR$/component/_head/head.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/_head/head.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/component/_head/head.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/_head/head.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/component/_head/head.wxss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/_img/img.js" beforeDir="false" afterPath="$PROJECT_DIR$/component/_img/img.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/_img/img.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/component/_img/img.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/_input/input.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/component/_input/input.wxss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/_message/message.js" beforeDir="false" afterPath="$PROJECT_DIR$/component/_message/message.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/_message/message.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/component/_message/message.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/_numIndicator/numIndicator.js" beforeDir="false" afterPath="$PROJECT_DIR$/component/_numIndicator/numIndicator.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/_numIndicator/numIndicator.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/component/_numIndicator/numIndicator.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/_radio-group/radio-group.js" beforeDir="false" afterPath="$PROJECT_DIR$/component/_radio-group/radio-group.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/_radio/radio.js" beforeDir="false" afterPath="$PROJECT_DIR$/component/_radio/radio.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/_rolling/rolling.js" beforeDir="false" afterPath="$PROJECT_DIR$/component/_rolling/rolling.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/_rolling/rolling.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/component/_rolling/rolling.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/_scrolltxt/scrolltxt.js" beforeDir="false" afterPath="$PROJECT_DIR$/component/_scrolltxt/scrolltxt.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/_scrolltxt/scrolltxt.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/component/_scrolltxt/scrolltxt.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/_scrolltxt/scrolltxt.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/component/_scrolltxt/scrolltxt.wxss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/component/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/content/content.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/content/content.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/content/content.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/content/content.wxss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/input/input.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/input/input.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/message/message.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/message/message.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/message/message.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/message/message.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/nav/nav.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/nav/nav.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/nav/nav.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/nav/nav.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/nav/nav.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/nav/nav.wxss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/radio/radio.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/radio/radio.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/radio/radio.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/radio/radio.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/scrolltxt/scrolltxt.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/scrolltxt/scrolltxt.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styles/button.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/public/styles/button.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/component/_tip/tip.js" beforeDir="false" afterPath="$PROJECT_DIR$/component/_tip/tip.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/file/file.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/file/file.wxml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -268,7 +228,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="F:/YouEjia" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../YouEjia" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
@@ -321,7 +281,7 @@
       <workItem from="1557024039326" duration="599000" />
       <workItem from="1557044198709" duration="2929000" />
       <workItem from="1557379516337" duration="599000" />
-      <workItem from="1557713595472" duration="599000" />
+      <workItem from="1557713595472" duration="1832000" />
     </task>
     <task id="LOCAL-00001" summary="2019年3月26日09:56:18">
       <created>1553565384081</created>
@@ -463,11 +423,32 @@
       <option name="project" value="LOCAL" />
       <updated>1557283112440</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="2019-5-13 13:54:16">
+      <created>1557726868421</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1557726868422</updated>
+    </task>
+    <task id="LOCAL-00022" summary="2019-5-13 13:54:37">
+      <created>1557726882017</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1557726882017</updated>
+    </task>
+    <task id="LOCAL-00023" summary="2019-5-13 14:55:28">
+      <created>1557730534947</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1557730534947</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40517000" />
+    <option name="totallyTimeSpent" value="41750000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
@@ -587,7 +568,10 @@
     <MESSAGE value="2019-4-27 16:08:34" />
     <MESSAGE value="2019-5-7 18:37:32" />
     <MESSAGE value="2019-5-8 10:38:23" />
-    <option name="LAST_COMMIT_MESSAGE" value="2019-5-8 10:38:23" />
+    <MESSAGE value="2019-5-13 13:54:16" />
+    <MESSAGE value="2019-5-13 13:54:37" />
+    <MESSAGE value="2019-5-13 14:55:28" />
+    <option name="LAST_COMMIT_MESSAGE" value="2019-5-13 14:55:28" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/component/_form/form.js">

@@ -10,12 +10,4 @@ Elui({
       value: true
     }
   },
-
-  data: {
-
-  },
-
-  methods: {
-
-  }
 })
