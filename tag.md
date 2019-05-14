@@ -16,6 +16,8 @@
 }
 ```
 
+### &lt;el-tab&gt;
+
 ### 属性
 
 | 名称 | 类型 | 默认 | 说明 | 版本 |
@@ -33,6 +35,20 @@
     背景颜色
 </el-tag>
 ```
+
+### &lt;el-tab-content&gt;
+
+### 使用
+
+```html
+<el-tag>
+    <el-tag-content>
+        
+    </el-tag-content>
+</el-tag>
+```
+
+### 
 
 
 
