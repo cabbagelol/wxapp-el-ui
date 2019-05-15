@@ -32,6 +32,10 @@
 | title | String | "" | 标题 | 0.0.2 |
 | disabled | Boolean | false | 禁用标签 | 0.0.2 |
 
+### 事件
+
+`bindchange`: function \(e\) {} tab改变时触发 \| 0.0.3
+
 ### 插槽
 
 Tab标签左侧与右侧区域:
