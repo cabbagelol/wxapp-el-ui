@@ -16,6 +16,7 @@ Page({
       color: {
         essential: "#FFF"
       },
+      type: '',
       vibrate: true,
       show: true,
       size: 'normal',

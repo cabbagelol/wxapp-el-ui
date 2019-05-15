@@ -19,7 +19,7 @@
 }
 
 .__tab-nav-item__ {
-  font-size: 36rpx;
+  font-size: 30rpx;
   white-space: nowrap;
   width: 100%;
   text-align: center;

@@ -1,11 +1,14 @@
 <el-head head='{{head}}' stickie='true'></el-head>
 <view class='container'>
-  <el-button size='{{button.size}}' align='{{button.align}}' disabled='{{button.disabled}}' radius='{{button.radius}}' vibrate='{{button.vibrate}}' wx:if='{{button.show}}' bindtap='onButton'>
+  <el-button size='{{button.size}}' align='{{button.align}}' disabled='{{button.disabled}}' radius='{{button.radius}}' type='{{button.type}}' vibrate='{{button.vibrate}}' wx:if='{{button.show}}' bindtap='onButton'>
     按钮
     <block wx:if='{{button.load}}'>, 出现
       <el-load color='{{button.color}}'></el-load>图标</block>
   </el-button>
 
+  <el-cell title='类型' label='success,warning,danger,default'>
+    <input slot="content" value="{{button.type}}" data-e="button.type" bindinput="$" />
+  </el-cell>
   <el-cell title='大小' label='mini,normal,large'>
     <input slot="content" value="{{button.size}}" data-e="button.size" bindinput="$" />
   </el-cell>

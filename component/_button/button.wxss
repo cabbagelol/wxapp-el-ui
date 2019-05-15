@@ -16,11 +16,11 @@ button {
 }
 
 .__button-active__::after {
-  transition: all .25s;
+  transition: all 0.25s;
   content: '';
   position: absolute;
   background: #000;
-  opacity: .1;
+  opacity: 0.1;
   top: 0;
   left: 0;
   width: 200%;
@@ -56,4 +56,24 @@ button {
 
 .__button_radius__ {
   border-radius: 50px !important;
+}
+
+.__button-success__ {
+  background: #8bc34a;
+  color: #fff;
+}
+
+.__button-warning__ {
+  background: #ffc107;
+  color: #fff;
+}
+
+.__button-danger__ {
+  background: #f44336;
+  color: #fff;
+}
+
+.__button-default__ {
+  background: #FFF;
+  color: #777;
 }
