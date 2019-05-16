@@ -36,5 +36,4 @@
   * [tip 提示](tip-ti-shi.md)
 * [设计规范](she-ji-gui-fan.md)
 * [设计资源](she-ji-zi-yuan.md)
-* [下载](xia-zai.md)
 
