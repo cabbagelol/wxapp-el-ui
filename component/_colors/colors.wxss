@@ -1,0 +1,114 @@
+/**
+* Elui Colos
+* by cabbagelol
+* url: http://hn.cabbagelol.net/wxapp-el-ui/she-ji-gui-fan.html
+*/
+
+/* default */
+.__color-text-default__ {
+  color: #888;
+}
+
+.__color-block-default__ {
+  background-color: #777;
+}
+
+.__color-border-default__ {
+  border-color: #dfdfdf;
+}
+
+.__color-tint-text-default__ {
+  color: rgba(70, 70, 70, 0.2);
+}
+
+.__color-tint-block-default__ {
+  background-color: rgba(182, 182, 182, 0.2);
+}
+
+/* 主 */
+
+.__color-text-primary__ {
+  color: #18b6c1;
+}
+
+.__color-block-primary__ {
+  background-color: #18b6c1;
+}
+
+.__color-border-primary__ {
+  border-color: #b3dde0;
+}
+
+.__color-tint-text-primary__ {
+  color: rgba(24, 182, 193, 0.2);
+}
+
+.__color-tint-block-primary__ {
+  background-color: rgba(24, 182, 193, 0.2);
+}
+
+/* succeed */
+
+.__color-text-succeed__ {
+  color: #8bc34a;
+}
+
+.__color-block-succeed__ {
+  background-color: #8bc34a;
+}
+
+.__color-border-succeed__ {
+  border-color: rgba(96, 138, 48, 0.2);
+}
+
+.__color-tint-text-succeed__ {
+  color: rgba(139, 195, 74, 0.2);
+}
+
+.__color-tint-block-succeed__ {
+  background-color: rgba(139, 195, 74, 0.2);
+}
+
+
+/* warning */
+.__color-text-warning__ {
+  color: #ffc107;
+}
+
+.__color-block-warning__ {
+  background-color: #fffae9;
+}
+
+.__color-border-warning__ {
+  border-color: #f5edd2;
+}
+
+.__color-tint-text-warning__ {
+  color: rgba(255, 193, 7, 0.2);
+}
+
+.__color-tint-block-warning__ {
+  background-color: rgba(255, 193, 7, 0.2);
+}
+
+
+/* danger */
+.__color-text-danger__ {
+  color: #f44336;
+}
+
+.__color-block-danger__ {
+  background-color: #f44336;
+}
+
+.__color-border-danger__ {
+  border-color: rgba(226, 48, 35, 0.2);
+}
+
+.__color-tint-text-danger__ {
+  color: rgba(244, 67, 54, 0.2);
+}
+
+.__color-tint-block-danger__ {
+  background-color: rgba(244, 67, 54, 0.2);
+}
