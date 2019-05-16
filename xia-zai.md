@@ -1,1 +1,11 @@
-<iframe src='http://baidu.com' style='widht:100%;height: 100%;' />
+<iframe
+    src="http://www.baidu.com"
+    width="100%"
+    height="100%"
+    frameborder="no"
+    border="0"
+    marginwidth="0"
+    marginheight="0"
+    scrolling="no"
+    allowtransparency="yes">
+</iframe>
