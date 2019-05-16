@@ -16,11 +16,53 @@ Page({
       color: {
         essential: "#FFF"
       },
-      type: '',
+      type: {
+        index: 0,
+        value: [{
+          name: 'primary',
+          s: '主'
+        }, {
+          name: 'succeed',
+          s: '成功'
+        }, {
+          name: 'warning',
+          s: '警告'
+        }, {
+          name: 'danger',
+          s: '严重'
+        }, {
+          name: 'default',
+          s: '默认'
+        }]
+      },
       vibrate: true,
       show: true,
-      size: 'normal',
-      align: 'center',
+      size: {
+        index: 1,
+        value: [{
+          name: 'mini',
+          s: '小'
+        }, {
+          name: 'normal',
+          s: '标准'
+        }, {
+          name: 'large',
+          s: '大'
+        }]
+      },
+      align: {
+        index: 1,
+        value: [{
+          name: 'left',
+          s: '左'
+        }, {
+          name: 'center',
+          s: '中'
+        }, {
+          name: 'right',
+          s: '右'
+        }]
+      },
       radius: false,
       disabled: false,
       load: true

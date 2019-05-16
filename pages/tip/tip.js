@@ -9,7 +9,7 @@ Page({
       back: true
     },
     tip: {
-      type: 'success'
+      type: 'primary'
     }
   },
 

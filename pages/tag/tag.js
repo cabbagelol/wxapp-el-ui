@@ -8,5 +8,16 @@ Page({
       },
       back: true
     },
+    t: ''
   },
+
+  onReady () {
+    var that = this;
+    setTimeout(()=>{
+      console.log('1')
+      that.setData({
+        t: '213sd'
+      })
+    }, 1000)
+  }
 })

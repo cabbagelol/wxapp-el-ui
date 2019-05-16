@@ -1,5 +1,5 @@
 button {
-  background: #18b6c1;
-  color: #fff;
+  /* background: #18b6c1;
+  color: #fff; */
   margin: 0 0 30rpx 0;
 }

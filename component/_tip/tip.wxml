@@ -1,3 +1,3 @@
-<view class='__tip__ {{type ? "__tip-" + type + "__" : ""}} {{border ? "__tip-border-" + type + "__" : ""}}'>
+<view class='__tip__ {{type ? "__color-tint-block-" + type + "__" : ""}} {{type ? "__color-border-" + type + "__" : ""}} {{border ? "__tip-border-" + type + "__" : ""}}'>
   <slot />
 </view>

@@ -1,3 +1,5 @@
+@import '../_colors/colors';
+
 button {
   box-sizing: none !important;
   overflow: none !important;
@@ -58,22 +60,13 @@ button {
   border-radius: 50px !important;
 }
 
-.__button-success__ {
-  background: #8bc34a;
+.__color-block-primary__,
+.__color-block-succeed__,
+.__color-block-warning__,
+.__color-block-danger__ {
   color: #fff;
 }
 
-.__button-warning__ {
-  background: #ffc107;
-  color: #fff;
-}
-
-.__button-danger__ {
-  background: #f44336;
-  color: #fff;
-}
-
-.__button-default__ {
-  background: #FFF;
-  color: #777;
+.__color-block-default__ {
+  color: #777
 }

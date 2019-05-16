@@ -78,11 +78,11 @@ Page({
           title: '滑动单元格',
           label: 'cellswipe'
         },
-        // {
-        //   url: '../slider/slider',
-        //   title: '滑动选择器',
-        //   label: 'slider'
-        // },
+        {
+          url: '../slider/slider',
+          title: '[未完成]滑动选择器',
+          label: 'slider'
+        },
         {
           url: '../message/message',
           title: '全局消息',
@@ -107,7 +107,7 @@ Page({
           url: '../checkbox/checkbox',
           title: '复选',
           label: 'checkbox'
-        }, 
+        },
         {
           url: '../focus/focus',
           title: '焦点与校验',
@@ -144,6 +144,10 @@ Page({
         url: '../tip/tip',
         title: '提示',
         label: 'tip'
+      }, {
+        url: '../divider/divider',
+        title: '分割线',
+        label: 'divider'
       }]
     }]
   },

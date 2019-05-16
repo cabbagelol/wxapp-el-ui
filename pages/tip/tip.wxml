@@ -1,6 +1,6 @@
 <el-body>
   <el-head slot='head' head='{{head}}' stickie='true'></el-head>
-  <view slot='body'>
+  <el-layout slot='body'>
     <el-tip type='{{tip.type}}'>
       <el-layout>
         <el-column>
@@ -9,29 +9,53 @@
       </el-layout>
     </el-tip>
     <view class='container'>
-      <el-cell title='成功' label='success' data-type='success' bindtap='setTipType' islink>
-        <el-tip slot='content' type='success'>
-          <icon size='15' type='success' />
-          <text space='ensp'> 提示标签</text>
-        </el-tip>
-      </el-cell>
-      <el-cell title='警示' label='warning' data-type='warning' bindtap='setTipType' islink>
-        <el-tip slot='content' type='warning'>
-          <icon size='15' type='info' color='orange' />
-          <text space='ensp'> 提示标签</text>
-        </el-tip>
-      </el-cell>
-      <el-cell title='严重' label='danger' data-type='danger' bindtap='setTipType' islink>
-        <el-tip slot='content' type='danger'>
-          <icon size='15' type='warn' />
-          <text space='ensp'> 提示标签</text>
-        </el-tip>
-      </el-cell>
+      <el-radio-group value='{{1}}'>
+        <el-radio value='1'>
+          <el-cell title='主题色' label='primary' data-type='primary' bindtap='setTipType' islink>
+            <el-tip slot='content' type='primary'>
+              <icon size='15' type='warn' color='#18b6c1' />
+              <text space='ensp'> 提示标签</text>
+            </el-tip>
+          </el-cell>
+        </el-radio>
+        <el-radio value='2'>
+          <el-cell title='成功' label='succeed' data-type='succeed' bindtap='setTipType' islink>
+            <el-tip slot='content' type='succeed'>
+              <icon size='15' type='success' />
+              <text space='ensp'> 提示标签</text>
+            </el-tip>
+          </el-cell>
+        </el-radio>
+        <el-radio value='3'>
+          <el-cell title='警示' label='warning' data-type='warning' bindtap='setTipType' islink>
+            <el-tip slot='content' type='warning'>
+              <icon size='15' type='info' color='orange' />
+              <text space='ensp'> 提示标签</text>
+            </el-tip>
+          </el-cell>
+        </el-radio>
+        <el-radio value='4'>
+          <el-cell title='严重' label='danger' data-type='danger' bindtap='setTipType' islink>
+            <el-tip slot='content' type='danger'>
+              <icon size='15' type='warn' />
+              <text space='ensp'> 提示标签</text>
+            </el-tip>
+          </el-cell>
+        </el-radio>
+        <el-radio value='5'>
+          <el-cell title='默认' label='default' data-type='default' bindtap='setTipType' islink>
+            <el-tip slot='content' type='default'>
+              <icon size='15' type='warn' color='#888' />
+              <text space='ensp'> 提示标签</text>
+            </el-tip>
+          </el-cell>
+        </el-radio>
+      </el-radio-group>
     </view>
-  </view>
+  </el-layout>
   <view slot='footer'>
-    <el-tip>
-      <icon size='15' type='success' />
+    <el-tip type='danger'>
+      <icon size='15' type='warn' />
       <text space='emsp'> 注意这里是页脚</text>
     </el-tip>
   </view>

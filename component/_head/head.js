@@ -21,6 +21,7 @@ Elui({
 
   data: {
     nav: {
+      disabled: false,
       interne: {
         navHeight: 100
       }
@@ -37,10 +38,30 @@ Elui({
         }
       })
     })
+
+  },
+
+  ready () {
+    var that = this;
+    that.setData({
+      'nav': Object.assign(that.data.nav, {
+        disabled: getCurrentPages().length <= 1 ? true : false
+      })
+    })
   },
 
   methods: {
     onBack(data_) {
+      if (this.data.nav.disabled) {
+        const url = '/pages/index/index';
+        wx.navigateTo({
+          url,
+          fail () {
+            wx.switchTab({url})
+          }
+        })
+        return;
+      }
       wx.navigateBack({
         delta: this.data.head.backlenght || 1,
         fail (err) {

@@ -8,6 +8,10 @@ Elui({
       value: false
     },
     round: Boolean,
-    textColor: String
+    textColor: String,
+    value: {
+      type: String,
+      value: ''
+    }
   },
 })

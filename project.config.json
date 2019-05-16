@@ -41,7 +41,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 27,
+			"current": 28,
 			"list": [
 				{
 					"id": -1,
@@ -236,6 +236,13 @@
 					"id": -1,
 					"name": "复选",
 					"pathName": "pages/checkbox/checkbox",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "分割线",
+					"pathName": "pages/divider/divider",
 					"scene": null
 				}
 			]

@@ -17,6 +17,10 @@
   min-height: 45px;
 }
 
+.__head-navdisabled__ {
+  opacity: .4;
+}
+
 .__head_up__ {
   position: relative;
   z-index: 55;

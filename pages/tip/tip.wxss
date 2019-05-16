@@ -1,0 +1,11 @@
+el-radio {
+  display: block;
+  width: 100%;
+  margin-bottom: 10rpx;
+}
+
+el-cell {
+  width: calc(100% - 260rpx);
+  margin-left: 10rpx;
+}
+

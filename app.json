@@ -29,7 +29,8 @@
     "pages/radio/radio",
     "pages/focus/focus",
     "pages/checkbox/checkbox",
-    "pages/nav/navto/navto"
+    "pages/nav/navto/navto",
+    "pages/divider/divider"
   ],
   "window": {
     "backgroundTextStyle": "light",
