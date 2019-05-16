@@ -4,13 +4,19 @@
   <el-cell title="内容">
     <input slot="content" value="{{message.cont}}" data-e="message.cont" bindinput="$" />
   </el-cell>
-  <el-cell title="类型">
+
+  <el-cell title='类型' label='mini,normal,large'>
+    <picker slot='content' range-key='s' bindchange="$" data-e="message.typelist.index" range="{{message.typelist.value}}">
+      {{message.typelist.value[button.size.index].s || '选择'}}
+    </picker>
+  </el-cell>
+  <!-- <el-cell title="类型">
     <picker slot='content' bindchange="onPicker" value="{{message.typelisti}}" range="{{message.typelist}}">
       <view class="picker">
         {{message.typelist[message.typelisti]}}
       </view>
     </picker>
-  </el-cell>
+  </el-cell> -->
   <el-cell title="停留时间">
     <input slot="content" value="{{message.time}}" data-e="message.time" bindinput="$" />
   </el-cell>
@@ -23,10 +29,9 @@
 </view>
 <view class="container">
   <el-column class='message-tip'>
-    <el-column-1>说明:</el-column-1>
-    <el-column-5>支持队列消息,快速触摸下方按钮开始</el-column-5>
+    <el-column-5>说明:支持队列消息,快速触摸下方按钮开始</el-column-5>
   </el-column>
-  <el-button bindtap='onMessageShow'>
+  <el-button bindtap='onMessageShow' type='primary'>
     {{message.ing ? "处理中,剩余" + message.index : "显示"}}
   </el-button>
 </view>

@@ -1,5 +1,4 @@
 import Elui from '../baseComponent';
-const tabBehavior = require('tabBehavior');
 Elui({
   externalClasses: [
     'el-nav',
@@ -27,7 +26,7 @@ Elui({
     index: Number
   },
 
-  behaviors: [tabBehavior],
+  behaviors: [require('tabBehavior')],
 
   relations: {
     './tab-item': {
@@ -114,7 +113,7 @@ Elui({
       var paddingWidth = 0;
       var myScroll = 0;
       var scrollWidth = 0;
-      var paddingDiploid = wx.getSystemInfoSync().windowWidth / 1024  
+      var paddingDiploid = wx.getSystemInfoSync().windowWidth / 1024
       wx.createSelectorQuery().in(this).select('.__tab-nav__').boundingClientRect(function(rect) {
         allWidth = rect.width
       }).exec()

@@ -2,7 +2,8 @@
   * 控件
   ** 全局消息
 -->
-<view class='__message__ el-message  {{start ? "__message-animation__" : "__message-animation-up__"}} {{message.type ? "__message-" + message.type + "__" : "__message-succeed__"}}' bindtouchstart='onMessageStart' bindtouchend='onMessageEnd'>
+{{message.type}}
+<view class='__message__ el-message  {{start ? "__message-animation__" : "__message-animation-up__"}} {{message.type ? "__color-block-" + message.type + "__" : "__color-block-succeed__"}}' bindtouchstart='onMessageStart' bindtouchend='onMessageEnd'>
   <view class='__message-top__' style='margin-top: {{systemnfo.statusBarHeight}}px'>
     <view class='__message-icon__' wx:if='{{message.icon}}'>
       <el-load size='.6' color='{{color}}' type='success' wx:if='{{message.type == "success"}}'></el-load>

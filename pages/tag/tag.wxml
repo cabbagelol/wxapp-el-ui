@@ -7,10 +7,6 @@
   <el-cell title='幽灵' label='幽灵状态下，背景是继承父容器'>
     <el-tag slot='content' plain>幽灵</el-tag>
   </el-cell>
-  {{t}}
-
-  <el-tag round size='3' color='#DEFDFF' textColor='#00B6C2'>{{t}}平米</el-tag>
-  <el-tag round size='3' color='#DEFDFF' textColor='#00B6C2' value='{{t}}'>{{t}}</el-tag>
 
   <el-cell title='3号' label='大小'>
     <el-tag slot='content' size='3' textColor='#1A1A1A'>测试文本</el-tag>

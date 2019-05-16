@@ -13,8 +13,19 @@ Page({
       back: true
     },
     message: {
-      typelist: ['success', 'warning', 'danger'],
-      typelisti: 0,
+      typelist: {
+        index: 0,
+        value: [{
+          name: 'succeed',
+          s: '成功'
+        }, {
+          name: 'warning',
+          s: '警告'
+        }, {
+          name: 'danger',
+          s: '严重'
+        }]
+      },
       cont: `<div>现在时间是: </div><div>${new Date()}</div>`,
       type: 'success',
       icon: true,
@@ -43,7 +54,7 @@ Page({
       cont: that.data.message.cont,
       time: that.data.message.time,
       icon: that.data.message.icon,
-      type: that.data.message.typelist[that.data.message.typelisti],
+      type: that.data.message.typelist.value[that.data.message.typelist.index].name,
       mask: that.data.message.mask,
       succeed() {
         console.log('调用成功');

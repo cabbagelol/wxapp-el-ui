@@ -1,27 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bcb96f6b-c814-45f6-bc20-aea94fe2cee1" name="Default Changelist" comment="2019-5-15 10:01:53">
+    <list default="true" id="bcb96f6b-c814-45f6-bc20-aea94fe2cee1" name="Default Changelist" comment="2019-5-16 18:02:48">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/_button/button.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/component/_button/button.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/_button/button.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/component/_button/button.wxss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/_head/head.js" beforeDir="false" afterPath="$PROJECT_DIR$/component/_head/head.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/_head/head.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/component/_head/head.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/_head/head.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/component/_head/head.wxss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/_tip/tip.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/component/_tip/tip.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/_tip/tip.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/component/_tip/tip.wxss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/button/button.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/button/button.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/button/button.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/button/button.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/button/button.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/button/button.wxss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/content/content.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/content/content.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index/index.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index/index.wxss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/tip/tip.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/tip/tip.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/tip/tip.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/tip/tip.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/tip/tip.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/tip/tip.wxss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project.config.json" beforeDir="false" afterPath="$PROJECT_DIR$/project.config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styles/button.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/public/styles/button.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/component/_message/message.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/component/_message/message.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/component/_message/message.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/component/_message/message.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/component/_tab/tab.js" beforeDir="false" afterPath="$PROJECT_DIR$/component/_tab/tab.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/component/_tip/tip.js" beforeDir="false" afterPath="$PROJECT_DIR$/component/_tip/tip.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/message/message.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/message/message.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/message/message.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/message/message.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/tag/tag.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/tag/tag.wxml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -37,7 +25,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/content/content.wxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
+            <state relative-caret-position="285">
               <caret line="15" column="10" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
             </state>
           </provider>
@@ -56,8 +44,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pages/content/content.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
+            <state relative-caret-position="361">
+              <caret line="40" column="21" selection-start-line="40" selection-start-column="21" selection-end-line="40" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -161,7 +149,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -201,12 +188,14 @@
           <select />
         </subPane>
       </pane>
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../YouEjia" />
+    <property name="last_opened_file_path" value="F:/YouEjia" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -258,7 +247,8 @@
       <workItem from="1557024039326" duration="599000" />
       <workItem from="1557044198709" duration="2929000" />
       <workItem from="1557379516337" duration="599000" />
-      <workItem from="1557713595472" duration="11883000" />
+      <workItem from="1557713595472" duration="14757000" />
+      <workItem from="1558010531558" duration="597000" />
     </task>
     <task id="LOCAL-00001" summary="2019年3月26日09:56:18">
       <created>1553565384081</created>
@@ -463,21 +453,33 @@
       <option name="project" value="LOCAL" />
       <updated>1557885717927</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="2019-5-16 17:46:55">
+      <created>1558000023759</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1558000023759</updated>
+    </task>
+    <task id="LOCAL-00031" summary="2019-5-16 18:02:48">
+      <created>1558000974233</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1558000974233</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51801000" />
+    <option name="totallyTimeSpent" value="55272000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="-8" width="1874" height="1096" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27854386" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.29123" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="Repositories" order="3" weight="0.32984003" />
-      <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -487,11 +489,12 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Weex Console" order="7" sideWeight="0.49813294" weight="0.32744282" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.4992" visible="true" weight="0.32744282" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="9" sideWeight="0.4992" visible="true" weight="0.32744282" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.24844074" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5008" side_tool="true" weight="0.49028572" />
       <window_info anchor="bottom" id="SmartIM" order="12" />
       <window_info anchor="bottom" id="Alipay DevTools" order="13" />
+      <window_info anchor="bottom" id="Messages" order="14" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -580,8 +583,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="2019-4-12 17:44:02" />
-    <MESSAGE value="2019-4-12 19:07:50" />
     <MESSAGE value="2019-4-12 19:23:21" />
     <MESSAGE value="2019-4-13 11:10:32" />
     <MESSAGE value="2019-4-13 11:12:39" />
@@ -605,7 +606,9 @@
     <MESSAGE value="2019-5-13 18:37:54" />
     <MESSAGE value="2019-5-15 09:59:02" />
     <MESSAGE value="2019-5-15 10:01:53" />
-    <option name="LAST_COMMIT_MESSAGE" value="2019-5-15 10:01:53" />
+    <MESSAGE value="2019-5-16 17:46:55" />
+    <MESSAGE value="2019-5-16 18:02:48" />
+    <option name="LAST_COMMIT_MESSAGE" value="2019-5-16 18:02:48" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/demo/README.md" />
@@ -652,13 +655,7 @@
     <entry file="file://$PROJECT_DIR$/www/js/jszip.js" />
     <entry file="file://$PROJECT_DIR$/www/Hello.txt" />
     <entry file="file://$PROJECT_DIR$/www/index.html" />
-    <entry file="file://$USER_HOME$/Desktop/www/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="26" lean-forward="true" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/Desktop/www/index.html" />
     <entry file="file://$PROJECT_DIR$/component/_checkbox/checkbox.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
@@ -829,7 +826,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/content/content.wxml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
+        <state relative-caret-position="285">
           <caret line="15" column="10" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
         </state>
       </provider>
@@ -842,8 +839,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/content/content.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
+        <state relative-caret-position="361">
+          <caret line="40" column="21" selection-start-line="40" selection-start-column="21" selection-end-line="40" selection-end-column="21" />
         </state>
       </provider>
     </entry>

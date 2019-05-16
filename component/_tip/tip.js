@@ -3,7 +3,7 @@ Elui({
   properties: {
     type: {
       type: String,
-      value: 'success'
+      value: 'succeed'
     },
     border: {
       type: Boolean,
