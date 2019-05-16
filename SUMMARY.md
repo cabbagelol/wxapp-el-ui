@@ -1,6 +1,7 @@
 # Summary
 
 * [引导](README.md)
+* [下载](xia-zai.md)
 * [快速配置](kuai-su-pei-zhi.md)
 * [重写Class类](zhong-xie-class-lei.md)
 * [通用事件](tong-yong-shi-jian.md)
@@ -35,5 +36,5 @@
   * [tip 提示](tip-ti-shi.md)
 * [设计规范](she-ji-gui-fan.md)
 * [设计资源](she-ji-zi-yuan.md)
-* [版本](ban-ben.md)
+* [下载](xia-zai.md)
 
