@@ -1,5 +1,4 @@
 import Elui from '../baseComponent';
-const config = require("../index.js");
 const tabBehavior = require('tabBehavior');
 Elui({
   externalClasses: [
@@ -24,7 +23,8 @@ Elui({
     animation: {
       type: Boolean,
       value: false
-    }
+    },
+    index: Number
   },
 
   behaviors: [tabBehavior],
@@ -51,33 +51,39 @@ Elui({
 
   ready() {
     var that = this;
-    if (config.util.in(that)) {
-      config.util.$('.__tab-nav-title__').then(function(e) {
-        for (var i = 0; i < e.length; i++) {
-          if (e['.__tab-nav-title__' + i].width > 0) {
-            that.data.tabs.data[i]['isTitle'] = true
+    var tabsIndex = {};
+      that.$fields('.__tab-nav-title__', {computedStyle: ['width']}).then(e=>{
+      console.log(e)
+      for (var i = 0; i < e.length; i++) {
+        if (parseInt(e['.__tab-nav-title__' + i].width) > 0) {
+          that.data.tabs.data[i]['isTitle'] = true
+        }
+      }
+      that.setData({
+        'tabs.data': that.data.tabs.data
+      })
+    })
+
+    that.$fields('.__tab-nav__', { computedStyle: ['width']}).then(e=>{
+      var width = 0
+      for(var i in e){
+        if (e[i].width){
+          width = parseInt(e[i].width)
+        }
+      }
+      if (that.data.scroll.x <= width / 2) {
+        that.data.tabs.data.forEach(function (i, index) {
+          if (i.title == that.data.active) {
+            that.setData({
+              'tabs.title': that.data.active || that.data.tabs.data[0].title,
+              'tabs.index': index
+            });
           }
-        }
-        that.setData({
-          'tabs.data': that.data.tabs.data
         })
-      })
-      config.util.$('.__tab-nav__').then(function(e) {
-        if (that.data.scroll.x <= (e['.__tab-nav__'].width / 2)) {
-          that.data.tabs.data.forEach(function(i, index) {
-            if (i.title == that.data.active) {
-              that.setData({
-                'tabs.title': that.data.active || that.data.tabs.data[0].title,
-                'tabs.index': index,
-                tabnav: e['.__tab-nav__']
-              });
-            }
-          })
-          that.setSelectContent();
-          that.onChange();
-        }
-      })
-    }
+      }
+      that.setSelectContent();
+      that.onChange();
+    })
   },
 
   created() {
