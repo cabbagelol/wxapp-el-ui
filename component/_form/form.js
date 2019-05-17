@@ -39,6 +39,12 @@ Elui({
     },
     '../_button/button': {
       type: 'child'
+    },
+    '../_img/img': {
+      type: 'child',
+      linked(target) {
+        this.setValue(target)
+      }
     }
   },
 

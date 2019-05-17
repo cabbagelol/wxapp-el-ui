@@ -1,7 +1,6 @@
 @import './style/font.wxss';
 
 .__head__ {
-  /* overflow: hidden; */
   position: relative;
 }
 
@@ -18,7 +17,7 @@
 }
 
 .__head-navdisabled__ {
-  opacity: .4;
+  opacity: 0.4;
 }
 
 .__head_up__ {
@@ -36,7 +35,6 @@
 
 .__head_block__ {
   z-index: 55;
-  /* overflow: hidden; */
   display: inline-flex;
   align-items: center;
   width: 100%;
@@ -60,7 +58,6 @@
 
 .__head_block_title__ > view {
   white-space: nowrap;
-  /* overflow: hidden; */
   text-overflow: ellipsis;
 }
 
@@ -76,6 +73,7 @@
 
 .__head_block_lbtns__ > view:first-child {
   padding: 0 0 0 25rpx;
+  font-weight: 600;
 }
 
 .__head_block_rbtns__ {
@@ -85,7 +83,7 @@
 }
 
 .__head_block_rbtns__ > view:first-child {
-  padding: 0 25rpx 0 0 ;
+  padding: 0 25rpx 0 0;
 }
 
 .__head_block_rbtns__ > view {

@@ -27,6 +27,14 @@
     <el-focus verification='0' verifications='{{focus.verifications}}'>
       <el-textarea title='备忘' name='remark' value='您好先生，请问我可以要杯饮料吗?' placeholder='备忘'></el-textarea>
     </el-focus>
+    <el-focus verification='0'>
+        <el-img name='cardid' style="display: block;height: 200rpx;"></el-img>
+    </el-focus>
+    <el-focus verification='0'>
+      <el-file album bindsucceed='onImg' data-e="focus.img" name='img'>
+        <el-img src='{{focus.img || ""}}' style="display: block;height: 200rpx;"></el-img>
+      </el-file>
+    </el-focus>
   </view>
 
   <view class='container'>

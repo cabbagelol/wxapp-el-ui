@@ -42,7 +42,7 @@ Elui({
           'content.head.height': parseInt(res['.head'].height),
           'content.body.height': info.screenHeight - parseInt(res['.head'].height) - parseInt(res['.footer'].height) - info.statusBarHeight,
           'content.footer.height': parseInt(res['.footer'].height),
-          message: that.selectComponent(".messgae")
+          'message': that.selectComponent(".messgae")
         })
         that.srcollHead = -(that.data.content.body.view.height - that.data.content.body.height);
         that.triggerEvent('ready', {

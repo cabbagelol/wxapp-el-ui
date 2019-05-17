@@ -25,6 +25,18 @@ Elui({
     '../_form/form': {
       type: 'parent'
     },
+    '../_img/img': {
+      type: 'child',
+      linked(target) {
+        this.setValue(target)
+      }
+    },
+    '../_file/file': {
+      type: 'child',
+      linked(target) {
+        this.setValue(target)
+      }
+    },
     '../_input/input': {
       type: 'child',
       linked(target) {
@@ -110,6 +122,7 @@ Elui({
       err = [];
       try {
         that.data.verification ? that.data.verification.split(',').forEach(function(i, index) {
+          console.log(that.data.focus_.data)
           let val = that.data.focus_.data[0].data.value;
           let t = that.data.verification_;
           for (var j in t) {

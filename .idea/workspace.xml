@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bcb96f6b-c814-45f6-bc20-aea94fe2cee1" name="Default Changelist" comment="2019-5-16 18:02:48">
+    <list default="true" id="bcb96f6b-c814-45f6-bc20-aea94fe2cee1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/component/_body/body.js" beforeDir="false" afterPath="$PROJECT_DIR$/component/_body/body.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/component/_file/file.js" beforeDir="false" afterPath="$PROJECT_DIR$/component/_file/file.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/component/_focus/focus.js" beforeDir="false" afterPath="$PROJECT_DIR$/component/_focus/focus.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/component/_form/form.js" beforeDir="false" afterPath="$PROJECT_DIR$/component/_form/form.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/component/_img/images/cover.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/component/_img/img.js" beforeDir="false" afterPath="$PROJECT_DIR$/component/_img/img.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/component/_img/imgtemplate.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/component/_img/imgtemplate.wxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/component/_message/message.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/component/_message/message.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/_message/message.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/component/_message/message.wxss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/_tab/tab.js" beforeDir="false" afterPath="$PROJECT_DIR$/component/_tab/tab.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/_tip/tip.js" beforeDir="false" afterPath="$PROJECT_DIR$/component/_tip/tip.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/message/message.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/message/message.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/message/message.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/message/message.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/tag/tag.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/tag/tag.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/content/content.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/content/content.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/focus/focus.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/focus/focus.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/focus/focus.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/focus/focus.wxml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -101,7 +105,6 @@
         <option value="$PROJECT_DIR$/pages/rule/rule.js" />
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
         <option value="$PROJECT_DIR$/pages/index/index.wxml" />
-        <option value="$PROJECT_DIR$/component/_tab/tab.js" />
         <option value="$PROJECT_DIR$/component/_address/address.json" />
         <option value="$PROJECT_DIR$/component/_address/address.wxml" />
         <option value="$PROJECT_DIR$/component/_address/address.wxss" />
@@ -134,6 +137,7 @@
         <option value="$PROJECT_DIR$/pages/input/input.wxml" />
         <option value="$PROJECT_DIR$/component/index.js" />
         <option value="$PROJECT_DIR$/pages/content/content.wxml" />
+        <option value="$PROJECT_DIR$/component/_tab/tab.js" />
       </list>
     </option>
   </component>
@@ -193,7 +197,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="F:/YouEjia" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../YouEjia" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
@@ -248,7 +252,7 @@
       <workItem from="1557044198709" duration="2929000" />
       <workItem from="1557379516337" duration="599000" />
       <workItem from="1557713595472" duration="14757000" />
-      <workItem from="1558010531558" duration="597000" />
+      <workItem from="1558010531558" duration="1251000" />
     </task>
     <task id="LOCAL-00001" summary="2019年3月26日09:56:18">
       <created>1553565384081</created>
@@ -467,11 +471,18 @@
       <option name="project" value="LOCAL" />
       <updated>1558000974233</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="2019-5-16 23:01:58">
+      <created>1558018925770</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1558018925770</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55272000" />
+    <option name="totallyTimeSpent" value="55926000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="-8" width="1874" height="1096" extended-state="6" />
@@ -583,7 +594,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="2019-4-12 19:23:21" />
     <MESSAGE value="2019-4-13 11:10:32" />
     <MESSAGE value="2019-4-13 11:12:39" />
     <MESSAGE value="更新 2019-4-16 09:44:08" />
@@ -608,7 +618,8 @@
     <MESSAGE value="2019-5-15 10:01:53" />
     <MESSAGE value="2019-5-16 17:46:55" />
     <MESSAGE value="2019-5-16 18:02:48" />
-    <option name="LAST_COMMIT_MESSAGE" value="2019-5-16 18:02:48" />
+    <MESSAGE value="2019-5-16 23:01:58" />
+    <option name="LAST_COMMIT_MESSAGE" value="2019-5-16 23:01:58" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/demo/README.md" />

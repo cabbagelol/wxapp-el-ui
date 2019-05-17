@@ -11,6 +11,14 @@
     </view>
   </el-cell>
 
+  <el-cell title='颜色' class='radio'>
+    <view slot='content'>
+      <el-checkbox checked='{{true}}' color='#000'>黑色 · 单个未选择复选</el-checkbox>
+      <el-checkbox checked='{{true}}' color='#8bc34a'>绿色 · 单个未选择复选</el-checkbox>
+      <el-checkbox checked='{{true}}' color='#f44336'>红色 · 单个未选择复选</el-checkbox>
+    </view>
+  </el-cell>
+
   <el-form class='radio-form' bindsubmit='onForm'>
     <el-cell title='[{{checkbox.a.value}}]' label='复选'></el-cell>
     <el-checkbox-group name='checkbox-a' value='{{checkbox.a.value}}' bindchange='onCheckboxGroup' data-e='checkbox.a.value'>

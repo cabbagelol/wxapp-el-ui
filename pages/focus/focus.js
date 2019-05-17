@@ -33,6 +33,13 @@ Page({
     })
   },
 
+  onImg (e) {
+    console.log(e.detail.tempFilePaths[0])
+    this.setData({
+      'focus.img': e.detail.tempFilePaths[0]
+    })
+  },
+
   onForm (e) {
     console.log(e.detail)
   }

@@ -1,6 +1,6 @@
 <label class='__radio__ {{disabled ? "__radio-disabled__" : ""}}' bindtap='setValueChecked'>
   <radio name='{{name}}' checked='{{checked}}' value='{{value}}' disabled='{{disabled}}' />
-  <view class='__radio-dot__ {{checked ? "" : "__radio-dot-checked__"}} {{disabled ? "__radio-disabled__" : ""}}' wx:if='{{isradio}}'>
+  <view class='__radio-dot__ {{checked ? "__color-block-primary__" : "__radio-dot-checked__"}} {{disabled ? "__radio-disabled__" : ""}}' style='background: {{checked && color ? color : ""}}' wx:if='{{isradio}}'>
     <view class='__radio-dot-item__'></view>
   </view>
   <slot />

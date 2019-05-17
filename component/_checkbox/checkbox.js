@@ -17,6 +17,10 @@ Elui({
       type: String,
       value: ''
     },
+    color: {
+      type: String,
+      value: ''
+    },
     ischeckbox: {
       type: Boolean,
       value: true

@@ -112,6 +112,11 @@ Page({
           url: '../focus/focus',
           title: '焦点与校验',
           label: 'focus'
+        },
+        {
+          url: '../steps/steps',
+          title: '步骤条',
+          label: 'steps'
         }
       ],
     }, {

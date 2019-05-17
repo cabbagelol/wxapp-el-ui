@@ -25,7 +25,7 @@ Page({
     if (that.data.message) {return}
     that.setData({ message: true})
     that.body.data.message.onMessage({
-      type: 'success',
+      type: 'succeed',
       cont: '内容' + new Date(),
       time: 3000,
       succeed() {

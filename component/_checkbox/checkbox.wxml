@@ -1,5 +1,5 @@
 <label class='__checkbox__ {{disabled ? "__checkbox-disabled__" : ""}}' bindtap='setValueChecked'>
-  <view class='__checkbox-dot__ {{checked ? "" : "__checkbox-dot-checked__"}} {{disabled ? "__checkbox-disabled__" : ""}}' wx:if='{{ischeckbox}}'>
+  <view class='__checkbox-dot__ {{checked ? "__color-block-primary__" : "__checkbox-dot-checked__"}} {{disabled ? "__checkbox-disabled__" : ""}}' style='background: {{checked && color ? color : ""}}' wx:if='{{ischeckbox}}'>
     <view class='__checkbox-dot-item__'></view>
   </view>
   <slot />

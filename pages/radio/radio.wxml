@@ -11,6 +11,14 @@
     </view>
   </el-cell>
 
+  <el-cell title='颜色' class='radio'>
+    <view slot='content'>
+      <el-radio checked='{{true}}' color='#000'>黑色 · 单个未选择单选</el-radio>
+      <el-radio checked='{{true}}' color='#8bc34a'>绿色 · 单个未选择单选</el-radio>
+      <el-radio checked='{{true}}' color='#f44336'>红色 · 单个未选择单选</el-radio>
+    </view>
+  </el-cell>
+
   <el-form class='radio-form' bindsubmit='onForm'>
     <el-cell title='{{radio.a.value}}' label='你可以完全的自定义它，无论放在哪里'></el-cell>
     <el-radio-group name='radio1' value='{{radio.a.value}}' bindchange='onRadioGroup' data-e='radio.a.value'>

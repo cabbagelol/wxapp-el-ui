@@ -1,3 +1,5 @@
+@import '../_colors/colors';
+
 .__radio__ {
   display: inline-flex;
   width: 100%;
@@ -10,10 +12,10 @@
 }
 
 .__radio-dot__ {
+  transition: all .25s;
   width: 20rpx;
   height: 20rpx;
   padding: 6rpx;
-  background: #18B6C1;
   border-radius: 50%;
   margin-right: 10rpx;
 }

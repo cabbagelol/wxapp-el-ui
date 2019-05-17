@@ -41,7 +41,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 28,
+			"current": 29,
 			"list": [
 				{
 					"id": -1,
@@ -243,6 +243,13 @@
 					"id": -1,
 					"name": "分割线",
 					"pathName": "pages/divider/divider",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "steps",
+					"pathName": "pages/steps/steps",
 					"scene": null
 				}
 			]

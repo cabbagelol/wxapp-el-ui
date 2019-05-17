@@ -4,11 +4,13 @@ Elui({
   properties: {
     src: {
       type: String,
-      value: './images/cover.png',
+      value: './image/cover.png',
       observer(newVal_, oldVal_) {
         this.setData({
-          src_: oldVal_
+          src_: oldVal_,
+          value: newVal_
         })
+        console.log(this.data, this.data.url, newVal_)
       }
     },
     style: {
@@ -42,10 +44,27 @@ Elui({
     loadcolor: {
       type: Object,
       value: {}
+    },
+    name: {
+      type: String,
+      value: ''
     }
   },
 
+  relations: {
+    '../_form/form': {
+      type: 'parent'
+    },
+    '../_focus/focus': {
+      type: 'parent'
+    },
+    '../_file/file': {
+      type: 'parent'
+    },
+  },
+
   data: {
+    value: '',
     src_: '',
     load: true
   },
@@ -78,7 +97,7 @@ Elui({
         if (parseInt(_img.width) == 0 || parseInt(_img.height) == 0) {
           that.setData({
             style: `${that.data.style || ""};width:${50}px;height:${50}px`,
-            load: false // 网络
+            load: false, // 网络
           })
         }
         that.triggerEvent('load', Object.assign(that.getValue(_e), {

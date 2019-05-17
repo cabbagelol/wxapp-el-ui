@@ -45,10 +45,27 @@ Elui({
     video: {
       type: Boolean,
       value: false
+    },
+    name: {
+      type: String,
+      value: ''
     }
   },
 
+  relations: {
+    '../_form/form': {
+      type: 'parent'
+    },
+    '../_focus/focus': {
+      type: 'parent'
+    },
+    '../_img/img': {
+      type: 'child'
+    },
+  },
+
   data: {
+    value: '',
     file_: {}
   },
 
@@ -63,6 +80,9 @@ Elui({
     onSucceed(d_, type_) {
       var that = this;
       d_.type = type_;
+      that.setData({
+        value: d_.tempFilePaths
+      })
       that.triggerEvent('succeed', d_)
     },
 

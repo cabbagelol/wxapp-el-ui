@@ -17,6 +17,10 @@ Elui({
       type: String,
       value: ''
     },
+    color: {
+      type: String,
+      value: ''
+    },
     isradio: {
       type: Boolean,
       value: true
