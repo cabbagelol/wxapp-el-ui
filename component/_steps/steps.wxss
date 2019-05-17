@@ -1,0 +1,8 @@
+.__steps__ {
+  display: inline-flex;
+  width: 100%;
+}
+
+.__steps-direction-vertical__ {
+  flex-direction: column;
+}

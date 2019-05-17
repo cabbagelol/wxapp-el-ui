@@ -1,0 +1,11 @@
+<el-head head='{{head}}' stickie='true'></el-head>
+<view>
+  <view>  horizontal vertical</view>
+  <el-steps direction='horizontal'>
+    <el-step wx:for='{{3}}' wx:key='{{index}}'>233</el-step>
+  </el-steps>
+
+  <el-steps direction='vertical'>
+    <el-step wx:for='{{3}}' wx:key='{{index}}'>233</el-step>
+  </el-steps>
+</view>

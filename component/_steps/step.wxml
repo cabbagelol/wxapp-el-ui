@@ -1,0 +1,5 @@
+<view class='__step__'>
+  <view class='__step-title__'>标题</view>
+  <view class='__step-vice__'>副标题内容</view>
+  <!-- <slot/> -->
+</view>

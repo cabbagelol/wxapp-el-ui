@@ -1,0 +1,13 @@
+.__step__ {
+  width: 100%;
+}
+
+.__step-title__ {
+  font-size: 30rpx;
+  color: #000;
+}
+
+.__step-vice__ {
+  font-size: 20rpx;
+  color: #999;
+}
