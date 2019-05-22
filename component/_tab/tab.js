@@ -23,7 +23,11 @@ Elui({
       type: Boolean,
       value: false
     },
-    index: Number
+    index: Number,
+    linefill: {
+      type: Boolean,
+      value: true
+    }
   },
 
   behaviors: [require('tabBehavior')],

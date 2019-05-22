@@ -19,6 +19,15 @@ Elui({
     }
   },
 
+  relations: {
+    '../_body/body': {
+      type: 'parent',
+      linked(parent) {
+        this.parent = parent;
+      }
+    }
+  },
+
   data: {
     nav: {
       disabled: false,
@@ -38,9 +47,8 @@ Elui({
         }
       })
     })
-
   },
-
+  
   ready () {
     var that = this;
     that.setData({
@@ -48,6 +56,9 @@ Elui({
         disabled: getCurrentPages().length <= 1 ? true : false
       })
     })
+    if (!!that.parent) {
+      that.parent.getDom(true);
+    }
   },
 
   methods: {

@@ -1,7 +1,14 @@
 import Elui from '../baseComponent';
-const config = require("../index.js");
 Elui({
   properties: {
+    essential: {
+      type: String,
+      value: ''
+    },
+    deputy: {
+      type: String,
+      value: 'rgba(0, 0, 0, 0.06)'
+    },
     color: {
       type: Object,
       value: {

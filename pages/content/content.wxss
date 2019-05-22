@@ -4,12 +4,11 @@
 
 .content-body {
   background: #EEE;
-  border-bottom: 1px solid #F9F9F9;
 }
 
 .content-footer {
   text-align: center;
   padding: 20rpx 0;
   background: #F2F2F2;
-  border-top: 1px solid #F9F9F9;
+  border-top: 1px solid #e3e3e3;
 }

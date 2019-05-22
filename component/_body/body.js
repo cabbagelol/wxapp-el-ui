@@ -22,32 +22,40 @@ Elui({
     }
   },
 
-  lifetimes: {
-    attached() {
-      var that = this;
-      setTimeout(() => {
-        that.getDom();
-      }, 100)
+  ready () {
+    if (!this._head) {
+      this.getDom();
+    }
+  },
+
+  relations: {
+    '../_head/head': {
+      type: 'child',
+      linked(parent) {
+        this._head = parent;
+      }
     }
   },
 
   methods: {
-    getDom() {
+    getDom(isBar_) {
       var that = this;
       var info = wx.getSystemInfoSync();
+      const isbar = (!!isBar_ ? info.statusBarHeight : 0);
       that.$fields('.body,.head,.footer', {
         computedStyle: ['height']
       }).then(res => {
         that.setData({
-          'content.head.height': parseInt(res['.head'].height),
-          'content.body.height': info.screenHeight - parseInt(res['.head'].height) - parseInt(res['.footer'].height) - info.statusBarHeight,
-          'content.footer.height': parseInt(res['.footer'].height),
-          'message': that.selectComponent(".messgae")
+          'content.head.height': parseFloat(res['.head'].height) + isbar,
+          'content.body.height': info.screenHeight - parseFloat(res['.head'].height) - parseFloat(res['.footer'].height) - isbar,
+          'content.footer.height': parseFloat(res['.footer'].height),
+          'message': that.selectComponent(".messgae") // 0.0.6版本移除
         })
         that.srcollHead = -(that.data.content.body.view.height - that.data.content.body.height);
+        that.message = that.selectComponent(".messgae"); // 0.0.6使用过渡
         that.triggerEvent('ready', {
           body: {
-            head: that.data.content.head.height,
+            head: that.data.content.head.height ,
             body: that.data.content.body.height,
             footer: that.data.content.footer.height,
             scrollButtonY: that.srcollHead

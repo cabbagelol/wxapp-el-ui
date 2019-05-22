@@ -1,5 +1,5 @@
 <el-head head='{{head}}' stickie='true'></el-head>
-<el-tab class='tab' animation='{{tab.animation}}' isscroll='{{tab.scroll}}' active='{{tab.title}}' bindchange='onTabChange' index="{{tab.index}}">
+<el-tab class='tab' animation='{{tab.animation}}' isscroll='{{tab.scroll}}' active='{{tab.title}}' bindchange='onTabChange' index="{{tab.index}}" linefill='{{tab.linefill}}'>
   <view slot='left' class='tab-custom' wx:if='{{tab.custom}}'>
     左侧
   </view>
@@ -31,7 +31,9 @@
   <el-cell title="标题">
     <input slot="content" value="{{tab.title}}" data-e="tab.title" bindinput="$" disabled />
   </el-cell>
-
+  <el-cell title="选择区域">
+    <input slot="content" value="{{tab.title}}" data-e="tab.title" bindinput="$" disabled />
+  </el-cell>
   <el-cell title="自定义" label="中卡槽">
     <switch slot="content" checked="{{tab.custom}}" data-e="tab.custom" bindchange="$" />
   </el-cell>
@@ -43,5 +45,8 @@
   </el-cell>
   <el-cell title="是否展现内容">
     <switch slot="content" checked="{{tab.content}}" data-e="tab.content" bindchange="$" />
+  </el-cell>
+    <el-cell title="线条铺平">
+    <switch slot="content" checked="{{tab.linefill}}" data-e="tab.linefill" bindchange="$" />
   </el-cell>
 </view>

@@ -13,6 +13,7 @@ Page({
       back: true
     },
     tab: {
+      linefill: false,
       custom: false,
       scroll: true,
       animation: true,

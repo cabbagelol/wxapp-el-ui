@@ -10,7 +10,6 @@ Elui({
           src_: oldVal_,
           value: newVal_
         })
-        console.log(this.data, this.data.url, newVal_)
       }
     },
     style: {
