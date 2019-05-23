@@ -28,11 +28,12 @@
 | round | Boolean | false | 圆角 | 0.0.3 |
 | textColor | String | "" | 文本颜色 | 0.0.3 |
 | value | String | "" | 值 | 0.0.6 |
+| close | Boolean | false | 是否显示关闭标签按钮,实际不会隐藏自身。 | 0.0.6 |
 
 ### 使用
 
 ```html
-<el-tag slot='content' size='5' color='#F57724' textColor='#FFF' plain round>
+<el-tag size='5' color='#F57724' textColor='#FFF' plain round>
     背景颜色
 </el-tag>
 ```

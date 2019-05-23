@@ -49,7 +49,7 @@
 | danger | 严重 | 0.0.6 |
 | - | 默认 | 0.0.6 |
 
-`bindsucceed`: function \(\) {} 成功结果 \| 0.0.6 
+`bindsucceed`: function \(\) {} 成功结果 \| 0.0.6
 
 `bindcancel`: function \(\) {} 用户主动上滑取消触发 \| 0.0.6
 
