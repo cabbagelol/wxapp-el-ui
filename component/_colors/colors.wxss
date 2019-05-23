@@ -76,7 +76,7 @@
 }
 
 .__color-block-warning__ {
-  background-color: #fffae9;
+  background-color: #ffc107;
 }
 
 .__color-border-warning__ {

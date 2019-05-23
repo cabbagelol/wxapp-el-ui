@@ -10,13 +10,13 @@
       {{message.typelist.value[button.size.index].s || '选择'}}
     </picker>
   </el-cell>
-  <!-- <el-cell title="类型">
+  <el-cell title="类型">
     <picker slot='content' bindchange="onPicker" value="{{message.typelisti}}" range="{{message.typelist}}">
       <view class="picker">
         {{message.typelist[message.typelisti]}}
       </view>
     </picker>
-  </el-cell> -->
+  </el-cell>
   <el-cell title="停留时间">
     <input slot="content" value="{{message.time}}" data-e="message.time" bindinput="$" />
   </el-cell>

@@ -18,6 +18,19 @@ Page({
       that.setData({
         t: '213sd'
       })
-    }, 1000)
+    }, 1000);
+    this.messgae = this.selectComponent(".messgae");
+  },
+
+  onClose (e) {
+    var that = this;
+    that.messgae.onMessage({
+      cont: '关闭标签'
+    })
+    console.log(1)
+  },
+
+  onTag (e) {
+    console.log(2)
   }
 })

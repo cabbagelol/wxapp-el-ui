@@ -18,8 +18,8 @@ button {
 }
 
 .__button-active__::after {
-  transition: all 0.25s;
   content: '';
+  transition: all 0.25s;
   position: absolute;
   background: #000;
   opacity: 0.1;
@@ -60,13 +60,11 @@ button {
   border-radius: 50px !important;
 }
 
-.__color-block-primary__,
-.__color-block-succeed__,
-.__color-block-warning__,
+.__color-block-primary__, .__color-block-succeed__, .__color-block-warning__,
 .__color-block-danger__ {
   color: #fff;
 }
 
 .__color-block-default__ {
-  color: #777
+  color: #777;
 }

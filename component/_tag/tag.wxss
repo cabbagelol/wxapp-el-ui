@@ -5,7 +5,35 @@
   color: #1a1a1a;
   margin-right: 10rpx;
   background-color: #f2f2f2;
-  border-radius: .2rem;
+  border-radius: 0.2rem;
+  position: relative;
+}
+
+.__tag-close__ {
+  position: absolute;
+  top: -10rpx;
+  right: -10rpx;
+  width: 20rpx;
+  height: 20rpx;
+  font-size: 20rpx;
+  border-radius: 1000rpx;
+}
+
+.__tag-close__ view {
+  content: '';
+  position: absolute;
+  width: 13rpx;
+  height: 2rpx;
+  top: 10rpx;
+  left: 5rpx;
+}
+
+.__tag-close__ view.f {
+  transform: rotate(45deg);
+}
+
+.__tag-close__ view.l {
+  transform: rotate(-45deg);
 }
 
 .__tag__::last-child {
