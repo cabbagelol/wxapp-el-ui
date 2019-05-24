@@ -16,7 +16,3 @@
   position: relative;
   -webkit-overflow-scrolling: touch;
 }
-
-.__content-footer__ {
-  padding-bottom: env(safe-area-inset-bottom);
-}

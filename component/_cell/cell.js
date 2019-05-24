@@ -1,6 +1,13 @@
 import Elui from '../baseComponent';
-const config = require("../index.js");
 Elui({
+  externalClasses: [
+    'el-title',
+    'el-label',
+    'el-cont',
+    'el-icon',
+    'el-onward'
+  ],
+
   options: {
     multipleSlots: true
   },
@@ -9,7 +16,6 @@ Elui({
     title: String,
     label: String,
     icon: Boolean,
-    elclass: String,
     islink: Boolean
   },
 
