@@ -34,14 +34,14 @@
 
 ##### 1.局部
 
-|  | 说明 | 版本 |
+| 名称 | 说明 | 版本 |
 | :--- | :--- | :--- |
 | el-tag | 外壳 | 0.0.6 |
 | el-slot | 由于tag被text所包裹，因此设置外壳的样式可能不被text所使用，这里el-slot将直接设置在text上，详情查看微信文档的text | 0.0.6 |
 
 ### 事件
 
-bindclose: function \(e\) {} 触发关闭标签按钮 \| 0.0.6
+`bindclose`: function \(e\) {} 触发关闭标签按钮 \| 0.0.6
 
 @e.detail
 
