@@ -17,7 +17,7 @@
 }
 ```
 
-## &lt;checkbox-group&gt;
+## &lt;el-checkbox-group&gt;
 
 ### 属性
 
@@ -28,7 +28,7 @@
 
 ### 事件
 
-`bindchange`: function \(e\) {} 选项变更时
+`bindchange`: function \(e\) {} 选项变更时 \| 0.0.5
 
 | 名称 | 类型 | 说明 | 版本 |
 | :--- | :--- | :--- | :--- |
@@ -52,7 +52,7 @@ Page({
 })
 ```
 
-## &lt;checkbox&gt;
+## &lt;el-checkbox&gt;
 
 ### 属性
 
@@ -63,6 +63,15 @@ Page({
 | checked | Boolean | false | 复选初始选中状态 | 0.0.5 |
 | ischeckbox | Boolean | false | 是否可见默认的选择框 | 0.0.5 |
 | disabled | Boolean | false | 禁用 | 0.0.5 |
+
+### 事件
+
+`bindchange: function (e) {} 当el-`checkbox的状态发现变动时`| 0.0.6`
+
+| 名称 | 说明 | 版本 |
+| :--- | :--- | :--- |
+| el | - | 0.0.6 |
+| value | 值 | 0.0.6 |
 
 ### 使用
 
