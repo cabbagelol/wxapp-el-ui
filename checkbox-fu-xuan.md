@@ -63,6 +63,7 @@ Page({
 | checked | Boolean | false | 复选初始选中状态 | 0.0.5 |
 | ischeckbox | Boolean | false | 是否可见默认的选择框 | 0.0.5 |
 | disabled | Boolean | false | 禁用 | 0.0.5 |
+| color | String | "" | 复选颜色 | 0.0.6 |
 
 ### 事件
 
