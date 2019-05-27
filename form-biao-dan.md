@@ -48,11 +48,11 @@
 ### 使用
 
 ```html
-<el-form>
+<el-form name='from'>
     <!-- 详细的表达控件请看控件说明 -->
-    <el-input />
-    <el-textarea />
-    <el-address />
+    <el-input name='age' />
+    <el-textarea name='remark' />
+    <el-address name='address' />
 
     <el-button type='submit'>提交</el-button>
     <el-button type='reset'>重置</el-button>
