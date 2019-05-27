@@ -28,8 +28,16 @@
 | mode | String | aspectFill | [https://developers.weixin.qq.com/miniprogram/dev/component/image.html，控件默认是aspectFill](https://developers.weixin.qq.com/miniprogram/dev/component/image.html，控件默认是aspectFill) | 0.0.2 |
 | lazyload | Boolean | false |  | 0.0.2 |
 | arialabel | String |  |  | 0.0.2 |
+| isload | Boolean | false | 是否可见加载符, 关联[load](/jia-zai-fu.md)控件 |  |
 | loadtype | String | “” | 加载符类型，参考[load](/jia-zai-fu.md)控件的type属性 | 0.0.5 |
 | loadcolor | Object | {} | 加载符颜色，参考[load](/jia-zai-fu.md)控件的color属性 | 0.0.5 |
+
+##### src的合法值:
+
+| 名称 | 说明 | 版本 |
+| :--- | :--- | :--- |
+| base64 | - | 0.0.2 |
+| http/https | - | 0.0.2 |
 
 ### 事件
 
