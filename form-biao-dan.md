@@ -1,6 +1,6 @@
 # form-表单
 
-获取表单控件值，联动`<el-input>` `<el-textarea>` `<el-address> <el-radio>`控件
+获取表单控件值，联动`<el-input>` `<el-textarea>` `<el-address>` `<el-radio>` `<el-file>` `<el-img>`控件
 
 ---
 
