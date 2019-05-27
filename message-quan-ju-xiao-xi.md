@@ -56,6 +56,8 @@
 ### 使用
 
 ```html
+<el-message class='messgae'></el-message>
+
 <el-message class='messgae' icon='{{false}}'>
     <el-tag>消息</el-tag>
 </el-message>
