@@ -79,16 +79,29 @@ Q: **无法获取所支持表单值**
 A: 当使用cell等这类控件包裹时、form无法获取。
 
 ```html
-<el-from>
+<el-from name='from'>
  <!-- 这种情况无法获取 -->
  <el-cell>
-  <el-input />
+  <el-input name='sex' />
  </el-cell>
 
  <!-- 改成这样既可 -->
  <view>
-  <el-input />
+  <el-input name='age' />
  </view>
+</el-form>
+```
+
+Q: **未能获取到form表单的值**
+
+A: 通常未设置name属性，在form所有支持的表单控件获取前提是设置name，比如下方代码，
+
+```html
+<el-form name='from'>
+    <!-- 下方input可被from铺抓 -->
+    <el-input id='one' value='{{value1}}' name='sex' />
+    <!-- 下方input无法被from铺抓 -->
+    <el-input id='two' value='{{value2}}' />
 </el-form>
 ```
 
