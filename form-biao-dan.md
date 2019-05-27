@@ -76,7 +76,7 @@
 
 Q: **无法获取所支持表单值**
 
-A: 当使用cell等这类控件包裹时、form无法获取。
+A: 1. 当使用cell等这类控件包裹时、form无法获取。
 
 ```html
 <el-from name='from'>
@@ -92,9 +92,7 @@ A: 当使用cell等这类控件包裹时、form无法获取。
 </el-form>
 ```
 
-Q: **未能获取到form表单的值**
-
-A: 通常未设置name属性，在form所有支持的表单控件获取前提是设置name，比如下方代码，
+A: 2. 通常未设置name属性，在form所有支持的表单控件获取前提是设置name，比如下方代码，
 
 ```html
 <el-form name='from'>
