@@ -3,7 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="bcb96f6b-c814-45f6-bc20-aea94fe2cee1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/_body/body.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/component/_body/body.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/component/_checkbox/checkbox.js" beforeDir="false" afterPath="$PROJECT_DIR$/component/_checkbox/checkbox.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/component/_img/img.js" beforeDir="false" afterPath="$PROJECT_DIR$/component/_img/img.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/component/_radio-group/radio-group.js" beforeDir="false" afterPath="$PROJECT_DIR$/component/_radio-group/radio-group.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/component/_radio-group/radio-group.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/component/_radio-group/radio-group.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/component/_radio/radio.js" beforeDir="false" afterPath="$PROJECT_DIR$/component/_radio/radio.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/component/_radio/radio.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/component/_radio/radio.wxml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -38,8 +43,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pages/content/content.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="113">
-              <caret line="20" column="4" lean-forward="true" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
+            <state relative-caret-position="123">
+              <caret line="29" column="17" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -131,7 +136,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="984" />
     <option name="width" value="943" />
     <option name="height" value="1087" />
@@ -153,29 +158,6 @@
               <item name="wxapp-components" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="component" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="wxapp-components" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="component" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="_button" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="wxapp-components" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="pages" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="wxapp-components" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="pages" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="content" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="wxapp-components" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="pages" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="input" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
           <select />
@@ -243,7 +225,9 @@
       <workItem from="1557713595472" duration="14757000" />
       <workItem from="1558010531558" duration="1951000" />
       <workItem from="1558487359364" duration="1807000" />
-      <workItem from="1558491042339" duration="4534000" />
+      <workItem from="1558491042339" duration="5139000" />
+      <workItem from="1559195572923" duration="829000" />
+      <workItem from="1559211835607" duration="1545000" />
     </task>
     <task id="LOCAL-00001" summary="2019年3月26日09:56:18">
       <created>1553565384081</created>
@@ -504,17 +488,24 @@
       <option name="project" value="LOCAL" />
       <updated>1558626841830</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="2019-5-24 17:40:58">
+      <created>1558690863947</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1558690863947</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62967000" />
+    <option name="totallyTimeSpent" value="65946000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="984" y="0" width="943" height="1087" extended-state="0" />
+    <frame x="54" y="-8" width="1874" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.4240363" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21621622" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="Repositories" order="3" weight="0.3296" />
@@ -525,9 +516,9 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Weex Console" order="7" sideWeight="0.49813294" weight="0.32744282" />
+      <window_info anchor="bottom" id="Weex Console" order="7" sideWeight="0.49813294" visible="true" weight="0.32640332" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.4992" visible="true" weight="0.33053514" />
+      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.4992" weight="0.33053514" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.24844074" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5008" side_tool="true" weight="0.49028572" />
       <window_info anchor="bottom" id="SmartIM" order="12" />
@@ -621,7 +612,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="[修复] popup and file问题" />
     <MESSAGE value="2019-4-23 17:48:08" />
     <MESSAGE value="2019-4-26 19:01:25" />
     <MESSAGE value="2019-4-27 14:32:53" />
@@ -646,7 +636,8 @@
     <MESSAGE value="2019-5-22 15:38:38" />
     <MESSAGE value="2019-5-23 14:55:46" />
     <MESSAGE value="2019-5-23 23:53:58" />
-    <option name="LAST_COMMIT_MESSAGE" value="2019-5-23 23:53:58" />
+    <MESSAGE value="2019-5-24 17:40:58" />
+    <option name="LAST_COMMIT_MESSAGE" value="2019-5-24 17:40:58" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.gitignore">
@@ -861,6 +852,7 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/Desktop/QSE7UJ7EEILR1FLRSS15EDIR166VJ54W.png" />
     <entry file="file://$PROJECT_DIR$/pages/content/content.wxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
@@ -874,13 +866,10 @@
     <entry file="file://$PROJECT_DIR$/pages/content/content.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$USER_HOME$/Desktop/QSE7UJ7EEILR1FLRSS15EDIR166VJ54W.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/pages/content/content.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="20" column="4" lean-forward="true" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
+        <state relative-caret-position="123">
+          <caret line="29" column="17" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="17" />
         </state>
       </provider>
     </entry>

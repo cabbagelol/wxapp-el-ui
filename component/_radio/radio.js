@@ -42,13 +42,17 @@ Elui({
       return this.data.checked;
     },
 
-    setValueChecked() {
+    setValueChecked(e) {
       var that = this;
       if (that.data.disabled) {
         return
       }
       that.setData({
         checked: true
+      })
+      that.triggerEvent("change", {
+        el: e,
+        value: that.data.checked
       })
       if (that.parent_ && typeof this.parent_.onRadioGroup == 'function') {
         that.parent_.onRadioGroup({

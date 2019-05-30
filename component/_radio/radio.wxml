@@ -5,3 +5,4 @@
   </view>
   <slot />
 </label>
+{{checked}}

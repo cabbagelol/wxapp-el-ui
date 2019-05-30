@@ -20,6 +20,19 @@ Elui({
     }
   },
 
+  observers: {
+    'value': function (e) {
+      console.log(e)
+      // this.onReady();
+      this.onRadioGroup({
+        data: {
+          name: '',
+          value: e
+        }
+      }, false);
+    }
+  },
+
   data: {
     group: [],
     group_: [],
@@ -48,14 +61,14 @@ Elui({
           name: that.data.group[0].data.name,
           value: that.data.group[0].data.value
         }
-      }) : that.data.group.forEach(function(i, index) {
+      }, true) : that.data.group.forEach(function(i, index) {
         if (that.data.value == i.data.value) {
           that.onRadioGroup({
             data: {
               name: i.data.name,
               value: i.data.value
             }
-          })
+          }, true)
         }
       })
     },
@@ -68,7 +81,7 @@ Elui({
       }, data_))
     },
 
-    onRadioGroup(data_) {
+    onRadioGroup(data_, change_) {
       var that = this;
       var value;
       that.data.group_ = [];
@@ -76,7 +89,8 @@ Elui({
         if (i.setValue && typeof i.setValue == 'function') {
           i.setValue(false);
           if (!!data_ && data_.data.value == i.data.value) {
-            i.setValue(true)
+            console.log(i, data_)
+            i.setValue(true);
           }
           that.data.group_.push({
             checked: i.getValue(),
@@ -94,7 +108,9 @@ Elui({
           that.data.value = i.value;
         }
       })
-      that.onChange();
+      if (change_) {
+        that.onChange();
+      }
     }
   }
 })
