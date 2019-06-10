@@ -1,4 +1,4 @@
-![](/assets/imgcode.png)演示程序可能不是最新，你应当克隆github上的代码，版本优先更新为 `github`&gt; `技术文档` &gt; `小程序`，具体参考[快速配置](/kuai-su-pei-zhi.md)。
+![](/assets/imgcode.png)演示程序可能不是最新，你应当克隆github上的代码，版本优先更新为 `github`&gt; `技术文档` &gt; `小程序`，更多信息具体参考[快速配置](/kuai-su-pei-zhi.md)。
 
 # 微信组件
 
@@ -8,12 +8,11 @@
 
 以下是Elui贡献者。
 
-| 头像 | 名称 | 职责 |
-| :--- | :--- | ---: |
-| ![](https://q1.qlogo.cn/g?b=qq&nk=1214617226&s=40&t=1384608689) | Cabbagelol | Elui主导 |
-| ![](https://q1.qlogo.cn/g?b=qq&nk=1224619931&s=40&t=1384608689) | 一份子 | 设计 |
-| ![](https://q1.qlogo.cn/g?b=qq&nk=1290816367&s=40&t=1384608689) | 菊 | 前端 |
-
+| 头像 | 名称 | 共享 | 职责 |
+| :--- | :--- | :--- | :--- |
+| ![](https://q1.qlogo.cn/g?b=qq&nk=1214617226&s=40&t=1384608689) | Cabbagelol | - | Elui主导 |
+| ![](https://q1.qlogo.cn/g?b=qq&nk=1224619931&s=40&t=1384608689) | 一份子 | 《设计规范》 | 设计 |
+| ![](https://q1.qlogo.cn/g?b=qq&nk=1290816367&s=40&t=1384608689) | 菊 | tag 标签、rule 页底提示 | 前端 |
 
 # 捐助
 
