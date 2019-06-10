@@ -18,6 +18,10 @@ Elui({
     focus: {
       type: Boolean,
       value: false
+    },
+    value: {
+      type: String,
+      value: ''
     }
   },
 
@@ -48,6 +52,16 @@ Elui({
       linked(target) {
         this.setValue(target)
       }
+    }
+  },
+
+  observers: {
+    'value': function (e) {
+      // console.log(e)
+      // this.setData({
+      //   value: e
+      // })
+      // this.onVerify();
     }
   },
 

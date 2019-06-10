@@ -24,12 +24,6 @@ Elui({
     'value': function (e) {
       console.log(e)
       // this.onReady();
-      this.onRadioGroup({
-        data: {
-          name: '',
-          value: e
-        }
-      }, false);
     }
   },
 

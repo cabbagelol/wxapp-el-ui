@@ -5,6 +5,10 @@
   </el-cell>
 </el-focus>
 
+<el-focus verification='901,900,1001,1002' value='{{focusDemo}}'>
+  <el-input value='{{focusDemo}}' bindinput='$' data-e='focusDemo' />
+</el-focus>
+
 <el-cell title='聚焦状态'>
   <switch slot="content" checked="{{focus.starts}}" data-e="focus.starts" bindchange="$" />
 </el-cell>

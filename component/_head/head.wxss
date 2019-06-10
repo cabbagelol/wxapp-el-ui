@@ -24,7 +24,6 @@
   position: relative;
   z-index: 55;
   width: 100%;
-  transition: all 0.25s;
 }
 
 .__head_stickie__ {

@@ -12,6 +12,7 @@ Page({
       },
       back: true
     },
+    focusDemo: '',
     focus: {
       starts: true,
       type: 'danger',
@@ -23,7 +24,6 @@ Page({
         }
       }
     },
-
   },
 
   onTap () {
