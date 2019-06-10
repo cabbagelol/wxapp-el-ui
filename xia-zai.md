@@ -1,7 +1,7 @@
 <iframe
     src="www/index.html"
     width="100%"
-    height="100%"
+    height="1500px"
     frameborder="no"
     border="0"
     marginwidth="0"
