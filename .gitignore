@@ -1,5 +1,6 @@
 .idea/
-miniprogram_npm/
-demo/
+/miniprogram_npm
+/demo
+/www
 package-lock.json
 项目说明.txt

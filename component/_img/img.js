@@ -21,7 +21,7 @@ Elui({
     },
     placeholder: {
       type: String,
-      value: false
+      value: './image/cover.png'
     },
     lazyload: {
       type: Boolean,
@@ -67,6 +67,10 @@ Elui({
     load: true
   },
 
+  ready () {
+    // console.log(this.data.placeholder)
+  },
+
   methods: {
     getValue(e) {
       var object = Object.assign(e.currentTarget.dataset, e.detail, {
@@ -78,6 +82,7 @@ Elui({
     onError(e) {
       this.setData({
         src: '',
+        style: `width:${50}px;height:${50}px`,
         load: false
       })
       this.triggerEvent('error', Object.assign(this.getValue(e), {
@@ -92,6 +97,7 @@ Elui({
         computedStyle: ['height', 'width']
       }).then(e => {
         const _img = e['.__img__'];
+        console.log(_img, this.data)
         if (parseInt(_img.width) == 0 || parseInt(_img.height) == 0) {
           that.setData({
             style: `${that.data.style || ""};width:${50}px;height:${50}px`,

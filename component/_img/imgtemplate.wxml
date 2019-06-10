@@ -1,5 +1,6 @@
 <template name='load'>
-  <image class='__img-item__ ' src="{{src + (imageslim ? '?imageslim' : '')}}" lazy-load="{{lazyload}}" aria-label="{{arialabel}}" data-url="{{src}}" style='{{style}}' lazy-load="true" alt="{{src || alt}}" wx:if="{{src}}" bindload="onLoad" binderror="onError"
+  <image class='__img-item__ ' src="{{src + (imageslim ? '?imageslim' : '')}}" lazy-load="{{lazyload}}" aria-label="{{arialabel}}" data-url="{{src}}" style='{{style}}' alt="{{src || alt}}" wx:if="{{src}}" bindload="onLoad" binderror="onError"
     mode="{{mode || 'aspectFill'}}" wx:if='{{src}}'></image>
-  <image class='__img-item__ fade_in' src="{{placeholder ? placeholder : './image/cover.png'}}" style='{{style}}' wx:if="{{!src || src == ''}}" mode="aspectFill"></image>
+  <image class='__img-item__ fade_in' src="{{placeholder}}" style='{{style}}' wx:if="{{!src || src == ''}}" mode="{{mode || 'aspectFill'}}"></image>
 </template>
+

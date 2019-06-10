@@ -1,20 +1,26 @@
 <el-head head='{{head}}' stickie='true'></el-head>
-<el-focus focus='{{focus.starts}}' type='{{focus.type}}'>
-  <el-cell title='焦点' bindtap='onTap'>
-    <view slot='content'>这里是焦点，通常用于表单内部，以提醒用户</view>
+<view class='container'>
+  <el-focus focus='{{focus.starts}}' type='{{focus.type}}'>
+    <el-cell title='焦点' bindtap='onTap'>
+      <view slot='content'>这里是焦点，通常用于表单内部，以提醒用户</view>
+    </el-cell>
+  </el-focus>
+
+  <el-cell title='聚焦状态'>
+    <switch slot="content" checked="{{focus.starts}}" data-e="focus.starts" bindchange="$" />
   </el-cell>
-</el-focus>
+  <el-cell title='类型' label='danger,warning'>
+    <input slot="content" value="{{focus.type}}" data-e="focus.type" bindinput="$" />
+  </el-cell>
+</view>
 
-<el-focus verification='901,900,1001,1002' value='{{focusDemo}}'>
-  <el-input value='{{focusDemo}}' bindinput='$' data-e='focusDemo' />
-</el-focus>
-
-<el-cell title='聚焦状态'>
-  <switch slot="content" checked="{{focus.starts}}" data-e="focus.starts" bindchange="$" />
-</el-cell>
-<el-cell title='类型' label='danger,warning'>
-  <input slot="content" value="{{focus.type}}" data-e="focus.type" bindinput="$" />
-</el-cell>
+<view class='container'>
+  <el-cell title='独立校验' label='传入value来提供独立的校验'>
+    <el-focus slot="content" verification='901,900,1001,1002' value='{{focusDemo}}'>
+      <el-input value='{{focusDemo}}' bindinput='$' data-e='focusDemo' />
+    </el-focus>
+  </el-cell>
+</view>
 
 <el-form class='focus-form' bindsubmit='onForm'>
   <view class='container'>
@@ -32,7 +38,7 @@
       <el-textarea title='备忘' name='remark' value='您好先生，请问我可以要杯饮料吗?' placeholder='备忘'></el-textarea>
     </el-focus>
     <el-focus verification='0'>
-        <el-img name='cardid' style="display: block;height: 200rpx;"></el-img>
+      <el-img name='cardid' style="display: block;height: 200rpx;"></el-img>
     </el-focus>
     <el-focus verification='0'>
       <el-file album bindsucceed='onImg' data-e="focus.img" name='img'>
@@ -42,7 +48,7 @@
   </view>
 
   <view class='container'>
-    <el-button type='submit'>提交</el-button>
+    <el-button type='submit' type='primary'>提交</el-button>
     <el-button type='reset'>重置</el-button>
   </view>
 </el-form>

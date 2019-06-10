@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="css/style.css">
+<head>
+	<meta charset="UTF-8">
+	<title>配置</title>
+</head>
+<body>
+<form action="#" id="download_form">
+	<label >
+		<input type="checkbox" class="checkboxall" checked> 全选
+	</label>
+	<ul></ul>
+	<div>
+		<input type="checkbox" checked disabled/> 当你点击下载Elui库时，这表示你同意作者意愿
+	</div>
+	<div class="msg"></div>
+	<hr />
+	<button type="submit" class="btn btn-primary">打包Elui库</button>
+</form>
+</body>
+</html>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" type="application/javascript"></script>
+<script src="js/util.js" type="application/javascript"></script>
+<script src="js/jszip.min.js" type="application/javascript"></script>
+<script src="js/jszip-utils.min.js" type="application/javascript"></script>
+<script src="js/FileSaver.js" type="application/javascript"></script>
+<script>
+  var Promise = window.Promise;
+  if (!Promise) {
+    Promise = JSZip.external.Promise;
+  }
+
+  /**
+   * Fetch the content and return the associated promise.
+   * @param {String} url the url of the content to fetch.
+   * @return {Promise} the promise containing the data.
+   */
+  function urlToPromise(url) {
+    return new Promise(function (resolve, reject) {
+      JSZipUtils.getBinaryContent(url, function (err, data) {
+        if (err) {
+          reject(err);
+        } else {
+          resolve(data);
+        }
+      });
+    });
+  }
+  
+  $('.checkboxall').click(function () {
+    var that = $(this);
+    $('#download_form li input').each(function (e, i) {
+      if ($(this)[0].dataset.vereist  != '') {
+        if (!that.prop("checked")) {
+          $(this).removeAttr('checked');
+        } else {
+          $(this).attr('checked', true);
+        }
+      }
+    })
+  })
+  
+  $(function(){
+    window.getEluiFrom().forEach(i => {
+      $('#download_form ul').append(`
+		<li>
+			<label>
+				<input type="checkbox" data-url="${i.name}"
+				       ${i.vereist ? 'data-vereist' : ''} ${i.vereist ? 'checked' : 'checked'} ${i.vereist ? 'onclick="return false;"' : ''}/>
+				${i.content}
+			</label>
+		</li>
+    `)
+    })
+  })
+
+
+  var $form = $("#download_form").on("submit", function () {
+
+    var zip = new JSZip();
+
+    // find every checked item
+    $(this).find(":checked").each(function () {
+      var $this = $(this);
+      var url = $this.data("url");
+      // var filename = url.replace(/.*\//g, "");
+      window.getEluiFrom().forEach(i => {
+        if (i.name == url) {
+          i.list.forEach(j => {
+            zip.file(j.dir, urlToPromise(j.url), {binary: true});
+          })
+        }
+      })
+    });
+
+    // when everything has been downloaded, we can trigger the dl
+    zip.generateAsync({type: "blob"}, function updateCallback(metadata) {
+      var msg = "进度 : " + metadata.percent.toFixed(2) + " %";
+      if (metadata.currentFile) {
+        msg += "进度: " + metadata.currentFile;
+      }
+      $('.msg').html(msg)
+    })
+      .then(function callback(blob) {
+        // see FileSaver.js
+        saveAs(blob, "elui-wxapp-components.zip");
+      }, function (e) {
+        console.log(e)
+      });
+
+    return false;
+  });
+</script>

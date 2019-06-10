@@ -61,7 +61,7 @@ Elui({
       // this.setData({
       //   value: e
       // })
-      // this.onVerify();
+      this.onVerify(true);
     }
   },
 
@@ -130,7 +130,7 @@ Elui({
       this.data.focus_.data[0].onEmpty();
     },
 
-    onVerify() {
+    onVerify(l_) {
       var that = this;
       var err = that.data.verificationErr;
       err = [];
@@ -152,7 +152,7 @@ Elui({
         }) : () => {
           throw '校验格式不通过'
         }
-        if (that.data.focus_.data[0]) {
+        if (!l_ && that.data.focus_.data[0]) {
           that.setData({
             verify: that.data.verificationErr.length > 0 ? true : false,
             value: that.data.focus_.data[0].data.value,

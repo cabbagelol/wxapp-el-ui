@@ -1,13 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bcb96f6b-c814-45f6-bc20-aea94fe2cee1" name="Default Changelist" comment="2019-5-31 00:25:05">
+    <list default="true" id="bcb96f6b-c814-45f6-bc20-aea94fe2cee1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/www/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/component/_focus/focus.js" beforeDir="false" afterPath="$PROJECT_DIR$/component/_focus/focus.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/_head/head.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/component/_head/head.wxss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/_radio-group/radio-group.js" beforeDir="false" afterPath="$PROJECT_DIR$/component/_radio-group/radio-group.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/component/_img/img.js" beforeDir="false" afterPath="$PROJECT_DIR$/component/_img/img.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/component/_img/imgtemplate.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/component/_img/imgtemplate.wxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/focus/focus.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/focus/focus.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/focus/focus.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/focus/focus.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/focus/focus.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/focus/focus.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/img/img.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/img/img.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/nav/nav.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/nav/nav.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/styles/button.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/public/styles/button.wxss" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -21,29 +27,95 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/content/content.wxml">
+        <entry file="file://$PROJECT_DIR$/www/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
+            <state relative-caret-position="114">
+              <caret line="39" column="51" lean-forward="true" selection-start-line="39" selection-start-column="51" selection-end-line="39" selection-end-column="51" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/content/content.wxss">
+        <entry file="file://$PROJECT_DIR$/www/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="456">
+              <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/项目说明.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="11" selection-start-column="11" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/js/FileSaver.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="817">
+              <caret line="50" column="56" selection-start-line="50" selection-start-column="56" selection-end-line="55" selection-end-column="21" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/js/util.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="247">
+              <caret line="13" column="53" lean-forward="true" selection-start-line="13" selection-start-column="53" selection-end-line="13" selection-end-column="53" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pages/img/img.wxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="392">
+              <caret line="22" column="131" selection-start-line="22" selection-start-column="131" selection-end-line="22" selection-end-column="131" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/js/jquery-1.8.3.min.js">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/content/content.json">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/www/js/jszip-utils.min.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="38">
+              <caret line="9" column="1495" selection-start-line="9" selection-start-column="1495" selection-end-line="9" selection-end-column="1495" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pages/content/content.js">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/js/jszip.min.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="532">
-              <caret line="34" column="10" lean-forward="true" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="10" />
+            <state>
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="95">
+              <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -56,6 +128,7 @@
         <option value="package.json" />
         <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -64,11 +137,20 @@
       <find>_related</find>
       <find>return</find>
       <find>JSZipUtils</find>
-      <find>JSZipUtils</find>
       <find>Reset</find>
+      <find>saveAs</find>
+      <find>${this.name}</find>
+      <find>单选</find>
+      <find>tab</find>
+      <find>_radio</find>
+      <find>updatePercent</find>
+      <find>ttps://developers.weixin.qq.com/miniprogram/dev/image/cat/0.jpg?t=19031116</find>
     </findStrings>
     <replaceStrings>
       <replace />
+      <replace>cell</replace>
+      <replace>tip</replace>
+      <replace>tab-item</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -81,12 +163,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/component/_button/button.wxml" />
-        <option value="$PROJECT_DIR$/component/_load/load.wxss" />
-        <option value="$PROJECT_DIR$/pages/content/content.js" />
-        <option value="$PROJECT_DIR$/project.config.json" />
-        <option value="$PROJECT_DIR$/component/_body/body.wxml" />
-        <option value="$PROJECT_DIR$/pages/slider/slider.js" />
         <option value="$PROJECT_DIR$/pages/slider/slider.json" />
         <option value="$PROJECT_DIR$/pages/slider/slider.wxml" />
         <option value="$PROJECT_DIR$/component/_head/head.js" />
@@ -115,7 +191,6 @@
         <option value="$PROJECT_DIR$/component/_form/form.wxml" />
         <option value="$PROJECT_DIR$/component/_address/js/cityArray.js" />
         <option value="$PROJECT_DIR$/component/_address/address.js" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/.npmignore" />
         <option value="$PROJECT_DIR$/app.json" />
         <option value="$PROJECT_DIR$/component/_column/column.wxss" />
@@ -123,7 +198,6 @@
         <option value="$PROJECT_DIR$/www/js/jq.js" />
         <option value="$PROJECT_DIR$/www/js/jszip.js" />
         <option value="$PROJECT_DIR$/www/Hello.txt" />
-        <option value="$PROJECT_DIR$/www/index.html" />
         <option value="$USER_HOME$/Desktop/www/index.html" />
         <option value="$PROJECT_DIR$/component/_checkbox/checkbox.js" />
         <option value="$PROJECT_DIR$/package-lock.json" />
@@ -132,14 +206,22 @@
         <option value="$PROJECT_DIR$/component/index.js" />
         <option value="$PROJECT_DIR$/pages/content/content.wxml" />
         <option value="$PROJECT_DIR$/component/_tab/tab.js" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/www/js/jszip-utils.min.js" />
+        <option value="$PROJECT_DIR$/www/js/FileSaver.js" />
+        <option value="$PROJECT_DIR$/www/css/style.ts" />
+        <option value="$PROJECT_DIR$/www/css/style.css" />
+        <option value="$PROJECT_DIR$/www/index.html" />
+        <option value="$PROJECT_DIR$/www/js/util.js" />
+        <option value="$PROJECT_DIR$/pages/img/img.wxml" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="274" />
-    <option name="y" value="15" />
-    <option name="width" value="943" />
-    <option name="height" value="1087" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="170" />
+    <option name="y" value="72" />
+    <option name="width" value="1637" />
+    <option name="height" value="974" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -158,7 +240,19 @@
             <path>
               <item name="wxapp-components" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="component" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="www" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="wxapp-components" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="www" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="css" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="wxapp-components" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="www" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="js" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
           <select />
@@ -167,13 +261,16 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="F:/dartdmeo" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../dartdmeo" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+    <property name="ts.external.directory.path" value="C:\Users\Administrator\AppData\Local\JetBrains\Toolbox\apps\WebStorm\ch-0\183.5912.23\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\wxapp-components\www\js" />
       <recent name="F:\wxapp-components\www" />
       <recent name="F:\wxapp-components\demo\src" />
     </key>
@@ -229,6 +326,8 @@
       <workItem from="1559195572923" duration="829000" />
       <workItem from="1559211835607" duration="1776000" />
       <workItem from="1559637834958" duration="1473000" />
+      <workItem from="1560129749898" duration="10560000" />
+      <workItem from="1560146644939" duration="6233000" />
     </task>
     <task id="LOCAL-00001" summary="2019年3月26日09:56:18">
       <created>1553565384081</created>
@@ -503,17 +602,24 @@
       <option name="project" value="LOCAL" />
       <updated>1559233513322</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="2019-6-10 09:22:58">
+      <created>1560129820466</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1560129820466</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67650000" />
+    <option name="totallyTimeSpent" value="84443000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="274" y="15" width="943" height="1087" extended-state="0" />
+    <frame x="54" y="-8" width="1874" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.4489796" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22669609" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="Repositories" order="3" weight="0.3296" />
@@ -524,7 +630,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info active="true" anchor="bottom" id="Weex Console" order="7" sideWeight="0.49813294" visible="true" weight="0.32633787" />
+      <window_info anchor="bottom" id="Weex Console" order="7" sideWeight="0.49813294" visible="true" weight="0.32328483" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.4992" weight="0.33053514" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.24844074" />
@@ -532,10 +638,11 @@
       <window_info anchor="bottom" id="SmartIM" order="12" />
       <window_info anchor="bottom" id="Alipay DevTools" order="13" />
       <window_info anchor="bottom" id="Messages" order="14" />
+      <window_info anchor="bottom" id="TypeScript" order="15" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Weex Documents" order="3" />
+      <window_info anchor="right" id="Weex Documents" order="3" weight="0.32984003" />
     </layout>
     <layout-to-restore>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20106667" />
@@ -620,7 +727,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="2019-4-26 19:01:25" />
     <MESSAGE value="2019-4-27 14:32:53" />
     <MESSAGE value="2019-4-27 16:05:00" />
     <MESSAGE value="2019-4-27 16:08:34" />
@@ -645,52 +751,27 @@
     <MESSAGE value="2019-5-23 23:53:58" />
     <MESSAGE value="2019-5-24 17:40:58" />
     <MESSAGE value="2019-5-31 00:25:05" />
-    <option name="LAST_COMMIT_MESSAGE" value="2019-5-31 00:25:05" />
+    <MESSAGE value="2019-6-10 09:22:58" />
+    <option name="LAST_COMMIT_MESSAGE" value="2019-6-10 09:22:58" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/www/index.html</url>
+          <line>70</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/www/index.html</url>
+          <line>63</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="5" selection-start-line="2" selection-end-line="2" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.eslintrc.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/component/_column/column.wxss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.npmignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="228">
-            <caret line="11" column="3" lean-forward="true" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/Stuk-jszip-4cbbb64/lib/nodejs/NodejsStreamInputAdapter.js" />
-    <entry file="file://$PROJECT_DIR$/www/js/jq.js" />
-    <entry file="file://$PROJECT_DIR$/www/js/jszip.js" />
-    <entry file="file://$PROJECT_DIR$/www/Hello.txt" />
-    <entry file="file://$PROJECT_DIR$/www/index.html" />
     <entry file="file://$USER_HOME$/Desktop/www/index.html" />
     <entry file="file://$PROJECT_DIR$/component/_checkbox/checkbox.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -868,16 +949,90 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/content/content.wxss">
+    <entry file="file://$PROJECT_DIR$/pages/content/content.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/content/content.json">
+    <entry file="file://$PROJECT_DIR$/pages/content/content.wxss">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/content/content.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="34" column="10" lean-forward="true" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="10" />
+        <state relative-caret-position="209">
+          <caret line="11" column="14" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/项目说明.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="11" selection-start-column="11" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/FileSaver.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="817">
+          <caret line="50" column="56" selection-start-line="50" selection-start-column="56" selection-end-line="55" selection-end-column="21" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/jquery-1.8.3.min.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/jszip-utils.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="9" column="1495" selection-start-line="9" selection-start-column="1495" selection-end-line="9" selection-end-column="1495" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/jszip.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="39" column="51" lean-forward="true" selection-start-line="39" selection-start-column="51" selection-end-line="39" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/util.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="53" lean-forward="true" selection-start-line="13" selection-start-column="53" selection-end-line="13" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/img/img.wxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="22" column="131" selection-start-line="22" selection-start-column="131" selection-end-line="22" selection-end-column="131" />
         </state>
       </provider>
     </entry>

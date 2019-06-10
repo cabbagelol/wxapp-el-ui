@@ -12,7 +12,7 @@ Page({
       },
       back: true
     },
-    focusDemo: '',
+    focusDemo: '一些内容',
     focus: {
       starts: true,
       type: 'danger',

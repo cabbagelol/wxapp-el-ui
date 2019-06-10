@@ -2,20 +2,25 @@
 <el-layout>
   <view class='container'>
     <el-cell title='关闭加载器'>
-      <el-img slot="content" class="img-style" binderro='onImgerror' bindload='onImgload' isload='{{false}}' src='https://developers.weixin.qq.com/miniprogram/dev/image/cat/0.jpg?t=19031116'></el-img>
+      <el-img slot="content" class="img-style" binderror='onImgerror' bindload='onImgload' isload='{{false}}' src='http://iph.href.lu/50x50?text=50x50&fg=888888&bg=F1F1F1'></el-img>
+    </el-cell>
+    <el-cell title='自定义占位图'>
+      <el-img slot="content" class="img-style" isload='{{true}}' src='https://qn12.tool.lu/201803/18/null.png' placeholder='http://iph.href.lu/50x50?text=自定义&fg=888888&bg=F1F1F1'></el-img>
     </el-cell>
     <el-cell title='占位图'>
-      <el-img slot="content" class="img-style" binderro='onImgerror' bindload='onImgload'></el-img>
+      <el-img slot="content" class="img-style" binderror='onImgerror' bindload='onImgload'></el-img>
     </el-cell>
     <el-cell title='带地址图标' label='网络图片'>
-      <el-img slot="content" src="https://developers.weixin.qq.com/miniprogram/dev/image/cat/0.jpg?t=19031116" class="img-style"></el-img>
+      <el-img slot="content" src="http://iph.href.lu/50x50?text=50x50&fg=888888&bg=F1F1F1" class="img-style"></el-img>
     </el-cell>
     <el-cell title='支持Base64'>
       <el-img slot="content" src="{{imgBase64}}" class="img-style"></el-img>
     </el-cell>
+  </view>
+  <view class='container'>
     <view class='img-col'>
       <view wx:for='{{array}}' wx:key='{{index}}'>
-        <el-img slot="content" lazyload='true' mode='{{item.mode}}' src="https://developers.weixin.qq.com/miniprogram/dev/image/cat/0.jpg?t=19031116" class="img-list"></el-img>
+        <el-img slot="content" lazyload='true' mode='{{item.mode}}' src="https://res.wx.qq.com/wxdoc/dist/assets/img/2.ec68e300.png" class="img-list"></el-img>
         <text>{{item.text}}</text>
       </view>
     </view>
