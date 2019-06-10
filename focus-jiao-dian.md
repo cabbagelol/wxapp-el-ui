@@ -24,6 +24,7 @@
 | verifications | Object | {} | 自定义校验 |  |
 | type | String | "" | 聚焦颜色类型 | 0.0.5 |
 | show | Boolan | false | 是否主动出现焦点,颜色处决于[type](#type的合法值) | 0.0.5 |
+| value | String | "" | 校验的值，该value提供给独立校验控件，通常不在form范围下。 | 0.0.6 |
 
 ##### verification的合法值:
 
