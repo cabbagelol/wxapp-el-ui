@@ -72,7 +72,7 @@ Page({
         "status": 1,
         "circulation": false
     },
-    
+
     onLoad() {
       this.selectComponent(".steps")
     },
