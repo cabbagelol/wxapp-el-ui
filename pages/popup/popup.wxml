@@ -1,6 +1,5 @@
 <el-head head='{{head}}' bindhead='onGetHead'></el-head>
 <view class='container'>
-
   <view class='popup-demo'>
     <button bindtap='onPopup'>{{!popup.show ? "显示" : "隐藏"}}</button>
   </view>

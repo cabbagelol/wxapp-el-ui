@@ -1,8 +1,19 @@
 .__steps__ {
-  display: inline-flex;
-  width: 100%;
+  overflow: auto;
 }
 
 .__steps-direction-vertical__ {
   flex-direction: column;
+}
+
+.__steps-direction-horizontal__ {
+  display: flex;
+}
+
+.__steps-direction-horizontal__ el-step {
+  flex: 1;
+}
+
+.__steps-direction-horizontal__ el-step:last-child {
+  flex: none;
 }

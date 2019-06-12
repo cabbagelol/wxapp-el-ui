@@ -57,10 +57,6 @@ Elui({
 
   observers: {
     'value': function (e) {
-      // console.log(e)
-      // this.setData({
-      //   value: e
-      // })
       this.onVerify(true);
     }
   },

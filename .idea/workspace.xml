@@ -2,18 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bcb96f6b-c814-45f6-bc20-aea94fe2cee1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/www/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/component/_focus/focus.js" beforeDir="false" afterPath="$PROJECT_DIR$/component/_focus/focus.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/component/_img/img.js" beforeDir="false" afterPath="$PROJECT_DIR$/component/_img/img.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/_img/imgtemplate.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/component/_img/imgtemplate.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/focus/focus.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/focus/focus.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/focus/focus.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/focus/focus.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/focus/focus.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/focus/focus.wxss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/img/img.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/img/img.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/nav/nav.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/nav/nav.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/styles/button.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/public/styles/button.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/component/_slider/slider.js" beforeDir="false" afterPath="$PROJECT_DIR$/component/_slider/slider.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/component/_steps/step.js" beforeDir="false" afterPath="$PROJECT_DIR$/component/_steps/step.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/component/_steps/step.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/component/_steps/step.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/component/_steps/step.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/component/_steps/step.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/component/_steps/steps.js" beforeDir="false" afterPath="$PROJECT_DIR$/component/_steps/steps.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/component/_steps/steps.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/component/_steps/steps.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/component/_steps/steps.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/component/_steps/steps.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/popup/popup.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/popup/popup.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/steps/steps.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/steps/steps.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/steps/steps.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/steps/steps.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/www/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -26,11 +28,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="39" column="51" lean-forward="true" selection-start-line="39" selection-start-column="51" selection-end-line="39" selection-end-column="51" />
+            <state relative-caret-position="1342">
+              <caret line="118" lean-forward="true" selection-start-line="118" selection-end-line="118" />
             </state>
           </provider>
         </entry>
@@ -38,8 +40,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
+            <state relative-caret-position="468">
+              <caret line="36" column="22" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -74,11 +76,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/img/img.wxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="392">
-              <caret line="22" column="131" selection-start-line="22" selection-start-column="131" selection-end-line="22" selection-end-column="131" />
+            <state relative-caret-position="164">
+              <caret line="10" column="100" lean-forward="true" selection-start-line="10" selection-start-column="100" selection-end-line="10" selection-end-column="100" />
             </state>
           </provider>
         </entry>
@@ -210,18 +212,18 @@
         <option value="$PROJECT_DIR$/www/js/jszip-utils.min.js" />
         <option value="$PROJECT_DIR$/www/js/FileSaver.js" />
         <option value="$PROJECT_DIR$/www/css/style.ts" />
-        <option value="$PROJECT_DIR$/www/css/style.css" />
-        <option value="$PROJECT_DIR$/www/index.html" />
         <option value="$PROJECT_DIR$/www/js/util.js" />
         <option value="$PROJECT_DIR$/pages/img/img.wxml" />
+        <option value="$PROJECT_DIR$/www/css/style.css" />
+        <option value="$PROJECT_DIR$/www/index.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="170" />
-    <option name="y" value="72" />
-    <option name="width" value="1637" />
-    <option name="height" value="974" />
+    <option name="x" value="229" />
+    <option name="y" value="182" />
+    <option name="width" value="1224" />
+    <option name="height" value="791" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -327,7 +329,7 @@
       <workItem from="1559211835607" duration="1776000" />
       <workItem from="1559637834958" duration="1473000" />
       <workItem from="1560129749898" duration="10560000" />
-      <workItem from="1560146644939" duration="6233000" />
+      <workItem from="1560146644939" duration="8081000" />
     </task>
     <task id="LOCAL-00001" summary="2019年3月26日09:56:18">
       <created>1553565384081</created>
@@ -609,17 +611,24 @@
       <option name="project" value="LOCAL" />
       <updated>1560129820466</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="2019-6-10 17:38:43">
+      <created>1560159529457</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1560159529457</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84443000" />
+    <option name="totallyTimeSpent" value="86291000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="54" y="-8" width="1874" height="1096" extended-state="6" />
+    <frame x="1912" y="-8" width="1936" height="1096" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22669609" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2192" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="Repositories" order="3" weight="0.3296" />
@@ -727,7 +736,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="2019-4-27 14:32:53" />
     <MESSAGE value="2019-4-27 16:05:00" />
     <MESSAGE value="2019-4-27 16:08:34" />
     <MESSAGE value="2019-5-7 18:37:32" />
@@ -752,7 +760,8 @@
     <MESSAGE value="2019-5-24 17:40:58" />
     <MESSAGE value="2019-5-31 00:25:05" />
     <MESSAGE value="2019-6-10 09:22:58" />
-    <option name="LAST_COMMIT_MESSAGE" value="2019-6-10 09:22:58" />
+    <MESSAGE value="2019-6-10 17:38:43" />
+    <option name="LAST_COMMIT_MESSAGE" value="2019-6-10 17:38:43" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -962,13 +971,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/项目说明.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -1015,13 +1017,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="39" column="51" lean-forward="true" selection-start-line="39" selection-start-column="51" selection-end-line="39" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/js/util.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
@@ -1031,8 +1026,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/img/img.wxml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="22" column="131" selection-start-line="22" selection-start-column="131" selection-end-line="22" selection-end-column="131" />
+        <state relative-caret-position="164">
+          <caret line="10" column="100" lean-forward="true" selection-start-line="10" selection-start-column="100" selection-end-line="10" selection-end-column="100" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="36" column="22" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1342">
+          <caret line="118" lean-forward="true" selection-start-line="118" selection-end-line="118" />
         </state>
       </provider>
     </entry>

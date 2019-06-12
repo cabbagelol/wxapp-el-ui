@@ -1,11 +1,48 @@
 <el-head head='{{head}}' stickie='true'></el-head>
-<view>
-  <view>  horizontal vertical</view>
-  <el-steps direction='horizontal'>
-    <el-step wx:for='{{3}}' wx:key='{{index}}'>233</el-step>
+<el-message class='messgae'></el-message>
+<view class='container'>
+  <el-steps direction='horizontal' status='{{stepHorizontal.index}}'>
+    <el-step title='注册账户' subhead='副标题内容' bindonetap='onMessage'></el-step>
+    <el-step title='验证' subhead='副标题内容' bindonetap='onMessage'></el-step>
+    <el-step title='完成' subhead='副标题内容' type='succeed' bindonetap='onMessage'></el-step>
   </el-steps>
+</view>
+<view class='container'>
+  <el-button type='primary' catchtap='onStepHorizontal'>下一步</el-button>
+</view>
 
-  <el-steps direction='vertical'>
-    <el-step wx:for='{{3}}' wx:key='{{index}}'>233</el-step>
+<view class='container'>
+  <el-steps direction='horizontal' circulation='{{circulation}}' bindresult='onStepsResult' class='steps-horizontal-1'>
+    <el-step title='注册账户' subhead='副标题内容' type='succeed'></el-step>
+    <el-step title='验证' subhead='副标题内容' type='error'></el-step>
+    <el-step title='完成' subhead='副标题内容' type='succeed'></el-step>
   </el-steps>
+  <el-steps direction='horizontal' circulation='{{circulation}}' bindresult='onStepsResult' class='steps-horizontal-2'>
+    <el-step title='注册账户' subhead='副标题内容' type='succeed'></el-step>
+    <el-step title='下一步' subhead='第一步'>
+      <el-load type='main' slot='icon' />
+    </el-step>
+    <el-step title='下一步' subhead='第二步'></el-step>
+    <el-step title='下一步' subhead='第三步'>
+      <el-load type='line' slot='icon' />
+    </el-step>
+    <el-step title='完成' subhead='副标题内容' type='succeed'></el-step>
+  </el-steps>
+</view>
+<el-cell title="循环">
+  <switch slot="content" checked="{{circulation}}" data-e="circulation" bindchange="$" />
+</el-cell>
+<view class='container'>
+  <el-button type='primary' catchtap='onNext'>下一步</el-button>
+  <el-button type='primary' catchtap='onPrevious'>上一步</el-button>
+  <el-button catchtap='onReset' wx:if='{{circulation}}'>重置</el-button>
+</view>
+
+<view class='container'>
+  <el-steps direction='vertical' status='{{stepVertical.index}}'>
+    <el-step wx:for='{{10}}' wx:key='{{index}}' title='vertical {{index}}' subhead='副标题内容' bindonetap='onMessage'></el-step>
+  </el-steps>
+</view>
+<view class='container'>
+  <el-button type='primary' bindtap='onStepVertical'>下一步</el-button>
 </view>

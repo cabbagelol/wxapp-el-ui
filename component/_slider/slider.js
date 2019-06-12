@@ -37,15 +37,12 @@ Elui({
           max.push(that.interval * i)
         }
         console.log(max)
-
         that.setData({
           'slider.height': e['.__slider-button__'].height,
           'slider.lineH': e['.__slider-line__'].height,
           'slider.lineW': e['.__slider-line__'].width,
           'slider.max': max
         })
- 
-
       })
     }
   },

@@ -97,7 +97,6 @@ Elui({
         computedStyle: ['height', 'width']
       }).then(e => {
         const _img = e['.__img__'];
-        console.log(_img, this.data)
         if (parseInt(_img.width) == 0 || parseInt(_img.height) == 0) {
           that.setData({
             style: `${that.data.style || ""};width:${50}px;height:${50}px`,

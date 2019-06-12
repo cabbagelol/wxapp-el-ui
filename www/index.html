@@ -75,8 +75,12 @@
     })
   })
 
-
+  var load = false;
   var $form = $("#download_form").on("submit", function () {
+    
+    if (load) {
+      return;
+    }
 
     var zip = new JSZip();
 
@@ -95,15 +99,19 @@
     });
 
     // when everything has been downloaded, we can trigger the dl
+    load = true;
+    $('button').html('处理中')
     zip.generateAsync({type: "blob"}, function updateCallback(metadata) {
-      var msg = "进度 : " + metadata.percent.toFixed(2) + " %";
+      var msg = "进度 : " + metadata.percent.toFixed(2) + "%";
       if (metadata.currentFile) {
-        msg += "进度: " + metadata.currentFile;
+        msg += " " + metadata.currentFile;
       }
-      $('.msg').html(msg)
+      $('.msg').html(msg);
     })
       .then(function callback(blob) {
         // see FileSaver.js
+        load = false;
+        $('button').html('打包Elui库')
         saveAs(blob, "elui-wxapp-components.zip");
       }, function (e) {
         console.log(e)
