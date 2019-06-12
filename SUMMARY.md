@@ -25,6 +25,7 @@
   * [radio 单选](radio-dan-xuan.md)
   * [checkbox 复选](checkbox-fu-xuan.md)
   * [focus 焦点](focus-jiao-dian.md)
+  * [steps 步骤条](steps-bu-zou-tiao.md)
 * [界面](jie-mian.md)
   * [load 装载器与加载符](jia-zai-fu.md)
   * [button 按钮](an-niu.md)
