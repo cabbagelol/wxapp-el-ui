@@ -21,7 +21,7 @@
 * 新增colors模块，以设置控件全局主题.
 * 新增tag内的关闭按钮.
 * 新增focus的value属性支持.
-* 新增divider
+* 新增:步骤条、colors
 * 改进Elui底层.
 
 ### v: 0.0.5
