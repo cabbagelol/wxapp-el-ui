@@ -1,7 +1,7 @@
 <el-head head='{{head}}' bindhead='onGetHead'></el-head>
 <view class='container'>
   <view class='popup-demo'>
-    <button bindtap='onPopup'>{{!popup.show ? "显示" : "隐藏"}}</button>
+    <el-button type='primary' bindtap='onPopup'>{{!popup.show ? "显示" : "隐藏"}}</el-button>
   </view>
 
   <el-popup show='{{popup.show}}' background='{{popup.background}}' modal='{{popup.modal}}' position='{{array[arrayi].v}}' animation='{{popup.animation}}' bindchange='onPopup'>

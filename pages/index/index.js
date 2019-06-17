@@ -122,6 +122,10 @@ Page({
     }, {
       title: '界面',
       data: [{
+        url: '../load/load',
+        title: '装载与加载符',
+        label: 'load'
+      }, {
         url: '../button/button',
         title: '按钮',
         label: 'button'

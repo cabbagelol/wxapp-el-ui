@@ -45,7 +45,7 @@ Elui({
     setValueChecked(e) {
       var that = this;
       if (that.data.disabled) {
-        return
+        return;
       }
       that.setData({
         checked: that.data.checked != true

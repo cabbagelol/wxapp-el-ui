@@ -41,6 +41,7 @@ Page({
   },
 
   onRadioGroup(e) {
+    console.log(e.detail)
     this.setData({
       'radio.a.value': e.detail.value,
       'radio.a.data': e.detail.data

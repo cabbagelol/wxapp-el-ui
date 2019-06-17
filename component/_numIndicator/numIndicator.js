@@ -53,7 +53,6 @@ Elui({
     that.$fields('.__numIndicator-left__,.__numIndicator-right__', {
       computedStyle: ['width']
     }).then(e => {
-      console.log(e)
       var conf = {
         left: true,
         right: true

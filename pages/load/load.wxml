@@ -13,7 +13,7 @@
 </view>
 <view class="container">
   <el-cell title="main" label="标准">
-    <el-load slot="content" type="main" size="1" color="{{color}}"></el-load>
+    <el-load slot="content" type="main" size="1" essential="{{color.essential}}" deputy="{{color.deputy}}"></el-load>
   </el-cell>
   <el-cell title="main">
     <el-load slot="content" type="main" size=".8"></el-load>

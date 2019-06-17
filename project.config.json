@@ -247,9 +247,10 @@
 					"scene": null
 				},
 				{
-					"id": -1,
-					"name": "steps",
+					"id": 29,
+					"name": "步骤条",
 					"pathName": "pages/steps/steps",
+					"query": "",
 					"scene": null
 				}
 			]

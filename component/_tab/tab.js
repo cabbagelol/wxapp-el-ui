@@ -56,7 +56,6 @@ Elui({
     var that = this;
     var tabsIndex = {};
       that.$fields('.__tab-nav-title__', {computedStyle: ['width']}).then(e=>{
-      console.log(e)
       for (var i = 0; i < e.length; i++) {
         if (parseInt(e['.__tab-nav-title__' + i].width) > 0) {
           that.data.tabs.data[i]['isTitle'] = true

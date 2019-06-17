@@ -49,8 +49,9 @@ Elui({
     onReady() {
       var that = this;
       if (that.data.group.length <= 0) {
-        return
-      }!that.data.value ? that.onRadioGroup({
+        return;
+      };
+      !that.data.value ? that.onRadioGroup({
         data: {
           name: that.data.group[0].data.name,
           value: that.data.group[0].data.value
@@ -62,7 +63,7 @@ Elui({
               name: i.data.name,
               value: i.data.value
             }
-          }, true)
+          }, true);
         }
       })
     },
@@ -72,7 +73,7 @@ Elui({
         type: 'radio-group',
         value: this.data.value,
         data: this.data.group_
-      }, data_))
+      }, data_));
     },
 
     onRadioGroup(data_, change_) {
@@ -83,7 +84,6 @@ Elui({
         if (i.setValue && typeof i.setValue == 'function') {
           i.setValue(false);
           if (!!data_ && data_.data.value == i.data.value) {
-            console.log(i, data_)
             i.setValue(true);
           }
           that.data.group_.push({

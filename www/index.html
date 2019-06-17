@@ -26,6 +26,17 @@
 <script src="js/jszip-utils.min.js" type="application/javascript"></script>
 <script src="js/FileSaver.js" type="application/javascript"></script>
 <script>
+
+  const yideng = (...f) => {
+    return (...u) => {
+      return f.map(i => i(...u))
+    }
+  }
+  
+  const minMax = yideng(Math.min, Math.max);
+  console.log(minMax(1,2,3,4,5));
+  
+	
   var Promise = window.Promise;
   if (!Promise) {
     Promise = JSZip.external.Promise;

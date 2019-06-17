@@ -1,4 +1,3 @@
 <view>
-{{value}}
   <slot/>
 </view>

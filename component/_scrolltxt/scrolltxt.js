@@ -40,7 +40,6 @@ Elui({
 
   ready() {
     var that = this;
-    console.log(that)
     that.setData({
       scrolltxt: Object.assign({
         delay: 3000,

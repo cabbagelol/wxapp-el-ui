@@ -41,7 +41,6 @@ Elui({
     that.$fields('.__cellswipe-controller-right__,.__cellswipe-controller-left__,.__cellswipe-controller-center__', {
       computedStyle: ['height', 'width']
     }).then(e => {
-      console.log(e)
       that.setData({
         'cellswipe.rightW': parseInt(e['.__cellswipe-controller-right__'].width),
         'cellswipe.leftW': parseInt(e['.__cellswipe-controller-left__'].width),

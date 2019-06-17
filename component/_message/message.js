@@ -10,7 +10,7 @@ Elui({
     color: {
       essential: '#FFF'
     },
-    systemnfo: {},
+    systemInfo: {},
     message: {
       cont: '',
       titile: '',
@@ -39,7 +39,7 @@ Elui({
 
   ready() {
     this.setData({
-      systemnfo: wx.getSystemInfoSync()
+      systemInfo: wx.getSystemInfoSync()
     })
   },
 
@@ -48,6 +48,7 @@ Elui({
       var that = this;
       clearTimeout(that.data.message.time);
       that.setData({
+        'message.mask': false,
         'start': false,
         'message.list': []
       });
