@@ -4,8 +4,6 @@
 
 ---
 
-![](/assets/cell01.png)
-
 ## 使用指南
 
 在page.json中引入组件
@@ -30,9 +28,9 @@
 
 ### 样式
 
-##### 1.局部
+1.局部
 
-|  | 说明 | 版本 |
+| 名称 | 说明 | 版本 |
 | :--- | :--- | :--- |
 | el-title | 标题 | 0.0.6 |
 | el-label | 副标题 | 0.0.6 |
@@ -45,7 +43,7 @@
 内容卡槽位置，使用如下:
 
 ```html
-<el-cell title="默认卡槽">
+<el-cell title="默认卡槽" label="副标题" islink>
     <view slot="content">内容</view>
 </el-cell>
 ```
@@ -59,10 +57,16 @@
 
 <!-- 必须注意使用icon插槽，需要设置icon为true -->
 
-<el-cell icon="true" title="自定义" >
+<el-cell icon="true" title="自定义">
     <el-img slot="icon" src=""></el-img>
 </el-cell>
 ```
+
+### 依赖
+
+| 名称 | 关系 | 版本 |
+| :--- | :--- | :--- |
+| column | 依赖 | 0.0.6 |
 
 
 
