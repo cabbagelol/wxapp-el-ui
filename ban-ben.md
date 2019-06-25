@@ -12,7 +12,7 @@
 * 修订message，新增事件，新增用户上拉关闭消息.
 * 修订input初始值存在时，且在设置可擦除状态下擦除按钮未显示问题.
 * 修订tip的type支持colors模块类型.
-* 修订button的type支持colors模块类型.
+* 修订button的type支持colors模块类型, 幽灵属性.
 * 修复input下的address宽度问题.
 * 修复button在按下时load类似控件的动画出现渲染问题.
 * 修复radio异步或延迟更新时引起错误，并无法设置初始值问题.
