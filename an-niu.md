@@ -28,6 +28,7 @@
 | size | String | "" | 大小.含mini、normal、large，当然也可以写成3、5、7. | 0.0.2 |
 | vibrate | Boolean | true | 触摸振动 | 0.0.4 |
 | type | String | "" | 按钮类型 | 0.0.6 |
+| plain | Boolean | false | 幽灵 | 0.0.6 |
 
 * 注意button控件按钮无法正常使用open-type="getUserInfo"类型功能，你应该使用原生来代替
 * 全局样式可以影响button控件样式
