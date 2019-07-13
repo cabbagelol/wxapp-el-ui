@@ -41,7 +41,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 29,
+			"current": 31,
 			"list": [
 				{
 					"id": -1,
@@ -251,6 +251,19 @@
 					"name": "步骤条",
 					"pathName": "pages/steps/steps",
 					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "单元格",
+					"pathName": "pages/cell/cell",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": " 倒计时",
+					"pathName": "pages/countdown/countdown",
 					"scene": null
 				}
 			]

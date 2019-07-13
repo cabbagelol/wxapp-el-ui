@@ -1,4 +1,4 @@
-<el-head head='{{head}}' stickie='{{head.stickie}}' load="{{head.load}}">
+<el-head head='{{head}}' stickie='{{head.stickie}}' load="{{head.load}}" isbar="{{head.bar}}">
   <view slot="nav-left" wx:if="{{head.slot.l}}" bindtap="onToast" style='color:{{head.style.textColor}}'>左</view>
   <view slot="nav-tit" wx:if="{{head.slot.c}}" bindtap="onToast" style='color:{{head.style.textColor}}'>中</view>
   <view slot="nav-right" wx:if="{{head.slot.r}}" bindtap="onToast" style='color:{{head.style.textColor}}'>右</view>
@@ -23,6 +23,9 @@
   </el-cell>
   <el-cell title="加载">
     <switch slot="content" checked="{{head.load}}" data-e="head.load" bindchange="$"/>
+  </el-cell>
+  <el-cell title="bar">
+    <switch slot="content" checked="{{head.bar}}" data-e="head.bar" bindchange="$"/>
   </el-cell>
 
   <el-cell title="左" label="左卡槽">

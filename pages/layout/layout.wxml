@@ -60,6 +60,16 @@
       <view class='layout-block'> 方向 </view>
       <view class='layout-block'> 方向 </view>
     </el-column>
+    <el-column class='layout-margin' align='between'>
+      <view class='layout-block'> 方向 </view>
+      <view class='layout-block'> 方向 </view>
+      <view class='layout-block'> 方向 </view>
+    </el-column>
+    <el-column class='layout-margin' align='around'>
+      <view class='layout-block'> 方向 </view>
+      <view class='layout-block'> 方向 </view>
+      <view class='layout-block'> 方向 </view>
+    </el-column>
   </view>
 </el-layout>
 

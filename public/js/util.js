@@ -11,5 +11,5 @@ module.exports = {
     } catch (E) {
       console.error(E)
     }
-  }
+  },
 }

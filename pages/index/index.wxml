@@ -2,7 +2,7 @@
 <view class='container'>
   <view class='title'>
     <view>Elui</view>
-    <text>小程序UI组件库</text>
+    <text bindtap="open">小程序UI组件库</text>
   </view>
   <el-input bindinput='onSearch' clear></el-input>
   <block wx:for='{{module_}}' wx:key='{{index}}' wx:if='{{module_[index].data.length > 0}}'>

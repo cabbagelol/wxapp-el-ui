@@ -21,7 +21,7 @@ Elui({
 
   methods: {
     onclick(e) {
-      this.triggerEvent('click', e)
+      this.triggerEvent('click', e);
     }
   }
 })

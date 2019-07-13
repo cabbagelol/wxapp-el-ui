@@ -1,7 +1,7 @@
 .button-h2 {
-    display: inline-table;
+  display: inline-table;
   font-size: 20rpx;
   margin-top: 10rpx;
-  color: rgba(0, 0, 0, .2);
+  color: rgba(0, 0, 0, 0.2);
   width: 100%;
 }

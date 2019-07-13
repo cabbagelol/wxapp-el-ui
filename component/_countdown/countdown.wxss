@@ -1,0 +1,7 @@
+.countdown-time {
+  display: inline-flex;
+}
+
+.countdown-interval {
+  display: inline-flex;
+}

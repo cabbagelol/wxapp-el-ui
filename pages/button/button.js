@@ -13,6 +13,7 @@ Page({
       back: true
     },
     button: {
+      plain: false,
       color: {
         essential: "#FFF"
       },

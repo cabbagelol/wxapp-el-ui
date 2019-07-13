@@ -1,5 +1,9 @@
 import Elui from '../baseComponent';
 Elui({
+  externalClasses: [
+    'el-cont'
+  ],
+
   properties: {
     value: {
       type: String,

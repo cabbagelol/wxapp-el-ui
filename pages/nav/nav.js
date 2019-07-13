@@ -16,6 +16,7 @@ var page = {
         c: false,
         r: false
       },
+      bar: true,
       back: true,
       backlenght: 2
     },

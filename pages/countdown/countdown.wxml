@@ -1,0 +1,36 @@
+<el-head head='{{head}}' stickie='true'></el-head>
+<view class="container">
+  <el-cell title='标准'>
+    <el-countdown slot='content' day='{{time.day}}' month='{{time.month}}' fullyear='{{time.fullyear}}' hours='{{time.hours}}' minutes='{{time.minutes}}' seconds='{{time.seconds}}' milliseconds='{{time.milliseconds}}' end='{{"2030-07-14"}}' interval='-'></el-countdown>
+  </el-cell>
+
+  <el-cell title='自定当前时间' label='从{{time.end}}到{{time.start}}, 分别为:年日时分秒毫秒'>
+    <el-countdown slot='content' end='{{time.end}}' value='{{time.start}}' y-interval='-'></el-countdown>
+  </el-cell>
+
+  <el-cell title='过期' label='当时间过期时会触发成功事件，并且显示placeholder的内容'>
+    <el-countdown slot='content' end='2000-01-01' y-interval='-' placeholder='活动已经结束啦' bindsucceed='onCountdownSucceed'></el-countdown>
+  </el-cell>
+</view>
+
+<el-cell title='年'>
+  <switch slot="content" checked="{{time.fullyear}}" data-e="time.fullyear" bindchange="$" />
+</el-cell>
+<!-- <el-cell title='月'>
+  <switch slot="content" checked="{{time.month}}" data-e="time.month" bindchange="$" />
+</el-cell> -->
+<el-cell title='日'>
+  <switch slot="content" checked="{{time.day}}" data-e="time.day" bindchange="$" />
+</el-cell>
+<el-cell title='时'>
+  <switch slot="content" checked="{{time.hours}}" data-e="time.hours" bindchange="$" />
+</el-cell>
+<el-cell title='钟'>
+  <switch slot="content" checked="{{time.minutes}}" data-e="time.minutes" bindchange="$" />
+</el-cell>
+<el-cell title='秒'>
+  <switch slot="content" checked="{{time.seconds}}" data-e="time.seconds" bindchange="$" />
+</el-cell>
+<el-cell title='毫秒'>
+  <switch slot="content" checked="{{time.milliseconds}}" data-e="time.milliseconds" bindchange="$" />
+</el-cell>

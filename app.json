@@ -31,7 +31,8 @@
     "pages/checkbox/checkbox",
     "pages/nav/navto/navto",
     "pages/divider/divider",
-    "pages/steps/steps"
+    "pages/steps/steps",
+    "pages/countdown/countdown"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -76,7 +77,8 @@
     "el-checkbox-group": "./component/_checkbox-group/checkbox-group",
     "el-checkbox": "./component/_checkbox/checkbox",
     "el-steps": "./component/_steps/steps",
-    "el-step": "./component/_steps/step"
+    "el-step": "./component/_steps/step",
+    "el-countdown": "./component/_countdown/countdown"
   },
   "sitemapLocation": "sitemap.json"
 }

@@ -1,6 +1,6 @@
 <el-head head='{{head}}' stickie='true'></el-head>
 <view class='container'>
-  <el-button size='{{button.size.value[button.size.index].name}}' align='{{button.align.value[button.align.index].name}}' disabled='{{button.disabled}}' radius='{{button.radius}}' type='{{button.type.value[button.type.index].name}}' vibrate='{{button.vibrate}}'
+  <el-button size='{{button.size.value[button.size.index].name}}' align='{{button.align.value[button.align.index].name}}' disabled='{{button.disabled}}' radius='{{button.radius}}' type='{{button.type.value[button.type.index].name}}' plain='{{button.plain}}' vibrate='{{button.vibrate}}'
     wx:if='{{button.show}}' bindtap='onButton'>
     按钮
     <block wx:if='{{button.load}}'>, 出现
@@ -22,6 +22,9 @@
     <picker slot='content' range-key='s' bindchange="$" data-e="button.align.index" range="{{button.align.value}}">
       {{button.align.value[button.align.index].s || '选择'}}
     </picker>
+  </el-cell>
+  <el-cell title='幽灵'>
+    <switch slot="content" checked="{{button.plain}}" data-e="button.plain" bindchange="$" />
   </el-cell>
   <el-cell title='圆角'>
     <switch slot="content" checked="{{button.radius}}" data-e="button.radius" bindchange="$" />

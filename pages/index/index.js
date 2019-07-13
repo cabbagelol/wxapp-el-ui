@@ -117,6 +117,11 @@ Page({
           url: '../steps/steps',
           title: '步骤条',
           label: 'steps'
+        },
+        {
+          url: '../countdown/countdown',
+          title: '倒计时',
+          label: 'countdown'
         }
       ],
     }, {
@@ -183,5 +188,5 @@ Page({
       searchvalue: e.detail.value,
       module_
     })
-  }
+  },
 })

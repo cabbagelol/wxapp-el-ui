@@ -36,6 +36,10 @@ Elui({
     type: {
       type: String,
       value: ''
+    },
+    plain: {
+      type: Boolean,
+      value: false
     }
   },
 

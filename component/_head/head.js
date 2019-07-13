@@ -9,6 +9,10 @@ Elui({
       type: Boolean,
       value: false
     },
+    isbar: {
+      type: Boolean,
+      value: true
+    },
     stickie: {
       type: Boolean,
       value: true
@@ -48,8 +52,8 @@ Elui({
       })
     })
   },
-  
-  ready () {
+
+  ready() {
     var that = this;
     that.setData({
       'nav': Object.assign(that.data.nav, {
@@ -67,15 +71,15 @@ Elui({
         const url = '/pages/index/index';
         wx.navigateTo({
           url,
-          fail () {
-            wx.switchTab({url})
+          fail() {
+            wx.switchTab({ url })
           }
         })
         return;
       }
       wx.navigateBack({
         delta: this.data.head.backlenght || 1,
-        fail (err) {
+        fail(err) {
           console.log(err)
         }
       })

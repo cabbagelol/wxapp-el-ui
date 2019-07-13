@@ -1,6 +1,6 @@
      
 <picker class="__address__" mode="region" bindchange="onCitysChange" bindcancel="onCancel" value="{{ citysIndex }}" range="{{ cityArray }}">
-    <view class="__address-picker__">
+    <view class="__address-picker__ el-cont">
         <block wx:if='{{!!value}}'>
             {{value}}
         </block>

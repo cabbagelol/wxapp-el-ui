@@ -17,6 +17,10 @@ button {
   animation: all 25s;
 }
 
+.__button-plain__ {
+  background-color: inherit;
+}
+
 .__button-active__::after {
   content: '';
   transition: all 0.25s;
@@ -66,5 +70,12 @@ button {
 }
 
 .__color-block-default__ {
+  border: 0;
+  background: inherit;
   color: #777;
+}
+
+.__color-block-default__::after,
+.__color-block-default__::before {
+  opacity: 0;
 }

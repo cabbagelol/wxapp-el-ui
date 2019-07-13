@@ -1,37 +1,45 @@
 <el-head head='{{head}}' stickie='true'></el-head>
 <view class='container'>
-  <el-cell title="具有副标题" ></el-cell>
+  <el-cell title="存在很长的标题内容，这标题足够长，所以你需要看看是怎样的" label="content">
+    <view slot="content">这里容</view>
+  </el-cell>
 
-  <el-cell title="具有副标题"  label="label"></el-cell>
+  <el-cell title="这里是自定义内容" label="存在很长的标题内容，这标题足够长，所以你需要看看是怎样的">
+    <view slot="content">存在很长的标题内容，这标题足够长，所以你需要看看是怎样的</view>
+  </el-cell>
 
-  <el-cell title="使用插槽"  label="content">
+  <el-cell title="具有副标题"></el-cell>
+
+  <el-cell title="具有副标题" label="label"></el-cell>
+
+  <el-cell title="使用插槽" label="content">
     <view slot="content">这里是自定义内容</view>
   </el-cell>
 
-  <el-cell icon="true" title="带有图标" >
+  <el-cell icon="true" title="带有图标">
     <image slot='icon' src='https://figure.kjwangluo.com/2F5OMZ2J7H'></image>
   </el-cell>
 
   <el-cell icon='true' title='icon' islink='true'>
-      <icon  slot='icon'  type="success_no_circle" size="15" />
+    <icon slot='icon' type="success_no_circle" size="15" />
   </el-cell>
 
   <el-cell icon='true' title='icon' islink='true'>
-      <icon  slot='icon'  type="info" size="15" />
+    <icon slot='icon' type="info" size="15" />
   </el-cell>
 
   <el-cell icon='true' title='icon' islink='true'>
-      <icon  slot='icon'  type="warn" size="15" />
+    <icon slot='icon' type="warn" size="15" />
   </el-cell>
 
-  <el-cell icon='true' title='icon'  islink='true'>
-      <icon  slot='icon'  type="search" size="15" />
+  <el-cell icon='true' title='icon' islink='true'>
+    <icon slot='icon' type="search" size="15" />
   </el-cell>
-  
-  <el-cell icon='true' title='所有'  label="点击下我试试" islink='true' bindclick='onCellClick'>
-      <icon  slot='icon'  type="success" size="15" />
-      <view slot='content'>
-        <el-img src='https://figure.kjwangluo.com/2F5OMZ2J7H' class='cell-img'></el-img>
-      </view>
+
+  <el-cell icon='true' title='所有' label="点击下我试试" islink='true' bindclick='onCellClick'>
+    <icon slot='icon' type="success" size="15" />
+    <view slot='content'>
+      <el-img src='https://figure.kjwangluo.com/2F5OMZ2J7H' class='cell-img'></el-img>
+    </view>
   </el-cell>
 </view>

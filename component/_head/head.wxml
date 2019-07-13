@@ -1,7 +1,7 @@
 <!-- 导航 -->
 <view class='__head__'>
   <view class='__head_up__ __head-height__' style='margin:{{nav.statusBarHeight}}px 0 0 0;' wx:if='{{stickie}}'></view>
-  <view class='__head_block__ {{stickie ? "__head_stickie__" :  ""}}' style='padding:{{nav.statusBarHeight}}px 0 0 0; background: {{head.style.background ? head.style.background : "inherit"}}'>
+  <view class='__head_block__ {{stickie ? "__head_stickie__" :  ""}}' style='{{isbar ? "padding:" + nav.statusBarHeight + "px 0 0 0" : ""}}; background: {{head.style.background ? head.style.background : "inherit"}}'>
     <image class='__head-background__' src='{{head.style.backgroundImage || ""}}' wx:if='{{!!head.style.backgroundImage}}'></image>
     <view class='__head_block_lbtns__ __head-height__'>
       <view bindtap='onBack' class='__head-block-back__ {{nav.disabled ? "__head-navdisabled__" : ""}}' wx:if='{{head.back}}'>

@@ -122,7 +122,7 @@ Elui({
   },
 
   methods: {
-    onEmpty () {
+    onEmpty() {
       this.data.focus_.data[0].onEmpty();
     },
 
@@ -131,20 +131,21 @@ Elui({
       var err = that.data.verificationErr;
       err = [];
       try {
-        that.data.verification ? that.data.verification.split(',').forEach(function(i, index) {
-          console.log(that.data.focus_.data)
-          let val = that.data.focus_.data[0].data.value;
-          let t = that.data.verification_;
-          for (var j in t) {
-            if (t[j].v && !!t[j].v(val) && i == j) {
-              err.push({
-                msg: t[j].msg
-              })
+        that.data.verification ? that.data.verification.split(',').forEach(function (i, index) {
+          if (that.data.focus_.data.length > 0) {
+            let val = that.data.focus_.data[0].data.value;
+            let t = that.data.verification_;
+            for (var j in t) {
+              if (t[j].v && !!t[j].v(val) && i == j) {
+                err.push({
+                  msg: t[j].msg
+                })
+              }
             }
+            that.setData({
+              verificationErr: err
+            })
           }
-          that.setData({
-            verificationErr: err
-          })
         }) : () => {
           throw '校验格式不通过'
         }

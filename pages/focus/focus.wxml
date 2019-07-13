@@ -15,6 +15,14 @@
 </view>
 
 <view class='container'>
+  <el-focus slot="content" verification='901,900,1001,1002' value='{{focusDemo}}'>
+    <el-cell title='独立校验' label='传入value来提供独立的校验'>
+      <el-input value='{{focusDemo}}' bindinput='$' data-e='focusDemo' />
+    </el-cell>
+  </el-focus>
+</view>
+
+<view class='container'>
   <el-cell title='独立校验' label='传入value来提供独立的校验'>
     <el-focus slot="content" verification='901,900,1001,1002' value='{{focusDemo}}'>
       <el-input value='{{focusDemo}}' bindinput='$' data-e='focusDemo' />

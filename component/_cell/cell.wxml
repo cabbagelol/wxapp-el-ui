@@ -1,14 +1,24 @@
 <!-- 单元格 -->
-<view class='_cell_ {{elclass}}' hover-class='{{islink ? "_cell_hover" : ""}}' bindtap='onclick'>
-    <view class='_cell_title_img_ _cell_center_ el-icon' wx:if='{{icon}}'>
-        <slot name='icon' class='_cell_center_'></slot>
-    </view>
-    <view class='_cell_title_'>
-        <view class='_cell_title_positivetitle_ _cell_center_ el-title' wx:if='{{title}}'>{{title}}</view>
-        <view class='_cell_title_subhead_ _cell_center_ el-label' wx:if='{{label}}'>{{label}}</view>
-    </view>
-    <view class='_cell_title_content_ _cell_center_ el-cont'><slot name='content'></slot></view>
-    <view class='_cell_title_icon_ _cell_center_ el-onward' wx:if='{{islink}}'>
-        <image src='./images/onward.png' ></image>
-    </view>
-</view>
+<el-column style='widht: 100%' align='between' class='_cell_ {{elclass}}' hover-class='{{islink ? "_cell_hover" : ""}}' bindtap='onclick'>
+  <view wx:if='{{icon}}' class='_cell_title_img_ _cell_center_ el-icon'>
+    <slot name='icon' class='_cell_center_'></slot>
+  </view>
+  <view class='_cell_title_'>
+    <view class='_cell_title_positivetitle_ _cell_center_ el-title' wx:if='{{title}}'>{{title}}</view>
+    <view class='_cell_title_subhead_ _cell_center_ el-label' wx:if='{{label}}'>{{label}}</view>
+  </view>
+  <view class='_cell_title_content_ el-cont'>
+    <el-column align='end'>
+      <el-row align='center'>
+        <slot name='content'></slot>
+      </el-row>
+    </el-column>
+  </view>
+  <view class='_cell_title_icon_ el-onward' wx:if='{{islink}}'>
+    <el-column align='end'>
+      <el-row align='center'>
+        <image class='__cell-title-iconimg__' src='./images/onward.png'></image>
+      </el-row>
+    </el-column>
+  </view>
+</el-column>
