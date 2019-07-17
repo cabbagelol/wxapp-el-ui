@@ -33,6 +33,23 @@
 
 ### 插槽
 
+样式
+
+### 样式
+
+1.局部
+
+| 名称 | 说明 | 版本 |
+| :--- | :--- | :--- |
+| el-day | - | 0.0.6 |
+| el-month | - | 0.0.6 |
+| el-fullyear | - | 0.0.6 |
+| el-hours | - | 0.0.6 |
+| el-minuter | - | 0.0.6 |
+| el-seconds | - | 0.0.6 |
+| el-milliseconds | - | 0.0.6 |
+| el-interval | 单位 | 0.0.6 |
+
 ### 使用
 
 ```html
