@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bcb96f6b-c814-45f6-bc20-aea94fe2cee1" name="Default Changelist" comment="2019-7-17 17:26:41">
+    <list default="true" id="bcb96f6b-c814-45f6-bc20-aea94fe2cee1" name="Default Changelist" comment="2019-7-17 17:52:38">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -330,7 +330,7 @@
       <workItem from="1562662075228" duration="1637000" />
       <workItem from="1562890174889" duration="1199000" />
       <workItem from="1563327640046" duration="1362000" />
-      <workItem from="1563356092195" duration="710000" />
+      <workItem from="1563356092195" duration="1211000" />
     </task>
     <task id="LOCAL-00001" summary="2019年3月26日09:56:18">
       <created>1553565384081</created>
@@ -640,14 +640,21 @@
       <option name="project" value="LOCAL" />
       <updated>1563355605693</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="2019-7-17 17:52:38">
+      <created>1563357163407</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1563357163407</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="101347000" />
+    <option name="totallyTimeSpent" value="101848000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="200" y="146" width="1637" height="976" extended-state="0" />
+    <frame x="200" y="146" width="1637" height="976" extended-state="1" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2715736" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -757,7 +764,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="2019-5-8 10:38:23" />
     <MESSAGE value="2019-5-13 13:54:16" />
     <MESSAGE value="2019-5-13 13:54:37" />
     <MESSAGE value="2019-5-13 14:55:28" />
@@ -782,7 +788,8 @@
     <MESSAGE value="2019-6-12 20:50:03" />
     <MESSAGE value="2019-6-17 21:33:40" />
     <MESSAGE value="2019-7-17 17:26:41" />
-    <option name="LAST_COMMIT_MESSAGE" value="2019-7-17 17:26:41" />
+    <MESSAGE value="2019-7-17 17:52:38" />
+    <option name="LAST_COMMIT_MESSAGE" value="2019-7-17 17:52:38" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

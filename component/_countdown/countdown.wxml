@@ -1,26 +1,39 @@
 <block wx:if='{{fullyear && time.fullyear > 0}}'>
-  <view class="countdown-time">{{time.fullyear}}年</view>
+  <view class="countdown-time">{{time.fullyear}}
+    <view class="countdown-interval el-interval">年</view>
+  </view>
 </block>
 <block wx:if='{{day && time.day > 0}}'>
-  <view class="countdown-time">{{time.day}}天</view>
+  <view class="countdown-time">{{time.day}}
+    <view class="countdown-interval el-interval">天</view>
+  </view>
   <!-- <view class="countdown-interval">{{y-interval || '-'}}</view> -->
 </block>
 <!-- <rich-text wx:if='{{hours && minutes}}' nodes='&ensp;' class="countdown-time" /> -->
 <block wx:if='{{hours && time.hours > 0}}'>
-  <view class="countdown-time">{{time.hours}}小时</view>
-</block>
+  <view class="countdown-time">{{time.hours}}
+    <view class="countdown-interval el-interval">小时</view>
+  </view>
+</block> 
 <block wx:if='{{minutes && time.minutes > 0}}'>
   <!-- <view class="countdown-interval" wx:if='{{hours && minutes}}'>{{t-interval || ':'}}</view> -->
-  <view class="countdown-time">{{time.minutes}}分</view>
+  <view class="countdown-time">{{time.minutes}}
+    <view class="countdown-interval el-interval">分</view>
+  </view>
 </block>
 <block wx:if='{{seconds && time.seconds > 0}}'>
   <!-- <view class="countdown-interval" wx:if='{{minutes && seconds}}'>{{t-interval || ':'}}</view> -->
-  <view class="countdown-time">{{time.seconds}}秒</view>
+  <view class="countdown-time">{{time.seconds}}
+    <view class="countdown-interval el-interval">秒</view>
+  </view>
 </block>
 <block wx:if='{{milliseconds && time.milliseconds > 0}}'>
   <!-- <view class="countdown-interval" wx:if='{{seconds && milliseconds}}'>{{t-interval || ':'}}</view> -->
-  <view class="countdown-time">{{time.milliseconds}}毫秒</view>
+  <view class="countdown-time">{{time.milliseconds}}
+    <view class="countdown-interval el-interval">毫秒</view>
+  </view>
 </block>
 <block wx:if='{{datenumber <= 0}}'>
-  {{placeholder || '计时结束'}}
+  {{placeholder || ''}}
+  <slot name='placeholder' />
 </block>

@@ -1,5 +1,16 @@
 import Elui from '../baseComponent';
 Elui({
+  externalClasses: [
+    'el-day',
+    'el-month',
+    'el-fullyear',
+    'el-hours',
+    'el-minuter',
+    'el-seconds',
+    'el-milliseconds',
+    'el-interval'
+  ],
+
   properties: {
     value: {
       type: String,
@@ -13,11 +24,11 @@ Elui({
       type: String,
       value: ''
     },
-    'y-interval': {
+    'yInterval': {
       type: String,
       value: '-'
     },
-    't-interval': {
+    'tInterval': {
       type: String,
       value: ':'
     },
