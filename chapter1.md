@@ -55,7 +55,7 @@
 | backgroundImage | String | "" | 背景地址，注意在background为inherit下使用 | 0.0.3 |
 | textColor | String | "" | 默认状态下将直接继承父容器属性 | 0.0.2 |
 | back | Boolean | false | 是否可见返回上一页按钮 | 0.0.2 |
-| backlenght | Number | 1 | 返回的页面 | 0.0.5 |
+| backlength | Number | 1 | 返回的页面 | 0.0.5 |
 
 ### 插槽
 
