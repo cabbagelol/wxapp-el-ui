@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bcb96f6b-c814-45f6-bc20-aea94fe2cee1" name="Default Changelist" comment="2019-6-17 21:33:40">
+    <list default="true" id="bcb96f6b-c814-45f6-bc20-aea94fe2cee1" name="Default Changelist" comment="2019-7-17 17:26:41">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -18,8 +18,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="274">
-              <caret line="43" selection-start-line="43" selection-end-line="43" />
+            <state relative-caret-position="27">
+              <caret line="30" column="22" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -218,7 +218,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -247,12 +246,13 @@
           <select />
         </subPane>
       </pane>
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="F:/dartdmeo" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../dartdmeo" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
     <property name="ts.external.directory.path" value="C:\Users\Administrator\AppData\Local\JetBrains\Toolbox\apps\WebStorm\ch-0\183.5912.23\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
@@ -329,7 +329,8 @@
       <workItem from="1562314671476" duration="1551000" />
       <workItem from="1562662075228" duration="1637000" />
       <workItem from="1562890174889" duration="1199000" />
-      <workItem from="1563327640046" duration="1199000" />
+      <workItem from="1563327640046" duration="1362000" />
+      <workItem from="1563356092195" duration="710000" />
     </task>
     <task id="LOCAL-00001" summary="2019年3月26日09:56:18">
       <created>1553565384081</created>
@@ -632,17 +633,23 @@
       <option name="project" value="LOCAL" />
       <updated>1560778446268</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="2019-7-17 17:26:41">
+      <created>1563355605693</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1563355605693</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="100474000" />
+    <option name="totallyTimeSpent" value="101347000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="136" y="701" width="1637" height="974" extended-state="0" />
-    <editor active="true" />
+    <frame x="200" y="146" width="1637" height="976" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2677665" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2715736" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="Repositories" order="3" weight="0.3296" />
@@ -653,7 +660,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info active="true" anchor="bottom" id="Weex Console" order="7" sideWeight="0.49813294" visible="true" weight="0.32261905" />
+      <window_info anchor="bottom" id="Weex Console" order="7" sideWeight="0.49813294" visible="true" weight="0.32185274" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.4992" weight="0.33053514" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.24844074" />
@@ -750,7 +757,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="2019-5-7 18:37:32" />
     <MESSAGE value="2019-5-8 10:38:23" />
     <MESSAGE value="2019-5-13 13:54:16" />
     <MESSAGE value="2019-5-13 13:54:37" />
@@ -775,7 +781,8 @@
     <MESSAGE value="2019-6-10 17:38:43" />
     <MESSAGE value="2019-6-12 20:50:03" />
     <MESSAGE value="2019-6-17 21:33:40" />
-    <option name="LAST_COMMIT_MESSAGE" value="2019-6-17 21:33:40" />
+    <MESSAGE value="2019-7-17 17:26:41" />
+    <option name="LAST_COMMIT_MESSAGE" value="2019-7-17 17:26:41" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -986,8 +993,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/www/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="43" selection-start-line="43" selection-end-line="43" />
+        <state relative-caret-position="27">
+          <caret line="30" column="22" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
         </state>
       </provider>
     </entry>
