@@ -33,13 +33,12 @@
 
 ### 插槽
 
-
-
 ### 使用
 
 ```html
-    <el-countdown slot='content' day='{{time.day}}' month='{{time.month}}' fullyear='{{time.fullyear}}' hours='{{time.hours}}' minutes='{{time.minutes}}' seconds='{{time.seconds}}' milliseconds='{{time.milliseconds}}' end='{{"2030-07-14"}}' interval='-'></el-countdown>
-  </el-cell>
+<el-countdown slot='content' day='{{time.day}}' month='{{time.month}}' fullyear='{{time.fullyear}}' hours='{{time.hours}}' minutes='{{time.minutes}}' seconds='{{time.seconds}}' milliseconds='{{time.milliseconds}}' end='{{"2030-07-14"}}' interval='-'>
+
+</el-countdown>
 ```
 
 
