@@ -49,26 +49,26 @@
   <el-cell title='水平'></el-cell>
   <view class='container'>
     <el-column class='layout-margin' align='start'>
-      <view class='layout-block'> 方向 </view>
-      <view class='layout-block'> 方向 </view>
+      <view class='layout-block'> start </view>
+      <view class='layout-block'> start </view>
     </el-column>
     <el-column class='layout-margin' align='center'>
-      <view class='layout-block'> 方向 </view>
-      <view class='layout-block'> 方向 </view>
+      <view class='layout-block'> center </view>
+      <view class='layout-block'> center </view>
     </el-column>
     <el-column class='layout-margin' align='end'>
-      <view class='layout-block'> 方向 </view>
-      <view class='layout-block'> 方向 </view>
+      <view class='layout-block'> end </view>
+      <view class='layout-block'> end </view>
     </el-column>
     <el-column class='layout-margin' align='between'>
-      <view class='layout-block'> 方向 </view>
-      <view class='layout-block'> 方向 </view>
-      <view class='layout-block'> 方向 </view>
+      <view class='layout-block'> between </view>
+      <view class='layout-block'> between </view>
+      <view class='layout-block'> between </view>
     </el-column>
     <el-column class='layout-margin' align='around'>
-      <view class='layout-block'> 方向 </view>
-      <view class='layout-block'> 方向 </view>
-      <view class='layout-block'> 方向 </view>
+      <view class='layout-block'> around </view>
+      <view class='layout-block'> around </view>
+      <view class='layout-block'> around </view>
     </el-column>
   </view>
 </el-layout>

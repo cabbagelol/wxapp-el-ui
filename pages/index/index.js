@@ -78,11 +78,11 @@ Page({
           title: '滑动单元格',
           label: 'cellswipe'
         },
-        {
-          url: '../slider/slider',
-          title: '[未完成]滑动选择器',
-          label: 'slider'
-        },
+        // {
+        //   url: '../slider/slider',
+        //   title: '[未完成]滑动选择器',
+        //   label: 'slider'
+        // },
         {
           url: '../message/message',
           title: '全局消息',
@@ -158,11 +158,13 @@ Page({
         url: '../tip/tip',
         title: '提示',
         label: 'tip'
-      }, {
-        url: '../divider/divider',
-        title: '分割线',
-        label: 'divider'
-      }]
+      },
+      // {
+      //   url: '../divider/divider',
+      //   title: '分割线',
+      //   label: 'divider'
+      // }
+      ]
     }]
   },
 
