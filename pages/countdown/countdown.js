@@ -25,7 +25,23 @@ Page({
     }
   },
 
+  onLoad () {
+    this.countdow = this.selectComponent(".countdow");
+  },
+
+  onTimeStop () {
+    this.countdow.stop();
+  },
+
+  onTimeStart () {
+    this.countdow.start();
+  },
+
   onCountdownSucceed () {
     console.log('活动结束');
+  },
+
+  onTimeOverdue (e) {
+    console.log('时间过期')
   },
 })

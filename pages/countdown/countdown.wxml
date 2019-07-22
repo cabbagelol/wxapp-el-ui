@@ -1,7 +1,10 @@
 <el-head head='{{head}}' stickie='true'></el-head>
 <view class="container">
   <el-cell title='标准'>
-    <el-countdown slot='content' day='{{time.day}}' month='{{time.month}}' fullyear='{{time.fullyear}}' hours='{{time.hours}}' minutes='{{time.minutes}}' seconds='{{time.seconds}}' milliseconds='{{time.milliseconds}}' end='{{"2030-07-14"}}' yInterval='-'></el-countdown>
+    <el-countdown slot='content' class='countdow' day='{{time.day}}' month='{{time.month}}' fullyear='{{time.fullyear}}' hours='{{time.hours}}' minutes='{{time.minutes}}' seconds='{{time.seconds}}' milliseconds='{{time.milliseconds}}' end='{{"2030-07-20 17:32:00"}}'
+      yInterval='-' bindsucceed='onTimeOverdue'>
+      <view slot='placeholder'>时间过期</view>
+    </el-countdown>
   </el-cell>
 
   <el-cell title='自定当前时间' label='从{{time.end}}到{{time.start}}, 分别为:年日时分秒毫秒'>
@@ -11,6 +14,11 @@
   <el-cell title='过期' label='当时间过期时会触发成功事件，并且显示placeholder的内容'>
     <el-countdown slot='content' end='2000-01-01' yInterval='-' placeholder='活动已经结束啦' bindsucceed='onCountdownSucceed'></el-countdown>
   </el-cell>
+</view>
+
+<view class="container">
+  <el-button bindtap='onTimeStart' type='primary'>开始</el-button>
+  <el-button bindtap='onTimeStop'>结束</el-button>
 </view>
 
 <el-cell title='年'>

@@ -85,18 +85,27 @@ Elui({
   },
 
   ready() {
-    this.setTime();
-    this.data.inter['0'] = setInterval(() => {
-      this.setTime();
-    }, 1000);
-    this.data.inter['1'] = setInterval(() => {
-      if (this.data.datenumber > 0) {
-        this.getTimemilliseconds();
-      }
-    }, 10);
+    this.setReady();
   },
 
   methods: {
+    setReady () {
+      // this.setTime();
+      this.i = 0;
+      do {
+        this.i++;
+      } while (this.i < 1) {
+        this.data.inter['0'] = setInterval(() => {
+          this.setTime();
+        }, 1000);
+        this.data.inter['1'] = setInterval(() => {
+          if (this.data.datenumber > 0) {
+            this.getTimemilliseconds();
+          }
+        }, 10);
+      }
+    },
+
     setTime() {
       this.setData({
         time: Object.assign(this.data.time, this.getTime())
@@ -133,9 +142,21 @@ Elui({
     delelInder() {
       clearInterval(this.data.inter['0']);
       clearInterval(this.data.inter['1']);
+      this.i = 0;
       this.setData({
         'time.milliseconds':0
       })
     },
+
+    stop () {
+      this.delelInder();
+    },
+
+    start () {
+      if (!!this.i) {
+        return;
+      }
+      this.setReady();
+    }
   }
 })
