@@ -1,6 +1,0 @@
-<view class='__divider__'>
-  <view>
-    <slot/>
-    <view class='__divider-hr__'></view>
-  </view>
-</view>

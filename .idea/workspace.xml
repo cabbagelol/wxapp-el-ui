@@ -2,10 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bcb96f6b-c814-45f6-bc20-aea94fe2cee1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/_countdown/countdown.js" beforeDir="false" afterPath="$PROJECT_DIR$/component/_countdown/countdown.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/countdown/countdown.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/countdown/countdown.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/countdown/countdown.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/countdown/countdown.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/component/_divider/divider.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/component/_divider/divider.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/component/_divider/divider.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/component/_divider/divider.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/component/_slider/slider.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/component/_slider/slider.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/component/_slider/slider.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/component/_slider/slider.wxss" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -21,8 +27,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-68">
-              <caret line="25" column="75" lean-forward="true" selection-start-line="25" selection-start-column="75" selection-end-line="25" selection-end-column="75" />
+            <state relative-caret-position="217">
+              <caret line="73" column="2" lean-forward="true" selection-start-line="73" selection-start-column="2" selection-end-line="73" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -106,8 +112,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
+            <state>
+              <caret column="1" selection-start-column="1" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -198,7 +204,6 @@
         <option value="$PROJECT_DIR$/component/index.js" />
         <option value="$PROJECT_DIR$/pages/content/content.wxml" />
         <option value="$PROJECT_DIR$/component/_tab/tab.js" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/www/js/jszip-utils.min.js" />
         <option value="$PROJECT_DIR$/www/js/FileSaver.js" />
         <option value="$PROJECT_DIR$/www/css/style.ts" />
@@ -206,14 +211,15 @@
         <option value="$PROJECT_DIR$/pages/img/img.wxml" />
         <option value="$PROJECT_DIR$/www/css/style.css" />
         <option value="$PROJECT_DIR$/www/index.html" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="200" />
-    <option name="y" value="146" />
-    <option name="width" value="1637" />
-    <option name="height" value="976" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1912" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1096" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -231,19 +237,24 @@
             <path>
               <item name="wxapp-components" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="www" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="component" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="wxapp-components" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="component" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="_divider" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="wxapp-components" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="component" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="_slider" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
               <item name="wxapp-components" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="www" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="css" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="wxapp-components" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="www" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="js" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
           <select />
@@ -333,7 +344,7 @@
       <workItem from="1562662075228" duration="1637000" />
       <workItem from="1562890174889" duration="1199000" />
       <workItem from="1563327640046" duration="1362000" />
-      <workItem from="1563356092195" duration="2085000" />
+      <workItem from="1563356092195" duration="2803000" />
     </task>
     <task id="LOCAL-00001" summary="2019年3月26日09:56:18">
       <created>1553565384081</created>
@@ -657,17 +668,24 @@
       <option name="project" value="LOCAL" />
       <updated>1563357668404</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="新增倒计时暂停与开始事件">
+      <created>1563761459149</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1563761459149</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="102722000" />
+    <option name="totallyTimeSpent" value="103440000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="200" y="146" width="1637" height="976" extended-state="0" />
+    <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2715736" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22826667" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="Repositories" order="3" weight="0.3296" />
@@ -678,10 +696,10 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Weex Console" order="7" sideWeight="0.49813294" visible="true" weight="0.32185274" />
+      <window_info anchor="bottom" id="Weex Console" order="7" sideWeight="0.49813294" weight="0.28170478" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.4992" weight="0.33053514" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.24844074" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.24844074" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5008" side_tool="true" weight="0.49028572" />
       <window_info anchor="bottom" id="SmartIM" order="12" />
       <window_info anchor="bottom" id="Alipay DevTools" order="13" />
@@ -775,7 +793,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="2019-5-13 13:54:37" />
     <MESSAGE value="2019-5-13 14:55:28" />
     <MESSAGE value="2019-5-13 15:40:55" />
     <MESSAGE value="2019-5-13 17:09:04" />
@@ -800,23 +817,8 @@
     <MESSAGE value="2019-7-17 17:26:41" />
     <MESSAGE value="2019-7-17 17:52:38" />
     <MESSAGE value="2019-7-17 18:01:02" />
-    <option name="LAST_COMMIT_MESSAGE" value="2019-7-17 18:01:02" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/www/index.html</url>
-          <line>81</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/www/index.html</url>
-          <line>74</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="新增倒计时暂停与开始事件" />
+    <option name="LAST_COMMIT_MESSAGE" value="新增倒计时暂停与开始事件" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$USER_HOME$/Desktop/www/index.html" />
@@ -1009,13 +1011,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-68">
-          <caret line="25" column="75" lean-forward="true" selection-start-line="25" selection-start-column="75" selection-end-line="25" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="684">
@@ -1078,8 +1073,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
+        <state>
+          <caret column="1" selection-start-column="1" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="73" column="2" lean-forward="true" selection-start-line="73" selection-start-column="2" selection-end-line="73" selection-end-column="2" />
         </state>
       </provider>
     </entry>
