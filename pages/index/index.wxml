@@ -1,8 +1,10 @@
 <el-head head='{{head}}' stickie></el-head>
 <view class='container'>
+  <slot name='input' />
   <view class='title'>
     <view>Elui</view>
-    <text bindtap="open">小程序UI组件库</text>
+    <text>小程序UI组件库</text>
+    <text style="font-size:24rpx">https://github.com/cabbagelol/wxapp-el-ui</text>
   </view>
   <el-input bindinput='onSearch' clear></el-input>
   <block wx:for='{{module_}}' wx:key='{{index}}' wx:if='{{module_[index].data.length > 0}}'>

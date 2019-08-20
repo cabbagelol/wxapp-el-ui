@@ -1,0 +1,41 @@
+<slot />
+<view class="__keyboard__ {{show ? '__keyboard-show__' : ''}}" style='z-index: {{zIndex||10}}'>
+  <el-column align='center' class='__keyboard-title__'>
+    <el-column-x>{{title}}</el-column-x>
+  </el-column>
+  <block wx:if='{{FH}}'>
+    <view class="__keyboard-flex__ __keyboard-ke__">
+      <view wx:for='{{f[0]}}' wx:key='{{index}}' data-d='{{item}}' bindtap="onInput">{{item}}</view>
+    </view>
+    <view class="__keyboard-flex__ __keyboard-ke__">
+      <view wx:for='{{f[1]}}' wx:key='{{index}}' data-d='{{item}}' bindtap="onInput">{{item}}</view>
+    </view>
+    <view class="__keyboard-flex__ __keyboard-ke__">
+      <view wx:for='{{f[2]}}' wx:key='{{index}}' data-d='{{item}}' bindtap="onInput">{{item}}</view>
+    </view>
+    <view class="__keyboard-flex__ __keyboard-ke__">
+      <view class="__keyboard-ke-t__" bindtap="onSymbol">ABC</view>
+      <view wx:for='{{f[3]}}' wx:key='{{index}}' data-d='{{item}}' bindtap="onInput">{{item}}</view>
+      <view class="__keyboard-ke-t__" bindtap="onDelete" bindtouchstart="onDeleteLong" bindtouchend="onDeleteLongEnd">删除</view>
+    </view>
+  </block>
+  <block wx:else>
+    <view class="__keyboard-flex__ __keyboard-ke__">
+      <view wx:for='{{k[0]}}' wx:key='{{index}}' data-d='{{item}}' bindtap="onInput">{{item}}</view>
+    </view>
+    <view class="__keyboard-flex__ __keyboard-ke__">
+      <view wx:for='{{k[1]}}' wx:key='{{index}}' data-d='{{item[ZMT]}}' bindtap="onInput">{{item[ZMT]}}</view>
+    </view>
+    <view class="__keyboard-flex__ __keyboard-ke__">
+      <view class="__keyboard-ke-t__ {{ZMT == 'D' ? '__keyboard-ke-tD__' : ''}}" bindtap="onConversion">
+        大写
+      </view>
+      <view wx:for='{{k[2]}}' wx:key='{{index}}' data-d='{{item[ZMT]}}' bindtap="onInput">{{item[ZMT]}}</view>
+    </view>
+    <view class="__keyboard-flex__ __keyboard-ke__">
+      <view class="__keyboard-ke-t__" bindtap="onSymbol">#+=</view>
+      <view wx:for='{{k[3]}}' wx:key='{{index}}' data-d='{{item[ZMT]}}' bindtap="onInput">{{item[ZMT]}}</view>
+      <view class="__keyboard-ke-t__" bindtap="onDelete" bindtouchstart="onDeleteLong" bindtouchend="onDeleteLongEnd">删除</view>
+    </view>
+  </block>
+</view>

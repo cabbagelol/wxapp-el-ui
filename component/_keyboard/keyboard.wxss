@@ -1,0 +1,60 @@
+.__keyboard__ {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: -100%;
+  padding-bottom: env(safe-area-inset-bottom);
+  background: #eee;
+  transition: all 0.25s;
+}
+
+.__keyboard-show__ {
+  bottom: 0;
+}
+
+.__keyboard-flex__ {
+  display: inline-flex;
+}
+
+.__keyboard-flex__ > view {
+  flex: 1;
+  flex-direction: column;
+}
+
+.__keyboard-title__ {
+  font-size: 24rpx;
+  color: #999;
+  padding: 10rpx 0;
+}
+
+.__keyboard-ke__ {
+  padding: 0 0 0 10rpx;
+  width: calc(100% - 10rpx);
+}
+
+.__keyboard-ke__ > view {
+  border-radius: 0.1rem;
+  border: 2rpx solid rgba(0, 0, 0, 0);
+  box-shadow: 0 0 5rpx rgba(0, 0, 0, 0.123);
+  font-size: 28rpx;
+  margin-right: 10rpx;
+  margin-bottom: 10rpx;
+  padding: 15rpx 10rpx;
+  background-color: #fff;
+  color: #555;
+  text-align: center;
+}
+
+.__keyboard-ke__ > view:active {
+  opacity: 0.25;
+}
+
+.__keyboard-ke-t__ {
+  white-space: nowrap;
+  background-color: #e3e3e3 !important;
+  color: #555;
+}
+
+.__keyboard-ke-tD__ {
+  background-color: rgb(211, 211, 211) !important;
+}

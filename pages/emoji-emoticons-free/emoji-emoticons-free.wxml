@@ -1,0 +1,2 @@
+<el-head head='{{head}}' stickie='true'></el-head>
+<el-emoji-emoticons-free />

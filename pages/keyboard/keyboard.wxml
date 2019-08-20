@@ -1,0 +1,7 @@
+<el-head head='{{head}}'></el-head>
+<el-input title='描述内容' value='{{value}}'  bindinput="$" data-e='value' disabled/>
+<view class="container">
+  <el-keyboard bindkeyboard='onInput' class='keyboard' title='自定义标题屏幕键盘' value='{{value}}' />
+  <el-button bindtap='onKeyboardShow'>显示</el-button>
+  <el-button bindtap="onKeyboardHide">隐藏</el-button>
+</view>

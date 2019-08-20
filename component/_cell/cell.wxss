@@ -31,6 +31,7 @@
 ._cell_title_positivetitle_ {
   font-size: 28rpx;
   color: #000;
+  min-width: 100rpx;
 }
 
 ._cell_title_subhead_ {
@@ -46,7 +47,8 @@
   display: inline-flex;
   align-content: center;
   justify-content: flex-end;
-  white-space: nowrap;
+  /* white-space: pre; */
+  word-break: keep-all;
 }
 
 ._cell_title_img_ {

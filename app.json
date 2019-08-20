@@ -32,7 +32,9 @@
     "pages/nav/navto/navto",
     "pages/divider/divider",
     "pages/steps/steps",
-    "pages/countdown/countdown"
+    "pages/countdown/countdown",
+    "pages/keyboard/keyboard",
+    "pages/emoji-emoticons-free/emoji-emoticons-free"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -78,7 +80,9 @@
     "el-checkbox": "./component/_checkbox/checkbox",
     "el-steps": "./component/_steps/steps",
     "el-step": "./component/_steps/step",
-    "el-countdown": "./component/_countdown/countdown"
+    "el-countdown": "./component/_countdown/countdown",
+    "el-keyboard": "./component/_keyboard/keyboard",
+    "el-emoji-emoticons-free": "./component/_emoji-emoticons-free/emoji-emoticons-free"
   },
   "sitemapLocation": "sitemap.json"
 }

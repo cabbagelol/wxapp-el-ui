@@ -165,6 +165,16 @@ Page({
       //   label: 'divider'
       // }
       ]
+    },
+    {
+      title: '业务',
+      data: [
+        {
+          url: '../keyboard/keyboard',
+          title: '键盘',
+          label: 'keyboard'
+        }
+      ]
     }]
   },
 

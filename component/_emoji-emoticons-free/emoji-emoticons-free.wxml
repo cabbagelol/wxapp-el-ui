@@ -1,0 +1,10 @@
+<view class="__emoji__">
+  <view bindtap="onSetValue">{{value}}</view>
+  <view bindtap="openEmoji" class="__emoji-on__">#</view>
+
+  <el-input class='__emoji-input__' value='{{value}}' focus="{{emoji.focus}}" bindinput='onInput'></el-input>
+
+  <view class="__emoji-popup__">
+    23
+  </view>
+</view>

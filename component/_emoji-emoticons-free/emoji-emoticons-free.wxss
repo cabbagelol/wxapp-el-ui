@@ -1,0 +1,20 @@
+.__emoji__ {
+ position: relative;
+ overflow: hidden;
+}
+.__emoji-input__ {
+  position: absolute;
+  top: -100%;
+  left: -100%;
+}
+
+.__emoji-on__ {
+  color: #999;
+  font-size: 27rpx;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.__emoji-popup__ {
+  background: rgba(0, 0, 0, 0.048);
+}
