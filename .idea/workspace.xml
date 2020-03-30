@@ -16,7 +16,7 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://F:/flutter_plugin_drawer/flutter_plugin_drawer/README.md">
+        <entry file="file://$PROJECT_DIR$/../flutter_plugin_drawer/flutter_plugin_drawer/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="437">
@@ -121,7 +121,7 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/package-lock.json" />
-        <option value="F:/flutter_plugin_drawer/flutter_plugin_drawer/README.md" />
+        <option value="$PROJECT_DIR$/../flutter_plugin_drawer/flutter_plugin_drawer/README.md" />
       </list>
     </option>
   </component>
@@ -174,7 +174,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
-    <property name="ts.external.directory.path" value="C:\Users\Administrator\AppData\Local\JetBrains\Toolbox\apps\WebStorm\ch-0\183.5912.23\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+    <property name="ts.external.directory.path" value="D:\WebStorm 2019.3.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -745,6 +745,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="2019-8-20 14:02:19" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="2568" y="185" key="CommitChangelistDialog2" timestamp="1585536484983">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2568" y="185" key="CommitChangelistDialog2/62.0.1858.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1585536484983" />
     <state x="2748" y="345" key="FileChooserDialogImpl" timestamp="1585536394148">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
@@ -1019,7 +1023,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://F:/flutter_plugin_drawer/flutter_plugin_drawer/README.md">
+    <entry file="file://$PROJECT_DIR$/../flutter_plugin_drawer/flutter_plugin_drawer/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="437">

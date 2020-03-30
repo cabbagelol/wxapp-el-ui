@@ -34,7 +34,8 @@
     "pages/steps/steps",
     "pages/countdown/countdown",
     "pages/keyboard/keyboard",
-    "pages/emoji-emoticons-free/emoji-emoticons-free"
+    "pages/emoji-emoticons-free/emoji-emoticons-free",
+    "pages/picker/picker"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -82,7 +83,10 @@
     "el-step": "./component/_steps/step",
     "el-countdown": "./component/_countdown/countdown",
     "el-keyboard": "./component/_keyboard/keyboard",
-    "el-emoji-emoticons-free": "./component/_emoji-emoticons-free/emoji-emoticons-free"
+    "el-emoji-emoticons-free": "./component/_emoji-emoticons-free/emoji-emoticons-free",
+    "el-picker": "./component/_picker/picker",
+    "el-picker-view": "./component/_picker-view/picker-view"
+        
   },
   "sitemapLocation": "sitemap.json"
 }
