@@ -6,7 +6,7 @@
   opacity: .5;
 }
 
-.__numIndicator__ > view {
+.__numIndicator__ > .__numIndicator-view__ {
   width: 100%;
   display: inline-flex;
   justify-content: center;
@@ -65,7 +65,7 @@
   position: relative;
 }
 
-.__numIndicator_value__ input {
+.__numIndicator_value__ .__numIndicator_value-input__ {
   text-align: center;
   width: 80rpx;
   min-width: 80rpx;

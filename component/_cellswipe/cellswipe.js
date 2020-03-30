@@ -110,7 +110,7 @@ Elui({
       if (that.data.cellswipe.leftW <= 0 && calcX > that.data.cellswipe.leftW) {
         calcX = 0
       }
-      if (that.data.cellswipe.rightW <= 0 && calcX < -that.data.cellswipe.leftW) {
+      if (that.data.cellswipe.rightW  <= 0 && calcX < -that.data.cellswipe.leftW) {
         calcX = -that.data.cellswipe.leftW
       }
       if (that.isF() > 0) {

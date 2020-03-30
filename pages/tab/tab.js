@@ -55,6 +55,7 @@ Page({
   },
 
   onTabChange (e) {
+    console.log(e.detail)
     this.setData({
       'tab.index': e.detail.index,
       'tab.title': e.detail.title

@@ -1,5 +1,5 @@
 <view class='__cellswipe__'>
-  <view class='__cellswipe-controller__' style='transition: transform {{cellswipe.duration / 1000}}s;transform: translateX({{cellswipe.left}}px)' bindtouchstart="touchStart" catchtouchmove="touchMove" bindtouchend="touchEnd">
+  <view class='__cellswipe-controller__' style='transition: transform {{cellswipe.duration / 1000}}s;transform: translateX({{cellswipe.left}}px)' bindtouchstart="touchStart" bindtouchmove="touchMove" bindtouchend="touchEnd">
     <view id='.__cellswipe-controller-left__' class='__cellswipe-controller-left__'>
       <view class='__cellswipe-controller-left-cont__' wx:if='{{!disabled}}'><slot name='left'></slot></view>
       <view class='__cellswipe-controller-left-cont-d__' style='width: {{cellswipe.leftWs}}px;background-color: {{color}};'></view>

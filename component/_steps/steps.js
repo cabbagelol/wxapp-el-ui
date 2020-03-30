@@ -26,7 +26,7 @@ Elui({
         this.data.step.push(target);
         this.setData({
           step: this.data.step
-        })
+        });
       }
     }
   },

@@ -40,6 +40,10 @@
 			"currentL": -1,
 			"list": []
 		},
+		"gamePlugin": {
+			"current": -1,
+			"list": []
+		},
 		"miniprogram": {
 			"current": 33,
 			"list": [
@@ -278,6 +282,14 @@
 					"id": -1,
 					"name": "表情库",
 					"pathName": "pages/emoji-emoticons-free/emoji-emoticons-free",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "选择器",
+					"pathName": "pages/picker/picker",
+					"query": "",
 					"scene": null
 				}
 			]

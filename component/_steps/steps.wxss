@@ -10,10 +10,10 @@
   display: flex;
 }
 
-.__steps-direction-horizontal__ el-step {
+/* .__steps-direction-horizontal__ el-step {
   flex: 1;
 }
 
 .__steps-direction-horizontal__ el-step:last-child {
   flex: none;
-}
+} */

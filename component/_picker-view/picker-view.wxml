@@ -1,0 +1,23 @@
+<view class='__picker-view__' style="height: {{configure.height}}px">
+  <view class='__picker-viewafter__' style="height: {{itemHeight || 36}}px"></view>
+  <block wx:for='{{slots}}' wx:key='rollingindex' wx:for-index='rollingindex'>
+    {{slotsindex[0]}}
+
+
+    <!-- S 選項 -->
+    <el-rolling animation='200' scrollbar='{{rolling.scrollbar}}' upperThreshold='{{rolling.upperThreshold}}' lowerThreshold='{{rolling.lowerThreshold}}' fullscreen='{{rolling.autoFullscreenf}}' rubber='{{rolling.rubber}}' isscroll='{{rolling.isscroll}}'
+      scrollY='{{item.y}}' bindscroll='onScroll' bindready='onScrollReady' data-index='{{rollingindex}}' class='__rolling-item__' style='width:{{100 / slots.length}}%' wx:if='{{!item.divider}}'>
+
+      <view wx:for='{{item.values}}' wx:for-item='valueitem' wx:for-index='valueindex' wx:key='valueindex' class='__picker-view-column__ {{slots[index].value == valueindex ? "__picker-view-column-ac__" : ""}}' style="line-height: {{itemHeight || 36}}px;">
+        {{valueitem}}
+      </view>
+    </el-rolling>
+    <!-- E 選項 -->
+
+    <!-- S 中間件 -->
+    <view wx:if='{{item.divider}}' class="__picker-divider__" style="height: {{itemHeight || 36}}px">
+      {{item.content}}
+    </view>
+    <!-- E 中間件 -->
+  </block>
+</view>

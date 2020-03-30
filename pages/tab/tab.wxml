@@ -13,10 +13,10 @@
     水源 <el-tag size='3' color='red' textColor='#FFF'>new</el-tag>
   </view>
 
-  <el-tab-content title='{{item.title}}' wx:for='{{tab.data}}' wx:key='{{index}}' disabled='{{item.disabled}}'>
+  <el-tab-content title='{{item.title}}' wx:for='{{tab.data}}' wx:key='index' disabled='{{item.disabled}}'>
     <block wx:if='{{tab.content}}'>
       <view class='tab-content'>
-        <el-cell title='{{item.title}}-{{i}}' label='{{item.cont}}' wx:for='{{10}}' wx:for-item='i' wx:key='{{i}}' islink></el-cell>
+        <el-cell title='{{item.title}}-{{i}}' label='{{item.cont}}' wx:for='{{10}}' wx:for-item='i' wx:key='i' islink></el-cell>
       </view>
     </block>
   </el-tab-content>

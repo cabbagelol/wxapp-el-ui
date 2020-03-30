@@ -1,22 +1,20 @@
 <view class='__step__ {{stepStatus == index ? "__step-select__" : ""}} {{type ? "__step-type-" + type + "__" : ""}} el-step' bindtap='onTapStep'>
   <el-column>
     <view class='__step-icon__ el-icon'>
-      <view wx:if="{{!iconsolt}}">
+      <view wx:if="{{!iconsolt}}" class='__step-icon-view__'>
         <view class='__step-icon-circle__ __color-border-primary__' style='{{color ? "border-color: " + color : ""}}'>{{index + 1}}</view>
         <view class='__step-hr__ __step-hr-vertical__' wx:if='{{index < stepsCount - 1 && direction == "vertical"}}'></view>
       </view>
-      <view class='__step-icon-solt__' id='.__step-icon-solt__'>
-        <slot name='icon' />
-      </view>
+      <view class='__step-icon-solt__ __step-icon-view__' id='.__step-icon-solt__'><slot name='icon' /></view>
     </view>
     <el-column-1 class='{{direction == "vertical" ? "__step-column-vertical__" : ""}}'>
-      <view class='__step-title__ el-title'>
-        <view>
+      <view class='__step-title__ el-title' wx:if='{{title}}'>
+        <view class='__step-title-view__'>
           {{title}}
           <view class='__step-hr__ __step-hr-horizontal__' wx:if='{{index < stepsCount - 1 && direction == "horizontal"}}'></view>
         </view>
       </view>
-      <view class='__step-vice__ el-vice' style='{{index < stepsCount - 1 ? "min-width: 150rpx;" : ""}}'>
+      <view class='__step-vice__ el-vice' style='{{index < stepsCount - 1 ? "min-width: 150rpx;" : ""}}' wx:if='{{subhead}}'>
         {{subhead}}
       </view>
       <slot name='cont' />

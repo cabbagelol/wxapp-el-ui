@@ -3,7 +3,7 @@
   * 空置-占位
  -->
  <view class="__vacancy__" style="height:{{height}}">
-    <view>
+    <view class='__vacancy-view__'>
         <text wx:if='{{!cont}}'>空空如也</text>
         <slot name='cont'></slot>
     </view>

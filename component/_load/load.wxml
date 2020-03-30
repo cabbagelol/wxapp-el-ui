@@ -3,13 +3,13 @@
   <view class=' __load-main__' wx:if='{{type == "main" || type == ""}}' style='border-top: 5rpx solid {{color.essential || essential || "#18b6c1"}};border-left: 5rpx solid {{color.deputy || deputy || "rgba(0, 0, 0, 0.1)"}}; border-right: 5rpx solid {{color.deputy || deputy || "rgba(0, 0, 0, 0.1)"}}; border-bottom: 5rpx solid {{color.deputy|| deputy || "rgba(0, 0, 0, 0.1)"}}'></view>
 
   <view class=' _load_circular location_indicator' wx:elif='{{type == "location"}}'>
-    <view style='box-shadow: 0px 0px 0px 5rpx {{color.essential || essential || "#18b6c1"}}'></view>
-    <view style='background-color: {{color.deputy|| deputy || rgba(0, 0, 0, 0.06)}};'></view>
+    <view class='__location_indicator-view__' style='box-shadow: 0px 0px 0px 5rpx {{color.essential || essential || "#18b6c1"}}'></view>
+    <view class='__location_indicator-view__' style='background-color: {{color.deputy|| deputy || rgba(0, 0, 0, 0.06)}};'></view>
   </view>
 
   <view class=' __load-line__' wx:elif='{{type == "line"}}'>
-    <view style='background: {{color.deputy || deputy || "rgba(0, 0, 0, 0.2)"}};'></view>
-    <view style='  background: {{color.essential || essential || "#18b6c1"}};'></view>
+    <view class='__load-line-view__' style='background: {{color.deputy || deputy || "rgba(0, 0, 0, 0.2)"}};'></view>
+    <view class='__load-line-view__' style='  background: {{color.essential || essential || "#18b6c1"}};'></view>
   </view>
 
   <icon type='{{type}}' color='{{color.essential || essential}}' wx:else />

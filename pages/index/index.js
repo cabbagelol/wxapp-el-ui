@@ -122,6 +122,11 @@ Page({
           url: '../countdown/countdown',
           title: '倒计时',
           label: 'countdown'
+        },
+        {
+          url: '../picker/picker',
+          title: '选择器',
+          label: 'picker'
         }
       ],
     }, {
@@ -182,6 +187,8 @@ Page({
     this.setData({
       module_: this.data.module || []
     })
+
+    console.log(this)
   },
 
   onSearch(e) {

@@ -47,9 +47,12 @@ Elui({
   },
 
   data: {
+    tabs: {
+      data: [],
+    },
     scroll: {
       x: 0
-    }
+    } 
   },
 
   ready() {
@@ -62,8 +65,8 @@ Elui({
         }
       }
       that.setData({
-        'tabs.data': that.data.tabs.data
-      })
+        'tabs.data': that.data.tabs.data || [],
+      });
     })
 
     that.$fields('.__tab-nav__', { computedStyle: ['width']}).then(e=>{
@@ -101,7 +104,7 @@ Elui({
         return
       }
       that.setData({
-        'tabs.index': e.currentTarget.dataset.index,
+        'tabs.index': e.target.dataset.index,
         'tabs.title': e.currentTarget.dataset.title
       });
 

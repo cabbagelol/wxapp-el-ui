@@ -42,7 +42,7 @@
   align-items: center;
 }
 
-.__message-icon__ el-load {
+.__message-icon__ .__message-icon-elload__ {
   display: block;
   width: 50rpx;
   height: 50rpx;

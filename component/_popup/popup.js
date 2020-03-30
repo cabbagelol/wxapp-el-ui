@@ -1,5 +1,9 @@
 import Elui from '../baseComponent';
 Elui({
+  externalClasses: [
+    'el-content'
+  ],
+
   options: {
     multipleSlots: true
   },

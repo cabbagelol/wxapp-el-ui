@@ -1,12 +1,16 @@
 import Elui from '../baseComponent';
 Elui({
+  options: {
+    pureDataPattern: /^_/
+  },
+
   properties: {
     src: {
       type: String,
       value: './image/cover.png',
       observer(newVal_, oldVal_) {
         this.setData({
-          src_: oldVal_,
+          _src: oldVal_,
           value: newVal_
         })
       }
@@ -62,19 +66,15 @@ Elui({
   },
 
   data: {
+    _src: '',
     value: '',
-    src_: '',
     load: true
-  },
-
-  ready () {
-    // console.log(this.data.placeholder)
   },
 
   methods: {
     getValue(e) {
       var object = Object.assign(e.currentTarget.dataset, e.detail, {
-        oldsrc: this.data.src_
+        oldsrc: this.data._src
       })
       return object;
     },
@@ -82,9 +82,9 @@ Elui({
     onError(e) {
       this.setData({
         src: '',
-        style: `width:${50}px;height:${50}px`,
+        style: `width:50px;height:50px`,
         load: false
-      })
+      });
       this.triggerEvent('error', Object.assign(this.getValue(e), {
         type: 'error'
       }));
@@ -101,15 +101,15 @@ Elui({
           that.setData({
             style: `${that.data.style || ""};width:${50}px;height:${50}px`,
             load: false, // 网络
-          })
+          });
         }
         that.triggerEvent('load', Object.assign(that.getValue(_e), {
           type: 'succeed'
         }));
-      })
+      });
       that.setData({
         load: false // 非网络
-      })
+      });
     }
   }
 })

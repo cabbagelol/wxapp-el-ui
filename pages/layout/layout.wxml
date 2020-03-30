@@ -88,5 +88,18 @@
       <view class='layout-block layout-block-lg'> 参照物 </view>
       <view class='layout-block'> 对比 </view>
     </el-row>
+
+    <view style="height: 200px">
+      <el-row class='layout-margin' align='stretch'>
+        <view class='layout-block'> 对比 </view>
+        <view class='layout-block'> 对比 </view>
+      </el-row>
+    </view>
+
+    <el-column class='layout-margin' align='around'>
+      <view class='layout-block'> 对比 </view>
+      <view class='layout-block'> 对比 </view>
+      <view class='layout-block'> 对比 </view>
+    </el-column>
   </view>
 </el-layout>

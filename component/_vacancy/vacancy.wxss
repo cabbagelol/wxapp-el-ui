@@ -7,7 +7,7 @@
   align-items: center;
 }
 
-.__vacancy__ > view {
+.__vacancy__ > .__vacancy-view__ {
   color: #999;
   font-size: 30rpx;
   display: inline-flex;

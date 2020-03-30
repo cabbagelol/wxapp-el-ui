@@ -19,7 +19,6 @@
 .__cellswipe-controller-center__ {
   position: relative;
   display: inline-block;
-  letter-spacing: -2rpx;
 }
 
 .__cellswipe-controller-right-cont__, .__cellswipe-controller-left-cont__ {

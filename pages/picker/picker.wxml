@@ -1,0 +1,3 @@
+<el-head head='{{head}}' stickie='true'></el-head>
+
+<el-picker-view data='{{slots}}'></el-picker-view>

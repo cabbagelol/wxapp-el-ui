@@ -4,7 +4,7 @@
   <el-cell title='独立' label='可单独使用checkbox，自身可控制选择状态' class='radio'>
     <view slot='content'>
       <el-column>
-        <el-checkbox checked='{{false}}' wx:for='{{3}}' wx:key='{{index}}'></el-checkbox>
+        <el-checkbox checked='{{false}}' wx:for='{{3}}' wx:key='index'></el-checkbox>
       </el-column>
       <el-checkbox checked='{{false}}' value='0-1'>单个未选择复选</el-checkbox>
       <el-checkbox checked='{{true}}' value='0-2'>单个选择复选</el-checkbox>
@@ -22,7 +22,7 @@
   <el-form class='radio-form' bindsubmit='onForm'>
     <el-cell title='[{{checkbox.a.value}}]' label='复选'></el-cell>
     <el-checkbox-group name='checkbox-a' value='{{checkbox.a.value}}' bindchange='onCheckboxGroup' data-e='checkbox.a.value'>
-      <el-checkbox class='radio' wx:for='{{10}}' wx:key='{{index}}' ischeckbox='{{false}}' disabled='{{index == 4}}' value='a{{index}}'>
+      <el-checkbox class='radio' wx:for='{{10}}' wx:key='index' ischeckbox='{{false}}' disabled='{{index == 4}}' value='a{{index}}'>
         <el-column style="width: 100%;">
           <el-column-1>
             <el-row align='center'>
@@ -42,7 +42,7 @@
 
     <el-cell title='[{{checkbox.b.value}}]' label='复选'></el-cell>
     <el-checkbox-group name='checkbox-b' value='{{checkbox.b.value}}' bindchange='$' data-e='checkbox.b.value'>
-      <el-checkbox class='radio' wx:for='{{10}}' wx:key='{{index}}' disabled='{{index == 4}}' value='a{{index}}'>复选{{index}}</el-checkbox>
+      <el-checkbox class='radio' wx:for='{{10}}' wx:key='index' disabled='{{index == 4}}' value='a{{index}}'>复选{{index}}</el-checkbox>
     </el-checkbox-group>
 
     <view class='container'>

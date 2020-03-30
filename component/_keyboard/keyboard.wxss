@@ -16,7 +16,7 @@
   display: inline-flex;
 }
 
-.__keyboard-flex__ > view {
+.__keyboard-flex__ > .__keyboard-flex-view__ {
   flex: 1;
   flex-direction: column;
 }
@@ -32,7 +32,7 @@
   width: calc(100% - 10rpx);
 }
 
-.__keyboard-ke__ > view {
+.__keyboard-ke__ > .__keyboard-ke-view__ {
   border-radius: 0.1rem;
   border: 2rpx solid rgba(0, 0, 0, 0);
   box-shadow: 0 0 5rpx rgba(0, 0, 0, 0.123);
@@ -45,7 +45,7 @@
   text-align: center;
 }
 
-.__keyboard-ke__ > view:active {
+.__keyboard-ke__ > .__keyboard-ke-view__:active {
   opacity: 0.25;
 }
 

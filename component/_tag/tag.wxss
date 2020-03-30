@@ -19,7 +19,7 @@
   border-radius: 1000rpx;
 }
 
-.__tag-close__ view {
+.__tag-close__ .__tag-close-view__ {
   content: '';
   position: absolute;
   width: 13rpx;
@@ -28,11 +28,11 @@
   left: 5rpx;
 }
 
-.__tag-close__ view.f {
+.__tag-close__ .__tag-close-view__.f {
   transform: rotate(45deg);
 }
 
-.__tag-close__ view.l {
+.__tag-close__ .__tag-close-view__.l {
   transform: rotate(-45deg);
 }
 

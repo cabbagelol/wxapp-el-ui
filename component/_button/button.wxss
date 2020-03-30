@@ -1,10 +1,5 @@
 @import '../_colors/colors';
 
-button {
-  box-sizing: none !important;
-  overflow: none !important;
-}
-
 .__button__ {
   position: relative;
   text-align: center;

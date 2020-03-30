@@ -7,10 +7,6 @@
   font-size: inherit;
 }
 
-.__radio__ > radio {
-  display: none;
-}
-
 .__radio-dot__ {
   transition: all .25s;
   width: 20rpx;

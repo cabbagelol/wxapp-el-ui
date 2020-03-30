@@ -41,7 +41,7 @@
   height: 100%;
 }
 
-.__tab-nav-item__ > view {
+.__tab-nav-item__ > .__tab-nav-item-view__ {
   display: inline-flex;
   align-items: center;
   height: calc(100% - 44rpx);

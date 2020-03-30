@@ -122,6 +122,8 @@ Elui({
       this.setData({
         datenumber: date = end - date
       })
+      console.log(date)
+
       return {
         fullyear: date >= 0 ? Math.floor(date / 1000 / 60 / 60 / 24 / 360) : 0,
         day: date >= 0 ? Math.floor(date / 1000 / 60 / 60 / 24 % 24) : 0,

@@ -7,7 +7,7 @@
     position: relative;
 }
 
-.__textarea_cont__ textarea {
+.__textarea_cont__ .__textarea-this__ {
     word-wrap:break-word;
     white-space:normal;
     word-break:break-all;
@@ -35,7 +35,7 @@
     margin: 0 10px 10px 0;
 }
 
-.__textarea__ textarea {
+.__textarea__ .__textarea-this__ {
     border: 1px solid #F2F2F2;
     border-radius: .3rem;
     padding: 10px 10px 30px 10px;

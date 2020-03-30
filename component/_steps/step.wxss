@@ -4,7 +4,7 @@
   overflow: hidden;
 }
 
-.__step-icon__ > view {
+.__step-icon__ > .__step-icon-view__ {
   position: relative;
 }
 
@@ -32,9 +32,10 @@
   margin: auto 10rpx;
   overflow: hidden;
   font-size: 30rpx;
+  padding-right: 30rpx;
 }
 
-.__step-title__ > view {
+.__step-title__ > .__step-title-view__ {
   word-break: break-all;
   white-space: nowrap;
   display: inline-flex;

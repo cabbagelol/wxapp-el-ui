@@ -7,10 +7,6 @@
   font-size: inherit;
 }
 
-.__checkbox__ > checkbox {
-  display: none;
-}
-
 .__checkbox-dot__ {
   transition: all 0.25s;
   width: 20rpx;

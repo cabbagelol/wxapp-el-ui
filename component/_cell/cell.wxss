@@ -6,10 +6,6 @@
   min-height: 40px;
 }
 
-/* ._cell_hover:active {
-    background-color: initial;
-} */
-
 ._cell_center_ {
   text-align: left;
   display: inline-flex;
@@ -47,7 +43,6 @@
   display: inline-flex;
   align-content: center;
   justify-content: flex-end;
-  /* white-space: pre; */
   word-break: keep-all;
 }
 
@@ -56,18 +51,12 @@
   width: auto;
 }
 
-._cell_title_img_ image {
-  margin: 0 auto;
-  width: 34rpx;
-  height: 34rpx;
-}
-
 ._cell_title_icon_ {
   width: 18px !important;
   padding-left: 10px;
 }
 
-._cell_title_icon_ image.__cell-title-iconimg__ {
+._cell_title_icon_ .__cell-title-iconimg__ {
   width: 14rpx;
   height: 28rpx;
 }

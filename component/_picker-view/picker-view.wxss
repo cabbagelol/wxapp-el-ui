@@ -1,0 +1,39 @@
+.__picker-view__ {
+  position: relative;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.__picker-view__ .__picker-viewafter__ {
+  content: "";
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.04);
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.__picker-view__ .__rolling-item__ {
+  background: transparent;
+  overflow: hidden;
+}
+
+.__picker-divider__ {
+  padding: 0 10rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.__picker-view-column__ {
+  text-align: center;
+  color: #999;
+  font-size: 33rpx;
+  animation: color .25s;
+}
+
+.__picker-view-column-ac__ {
+  color: #000;
+}

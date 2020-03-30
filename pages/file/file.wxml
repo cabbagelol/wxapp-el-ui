@@ -3,7 +3,7 @@
   <el-file file='{{file}}' album='{{true}}' camera='{{true}}' files='{{true}}' video='{{true}}' bindsucceed='onFile'>
     <el-button>选择</el-button>
   </el-file>
-  <view wx:for='{{filelist}}' wx:key='{{index}}' class='file-item'>
+  <view wx:for='{{filelist}}' wx:key='index' class='file-item'>
     <image src='{{item.path}}' wx:if='{{item.type=="image"}}'></image>
     <video src='{{item.path}}' wx:if='{{item.type=="video"}}'></video>
     <view src='{{item.path}}' wx:if='{{item.type=="file"}}'>

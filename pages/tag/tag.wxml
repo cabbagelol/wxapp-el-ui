@@ -2,7 +2,7 @@
 <el-message class='messgae' icon='{{false}}'></el-message>
 <view class='container'>
   <el-cell title='标准标签'>
-    <el-tag slot='content' wx:for='{{2}}' color='#FFF' textColor='#000' wx:key='{{index}}'>测试 {{index}}</el-tag>
+    <el-tag slot='content' wx:for='{{2}}' color='#FFF' textColor='#000' wx:key='index'>测试 {{index}}</el-tag>
   </el-cell>
 
   <el-cell title='幽灵' label='幽灵状态下，背景是继承父容器'>

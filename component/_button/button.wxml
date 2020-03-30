@@ -1,4 +1,4 @@
 <button class='__button__ el-button {{class || ""}} {{size ? "__button_" + size + "__" : "__button_normal__"}} {{align ? "__button_" + align + "__" : "__button_center__"}} {{radius ? "__button_radius__" : ""}} {{type ? "__color-block-" + type + "__" : ""}} {{plain ? "__button-plain__" : ""}}' hover-class='__button-active__' disabled='{{disabled || false}}'
-  bindtap='onTap' bindtouchstart='onLongtap' bindtouchend='onLogintapEnd'>
+  bindtap='onTap' bindtouchstart='onLongtap' bindtouchend='onLogintapEnd' bindtouchcancel="onLogintapEnd" style="box-sizing: none !important;overflow: none !important;">
   <slot />
 </button>

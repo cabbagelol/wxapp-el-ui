@@ -55,7 +55,7 @@
   color: #000;
 }
 
-.__head_block_title__ > view {
+.__head_block_title__ > .__head_block_title-text__ {
   white-space: nowrap;
   text-overflow: ellipsis;
 }
@@ -70,7 +70,7 @@
   color: #000;
 }
 
-.__head_block_lbtns__ > view:first-child {
+.__head_block_lbtns__ > .__head_block_lbtns-first__ {
   padding: 0 0 0 25rpx;
   font-weight: 600;
 }
@@ -79,16 +79,6 @@
   position: absolute;
   right: 0 !important;
   bottom: 0;
-}
-
-.__head_block_rbtns__ > view:first-child {
-  padding: 0 25rpx 0 0;
-}
-
-.__head_block_rbtns__ > view {
-  height: 100%;
-  display: inline-flex;
-  align-items: center;
 }
 
 .__head_block_rbtns_back__ {

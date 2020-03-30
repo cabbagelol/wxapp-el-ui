@@ -2,9 +2,9 @@
 <el-message class='messgae'></el-message>
 <view class='container'>
   <el-steps direction='horizontal' status='{{stepHorizontal.index}}'>
-    <el-step title='注册账户' subhead='副标题内容' bindonetap='onMessage'></el-step>
-    <el-step title='验证' subhead='副标题内容' bindonetap='onMessage'></el-step>
-    <el-step title='完成' subhead='副标题内容' type='succeed' bindonetap='onMessage'></el-step>
+    <el-step title='注册账户' bindonetap='onMessage'></el-step>
+    <el-step title='验证' bindonetap='onMessage'></el-step>
+    <el-step title='完成' type='succeed' bindonetap='onMessage'></el-step>
   </el-steps>
 </view>
 <view class='container'>
@@ -23,9 +23,7 @@
       <el-load type='main' slot='icon' />
     </el-step>
     <el-step title='下一步' subhead='第二步'></el-step>
-    <el-step title='下一步' subhead='第三步'>
-      <el-load type='line' slot='icon' />
-    </el-step>
+    <el-step title='下一步' subhead='第三步'></el-step>
     <el-step title='完成' subhead='副标题内容' type='succeed'></el-step>
   </el-steps>
 </view>
@@ -40,7 +38,12 @@
 
 <view class='container'>
   <el-steps direction='vertical' status='{{stepVertical.index}}'>
-    <el-step wx:for='{{10}}' wx:key='{{index}}' title='vertical {{index}}' subhead='副标题内容' bindonetap='onMessage'></el-step>
+    <el-step wx:for='{{2}}' wx:key='index' title='vertical {{index}}' subhead='副标题内容' bindonetap='onMessage'></el-step>
+    <el-step>
+      <view slot='cont'>
+        <el-input title='内容' />
+      </view>
+    </el-step>
   </el-steps>
 </view>
 <view class='container'>

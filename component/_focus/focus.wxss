@@ -12,7 +12,7 @@
   padding: 20rpx;
 }
 
-.__focus-tip__ > view {
+.__focus-tip__ > .__focus-tip-view__ {
   margin-left: 20rpx;
 }
 
@@ -29,7 +29,7 @@
   border: 6rpx solid rgba(243, 210, 111, 0.4);
 }
 
-.__focus-warning__ > view {
+.__focus-warning__ > .__focus-all-view__ {
   border: 2rpx solid #f3d26f;
 }
 
@@ -44,6 +44,6 @@
   outline: 6rpx solid rgba(255, 0, 0, 0.4);
 }
 
-.__focus-danger__ > view {
+.__focus-danger__ > .__focus-all-view__ {
   outline: 2rpx solid #f44336;
 }

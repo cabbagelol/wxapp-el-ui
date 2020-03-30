@@ -8,7 +8,7 @@
   background-color: #fff;
 }
 
-.__input__ > view.__input-cont__ {
+.__input__ > .__input-cont__ {
   width: 100%;
   display: inline-flex;
   align-items: center;
@@ -50,7 +50,7 @@
   width: 100%;
 }
 
-.__input__ input, .__input__ el-address {
+.__input__ .__input-cont-this__, .__input__ .__input-cont-address__ {
   width: 100%;
   font-size: 30rpx;
   height: 100%;

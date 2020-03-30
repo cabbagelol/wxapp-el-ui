@@ -1,12 +1,11 @@
 <view class='__tab__'>
   <view class='__tab-main__'>
-
     <scroll-view scroll-x='{{isscroll}}' scroll-left='{{scroll.x}}' bindscroll='onScrolls' lower-threshold='50' scroll-with-animation='{{animation}}' class='__tab-nav-item-center__'>
       <view class='__tab-nav__ el-nav'>
         <slot name='left' class='__tab-nav-item-left__' />
-        <view class='__tab-nav-item__ el-nav-item {{linefill ? (tabs.title == item.title ) ? "__tab-nav-itemactive__ " : "" : false}} {{item.disabled ? "__tab-nav-itemdisabled__" : ""}}' data-index='{{index}}' data-title='{{item.title}}' wx:for='{{tabs.data}}' wx:key='{{index}}'
+        <view class='__tab-nav-item__ el-nav-item {{linefill ? (tabs.title == item.title ) ? "__tab-nav-itemactive__ " : "" : false}} {{item.disabled ? "__tab-nav-itemdisabled__" : ""}}' data-index='{{tabIndex}}' data-title='{{item.title}}' wx:for='{{tabs.data}}' wx:for-index='tabIndex' wx:key='tabIndex'
           bindtap='onTabIndex'>
-          <view class='{{!linefill ? (tabs.title == item.title ) ? "__tab-nav-itemactive__ " : "" : false}}'>
+          <view class='__tab-nav-item-view__ {{!linefill ? (tabs.title == item.title ) ? "__tab-nav-itemactive__ " : "" : false}}'>
             <view wx:if='{{!item.isTitle}}'>{{item.title || '标题'}}</view>
             <view class='__tab-nav-title__'>
               <slot name='title-{{item.title}}'></slot>
@@ -16,7 +15,6 @@
         <slot name='right' class='__tab-nav-item-left__' />
       </view>
     </scroll-view>
-
   </view>
 
   <view class='__tab-navcontent__ el-content'>

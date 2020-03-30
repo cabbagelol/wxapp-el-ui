@@ -43,7 +43,7 @@ Elui({
       }
     },
 
-    onReady () {
+    onReady() {
       var that = this;
       if (that.data.group.length <= 0) {
         return
@@ -58,10 +58,18 @@ Elui({
     },
 
     onChange(data_) {
+      var list = [];
+
+      this.data.group_.forEach(i => {
+        if (i.checked) {
+          list.push(i);
+        }
+      });
+
       this.triggerEvent("change", Object.assign({
         type: 'checkbox-group',
         value: this.data.value,
-        data: this.data.group_
+        data: list,
       }, data_))
     },
 
@@ -70,7 +78,7 @@ Elui({
       var value;
       that.data.value = [];
       that.data.group_ = [];
-      that.data.group.forEach(function(i, index) {
+      that.data.group.forEach(function (i, index) {
         that.data.group_.push(i.data);
         if (i.data.checked) {
           that.data.value.push(i.data.value);

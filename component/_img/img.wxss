@@ -1,5 +1,5 @@
 .__img__,
-.__img__ image {
+.__img__ .__img-item__ {
   height: 100%;
   width: 100%;
 } 

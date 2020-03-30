@@ -13,7 +13,7 @@
   border-radius: 20rpx;
 }
 
-.__slider-line__ > view {
+.__slider-line__ > .__slider-line-view__ {
   position: absolute;
   top: 0;
   color: #FFF;

@@ -4,7 +4,7 @@
   </view>
   <view class='__content-body-scrollbar__' style='height: {{content.body.height}}px;' wx:if='{{scrollbar}}'>
     <view class='__content-body-scrollbar-body__'>
-      <view style='height:{{content.body.scrollbarHeight}}px; top:{{content.body.scrollbarTop}}%'>
+      <view class='__content-body-scrollbar-body-view__' style='height:{{content.body.scrollbarHeight}}px; top:{{content.body.scrollbarTop}}%'>
       </view>
     </view>
   </view>

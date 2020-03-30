@@ -23,6 +23,7 @@ Elui({
   },
 
   data: {
+    stepIcon: [],
     stepsCount: 0,
     iconsolt: 0,
     index: 0

@@ -16,7 +16,7 @@
       <el-address class='__input-cont-address__' value='{{value}}' bindtapchange='onInput'/>
     </block>
     <block wx:else>
-      <input type='{{type || "text"}}' placeholder='{{placeholder || (title ? ("请输入" + title) : "请输入内容")}}' focus='{{focus}}' value='{{value}}' disabled='{{disabled ? "disabled" : false}}' password='{{type == "password" ? true : false}}' maxlength='{{maxlength || 140}}'
+      <input class='__input-cont-this__' type='{{type || "text"}}' placeholder='{{placeholder || (title ? ("请输入" + title) : "请输入内容")}}' focus='{{focus}}' value='{{value}}' disabled='{{disabled ? "disabled" : false}}' password='{{type == "password" ? true : false}}' maxlength='{{maxlength || 140}}'
         adjust-position='true' bindinput='onInput' />
     </block>
   </view>

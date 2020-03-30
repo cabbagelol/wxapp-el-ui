@@ -1,4 +1,4 @@
-el-body,
+/* el-body,
 el-button,
 el-cell,
 el-vacancy,
@@ -21,4 +21,4 @@ el-img,
 el-layout {
   max-width: 100%;
   max-height: 100%;
-}
+} */
